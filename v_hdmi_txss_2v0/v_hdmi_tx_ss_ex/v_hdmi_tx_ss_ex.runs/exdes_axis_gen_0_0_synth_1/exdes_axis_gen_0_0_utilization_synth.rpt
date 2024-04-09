@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Tue Apr  9 09:31:01 2024
+| Date         : Tue Apr  9 15:26:19 2024
 | Host         : weslie running 64-bit major release  (build 9200)
 | Command      : report_utilization -file exdes_axis_gen_0_0_utilization_synth.rpt -pb exdes_axis_gen_0_0_utilization_synth.pb
 | Design       : exdes_axis_gen_0_0
@@ -32,11 +32,11 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*               |   42 |     0 |          0 |    230400 |  0.02 |
-|   LUT as Logic          |   42 |     0 |          0 |    230400 |  0.02 |
+| CLB LUTs*               |   54 |     0 |          0 |    230400 |  0.02 |
+|   LUT as Logic          |   54 |     0 |          0 |    230400 |  0.02 |
 |   LUT as Memory         |    0 |     0 |          0 |    101760 |  0.00 |
-| CLB Registers           |   43 |     0 |          0 |    460800 | <0.01 |
-|   Register as Flip Flop |   43 |     0 |          0 |    460800 | <0.01 |
+| CLB Registers           |   81 |     0 |          0 |    460800 |  0.02 |
+|   Register as Flip Flop |   81 |     0 |          0 |    460800 |  0.02 |
 |   Register as Latch     |    0 |     0 |          0 |    460800 |  0.00 |
 | CARRY8                  |    8 |     0 |          0 |     28800 |  0.03 |
 | F7 Muxes                |    0 |     0 |          0 |    115200 |  0.00 |
@@ -62,7 +62,7 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |          Set |
 | 0     |          Yes |           - |        Reset |
 | 0     |          Yes |         Set |            - |
-| 43    |          Yes |       Reset |            - |
+| 81    |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -157,14 +157,14 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     |   43 |            Register |
-| LUT3     |   17 |                 CLB |
-| LUT6     |   10 |                 CLB |
-| LUT4     |   10 |                 CLB |
+| FDRE     |   81 |            Register |
+| LUT6     |   28 |                 CLB |
+| LUT4     |   13 |                 CLB |
+| LUT5     |    8 |                 CLB |
 | CARRY8   |    8 |                 CLB |
-| LUT2     |    6 |                 CLB |
-| LUT5     |    4 |                 CLB |
-| LUT1     |    3 |                 CLB |
+| LUT3     |    6 |                 CLB |
+| LUT2     |    3 |                 CLB |
+| LUT1     |    2 |                 CLB |
 +----------+------+---------------------+
 
 

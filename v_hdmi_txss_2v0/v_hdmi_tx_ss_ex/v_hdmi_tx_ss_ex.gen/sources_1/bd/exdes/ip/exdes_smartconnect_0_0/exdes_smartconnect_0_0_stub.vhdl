@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Mon Apr  8 16:06:22 2024
+-- Date        : Tue Apr  9 16:39:09 2024
 -- Host        : weslie running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top exdes_smartconnect_0_0 -prefix
---               exdes_smartconnect_0_0_ exdes_smartconnect_0_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/exdes_smartconnect_0_0_stub.vhdl
 -- Design      : exdes_smartconnect_0_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu7ev-ffvc1156-2-e
@@ -49,7 +49,7 @@ entity exdes_smartconnect_0_0 is
     S01_AXI_bresp : out STD_LOGIC_VECTOR ( 1 downto 0 );
     S01_AXI_bvalid : out STD_LOGIC;
     S01_AXI_bready : in STD_LOGIC;
-    M00_AXI_awaddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M00_AXI_awaddr : out STD_LOGIC_VECTOR ( 48 downto 0 );
     M00_AXI_awlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
     M00_AXI_awsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
     M00_AXI_awburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -59,15 +59,15 @@ entity exdes_smartconnect_0_0 is
     M00_AXI_awqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
     M00_AXI_awvalid : out STD_LOGIC;
     M00_AXI_awready : in STD_LOGIC;
-    M00_AXI_wdata : out STD_LOGIC_VECTOR ( 511 downto 0 );
-    M00_AXI_wstrb : out STD_LOGIC_VECTOR ( 63 downto 0 );
+    M00_AXI_wdata : out STD_LOGIC_VECTOR ( 127 downto 0 );
+    M00_AXI_wstrb : out STD_LOGIC_VECTOR ( 15 downto 0 );
     M00_AXI_wlast : out STD_LOGIC;
     M00_AXI_wvalid : out STD_LOGIC;
     M00_AXI_wready : in STD_LOGIC;
     M00_AXI_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M00_AXI_bvalid : in STD_LOGIC;
     M00_AXI_bready : out STD_LOGIC;
-    M00_AXI_araddr : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    M00_AXI_araddr : out STD_LOGIC_VECTOR ( 48 downto 0 );
     M00_AXI_arlen : out STD_LOGIC_VECTOR ( 7 downto 0 );
     M00_AXI_arsize : out STD_LOGIC_VECTOR ( 2 downto 0 );
     M00_AXI_arburst : out STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -77,7 +77,7 @@ entity exdes_smartconnect_0_0 is
     M00_AXI_arqos : out STD_LOGIC_VECTOR ( 3 downto 0 );
     M00_AXI_arvalid : out STD_LOGIC;
     M00_AXI_arready : in STD_LOGIC;
-    M00_AXI_rdata : in STD_LOGIC_VECTOR ( 511 downto 0 );
+    M00_AXI_rdata : in STD_LOGIC_VECTOR ( 127 downto 0 );
     M00_AXI_rresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     M00_AXI_rlast : in STD_LOGIC;
     M00_AXI_rvalid : in STD_LOGIC;
@@ -90,7 +90,7 @@ architecture stub of exdes_smartconnect_0_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
-attribute black_box_pad_pin of stub : architecture is "aclk,aresetn,S00_AXI_araddr[31:0],S00_AXI_arlen[7:0],S00_AXI_arsize[2:0],S00_AXI_arburst[1:0],S00_AXI_arlock[0:0],S00_AXI_arcache[3:0],S00_AXI_arprot[2:0],S00_AXI_arqos[3:0],S00_AXI_arvalid,S00_AXI_arready,S00_AXI_rdata[63:0],S00_AXI_rresp[1:0],S00_AXI_rlast,S00_AXI_rvalid,S00_AXI_rready,S01_AXI_awaddr[31:0],S01_AXI_awlen[7:0],S01_AXI_awsize[2:0],S01_AXI_awburst[1:0],S01_AXI_awlock[0:0],S01_AXI_awcache[3:0],S01_AXI_awprot[2:0],S01_AXI_awqos[3:0],S01_AXI_awvalid,S01_AXI_awready,S01_AXI_wdata[63:0],S01_AXI_wstrb[7:0],S01_AXI_wlast,S01_AXI_wvalid,S01_AXI_wready,S01_AXI_bresp[1:0],S01_AXI_bvalid,S01_AXI_bready,M00_AXI_awaddr[31:0],M00_AXI_awlen[7:0],M00_AXI_awsize[2:0],M00_AXI_awburst[1:0],M00_AXI_awlock[0:0],M00_AXI_awcache[3:0],M00_AXI_awprot[2:0],M00_AXI_awqos[3:0],M00_AXI_awvalid,M00_AXI_awready,M00_AXI_wdata[511:0],M00_AXI_wstrb[63:0],M00_AXI_wlast,M00_AXI_wvalid,M00_AXI_wready,M00_AXI_bresp[1:0],M00_AXI_bvalid,M00_AXI_bready,M00_AXI_araddr[31:0],M00_AXI_arlen[7:0],M00_AXI_arsize[2:0],M00_AXI_arburst[1:0],M00_AXI_arlock[0:0],M00_AXI_arcache[3:0],M00_AXI_arprot[2:0],M00_AXI_arqos[3:0],M00_AXI_arvalid,M00_AXI_arready,M00_AXI_rdata[511:0],M00_AXI_rresp[1:0],M00_AXI_rlast,M00_AXI_rvalid,M00_AXI_rready";
+attribute black_box_pad_pin of stub : architecture is "aclk,aresetn,S00_AXI_araddr[31:0],S00_AXI_arlen[7:0],S00_AXI_arsize[2:0],S00_AXI_arburst[1:0],S00_AXI_arlock[0:0],S00_AXI_arcache[3:0],S00_AXI_arprot[2:0],S00_AXI_arqos[3:0],S00_AXI_arvalid,S00_AXI_arready,S00_AXI_rdata[63:0],S00_AXI_rresp[1:0],S00_AXI_rlast,S00_AXI_rvalid,S00_AXI_rready,S01_AXI_awaddr[31:0],S01_AXI_awlen[7:0],S01_AXI_awsize[2:0],S01_AXI_awburst[1:0],S01_AXI_awlock[0:0],S01_AXI_awcache[3:0],S01_AXI_awprot[2:0],S01_AXI_awqos[3:0],S01_AXI_awvalid,S01_AXI_awready,S01_AXI_wdata[63:0],S01_AXI_wstrb[7:0],S01_AXI_wlast,S01_AXI_wvalid,S01_AXI_wready,S01_AXI_bresp[1:0],S01_AXI_bvalid,S01_AXI_bready,M00_AXI_awaddr[48:0],M00_AXI_awlen[7:0],M00_AXI_awsize[2:0],M00_AXI_awburst[1:0],M00_AXI_awlock[0:0],M00_AXI_awcache[3:0],M00_AXI_awprot[2:0],M00_AXI_awqos[3:0],M00_AXI_awvalid,M00_AXI_awready,M00_AXI_wdata[127:0],M00_AXI_wstrb[15:0],M00_AXI_wlast,M00_AXI_wvalid,M00_AXI_wready,M00_AXI_bresp[1:0],M00_AXI_bvalid,M00_AXI_bready,M00_AXI_araddr[48:0],M00_AXI_arlen[7:0],M00_AXI_arsize[2:0],M00_AXI_arburst[1:0],M00_AXI_arlock[0:0],M00_AXI_arcache[3:0],M00_AXI_arprot[2:0],M00_AXI_arqos[3:0],M00_AXI_arvalid,M00_AXI_arready,M00_AXI_rdata[127:0],M00_AXI_rresp[1:0],M00_AXI_rlast,M00_AXI_rvalid,M00_AXI_rready";
 attribute X_CORE_INFO : string;
 attribute X_CORE_INFO of stub : architecture is "bd_cc6e,Vivado 2022.2";
 begin

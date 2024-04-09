@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Tue Apr  9 09:38:34 2024
+// Date        : Tue Apr  9 16:38:16 2024
 // Host        : weslie running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_zynq_us_0/exdes_zynq_us_0_sim_netlist.v
+//               e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_zynq_us_0/exdes_zynq_us_0_sim_netlist.v
 // Design      : exdes_zynq_us_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -55,6 +55,46 @@ module exdes_zynq_us_0
     maxigp2_rready,
     maxigp2_awqos,
     maxigp2_arqos,
+    saxihp0_fpd_aclk,
+    saxigp2_aruser,
+    saxigp2_awuser,
+    saxigp2_awid,
+    saxigp2_awaddr,
+    saxigp2_awlen,
+    saxigp2_awsize,
+    saxigp2_awburst,
+    saxigp2_awlock,
+    saxigp2_awcache,
+    saxigp2_awprot,
+    saxigp2_awvalid,
+    saxigp2_awready,
+    saxigp2_wdata,
+    saxigp2_wstrb,
+    saxigp2_wlast,
+    saxigp2_wvalid,
+    saxigp2_wready,
+    saxigp2_bid,
+    saxigp2_bresp,
+    saxigp2_bvalid,
+    saxigp2_bready,
+    saxigp2_arid,
+    saxigp2_araddr,
+    saxigp2_arlen,
+    saxigp2_arsize,
+    saxigp2_arburst,
+    saxigp2_arlock,
+    saxigp2_arcache,
+    saxigp2_arprot,
+    saxigp2_arvalid,
+    saxigp2_arready,
+    saxigp2_rid,
+    saxigp2_rdata,
+    saxigp2_rresp,
+    saxigp2_rlast,
+    saxigp2_rvalid,
+    saxigp2_rready,
+    saxigp2_awqos,
+    saxigp2_arqos,
     emio_gpio_i,
     emio_gpio_o,
     emio_gpio_t,
@@ -103,6 +143,46 @@ module exdes_zynq_us_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM0_LPD RREADY" *) output maxigp2_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM0_LPD AWQOS" *) output [3:0]maxigp2_awqos;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M_AXI_HPM0_LPD ARQOS" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXI_HPM0_LPD, NUM_WRITE_OUTSTANDING 8, NUM_READ_OUTSTANDING 8, DATA_WIDTH 32, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 16, ADDR_WIDTH 40, AWUSER_WIDTH 16, ARUSER_WIDTH 16, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, MAX_BURST_LENGTH 256, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk0, NUM_READ_THREADS 4, NUM_WRITE_THREADS 4, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) output [3:0]maxigp2_arqos;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 S_AXI_HP0_FPD_ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP0_FPD_ACLK, ASSOCIATED_BUSIF S_AXI_HP0_FPD, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *) input saxihp0_fpd_aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARUSER" *) input saxigp2_aruser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWUSER" *) input saxigp2_awuser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWID" *) input [5:0]saxigp2_awid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWADDR" *) input [48:0]saxigp2_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWLEN" *) input [7:0]saxigp2_awlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWSIZE" *) input [2:0]saxigp2_awsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWBURST" *) input [1:0]saxigp2_awburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWLOCK" *) input saxigp2_awlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWCACHE" *) input [3:0]saxigp2_awcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWPROT" *) input [2:0]saxigp2_awprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWVALID" *) input saxigp2_awvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWREADY" *) output saxigp2_awready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WDATA" *) input [127:0]saxigp2_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WSTRB" *) input [15:0]saxigp2_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WLAST" *) input saxigp2_wlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WVALID" *) input saxigp2_wvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD WREADY" *) output saxigp2_wready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD BID" *) output [5:0]saxigp2_bid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD BRESP" *) output [1:0]saxigp2_bresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD BVALID" *) output saxigp2_bvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD BREADY" *) input saxigp2_bready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARID" *) input [5:0]saxigp2_arid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARADDR" *) input [48:0]saxigp2_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARLEN" *) input [7:0]saxigp2_arlen;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARSIZE" *) input [2:0]saxigp2_arsize;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARBURST" *) input [1:0]saxigp2_arburst;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARLOCK" *) input saxigp2_arlock;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARCACHE" *) input [3:0]saxigp2_arcache;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARPROT" *) input [2:0]saxigp2_arprot;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARVALID" *) input saxigp2_arvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARREADY" *) output saxigp2_arready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RID" *) output [5:0]saxigp2_rid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RDATA" *) output [127:0]saxigp2_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RRESP" *) output [1:0]saxigp2_rresp;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RLAST" *) output saxigp2_rlast;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RVALID" *) output saxigp2_rvalid;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD RREADY" *) input saxigp2_rready;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD AWQOS" *) input [3:0]saxigp2_awqos;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S_AXI_HP0_FPD ARQOS" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXI_HP0_FPD, NUM_WRITE_OUTSTANDING 16, NUM_READ_OUTSTANDING 16, DATA_WIDTH 128, PROTOCOL AXI4, FREQ_HZ 250000000, ID_WIDTH 6, ADDR_WIDTH 49, AWUSER_WIDTH 1, ARUSER_WIDTH 1, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_WRITE, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 0, MAX_BURST_LENGTH 4, PHASE 0.0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *) input [3:0]saxigp2_arqos;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_I" *) input [94:0]emio_gpio_i;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_O" *) output [94:0]emio_gpio_o;
   (* X_INTERFACE_INFO = "xilinx.com:interface:gpio:1.0 GPIO_0 TRI_T" *) output [94:0]emio_gpio_t;
@@ -160,6 +240,46 @@ module exdes_zynq_us_0
   wire [2:0]pl_ps_irq0;
   wire [0:0]pl_ps_irq1;
   wire pl_resetn0;
+  wire [48:0]saxigp2_araddr;
+  wire [1:0]saxigp2_arburst;
+  wire [3:0]saxigp2_arcache;
+  wire [5:0]saxigp2_arid;
+  wire [7:0]saxigp2_arlen;
+  wire saxigp2_arlock;
+  wire [2:0]saxigp2_arprot;
+  wire [3:0]saxigp2_arqos;
+  wire saxigp2_arready;
+  wire [2:0]saxigp2_arsize;
+  wire saxigp2_aruser;
+  wire saxigp2_arvalid;
+  wire [48:0]saxigp2_awaddr;
+  wire [1:0]saxigp2_awburst;
+  wire [3:0]saxigp2_awcache;
+  wire [5:0]saxigp2_awid;
+  wire [7:0]saxigp2_awlen;
+  wire saxigp2_awlock;
+  wire [2:0]saxigp2_awprot;
+  wire [3:0]saxigp2_awqos;
+  wire saxigp2_awready;
+  wire [2:0]saxigp2_awsize;
+  wire saxigp2_awuser;
+  wire saxigp2_awvalid;
+  wire [5:0]saxigp2_bid;
+  wire saxigp2_bready;
+  wire [1:0]saxigp2_bresp;
+  wire saxigp2_bvalid;
+  wire [127:0]saxigp2_rdata;
+  wire [5:0]saxigp2_rid;
+  wire saxigp2_rlast;
+  wire saxigp2_rready;
+  wire [1:0]saxigp2_rresp;
+  wire saxigp2_rvalid;
+  wire [127:0]saxigp2_wdata;
+  wire saxigp2_wlast;
+  wire saxigp2_wready;
+  wire [15:0]saxigp2_wstrb;
+  wire saxigp2_wvalid;
+  wire saxihp0_fpd_aclk;
   wire NLW_inst_dbg_path_fifo_bypass_UNCONNECTED;
   wire NLW_inst_dp_audio_ref_clk_UNCONNECTED;
   wire NLW_inst_dp_aux_data_oe_n_UNCONNECTED;
@@ -606,12 +726,6 @@ module exdes_zynq_us_0
   wire NLW_inst_saxigp1_rlast_UNCONNECTED;
   wire NLW_inst_saxigp1_rvalid_UNCONNECTED;
   wire NLW_inst_saxigp1_wready_UNCONNECTED;
-  wire NLW_inst_saxigp2_arready_UNCONNECTED;
-  wire NLW_inst_saxigp2_awready_UNCONNECTED;
-  wire NLW_inst_saxigp2_bvalid_UNCONNECTED;
-  wire NLW_inst_saxigp2_rlast_UNCONNECTED;
-  wire NLW_inst_saxigp2_rvalid_UNCONNECTED;
-  wire NLW_inst_saxigp2_wready_UNCONNECTED;
   wire NLW_inst_saxigp3_arready_UNCONNECTED;
   wire NLW_inst_saxigp3_awready_UNCONNECTED;
   wire NLW_inst_saxigp3_bvalid_UNCONNECTED;
@@ -837,13 +951,8 @@ module exdes_zynq_us_0
   wire [1:0]NLW_inst_saxigp1_rresp_UNCONNECTED;
   wire [3:0]NLW_inst_saxigp1_wacount_UNCONNECTED;
   wire [7:0]NLW_inst_saxigp1_wcount_UNCONNECTED;
-  wire [5:0]NLW_inst_saxigp2_bid_UNCONNECTED;
-  wire [1:0]NLW_inst_saxigp2_bresp_UNCONNECTED;
   wire [3:0]NLW_inst_saxigp2_racount_UNCONNECTED;
   wire [7:0]NLW_inst_saxigp2_rcount_UNCONNECTED;
-  wire [127:0]NLW_inst_saxigp2_rdata_UNCONNECTED;
-  wire [5:0]NLW_inst_saxigp2_rid_UNCONNECTED;
-  wire [1:0]NLW_inst_saxigp2_rresp_UNCONNECTED;
   wire [3:0]NLW_inst_saxigp2_wacount_UNCONNECTED;
   wire [7:0]NLW_inst_saxigp2_wcount_UNCONNECTED;
   wire [5:0]NLW_inst_saxigp3_bid_UNCONNECTED;
@@ -939,7 +1048,7 @@ module exdes_zynq_us_0
   (* HW_HANDOFF = "exdes_zynq_us_0.hwdef" *) 
   (* PSS_IO = "Signal Name, DiffPair Type, DiffPair Signal,Direction, Site Type, IO Standard, Drive (mA), Slew Rate, Pull Type, IBIS Model, ODT, OUTPUT_IMPEDANCE \nQSPI_X4_SCLK_OUT, , , OUT, PS_MIO0_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MISO_MO1, , , INOUT, PS_MIO1_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MO2, , , INOUT, PS_MIO2_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MO3, , , INOUT, PS_MIO3_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MOSI_MI0, , , INOUT, PS_MIO4_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_N_SS_OUT, , , OUT, PS_MIO5_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_CLK_FOR_LPBK, , , OUT, PS_MIO6_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[7], , , INOUT, PS_MIO7_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[8], , , INOUT, PS_MIO8_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[9], , , INOUT, PS_MIO9_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[10], , , INOUT, PS_MIO10_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[11], , , INOUT, PS_MIO11_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[12], , , INOUT, PS_MIO12_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[13], , , INOUT, PS_MIO13_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C0_SCL_OUT, , , INOUT, PS_MIO14_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C0_SDA_OUT, , , INOUT, PS_MIO15_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C1_SCL_OUT, , , INOUT, PS_MIO16_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C1_SDA_OUT, , , INOUT, PS_MIO17_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART0_RXD, , , IN, PS_MIO18_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART0_TXD, , , OUT, PS_MIO19_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART1_TXD, , , OUT, PS_MIO20_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART1_RXD, , , IN, PS_MIO21_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[22], , , INOUT, PS_MIO22_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[23], , , INOUT, PS_MIO23_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nCAN1_PHY_TX, , , OUT, PS_MIO24_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nCAN1_PHY_RX, , , IN, PS_MIO25_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[26], , , INOUT, PS_MIO26_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_OUT, , , OUT, PS_MIO27_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_HOT_PLUG_DETECT, , , IN, PS_MIO28_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_OE, , , OUT, PS_MIO29_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_IN, , , IN, PS_MIO30_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[31], , , INOUT, PS_MIO31_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[32], , , INOUT, PS_MIO32_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[33], , , INOUT, PS_MIO33_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[34], , , INOUT, PS_MIO34_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[35], , , INOUT, PS_MIO35_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[36], , , INOUT, PS_MIO36_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[37], , , INOUT, PS_MIO37_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[38], , , INOUT, PS_MIO38_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[39], , , INOUT, PS_MIO39_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[40], , , INOUT, PS_MIO40_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[41], , , INOUT, PS_MIO41_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[42], , , INOUT, PS_MIO42_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[43], , , INOUT, PS_MIO43_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[44], , , INOUT, PS_MIO44_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CD_N, , , IN, PS_MIO45_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[0], , , INOUT, PS_MIO46_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[1], , , INOUT, PS_MIO47_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[2], , , INOUT, PS_MIO48_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[3], , , INOUT, PS_MIO49_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CMD_OUT, , , INOUT, PS_MIO50_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CLK_OUT, , , OUT, PS_MIO51_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_CLK_IN, , , IN, PS_MIO52_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_DIR, , , IN, PS_MIO53_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[2], , , INOUT, PS_MIO54_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_NXT, , , IN, PS_MIO55_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[0], , , INOUT, PS_MIO56_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[1], , , INOUT, PS_MIO57_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_STP, , , OUT, PS_MIO58_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[3], , , INOUT, PS_MIO59_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[4], , , INOUT, PS_MIO60_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[5], , , INOUT, PS_MIO61_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[6], , , INOUT, PS_MIO62_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[7], , , INOUT, PS_MIO63_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TX_CLK, , , OUT, PS_MIO64_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[0], , , OUT, PS_MIO65_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[1], , , OUT, PS_MIO66_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[2], , , OUT, PS_MIO67_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[3], , , OUT, PS_MIO68_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TX_CTL, , , OUT, PS_MIO69_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RX_CLK, , , IN, PS_MIO70_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[0], , , IN, PS_MIO71_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[1], , , IN, PS_MIO72_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[2], , , IN, PS_MIO73_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[3], , , IN, PS_MIO74_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RX_CTL, , , IN, PS_MIO75_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nMDIO3_GEM3_MDC, , , OUT, PS_MIO76_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nMDIO3_GEM3_MDIO_OUT, , , INOUT, PS_MIO77_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nPS_REF_CLK, , , IN, PS_REF_CLK_503, LVCMOS18, 2, SLOW, , PS_MIO_LVCMOS18_S_2,,  \nPS_JTAG_TCK, , , IN, PS_JTAG_TCK_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TDI, , , IN, PS_JTAG_TDI_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TDO, , , OUT, PS_JTAG_TDO_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TMS, , , IN, PS_JTAG_TMS_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_DONE, , , OUT, PS_DONE_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_ERROR_OUT, , , OUT, PS_ERROR_OUT_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_ERROR_STATUS, , , OUT, PS_ERROR_STATUS_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_INIT_B, , , INOUT, PS_INIT_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE0, , , IN, PS_MODE0_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE1, , , IN, PS_MODE1_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE2, , , IN, PS_MODE2_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE3, , , IN, PS_MODE3_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PADI, , , IN, PS_PADI_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PADO, , , OUT, PS_PADO_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_POR_B, , , IN, PS_POR_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PROG_B, , , IN, PS_PROG_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_SRST_B, , , IN, PS_SRST_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nDP1_MGTRRXN0, , , IN, PS_MGTRRXN0_505, , , , , ,,  \nDP1_MGTRRXP0, , , IN, PS_MGTRRXP0_505, , , , , ,,  \nDP1_MGTRTXN0, , , OUT, PS_MGTRTXN0_505, , , , , ,,  \nDP1_MGTRTXP0, , , OUT, PS_MGTRTXP0_505, , , , , ,,  \nSATA1_MGTREFCLK1N, , , IN, PS_MGTREFCLK1N_505, , , , , ,,  \nSATA1_MGTREFCLK1P, , , IN, PS_MGTREFCLK1P_505, , , , , ,,  \nDP0_MGTRRXN1, , , IN, PS_MGTRRXN1_505, , , , , ,,  \nDP0_MGTRRXP1, , , IN, PS_MGTRRXP1_505, , , , , ,,  \nDP0_MGTRTXN1, , , OUT, PS_MGTRTXN1_505, , , , , ,,  \nDP0_MGTRTXP1, , , OUT, PS_MGTRTXP1_505, , , , , ,,  \nUSB0_MGTREFCLK2N, , , IN, PS_MGTREFCLK2N_505, , , , , ,,  \nUSB0_MGTREFCLK2P, , , IN, PS_MGTREFCLK2P_505, , , , , ,,  \nUSB0_MGTRRXN2, , , IN, PS_MGTRRXN2_505, , , , , ,,  \nUSB0_MGTRRXP2, , , IN, PS_MGTRRXP2_505, , , , , ,,  \nUSB0_MGTRTXN2, , , OUT, PS_MGTRTXN2_505, , , , , ,,  \nUSB0_MGTRTXP2, , , OUT, PS_MGTRTXP2_505, , , , , ,,  \nDP0_DP1_MGTREFCLK3N, , , IN, PS_MGTREFCLK3N_505, , , , , ,,  \nDP0_DP1_MGTREFCLK3P, , , IN, PS_MGTREFCLK3P_505, , , , , ,,  \nSATA1_MGTRRXN3, , , IN, PS_MGTRRXN3_505, , , , , ,,  \nSATA1_MGTRRXP3, , , IN, PS_MGTRRXP3_505, , , , , ,,  \nSATA1_MGTRTXN3, , , OUT, PS_MGTRTXN3_505, , , , , ,,  \nSATA1_MGTRTXP3, , , OUT, PS_MGTRTXP3_505, , , , , ,, \n DDR4_RAM_RST_N, , , OUT, PS_DDR_RAM_RST_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ACT_N, , , OUT, PS_DDR_ACT_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_PARITY, , , OUT, PS_DDR_PARITY_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ALERT_N, , , IN, PS_DDR_ALERT_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_CK0, P, DDR4_CK_N0, OUT, PS_DDR_CK0_504, DDR4, , , ,PS_DDR4_CK_OUT34_P, RTT_NONE, 34\n DDR4_CK_N0, N, DDR4_CK0, OUT, PS_DDR_CK_N0_504, DDR4, , , ,PS_DDR4_CK_OUT34_N, RTT_NONE, 34\n DDR4_CKE0, , , OUT, PS_DDR_CKE0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_CS_N0, , , OUT, PS_DDR_CS_N0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ODT0, , , OUT, PS_DDR_ODT0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BG0, , , OUT, PS_DDR_BG0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BA0, , , OUT, PS_DDR_BA0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BA1, , , OUT, PS_DDR_BA1_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ZQ, , , INOUT, PS_DDR_ZQ_504, DDR4, , , ,, , \n DDR4_A0, , , OUT, PS_DDR_A0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A1, , , OUT, PS_DDR_A1_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A2, , , OUT, PS_DDR_A2_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A3, , , OUT, PS_DDR_A3_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A4, , , OUT, PS_DDR_A4_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A5, , , OUT, PS_DDR_A5_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A6, , , OUT, PS_DDR_A6_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A7, , , OUT, PS_DDR_A7_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A8, , , OUT, PS_DDR_A8_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A9, , , OUT, PS_DDR_A9_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A10, , , OUT, PS_DDR_A10_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A11, , , OUT, PS_DDR_A11_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A12, , , OUT, PS_DDR_A12_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A13, , , OUT, PS_DDR_A13_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A14, , , OUT, PS_DDR_A14_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A15, , , OUT, PS_DDR_A15_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_DQS_P0, P, DDR4_DQS_N0, INOUT, PS_DDR_DQS_P0_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P1, P, DDR4_DQS_N1, INOUT, PS_DDR_DQS_P1_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P2, P, DDR4_DQS_N2, INOUT, PS_DDR_DQS_P2_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P3, P, DDR4_DQS_N3, INOUT, PS_DDR_DQS_P3_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P4, P, DDR4_DQS_N4, INOUT, PS_DDR_DQS_P4_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P5, P, DDR4_DQS_N5, INOUT, PS_DDR_DQS_P5_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P6, P, DDR4_DQS_N6, INOUT, PS_DDR_DQS_P6_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P7, P, DDR4_DQS_N7, INOUT, PS_DDR_DQS_P7_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_N0, N, DDR4_DQS_P0, INOUT, PS_DDR_DQS_N0_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N1, N, DDR4_DQS_P1, INOUT, PS_DDR_DQS_N1_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N2, N, DDR4_DQS_P2, INOUT, PS_DDR_DQS_N2_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N3, N, DDR4_DQS_P3, INOUT, PS_DDR_DQS_N3_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N4, N, DDR4_DQS_P4, INOUT, PS_DDR_DQS_N4_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N5, N, DDR4_DQS_P5, INOUT, PS_DDR_DQS_N5_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N6, N, DDR4_DQS_P6, INOUT, PS_DDR_DQS_N6_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N7, N, DDR4_DQS_P7, INOUT, PS_DDR_DQS_N7_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DM0, , , OUT, PS_DDR_DM0_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM1, , , OUT, PS_DDR_DM1_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM2, , , OUT, PS_DDR_DM2_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM3, , , OUT, PS_DDR_DM3_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM4, , , OUT, PS_DDR_DM4_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM5, , , OUT, PS_DDR_DM5_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM6, , , OUT, PS_DDR_DM6_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM7, , , OUT, PS_DDR_DM7_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DQ0, , , INOUT, PS_DDR_DQ0_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ1, , , INOUT, PS_DDR_DQ1_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ2, , , INOUT, PS_DDR_DQ2_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ3, , , INOUT, PS_DDR_DQ3_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ4, , , INOUT, PS_DDR_DQ4_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ5, , , INOUT, PS_DDR_DQ5_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ6, , , INOUT, PS_DDR_DQ6_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ7, , , INOUT, PS_DDR_DQ7_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ8, , , INOUT, PS_DDR_DQ8_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ9, , , INOUT, PS_DDR_DQ9_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ10, , , INOUT, PS_DDR_DQ10_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ11, , , INOUT, PS_DDR_DQ11_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ12, , , INOUT, PS_DDR_DQ12_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ13, , , INOUT, PS_DDR_DQ13_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ14, , , INOUT, PS_DDR_DQ14_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ15, , , INOUT, PS_DDR_DQ15_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ16, , , INOUT, PS_DDR_DQ16_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ17, , , INOUT, PS_DDR_DQ17_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ18, , , INOUT, PS_DDR_DQ18_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ19, , , INOUT, PS_DDR_DQ19_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ20, , , INOUT, PS_DDR_DQ20_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ21, , , INOUT, PS_DDR_DQ21_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ22, , , INOUT, PS_DDR_DQ22_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ23, , , INOUT, PS_DDR_DQ23_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ24, , , INOUT, PS_DDR_DQ24_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ25, , , INOUT, PS_DDR_DQ25_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ26, , , INOUT, PS_DDR_DQ26_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ27, , , INOUT, PS_DDR_DQ27_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ28, , , INOUT, PS_DDR_DQ28_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ29, , , INOUT, PS_DDR_DQ29_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ30, , , INOUT, PS_DDR_DQ30_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ31, , , INOUT, PS_DDR_DQ31_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ32, , , INOUT, PS_DDR_DQ32_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ33, , , INOUT, PS_DDR_DQ33_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ34, , , INOUT, PS_DDR_DQ34_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ35, , , INOUT, PS_DDR_DQ35_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ36, , , INOUT, PS_DDR_DQ36_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ37, , , INOUT, PS_DDR_DQ37_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ38, , , INOUT, PS_DDR_DQ38_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ39, , , INOUT, PS_DDR_DQ39_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ40, , , INOUT, PS_DDR_DQ40_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ41, , , INOUT, PS_DDR_DQ41_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ42, , , INOUT, PS_DDR_DQ42_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ43, , , INOUT, PS_DDR_DQ43_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ44, , , INOUT, PS_DDR_DQ44_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ45, , , INOUT, PS_DDR_DQ45_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ46, , , INOUT, PS_DDR_DQ46_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ47, , , INOUT, PS_DDR_DQ47_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ48, , , INOUT, PS_DDR_DQ48_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ49, , , INOUT, PS_DDR_DQ49_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ50, , , INOUT, PS_DDR_DQ50_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ51, , , INOUT, PS_DDR_DQ51_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ52, , , INOUT, PS_DDR_DQ52_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ53, , , INOUT, PS_DDR_DQ53_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ54, , , INOUT, PS_DDR_DQ54_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ55, , , INOUT, PS_DDR_DQ55_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ56, , , INOUT, PS_DDR_DQ56_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ57, , , INOUT, PS_DDR_DQ57_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ58, , , INOUT, PS_DDR_DQ58_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ59, , , INOUT, PS_DDR_DQ59_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ60, , , INOUT, PS_DDR_DQ60_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ61, , , INOUT, PS_DDR_DQ61_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ62, , , INOUT, PS_DDR_DQ62_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ63, , , INOUT, PS_DDR_DQ63_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34" *) 
   (* PSS_JITTER = "<PSS_EXTERNAL_CLOCKS><EXTERNAL_CLOCK name={PLCLK[0]} clock_external_divide={15} vco_name={RPLL} vco_freq={3000.000} vco_internal_divide={2}/><EXTERNAL_CLOCK name={PLCLK[1]} clock_external_divide={5} vco_name={RPLL} vco_freq={3000.000} vco_internal_divide={2}/></PSS_EXTERNAL_CLOCKS>" *) 
-  (* PSS_POWER = "<BLOCKTYPE name={PS8}> <PS8><FPD><PROCESSSORS><PROCESSOR name={Cortex A-53} numCores={4} L2Cache={Enable} clockFreq={1200.000000} load={0.5}/><PROCESSOR name={GPU Mali-400 MP} numCores={2} clockFreq={500.000000} load={0.5} /></PROCESSSORS><PLLS><PLL domain={APU} vco={2399.976} /><PLL domain={DDR} vco={2099.979} /><PLL domain={Video} vco={2999.970} /></PLLS><MEMORY memType={DDR4} dataWidth={8} clockFreq={1050.000} readRate={0.5} writeRate={0.5} cmdAddressActivity={0.5} /><SERDES><GT name={PCIe} standard={} lanes={} usageRate={0.5} /><GT name={SATA} standard={SATA3} lanes={1} usageRate={0.5} /><GT name={Display Port} standard={SVGA-60 (800x600)} lanes={2} usageRate={0.5} />clockFreq={60} /><GT name={USB3} standard={USB3.0} lanes={1}usageRate={0.5} /><GT name={SGMII} standard={SGMII} lanes={0} usageRate={0.5} /></SERDES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><FPINTERCONNECT clockFreq={525.000000} Bandwidth={Low} /></FPD><LPD><PROCESSSORS><PROCESSOR name={Cortex R-5} usage={Enable} TCM={Enable} OCM={Enable} clockFreq={500.000000} load={0.5}/></PROCESSSORS><PLLS><PLL domain={IO} vco={2999.970} /><PLL domain={RPLL} vco={2999.970} /></PLLS><CSUPMU><Unit name={CSU} usageRate={0.5} clockFreq={180} /><Unit name={PMU} usageRate={0.5} clockFreq={180} /></CSUPMU><GPIO><Bank ioBank={VCC_PSIO0} number={9} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO1} number={15} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO2} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO3} number={16} io_standard={LVCMOS 3.3V} /></GPIO><IOINTERFACES> <IO name={QSPI} io_standard={} ioBank={VCC_PSIO0} clockFreq={125.000000} inputs={0} outputs={3} inouts={4} usageRate={0.5}/><IO name={NAND 3.1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={USB0} io_standard={} ioBank={VCC_PSIO2} clockFreq={250.000000} inputs={3} outputs={1} inouts={8} usageRate={0.5}/><IO name={USB1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth3} io_standard={} ioBank={VCC_PSIO2} clockFreq={125.000000} inputs={6} outputs={6} inouts={0} usageRate={0.5}/><IO name={GPIO 0} io_standard={} ioBank={VCC_PSIO0} clockFreq={1} inputs={0} outputs={0} inouts={9} usageRate={0.5}/><IO name={GPIO 1} io_standard={} ioBank={VCC_PSIO1} clockFreq={1} inputs={0} outputs={0} inouts={15} usageRate={0.5}/><IO name={GPIO 2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 3} io_standard={} ioBank={VCC_PSIO3} clockFreq={1} inputs={} outputs={} inouts={16} usageRate={0.5}/><IO name={UART0} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={UART1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={I2C0} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={I2C1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={SPI0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SPI1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={SD0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SD1} io_standard={} ioBank={VCC_PSIO1} clockFreq={187.500000} inputs={1} outputs={1} inouts={5} usageRate={0.5}/><IO name={Trace} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={TTC0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC2} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC3} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={PJTAG} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={DPAUX} io_standard={} ioBank={VCC_PSIO1} clockFreq={} inputs={2} outputs={2} inouts={0} usageRate={0.5}/><IO name={WDT0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={WDT1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/></IOINTERFACES><AFI master={1} slave={0} clockFreq={100.000} usageRate={0.5} /><LPINTERCONNECT clockFreq={500.000000} Bandwidth={High} /></LPD></PS8></BLOCKTYPE>/>" *) 
+  (* PSS_POWER = "<BLOCKTYPE name={PS8}> <PS8><FPD><PROCESSSORS><PROCESSOR name={Cortex A-53} numCores={4} L2Cache={Enable} clockFreq={1200.000000} load={0.5}/><PROCESSOR name={GPU Mali-400 MP} numCores={2} clockFreq={500.000000} load={0.5} /></PROCESSSORS><PLLS><PLL domain={APU} vco={2399.976} /><PLL domain={DDR} vco={2099.979} /><PLL domain={Video} vco={2999.970} /></PLLS><MEMORY memType={DDR4} dataWidth={8} clockFreq={1050.000} readRate={0.5} writeRate={0.5} cmdAddressActivity={0.5} /><SERDES><GT name={PCIe} standard={} lanes={} usageRate={0.5} /><GT name={SATA} standard={SATA3} lanes={1} usageRate={0.5} /><GT name={Display Port} standard={SVGA-60 (800x600)} lanes={2} usageRate={0.5} />clockFreq={60} /><GT name={USB3} standard={USB3.0} lanes={1}usageRate={0.5} /><GT name={SGMII} standard={SGMII} lanes={0} usageRate={0.5} /></SERDES><AFI master={0} slave={1} clockFreq={250.000} usageRate={0.5} /><FPINTERCONNECT clockFreq={525.000000} Bandwidth={Low} /></FPD><LPD><PROCESSSORS><PROCESSOR name={Cortex R-5} usage={Enable} TCM={Enable} OCM={Enable} clockFreq={500.000000} load={0.5}/></PROCESSSORS><PLLS><PLL domain={IO} vco={2999.970} /><PLL domain={RPLL} vco={2999.970} /></PLLS><CSUPMU><Unit name={CSU} usageRate={0.5} clockFreq={180} /><Unit name={PMU} usageRate={0.5} clockFreq={180} /></CSUPMU><GPIO><Bank ioBank={VCC_PSIO0} number={9} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO1} number={15} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO2} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO3} number={16} io_standard={LVCMOS 3.3V} /></GPIO><IOINTERFACES> <IO name={QSPI} io_standard={} ioBank={VCC_PSIO0} clockFreq={125.000000} inputs={0} outputs={3} inouts={4} usageRate={0.5}/><IO name={NAND 3.1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={USB0} io_standard={} ioBank={VCC_PSIO2} clockFreq={250.000000} inputs={3} outputs={1} inouts={8} usageRate={0.5}/><IO name={USB1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth3} io_standard={} ioBank={VCC_PSIO2} clockFreq={125.000000} inputs={6} outputs={6} inouts={0} usageRate={0.5}/><IO name={GPIO 0} io_standard={} ioBank={VCC_PSIO0} clockFreq={1} inputs={0} outputs={0} inouts={9} usageRate={0.5}/><IO name={GPIO 1} io_standard={} ioBank={VCC_PSIO1} clockFreq={1} inputs={0} outputs={0} inouts={15} usageRate={0.5}/><IO name={GPIO 2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 3} io_standard={} ioBank={VCC_PSIO3} clockFreq={1} inputs={} outputs={} inouts={16} usageRate={0.5}/><IO name={UART0} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={UART1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={I2C0} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={I2C1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={SPI0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SPI1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={SD0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SD1} io_standard={} ioBank={VCC_PSIO1} clockFreq={187.500000} inputs={1} outputs={1} inouts={5} usageRate={0.5}/><IO name={Trace} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={TTC0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC2} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC3} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={PJTAG} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={DPAUX} io_standard={} ioBank={VCC_PSIO1} clockFreq={} inputs={2} outputs={2} inouts={0} usageRate={0.5}/><IO name={WDT0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={WDT1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/></IOINTERFACES><AFI master={1} slave={0} clockFreq={100.000} usageRate={0.5} /><LPINTERCONNECT clockFreq={500.000000} Bandwidth={High} /></LPD></PS8></BLOCKTYPE>/>" *) 
   exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e inst
        (.adma2pl_cack(NLW_inst_adma2pl_cack_UNCONNECTED[7:0]),
         .adma2pl_tvld(NLW_inst_adma2pl_tvld_UNCONNECTED[7:0]),
@@ -2101,49 +2210,49 @@ module exdes_zynq_us_0
         .saxigp1_wready(NLW_inst_saxigp1_wready_UNCONNECTED),
         .saxigp1_wstrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .saxigp1_wvalid(1'b0),
-        .saxigp2_araddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_arburst({1'b0,1'b0}),
-        .saxigp2_arcache({1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_arid({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_arlen({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_arlock(1'b0),
-        .saxigp2_arprot({1'b0,1'b0,1'b0}),
-        .saxigp2_arqos({1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_arready(NLW_inst_saxigp2_arready_UNCONNECTED),
-        .saxigp2_arsize({1'b0,1'b0,1'b0}),
-        .saxigp2_aruser(1'b0),
-        .saxigp2_arvalid(1'b0),
-        .saxigp2_awaddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_awburst({1'b0,1'b0}),
-        .saxigp2_awcache({1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_awid({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_awlen({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_awlock(1'b0),
-        .saxigp2_awprot({1'b0,1'b0,1'b0}),
-        .saxigp2_awqos({1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_awready(NLW_inst_saxigp2_awready_UNCONNECTED),
-        .saxigp2_awsize({1'b0,1'b0,1'b0}),
-        .saxigp2_awuser(1'b0),
-        .saxigp2_awvalid(1'b0),
-        .saxigp2_bid(NLW_inst_saxigp2_bid_UNCONNECTED[5:0]),
-        .saxigp2_bready(1'b0),
-        .saxigp2_bresp(NLW_inst_saxigp2_bresp_UNCONNECTED[1:0]),
-        .saxigp2_bvalid(NLW_inst_saxigp2_bvalid_UNCONNECTED),
+        .saxigp2_araddr(saxigp2_araddr),
+        .saxigp2_arburst(saxigp2_arburst),
+        .saxigp2_arcache(saxigp2_arcache),
+        .saxigp2_arid(saxigp2_arid),
+        .saxigp2_arlen(saxigp2_arlen),
+        .saxigp2_arlock(saxigp2_arlock),
+        .saxigp2_arprot(saxigp2_arprot),
+        .saxigp2_arqos(saxigp2_arqos),
+        .saxigp2_arready(saxigp2_arready),
+        .saxigp2_arsize(saxigp2_arsize),
+        .saxigp2_aruser(saxigp2_aruser),
+        .saxigp2_arvalid(saxigp2_arvalid),
+        .saxigp2_awaddr(saxigp2_awaddr),
+        .saxigp2_awburst(saxigp2_awburst),
+        .saxigp2_awcache(saxigp2_awcache),
+        .saxigp2_awid(saxigp2_awid),
+        .saxigp2_awlen(saxigp2_awlen),
+        .saxigp2_awlock(saxigp2_awlock),
+        .saxigp2_awprot(saxigp2_awprot),
+        .saxigp2_awqos(saxigp2_awqos),
+        .saxigp2_awready(saxigp2_awready),
+        .saxigp2_awsize(saxigp2_awsize),
+        .saxigp2_awuser(saxigp2_awuser),
+        .saxigp2_awvalid(saxigp2_awvalid),
+        .saxigp2_bid(saxigp2_bid),
+        .saxigp2_bready(saxigp2_bready),
+        .saxigp2_bresp(saxigp2_bresp),
+        .saxigp2_bvalid(saxigp2_bvalid),
         .saxigp2_racount(NLW_inst_saxigp2_racount_UNCONNECTED[3:0]),
         .saxigp2_rcount(NLW_inst_saxigp2_rcount_UNCONNECTED[7:0]),
-        .saxigp2_rdata(NLW_inst_saxigp2_rdata_UNCONNECTED[127:0]),
-        .saxigp2_rid(NLW_inst_saxigp2_rid_UNCONNECTED[5:0]),
-        .saxigp2_rlast(NLW_inst_saxigp2_rlast_UNCONNECTED),
-        .saxigp2_rready(1'b0),
-        .saxigp2_rresp(NLW_inst_saxigp2_rresp_UNCONNECTED[1:0]),
-        .saxigp2_rvalid(NLW_inst_saxigp2_rvalid_UNCONNECTED),
+        .saxigp2_rdata(saxigp2_rdata),
+        .saxigp2_rid(saxigp2_rid),
+        .saxigp2_rlast(saxigp2_rlast),
+        .saxigp2_rready(saxigp2_rready),
+        .saxigp2_rresp(saxigp2_rresp),
+        .saxigp2_rvalid(saxigp2_rvalid),
         .saxigp2_wacount(NLW_inst_saxigp2_wacount_UNCONNECTED[3:0]),
         .saxigp2_wcount(NLW_inst_saxigp2_wcount_UNCONNECTED[7:0]),
-        .saxigp2_wdata({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_wlast(1'b0),
-        .saxigp2_wready(NLW_inst_saxigp2_wready_UNCONNECTED),
-        .saxigp2_wstrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .saxigp2_wvalid(1'b0),
+        .saxigp2_wdata(saxigp2_wdata),
+        .saxigp2_wlast(saxigp2_wlast),
+        .saxigp2_wready(saxigp2_wready),
+        .saxigp2_wstrb(saxigp2_wstrb),
+        .saxigp2_wvalid(saxigp2_wvalid),
         .saxigp3_araddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .saxigp3_arburst({1'b0,1'b0}),
         .saxigp3_arcache({1'b0,1'b0,1'b0,1'b0}),
@@ -2316,7 +2425,7 @@ module exdes_zynq_us_0
         .saxigp6_wready(NLW_inst_saxigp6_wready_UNCONNECTED),
         .saxigp6_wstrb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .saxigp6_wvalid(1'b0),
-        .saxihp0_fpd_aclk(1'b0),
+        .saxihp0_fpd_aclk(saxihp0_fpd_aclk),
         .saxihp0_fpd_rclk(1'b0),
         .saxihp0_fpd_wclk(1'b0),
         .saxihp1_fpd_aclk(1'b0),
@@ -2447,7 +2556,7 @@ endmodule
 (* C_USE_DIFF_RW_CLK_GP0 = "0" *) (* C_USE_DIFF_RW_CLK_GP1 = "0" *) (* C_USE_DIFF_RW_CLK_GP2 = "0" *) 
 (* C_USE_DIFF_RW_CLK_GP3 = "0" *) (* C_USE_DIFF_RW_CLK_GP4 = "0" *) (* C_USE_DIFF_RW_CLK_GP5 = "0" *) 
 (* C_USE_DIFF_RW_CLK_GP6 = "0" *) (* HW_HANDOFF = "exdes_zynq_us_0.hwdef" *) (* ORIG_REF_NAME = "zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e" *) 
-(* PSS_IO = "Signal Name, DiffPair Type, DiffPair Signal,Direction, Site Type, IO Standard, Drive (mA), Slew Rate, Pull Type, IBIS Model, ODT, OUTPUT_IMPEDANCE \nQSPI_X4_SCLK_OUT, , , OUT, PS_MIO0_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MISO_MO1, , , INOUT, PS_MIO1_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MO2, , , INOUT, PS_MIO2_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MO3, , , INOUT, PS_MIO3_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MOSI_MI0, , , INOUT, PS_MIO4_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_N_SS_OUT, , , OUT, PS_MIO5_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_CLK_FOR_LPBK, , , OUT, PS_MIO6_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[7], , , INOUT, PS_MIO7_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[8], , , INOUT, PS_MIO8_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[9], , , INOUT, PS_MIO9_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[10], , , INOUT, PS_MIO10_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[11], , , INOUT, PS_MIO11_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[12], , , INOUT, PS_MIO12_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[13], , , INOUT, PS_MIO13_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C0_SCL_OUT, , , INOUT, PS_MIO14_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C0_SDA_OUT, , , INOUT, PS_MIO15_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C1_SCL_OUT, , , INOUT, PS_MIO16_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C1_SDA_OUT, , , INOUT, PS_MIO17_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART0_RXD, , , IN, PS_MIO18_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART0_TXD, , , OUT, PS_MIO19_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART1_TXD, , , OUT, PS_MIO20_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART1_RXD, , , IN, PS_MIO21_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[22], , , INOUT, PS_MIO22_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[23], , , INOUT, PS_MIO23_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nCAN1_PHY_TX, , , OUT, PS_MIO24_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nCAN1_PHY_RX, , , IN, PS_MIO25_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[26], , , INOUT, PS_MIO26_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_OUT, , , OUT, PS_MIO27_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_HOT_PLUG_DETECT, , , IN, PS_MIO28_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_OE, , , OUT, PS_MIO29_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_IN, , , IN, PS_MIO30_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[31], , , INOUT, PS_MIO31_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[32], , , INOUT, PS_MIO32_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[33], , , INOUT, PS_MIO33_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[34], , , INOUT, PS_MIO34_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[35], , , INOUT, PS_MIO35_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[36], , , INOUT, PS_MIO36_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[37], , , INOUT, PS_MIO37_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[38], , , INOUT, PS_MIO38_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[39], , , INOUT, PS_MIO39_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[40], , , INOUT, PS_MIO40_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[41], , , INOUT, PS_MIO41_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[42], , , INOUT, PS_MIO42_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[43], , , INOUT, PS_MIO43_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[44], , , INOUT, PS_MIO44_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CD_N, , , IN, PS_MIO45_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[0], , , INOUT, PS_MIO46_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[1], , , INOUT, PS_MIO47_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[2], , , INOUT, PS_MIO48_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[3], , , INOUT, PS_MIO49_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CMD_OUT, , , INOUT, PS_MIO50_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CLK_OUT, , , OUT, PS_MIO51_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_CLK_IN, , , IN, PS_MIO52_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_DIR, , , IN, PS_MIO53_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[2], , , INOUT, PS_MIO54_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_NXT, , , IN, PS_MIO55_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[0], , , INOUT, PS_MIO56_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[1], , , INOUT, PS_MIO57_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_STP, , , OUT, PS_MIO58_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[3], , , INOUT, PS_MIO59_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[4], , , INOUT, PS_MIO60_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[5], , , INOUT, PS_MIO61_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[6], , , INOUT, PS_MIO62_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[7], , , INOUT, PS_MIO63_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TX_CLK, , , OUT, PS_MIO64_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[0], , , OUT, PS_MIO65_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[1], , , OUT, PS_MIO66_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[2], , , OUT, PS_MIO67_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[3], , , OUT, PS_MIO68_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TX_CTL, , , OUT, PS_MIO69_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RX_CLK, , , IN, PS_MIO70_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[0], , , IN, PS_MIO71_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[1], , , IN, PS_MIO72_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[2], , , IN, PS_MIO73_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[3], , , IN, PS_MIO74_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RX_CTL, , , IN, PS_MIO75_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nMDIO3_GEM3_MDC, , , OUT, PS_MIO76_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nMDIO3_GEM3_MDIO_OUT, , , INOUT, PS_MIO77_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nPS_REF_CLK, , , IN, PS_REF_CLK_503, LVCMOS18, 2, SLOW, , PS_MIO_LVCMOS18_S_2,,  \nPS_JTAG_TCK, , , IN, PS_JTAG_TCK_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TDI, , , IN, PS_JTAG_TDI_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TDO, , , OUT, PS_JTAG_TDO_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TMS, , , IN, PS_JTAG_TMS_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_DONE, , , OUT, PS_DONE_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_ERROR_OUT, , , OUT, PS_ERROR_OUT_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_ERROR_STATUS, , , OUT, PS_ERROR_STATUS_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_INIT_B, , , INOUT, PS_INIT_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE0, , , IN, PS_MODE0_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE1, , , IN, PS_MODE1_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE2, , , IN, PS_MODE2_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE3, , , IN, PS_MODE3_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PADI, , , IN, PS_PADI_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PADO, , , OUT, PS_PADO_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_POR_B, , , IN, PS_POR_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PROG_B, , , IN, PS_PROG_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_SRST_B, , , IN, PS_SRST_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nDP1_MGTRRXN0, , , IN, PS_MGTRRXN0_505, , , , , ,,  \nDP1_MGTRRXP0, , , IN, PS_MGTRRXP0_505, , , , , ,,  \nDP1_MGTRTXN0, , , OUT, PS_MGTRTXN0_505, , , , , ,,  \nDP1_MGTRTXP0, , , OUT, PS_MGTRTXP0_505, , , , , ,,  \nSATA1_MGTREFCLK1N, , , IN, PS_MGTREFCLK1N_505, , , , , ,,  \nSATA1_MGTREFCLK1P, , , IN, PS_MGTREFCLK1P_505, , , , , ,,  \nDP0_MGTRRXN1, , , IN, PS_MGTRRXN1_505, , , , , ,,  \nDP0_MGTRRXP1, , , IN, PS_MGTRRXP1_505, , , , , ,,  \nDP0_MGTRTXN1, , , OUT, PS_MGTRTXN1_505, , , , , ,,  \nDP0_MGTRTXP1, , , OUT, PS_MGTRTXP1_505, , , , , ,,  \nUSB0_MGTREFCLK2N, , , IN, PS_MGTREFCLK2N_505, , , , , ,,  \nUSB0_MGTREFCLK2P, , , IN, PS_MGTREFCLK2P_505, , , , , ,,  \nUSB0_MGTRRXN2, , , IN, PS_MGTRRXN2_505, , , , , ,,  \nUSB0_MGTRRXP2, , , IN, PS_MGTRRXP2_505, , , , , ,,  \nUSB0_MGTRTXN2, , , OUT, PS_MGTRTXN2_505, , , , , ,,  \nUSB0_MGTRTXP2, , , OUT, PS_MGTRTXP2_505, , , , , ,,  \nDP0_DP1_MGTREFCLK3N, , , IN, PS_MGTREFCLK3N_505, , , , , ,,  \nDP0_DP1_MGTREFCLK3P, , , IN, PS_MGTREFCLK3P_505, , , , , ,,  \nSATA1_MGTRRXN3, , , IN, PS_MGTRRXN3_505, , , , , ,,  \nSATA1_MGTRRXP3, , , IN, PS_MGTRRXP3_505, , , , , ,,  \nSATA1_MGTRTXN3, , , OUT, PS_MGTRTXN3_505, , , , , ,,  \nSATA1_MGTRTXP3, , , OUT, PS_MGTRTXP3_505, , , , , ,, \n DDR4_RAM_RST_N, , , OUT, PS_DDR_RAM_RST_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ACT_N, , , OUT, PS_DDR_ACT_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_PARITY, , , OUT, PS_DDR_PARITY_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ALERT_N, , , IN, PS_DDR_ALERT_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_CK0, P, DDR4_CK_N0, OUT, PS_DDR_CK0_504, DDR4, , , ,PS_DDR4_CK_OUT34_P, RTT_NONE, 34\n DDR4_CK_N0, N, DDR4_CK0, OUT, PS_DDR_CK_N0_504, DDR4, , , ,PS_DDR4_CK_OUT34_N, RTT_NONE, 34\n DDR4_CKE0, , , OUT, PS_DDR_CKE0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_CS_N0, , , OUT, PS_DDR_CS_N0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ODT0, , , OUT, PS_DDR_ODT0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BG0, , , OUT, PS_DDR_BG0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BA0, , , OUT, PS_DDR_BA0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BA1, , , OUT, PS_DDR_BA1_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ZQ, , , INOUT, PS_DDR_ZQ_504, DDR4, , , ,, , \n DDR4_A0, , , OUT, PS_DDR_A0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A1, , , OUT, PS_DDR_A1_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A2, , , OUT, PS_DDR_A2_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A3, , , OUT, PS_DDR_A3_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A4, , , OUT, PS_DDR_A4_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A5, , , OUT, PS_DDR_A5_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A6, , , OUT, PS_DDR_A6_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A7, , , OUT, PS_DDR_A7_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A8, , , OUT, PS_DDR_A8_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A9, , , OUT, PS_DDR_A9_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A10, , , OUT, PS_DDR_A10_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A11, , , OUT, PS_DDR_A11_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A12, , , OUT, PS_DDR_A12_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A13, , , OUT, PS_DDR_A13_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A14, , , OUT, PS_DDR_A14_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A15, , , OUT, PS_DDR_A15_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_DQS_P0, P, DDR4_DQS_N0, INOUT, PS_DDR_DQS_P0_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P1, P, DDR4_DQS_N1, INOUT, PS_DDR_DQS_P1_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P2, P, DDR4_DQS_N2, INOUT, PS_DDR_DQS_P2_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P3, P, DDR4_DQS_N3, INOUT, PS_DDR_DQS_P3_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P4, P, DDR4_DQS_N4, INOUT, PS_DDR_DQS_P4_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P5, P, DDR4_DQS_N5, INOUT, PS_DDR_DQS_P5_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P6, P, DDR4_DQS_N6, INOUT, PS_DDR_DQS_P6_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P7, P, DDR4_DQS_N7, INOUT, PS_DDR_DQS_P7_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_N0, N, DDR4_DQS_P0, INOUT, PS_DDR_DQS_N0_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N1, N, DDR4_DQS_P1, INOUT, PS_DDR_DQS_N1_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N2, N, DDR4_DQS_P2, INOUT, PS_DDR_DQS_N2_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N3, N, DDR4_DQS_P3, INOUT, PS_DDR_DQS_N3_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N4, N, DDR4_DQS_P4, INOUT, PS_DDR_DQS_N4_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N5, N, DDR4_DQS_P5, INOUT, PS_DDR_DQS_N5_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N6, N, DDR4_DQS_P6, INOUT, PS_DDR_DQS_N6_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N7, N, DDR4_DQS_P7, INOUT, PS_DDR_DQS_N7_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DM0, , , OUT, PS_DDR_DM0_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM1, , , OUT, PS_DDR_DM1_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM2, , , OUT, PS_DDR_DM2_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM3, , , OUT, PS_DDR_DM3_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM4, , , OUT, PS_DDR_DM4_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM5, , , OUT, PS_DDR_DM5_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM6, , , OUT, PS_DDR_DM6_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM7, , , OUT, PS_DDR_DM7_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DQ0, , , INOUT, PS_DDR_DQ0_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ1, , , INOUT, PS_DDR_DQ1_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ2, , , INOUT, PS_DDR_DQ2_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ3, , , INOUT, PS_DDR_DQ3_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ4, , , INOUT, PS_DDR_DQ4_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ5, , , INOUT, PS_DDR_DQ5_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ6, , , INOUT, PS_DDR_DQ6_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ7, , , INOUT, PS_DDR_DQ7_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ8, , , INOUT, PS_DDR_DQ8_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ9, , , INOUT, PS_DDR_DQ9_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ10, , , INOUT, PS_DDR_DQ10_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ11, , , INOUT, PS_DDR_DQ11_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ12, , , INOUT, PS_DDR_DQ12_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ13, , , INOUT, PS_DDR_DQ13_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ14, , , INOUT, PS_DDR_DQ14_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ15, , , INOUT, PS_DDR_DQ15_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ16, , , INOUT, PS_DDR_DQ16_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ17, , , INOUT, PS_DDR_DQ17_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ18, , , INOUT, PS_DDR_DQ18_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ19, , , INOUT, PS_DDR_DQ19_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ20, , , INOUT, PS_DDR_DQ20_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ21, , , INOUT, PS_DDR_DQ21_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ22, , , INOUT, PS_DDR_DQ22_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ23, , , INOUT, PS_DDR_DQ23_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ24, , , INOUT, PS_DDR_DQ24_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ25, , , INOUT, PS_DDR_DQ25_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ26, , , INOUT, PS_DDR_DQ26_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ27, , , INOUT, PS_DDR_DQ27_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ28, , , INOUT, PS_DDR_DQ28_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ29, , , INOUT, PS_DDR_DQ29_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ30, , , INOUT, PS_DDR_DQ30_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ31, , , INOUT, PS_DDR_DQ31_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ32, , , INOUT, PS_DDR_DQ32_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ33, , , INOUT, PS_DDR_DQ33_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ34, , , INOUT, PS_DDR_DQ34_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ35, , , INOUT, PS_DDR_DQ35_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ36, , , INOUT, PS_DDR_DQ36_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ37, , , INOUT, PS_DDR_DQ37_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ38, , , INOUT, PS_DDR_DQ38_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ39, , , INOUT, PS_DDR_DQ39_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ40, , , INOUT, PS_DDR_DQ40_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ41, , , INOUT, PS_DDR_DQ41_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ42, , , INOUT, PS_DDR_DQ42_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ43, , , INOUT, PS_DDR_DQ43_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ44, , , INOUT, PS_DDR_DQ44_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ45, , , INOUT, PS_DDR_DQ45_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ46, , , INOUT, PS_DDR_DQ46_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ47, , , INOUT, PS_DDR_DQ47_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ48, , , INOUT, PS_DDR_DQ48_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ49, , , INOUT, PS_DDR_DQ49_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ50, , , INOUT, PS_DDR_DQ50_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ51, , , INOUT, PS_DDR_DQ51_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ52, , , INOUT, PS_DDR_DQ52_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ53, , , INOUT, PS_DDR_DQ53_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ54, , , INOUT, PS_DDR_DQ54_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ55, , , INOUT, PS_DDR_DQ55_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ56, , , INOUT, PS_DDR_DQ56_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ57, , , INOUT, PS_DDR_DQ57_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ58, , , INOUT, PS_DDR_DQ58_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ59, , , INOUT, PS_DDR_DQ59_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ60, , , INOUT, PS_DDR_DQ60_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ61, , , INOUT, PS_DDR_DQ61_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ62, , , INOUT, PS_DDR_DQ62_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ63, , , INOUT, PS_DDR_DQ63_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34" *) (* PSS_JITTER = "<PSS_EXTERNAL_CLOCKS><EXTERNAL_CLOCK name={PLCLK[0]} clock_external_divide={15} vco_name={RPLL} vco_freq={3000.000} vco_internal_divide={2}/><EXTERNAL_CLOCK name={PLCLK[1]} clock_external_divide={5} vco_name={RPLL} vco_freq={3000.000} vco_internal_divide={2}/></PSS_EXTERNAL_CLOCKS>" *) (* PSS_POWER = "<BLOCKTYPE name={PS8}> <PS8><FPD><PROCESSSORS><PROCESSOR name={Cortex A-53} numCores={4} L2Cache={Enable} clockFreq={1200.000000} load={0.5}/><PROCESSOR name={GPU Mali-400 MP} numCores={2} clockFreq={500.000000} load={0.5} /></PROCESSSORS><PLLS><PLL domain={APU} vco={2399.976} /><PLL domain={DDR} vco={2099.979} /><PLL domain={Video} vco={2999.970} /></PLLS><MEMORY memType={DDR4} dataWidth={8} clockFreq={1050.000} readRate={0.5} writeRate={0.5} cmdAddressActivity={0.5} /><SERDES><GT name={PCIe} standard={} lanes={} usageRate={0.5} /><GT name={SATA} standard={SATA3} lanes={1} usageRate={0.5} /><GT name={Display Port} standard={SVGA-60 (800x600)} lanes={2} usageRate={0.5} />clockFreq={60} /><GT name={USB3} standard={USB3.0} lanes={1}usageRate={0.5} /><GT name={SGMII} standard={SGMII} lanes={0} usageRate={0.5} /></SERDES><AFI master={0} slave={0} clockFreq={333.333} usageRate={0.5} /><FPINTERCONNECT clockFreq={525.000000} Bandwidth={Low} /></FPD><LPD><PROCESSSORS><PROCESSOR name={Cortex R-5} usage={Enable} TCM={Enable} OCM={Enable} clockFreq={500.000000} load={0.5}/></PROCESSSORS><PLLS><PLL domain={IO} vco={2999.970} /><PLL domain={RPLL} vco={2999.970} /></PLLS><CSUPMU><Unit name={CSU} usageRate={0.5} clockFreq={180} /><Unit name={PMU} usageRate={0.5} clockFreq={180} /></CSUPMU><GPIO><Bank ioBank={VCC_PSIO0} number={9} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO1} number={15} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO2} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO3} number={16} io_standard={LVCMOS 3.3V} /></GPIO><IOINTERFACES> <IO name={QSPI} io_standard={} ioBank={VCC_PSIO0} clockFreq={125.000000} inputs={0} outputs={3} inouts={4} usageRate={0.5}/><IO name={NAND 3.1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={USB0} io_standard={} ioBank={VCC_PSIO2} clockFreq={250.000000} inputs={3} outputs={1} inouts={8} usageRate={0.5}/><IO name={USB1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth3} io_standard={} ioBank={VCC_PSIO2} clockFreq={125.000000} inputs={6} outputs={6} inouts={0} usageRate={0.5}/><IO name={GPIO 0} io_standard={} ioBank={VCC_PSIO0} clockFreq={1} inputs={0} outputs={0} inouts={9} usageRate={0.5}/><IO name={GPIO 1} io_standard={} ioBank={VCC_PSIO1} clockFreq={1} inputs={0} outputs={0} inouts={15} usageRate={0.5}/><IO name={GPIO 2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 3} io_standard={} ioBank={VCC_PSIO3} clockFreq={1} inputs={} outputs={} inouts={16} usageRate={0.5}/><IO name={UART0} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={UART1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={I2C0} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={I2C1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={SPI0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SPI1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={SD0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SD1} io_standard={} ioBank={VCC_PSIO1} clockFreq={187.500000} inputs={1} outputs={1} inouts={5} usageRate={0.5}/><IO name={Trace} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={TTC0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC2} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC3} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={PJTAG} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={DPAUX} io_standard={} ioBank={VCC_PSIO1} clockFreq={} inputs={2} outputs={2} inouts={0} usageRate={0.5}/><IO name={WDT0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={WDT1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/></IOINTERFACES><AFI master={1} slave={0} clockFreq={100.000} usageRate={0.5} /><LPINTERCONNECT clockFreq={500.000000} Bandwidth={High} /></LPD></PS8></BLOCKTYPE>/>" *) 
+(* PSS_IO = "Signal Name, DiffPair Type, DiffPair Signal,Direction, Site Type, IO Standard, Drive (mA), Slew Rate, Pull Type, IBIS Model, ODT, OUTPUT_IMPEDANCE \nQSPI_X4_SCLK_OUT, , , OUT, PS_MIO0_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MISO_MO1, , , INOUT, PS_MIO1_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MO2, , , INOUT, PS_MIO2_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MO3, , , INOUT, PS_MIO3_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_MOSI_MI0, , , INOUT, PS_MIO4_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_X4_N_SS_OUT, , , OUT, PS_MIO5_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nQSPI_CLK_FOR_LPBK, , , OUT, PS_MIO6_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[7], , , INOUT, PS_MIO7_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[8], , , INOUT, PS_MIO8_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[9], , , INOUT, PS_MIO9_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[10], , , INOUT, PS_MIO10_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[11], , , INOUT, PS_MIO11_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[12], , , INOUT, PS_MIO12_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[13], , , INOUT, PS_MIO13_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C0_SCL_OUT, , , INOUT, PS_MIO14_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C0_SDA_OUT, , , INOUT, PS_MIO15_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C1_SCL_OUT, , , INOUT, PS_MIO16_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nI2C1_SDA_OUT, , , INOUT, PS_MIO17_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART0_RXD, , , IN, PS_MIO18_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART0_TXD, , , OUT, PS_MIO19_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART1_TXD, , , OUT, PS_MIO20_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUART1_RXD, , , IN, PS_MIO21_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[22], , , INOUT, PS_MIO22_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO0_GPIO0[23], , , INOUT, PS_MIO23_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nCAN1_PHY_TX, , , OUT, PS_MIO24_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nCAN1_PHY_RX, , , IN, PS_MIO25_500, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[26], , , INOUT, PS_MIO26_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_OUT, , , OUT, PS_MIO27_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_HOT_PLUG_DETECT, , , IN, PS_MIO28_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_OE, , , OUT, PS_MIO29_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nDPAUX_DP_AUX_DATA_IN, , , IN, PS_MIO30_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[31], , , INOUT, PS_MIO31_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[32], , , INOUT, PS_MIO32_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[33], , , INOUT, PS_MIO33_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[34], , , INOUT, PS_MIO34_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[35], , , INOUT, PS_MIO35_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[36], , , INOUT, PS_MIO36_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[37], , , INOUT, PS_MIO37_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[38], , , INOUT, PS_MIO38_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[39], , , INOUT, PS_MIO39_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[40], , , INOUT, PS_MIO40_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[41], , , INOUT, PS_MIO41_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[42], , , INOUT, PS_MIO42_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[43], , , INOUT, PS_MIO43_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGPIO1_GPIO1[44], , , INOUT, PS_MIO44_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CD_N, , , IN, PS_MIO45_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[0], , , INOUT, PS_MIO46_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[1], , , INOUT, PS_MIO47_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[2], , , INOUT, PS_MIO48_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_DATA_OUT[3], , , INOUT, PS_MIO49_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CMD_OUT, , , INOUT, PS_MIO50_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nSD1_SDIO1_CLK_OUT, , , OUT, PS_MIO51_501, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_CLK_IN, , , IN, PS_MIO52_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_DIR, , , IN, PS_MIO53_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[2], , , INOUT, PS_MIO54_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_NXT, , , IN, PS_MIO55_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[0], , , INOUT, PS_MIO56_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[1], , , INOUT, PS_MIO57_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_STP, , , OUT, PS_MIO58_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[3], , , INOUT, PS_MIO59_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[4], , , INOUT, PS_MIO60_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[5], , , INOUT, PS_MIO61_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[6], , , INOUT, PS_MIO62_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nUSB0_ULPI_TX_DATA[7], , , INOUT, PS_MIO63_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TX_CLK, , , OUT, PS_MIO64_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[0], , , OUT, PS_MIO65_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[1], , , OUT, PS_MIO66_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[2], , , OUT, PS_MIO67_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TXD[3], , , OUT, PS_MIO68_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_TX_CTL, , , OUT, PS_MIO69_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RX_CLK, , , IN, PS_MIO70_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[0], , , IN, PS_MIO71_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[1], , , IN, PS_MIO72_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[2], , , IN, PS_MIO73_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RXD[3], , , IN, PS_MIO74_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nGEM3_RGMII_RX_CTL, , , IN, PS_MIO75_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nMDIO3_GEM3_MDC, , , OUT, PS_MIO76_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nMDIO3_GEM3_MDIO_OUT, , , INOUT, PS_MIO77_502, LVCMOS18, 12, FAST, PULLUP, PS_MIO_LVCMOS18_F_12,,  \nPS_REF_CLK, , , IN, PS_REF_CLK_503, LVCMOS18, 2, SLOW, , PS_MIO_LVCMOS18_S_2,,  \nPS_JTAG_TCK, , , IN, PS_JTAG_TCK_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TDI, , , IN, PS_JTAG_TDI_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TDO, , , OUT, PS_JTAG_TDO_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_JTAG_TMS, , , IN, PS_JTAG_TMS_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_DONE, , , OUT, PS_DONE_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_ERROR_OUT, , , OUT, PS_ERROR_OUT_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_ERROR_STATUS, , , OUT, PS_ERROR_STATUS_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_INIT_B, , , INOUT, PS_INIT_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE0, , , IN, PS_MODE0_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE1, , , IN, PS_MODE1_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE2, , , IN, PS_MODE2_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_MODE3, , , IN, PS_MODE3_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PADI, , , IN, PS_PADI_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PADO, , , OUT, PS_PADO_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_POR_B, , , IN, PS_POR_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_PROG_B, , , IN, PS_PROG_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nPS_SRST_B, , , IN, PS_SRST_B_503, LVCMOS33, 12, FAST, , PS_MIO_LVCMOS33_F_12,,  \nDP1_MGTRRXN0, , , IN, PS_MGTRRXN0_505, , , , , ,,  \nDP1_MGTRRXP0, , , IN, PS_MGTRRXP0_505, , , , , ,,  \nDP1_MGTRTXN0, , , OUT, PS_MGTRTXN0_505, , , , , ,,  \nDP1_MGTRTXP0, , , OUT, PS_MGTRTXP0_505, , , , , ,,  \nSATA1_MGTREFCLK1N, , , IN, PS_MGTREFCLK1N_505, , , , , ,,  \nSATA1_MGTREFCLK1P, , , IN, PS_MGTREFCLK1P_505, , , , , ,,  \nDP0_MGTRRXN1, , , IN, PS_MGTRRXN1_505, , , , , ,,  \nDP0_MGTRRXP1, , , IN, PS_MGTRRXP1_505, , , , , ,,  \nDP0_MGTRTXN1, , , OUT, PS_MGTRTXN1_505, , , , , ,,  \nDP0_MGTRTXP1, , , OUT, PS_MGTRTXP1_505, , , , , ,,  \nUSB0_MGTREFCLK2N, , , IN, PS_MGTREFCLK2N_505, , , , , ,,  \nUSB0_MGTREFCLK2P, , , IN, PS_MGTREFCLK2P_505, , , , , ,,  \nUSB0_MGTRRXN2, , , IN, PS_MGTRRXN2_505, , , , , ,,  \nUSB0_MGTRRXP2, , , IN, PS_MGTRRXP2_505, , , , , ,,  \nUSB0_MGTRTXN2, , , OUT, PS_MGTRTXN2_505, , , , , ,,  \nUSB0_MGTRTXP2, , , OUT, PS_MGTRTXP2_505, , , , , ,,  \nDP0_DP1_MGTREFCLK3N, , , IN, PS_MGTREFCLK3N_505, , , , , ,,  \nDP0_DP1_MGTREFCLK3P, , , IN, PS_MGTREFCLK3P_505, , , , , ,,  \nSATA1_MGTRRXN3, , , IN, PS_MGTRRXN3_505, , , , , ,,  \nSATA1_MGTRRXP3, , , IN, PS_MGTRRXP3_505, , , , , ,,  \nSATA1_MGTRTXN3, , , OUT, PS_MGTRTXN3_505, , , , , ,,  \nSATA1_MGTRTXP3, , , OUT, PS_MGTRTXP3_505, , , , , ,, \n DDR4_RAM_RST_N, , , OUT, PS_DDR_RAM_RST_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ACT_N, , , OUT, PS_DDR_ACT_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_PARITY, , , OUT, PS_DDR_PARITY_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ALERT_N, , , IN, PS_DDR_ALERT_N_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_CK0, P, DDR4_CK_N0, OUT, PS_DDR_CK0_504, DDR4, , , ,PS_DDR4_CK_OUT34_P, RTT_NONE, 34\n DDR4_CK_N0, N, DDR4_CK0, OUT, PS_DDR_CK_N0_504, DDR4, , , ,PS_DDR4_CK_OUT34_N, RTT_NONE, 34\n DDR4_CKE0, , , OUT, PS_DDR_CKE0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_CS_N0, , , OUT, PS_DDR_CS_N0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ODT0, , , OUT, PS_DDR_ODT0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BG0, , , OUT, PS_DDR_BG0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BA0, , , OUT, PS_DDR_BA0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_BA1, , , OUT, PS_DDR_BA1_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_ZQ, , , INOUT, PS_DDR_ZQ_504, DDR4, , , ,, , \n DDR4_A0, , , OUT, PS_DDR_A0_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A1, , , OUT, PS_DDR_A1_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A2, , , OUT, PS_DDR_A2_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A3, , , OUT, PS_DDR_A3_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A4, , , OUT, PS_DDR_A4_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A5, , , OUT, PS_DDR_A5_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A6, , , OUT, PS_DDR_A6_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A7, , , OUT, PS_DDR_A7_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A8, , , OUT, PS_DDR_A8_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A9, , , OUT, PS_DDR_A9_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A10, , , OUT, PS_DDR_A10_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A11, , , OUT, PS_DDR_A11_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A12, , , OUT, PS_DDR_A12_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A13, , , OUT, PS_DDR_A13_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A14, , , OUT, PS_DDR_A14_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_A15, , , OUT, PS_DDR_A15_504, DDR4, , , ,PS_DDR4_CKE_OUT34, RTT_NONE, 34\n DDR4_DQS_P0, P, DDR4_DQS_N0, INOUT, PS_DDR_DQS_P0_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P1, P, DDR4_DQS_N1, INOUT, PS_DDR_DQS_P1_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P2, P, DDR4_DQS_N2, INOUT, PS_DDR_DQS_P2_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P3, P, DDR4_DQS_N3, INOUT, PS_DDR_DQS_P3_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P4, P, DDR4_DQS_N4, INOUT, PS_DDR_DQS_P4_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P5, P, DDR4_DQS_N5, INOUT, PS_DDR_DQS_P5_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P6, P, DDR4_DQS_N6, INOUT, PS_DDR_DQS_P6_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_P7, P, DDR4_DQS_N7, INOUT, PS_DDR_DQS_P7_504, DDR4, , , ,PS_DDR4_DQS_OUT34_P|PS_DDR4_DQS_IN40_P, RTT_40, 34\n DDR4_DQS_N0, N, DDR4_DQS_P0, INOUT, PS_DDR_DQS_N0_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N1, N, DDR4_DQS_P1, INOUT, PS_DDR_DQS_N1_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N2, N, DDR4_DQS_P2, INOUT, PS_DDR_DQS_N2_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N3, N, DDR4_DQS_P3, INOUT, PS_DDR_DQS_N3_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N4, N, DDR4_DQS_P4, INOUT, PS_DDR_DQS_N4_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N5, N, DDR4_DQS_P5, INOUT, PS_DDR_DQS_N5_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N6, N, DDR4_DQS_P6, INOUT, PS_DDR_DQS_N6_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DQS_N7, N, DDR4_DQS_P7, INOUT, PS_DDR_DQS_N7_504, DDR4, , , ,PS_DDR4_DQS_OUT34_N|PS_DDR4_DQS_IN40_N, RTT_40, 34\n DDR4_DM0, , , OUT, PS_DDR_DM0_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM1, , , OUT, PS_DDR_DM1_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM2, , , OUT, PS_DDR_DM2_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM3, , , OUT, PS_DDR_DM3_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM4, , , OUT, PS_DDR_DM4_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM5, , , OUT, PS_DDR_DM5_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM6, , , OUT, PS_DDR_DM6_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DM7, , , OUT, PS_DDR_DM7_504, DDR4, , , ,PS_DDR4_DQ_OUT34, RTT_40, 34\n DDR4_DQ0, , , INOUT, PS_DDR_DQ0_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ1, , , INOUT, PS_DDR_DQ1_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ2, , , INOUT, PS_DDR_DQ2_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ3, , , INOUT, PS_DDR_DQ3_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ4, , , INOUT, PS_DDR_DQ4_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ5, , , INOUT, PS_DDR_DQ5_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ6, , , INOUT, PS_DDR_DQ6_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ7, , , INOUT, PS_DDR_DQ7_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ8, , , INOUT, PS_DDR_DQ8_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ9, , , INOUT, PS_DDR_DQ9_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ10, , , INOUT, PS_DDR_DQ10_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ11, , , INOUT, PS_DDR_DQ11_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ12, , , INOUT, PS_DDR_DQ12_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ13, , , INOUT, PS_DDR_DQ13_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ14, , , INOUT, PS_DDR_DQ14_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ15, , , INOUT, PS_DDR_DQ15_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ16, , , INOUT, PS_DDR_DQ16_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ17, , , INOUT, PS_DDR_DQ17_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ18, , , INOUT, PS_DDR_DQ18_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ19, , , INOUT, PS_DDR_DQ19_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ20, , , INOUT, PS_DDR_DQ20_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ21, , , INOUT, PS_DDR_DQ21_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ22, , , INOUT, PS_DDR_DQ22_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ23, , , INOUT, PS_DDR_DQ23_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ24, , , INOUT, PS_DDR_DQ24_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ25, , , INOUT, PS_DDR_DQ25_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ26, , , INOUT, PS_DDR_DQ26_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ27, , , INOUT, PS_DDR_DQ27_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ28, , , INOUT, PS_DDR_DQ28_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ29, , , INOUT, PS_DDR_DQ29_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ30, , , INOUT, PS_DDR_DQ30_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ31, , , INOUT, PS_DDR_DQ31_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ32, , , INOUT, PS_DDR_DQ32_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ33, , , INOUT, PS_DDR_DQ33_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ34, , , INOUT, PS_DDR_DQ34_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ35, , , INOUT, PS_DDR_DQ35_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ36, , , INOUT, PS_DDR_DQ36_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ37, , , INOUT, PS_DDR_DQ37_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ38, , , INOUT, PS_DDR_DQ38_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ39, , , INOUT, PS_DDR_DQ39_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ40, , , INOUT, PS_DDR_DQ40_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ41, , , INOUT, PS_DDR_DQ41_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ42, , , INOUT, PS_DDR_DQ42_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ43, , , INOUT, PS_DDR_DQ43_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ44, , , INOUT, PS_DDR_DQ44_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ45, , , INOUT, PS_DDR_DQ45_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ46, , , INOUT, PS_DDR_DQ46_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ47, , , INOUT, PS_DDR_DQ47_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ48, , , INOUT, PS_DDR_DQ48_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ49, , , INOUT, PS_DDR_DQ49_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ50, , , INOUT, PS_DDR_DQ50_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ51, , , INOUT, PS_DDR_DQ51_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ52, , , INOUT, PS_DDR_DQ52_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ53, , , INOUT, PS_DDR_DQ53_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ54, , , INOUT, PS_DDR_DQ54_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ55, , , INOUT, PS_DDR_DQ55_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ56, , , INOUT, PS_DDR_DQ56_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ57, , , INOUT, PS_DDR_DQ57_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ58, , , INOUT, PS_DDR_DQ58_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ59, , , INOUT, PS_DDR_DQ59_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ60, , , INOUT, PS_DDR_DQ60_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ61, , , INOUT, PS_DDR_DQ61_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ62, , , INOUT, PS_DDR_DQ62_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34\n DDR4_DQ63, , , INOUT, PS_DDR_DQ63_504, DDR4, , , ,PS_DDR4_DQ_OUT34|PS_DDR4_DQ_IN40, RTT_40, 34" *) (* PSS_JITTER = "<PSS_EXTERNAL_CLOCKS><EXTERNAL_CLOCK name={PLCLK[0]} clock_external_divide={15} vco_name={RPLL} vco_freq={3000.000} vco_internal_divide={2}/><EXTERNAL_CLOCK name={PLCLK[1]} clock_external_divide={5} vco_name={RPLL} vco_freq={3000.000} vco_internal_divide={2}/></PSS_EXTERNAL_CLOCKS>" *) (* PSS_POWER = "<BLOCKTYPE name={PS8}> <PS8><FPD><PROCESSSORS><PROCESSOR name={Cortex A-53} numCores={4} L2Cache={Enable} clockFreq={1200.000000} load={0.5}/><PROCESSOR name={GPU Mali-400 MP} numCores={2} clockFreq={500.000000} load={0.5} /></PROCESSSORS><PLLS><PLL domain={APU} vco={2399.976} /><PLL domain={DDR} vco={2099.979} /><PLL domain={Video} vco={2999.970} /></PLLS><MEMORY memType={DDR4} dataWidth={8} clockFreq={1050.000} readRate={0.5} writeRate={0.5} cmdAddressActivity={0.5} /><SERDES><GT name={PCIe} standard={} lanes={} usageRate={0.5} /><GT name={SATA} standard={SATA3} lanes={1} usageRate={0.5} /><GT name={Display Port} standard={SVGA-60 (800x600)} lanes={2} usageRate={0.5} />clockFreq={60} /><GT name={USB3} standard={USB3.0} lanes={1}usageRate={0.5} /><GT name={SGMII} standard={SGMII} lanes={0} usageRate={0.5} /></SERDES><AFI master={0} slave={1} clockFreq={250.000} usageRate={0.5} /><FPINTERCONNECT clockFreq={525.000000} Bandwidth={Low} /></FPD><LPD><PROCESSSORS><PROCESSOR name={Cortex R-5} usage={Enable} TCM={Enable} OCM={Enable} clockFreq={500.000000} load={0.5}/></PROCESSSORS><PLLS><PLL domain={IO} vco={2999.970} /><PLL domain={RPLL} vco={2999.970} /></PLLS><CSUPMU><Unit name={CSU} usageRate={0.5} clockFreq={180} /><Unit name={PMU} usageRate={0.5} clockFreq={180} /></CSUPMU><GPIO><Bank ioBank={VCC_PSIO0} number={9} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO1} number={15} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO2} number={0} io_standard={LVCMOS 1.8V} /><Bank ioBank={VCC_PSIO3} number={16} io_standard={LVCMOS 3.3V} /></GPIO><IOINTERFACES> <IO name={QSPI} io_standard={} ioBank={VCC_PSIO0} clockFreq={125.000000} inputs={0} outputs={3} inouts={4} usageRate={0.5}/><IO name={NAND 3.1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={USB0} io_standard={} ioBank={VCC_PSIO2} clockFreq={250.000000} inputs={3} outputs={1} inouts={8} usageRate={0.5}/><IO name={USB1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GigabitEth3} io_standard={} ioBank={VCC_PSIO2} clockFreq={125.000000} inputs={6} outputs={6} inouts={0} usageRate={0.5}/><IO name={GPIO 0} io_standard={} ioBank={VCC_PSIO0} clockFreq={1} inputs={0} outputs={0} inouts={9} usageRate={0.5}/><IO name={GPIO 1} io_standard={} ioBank={VCC_PSIO1} clockFreq={1} inputs={0} outputs={0} inouts={15} usageRate={0.5}/><IO name={GPIO 2} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={GPIO 3} io_standard={} ioBank={VCC_PSIO3} clockFreq={1} inputs={} outputs={} inouts={16} usageRate={0.5}/><IO name={UART0} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={UART1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={I2C0} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={I2C1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={0} outputs={0} inouts={2} usageRate={0.5}/><IO name={SPI0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SPI1} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={CAN1} io_standard={} ioBank={VCC_PSIO0} clockFreq={100.000000} inputs={1} outputs={1} inouts={0} usageRate={0.5}/><IO name={SD0} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={SD1} io_standard={} ioBank={VCC_PSIO1} clockFreq={187.500000} inputs={1} outputs={1} inouts={5} usageRate={0.5}/><IO name={Trace} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={TTC0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC2} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={TTC3} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={PJTAG} io_standard={} ioBank={} clockFreq={} inputs={} outputs={} inouts={} usageRate={0.5}/><IO name={DPAUX} io_standard={} ioBank={VCC_PSIO1} clockFreq={} inputs={2} outputs={2} inouts={0} usageRate={0.5}/><IO name={WDT0} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/><IO name={WDT1} io_standard={} ioBank={} clockFreq={100} inputs={0} outputs={0} inouts={0} usageRate={0.5}/></IOINTERFACES><AFI master={1} slave={0} clockFreq={100.000} usageRate={0.5} /><LPINTERCONNECT clockFreq={500.000000} Bandwidth={High} /></LPD></PS8></BLOCKTYPE>/>" *) 
 module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
    (maxihpm0_fpd_aclk,
     dp_video_ref_clk,
@@ -5608,146 +5717,18 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_1153;
   wire PS8_i_n_1154;
   wire PS8_i_n_1155;
-  wire PS8_i_n_1156;
-  wire PS8_i_n_1157;
-  wire PS8_i_n_1158;
-  wire PS8_i_n_1159;
   wire PS8_i_n_116;
-  wire PS8_i_n_1160;
-  wire PS8_i_n_1161;
-  wire PS8_i_n_1162;
-  wire PS8_i_n_1163;
-  wire PS8_i_n_1164;
-  wire PS8_i_n_1165;
-  wire PS8_i_n_1166;
-  wire PS8_i_n_1167;
-  wire PS8_i_n_1168;
-  wire PS8_i_n_1169;
   wire PS8_i_n_117;
-  wire PS8_i_n_1170;
-  wire PS8_i_n_1171;
-  wire PS8_i_n_1172;
-  wire PS8_i_n_1173;
-  wire PS8_i_n_1174;
-  wire PS8_i_n_1175;
-  wire PS8_i_n_1176;
-  wire PS8_i_n_1177;
-  wire PS8_i_n_1178;
-  wire PS8_i_n_1179;
-  wire PS8_i_n_1180;
-  wire PS8_i_n_1181;
-  wire PS8_i_n_1182;
-  wire PS8_i_n_1183;
-  wire PS8_i_n_1184;
-  wire PS8_i_n_1185;
-  wire PS8_i_n_1186;
-  wire PS8_i_n_1187;
-  wire PS8_i_n_1188;
-  wire PS8_i_n_1189;
   wire PS8_i_n_119;
-  wire PS8_i_n_1190;
-  wire PS8_i_n_1191;
-  wire PS8_i_n_1192;
-  wire PS8_i_n_1193;
-  wire PS8_i_n_1194;
-  wire PS8_i_n_1195;
-  wire PS8_i_n_1196;
-  wire PS8_i_n_1197;
-  wire PS8_i_n_1198;
-  wire PS8_i_n_1199;
   wire PS8_i_n_12;
   wire PS8_i_n_120;
-  wire PS8_i_n_1200;
-  wire PS8_i_n_1201;
-  wire PS8_i_n_1202;
-  wire PS8_i_n_1203;
-  wire PS8_i_n_1204;
-  wire PS8_i_n_1205;
-  wire PS8_i_n_1206;
-  wire PS8_i_n_1207;
-  wire PS8_i_n_1208;
-  wire PS8_i_n_1209;
   wire PS8_i_n_121;
-  wire PS8_i_n_1210;
-  wire PS8_i_n_1211;
-  wire PS8_i_n_1212;
-  wire PS8_i_n_1213;
-  wire PS8_i_n_1214;
-  wire PS8_i_n_1215;
-  wire PS8_i_n_1216;
-  wire PS8_i_n_1217;
-  wire PS8_i_n_1218;
-  wire PS8_i_n_1219;
   wire PS8_i_n_122;
-  wire PS8_i_n_1220;
-  wire PS8_i_n_1221;
-  wire PS8_i_n_1222;
-  wire PS8_i_n_1223;
-  wire PS8_i_n_1224;
-  wire PS8_i_n_1225;
-  wire PS8_i_n_1226;
-  wire PS8_i_n_1227;
-  wire PS8_i_n_1228;
-  wire PS8_i_n_1229;
-  wire PS8_i_n_1230;
-  wire PS8_i_n_1231;
-  wire PS8_i_n_1232;
-  wire PS8_i_n_1233;
-  wire PS8_i_n_1234;
-  wire PS8_i_n_1235;
-  wire PS8_i_n_1236;
-  wire PS8_i_n_1237;
-  wire PS8_i_n_1238;
-  wire PS8_i_n_1239;
   wire PS8_i_n_124;
-  wire PS8_i_n_1240;
-  wire PS8_i_n_1241;
-  wire PS8_i_n_1242;
-  wire PS8_i_n_1243;
-  wire PS8_i_n_1244;
-  wire PS8_i_n_1245;
-  wire PS8_i_n_1246;
-  wire PS8_i_n_1247;
-  wire PS8_i_n_1248;
-  wire PS8_i_n_1249;
   wire PS8_i_n_125;
-  wire PS8_i_n_1250;
-  wire PS8_i_n_1251;
-  wire PS8_i_n_1252;
-  wire PS8_i_n_1253;
-  wire PS8_i_n_1254;
-  wire PS8_i_n_1255;
-  wire PS8_i_n_1256;
-  wire PS8_i_n_1257;
-  wire PS8_i_n_1258;
-  wire PS8_i_n_1259;
   wire PS8_i_n_126;
-  wire PS8_i_n_1260;
-  wire PS8_i_n_1261;
-  wire PS8_i_n_1262;
-  wire PS8_i_n_1263;
-  wire PS8_i_n_1264;
-  wire PS8_i_n_1265;
-  wire PS8_i_n_1266;
-  wire PS8_i_n_1267;
-  wire PS8_i_n_1268;
-  wire PS8_i_n_1269;
   wire PS8_i_n_127;
-  wire PS8_i_n_1270;
-  wire PS8_i_n_1271;
-  wire PS8_i_n_1272;
-  wire PS8_i_n_1273;
-  wire PS8_i_n_1274;
-  wire PS8_i_n_1275;
-  wire PS8_i_n_1276;
-  wire PS8_i_n_1277;
-  wire PS8_i_n_1278;
-  wire PS8_i_n_1279;
   wire PS8_i_n_128;
-  wire PS8_i_n_1280;
-  wire PS8_i_n_1281;
-  wire PS8_i_n_1282;
-  wire PS8_i_n_1283;
   wire PS8_i_n_1284;
   wire PS8_i_n_1285;
   wire PS8_i_n_1286;
@@ -6520,10 +6501,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_2068;
   wire PS8_i_n_2069;
   wire PS8_i_n_207;
-  wire PS8_i_n_2070;
-  wire PS8_i_n_2071;
-  wire PS8_i_n_2072;
-  wire PS8_i_n_2073;
   wire PS8_i_n_2074;
   wire PS8_i_n_2075;
   wire PS8_i_n_2076;
@@ -6731,7 +6708,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_2298;
   wire PS8_i_n_2299;
   wire PS8_i_n_23;
-  wire PS8_i_n_230;
   wire PS8_i_n_2300;
   wire PS8_i_n_2301;
   wire PS8_i_n_2302;
@@ -6742,7 +6718,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_2307;
   wire PS8_i_n_2308;
   wire PS8_i_n_2309;
-  wire PS8_i_n_231;
   wire PS8_i_n_2310;
   wire PS8_i_n_2311;
   wire PS8_i_n_2312;
@@ -6753,7 +6728,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_2317;
   wire PS8_i_n_2318;
   wire PS8_i_n_2319;
-  wire PS8_i_n_232;
   wire PS8_i_n_2320;
   wire PS8_i_n_2321;
   wire PS8_i_n_2322;
@@ -6764,7 +6738,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_2327;
   wire PS8_i_n_2328;
   wire PS8_i_n_2329;
-  wire PS8_i_n_233;
   wire PS8_i_n_2330;
   wire PS8_i_n_2331;
   wire PS8_i_n_2332;
@@ -6775,7 +6748,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_2337;
   wire PS8_i_n_2338;
   wire PS8_i_n_2339;
-  wire PS8_i_n_234;
   wire PS8_i_n_2340;
   wire PS8_i_n_2341;
   wire PS8_i_n_2342;
@@ -6786,7 +6758,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_2347;
   wire PS8_i_n_2348;
   wire PS8_i_n_2349;
-  wire PS8_i_n_235;
   wire PS8_i_n_2350;
   wire PS8_i_n_2351;
   wire PS8_i_n_2352;
@@ -7449,19 +7420,7 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire PS8_i_n_3031;
   wire PS8_i_n_3032;
   wire PS8_i_n_3033;
-  wire PS8_i_n_3034;
-  wire PS8_i_n_3035;
-  wire PS8_i_n_3036;
-  wire PS8_i_n_3037;
-  wire PS8_i_n_3038;
-  wire PS8_i_n_3039;
   wire PS8_i_n_304;
-  wire PS8_i_n_3040;
-  wire PS8_i_n_3041;
-  wire PS8_i_n_3042;
-  wire PS8_i_n_3043;
-  wire PS8_i_n_3044;
-  wire PS8_i_n_3045;
   wire PS8_i_n_3046;
   wire PS8_i_n_3047;
   wire PS8_i_n_3048;
@@ -8768,6 +8727,46 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   wire [2:0]pl_ps_irq0;
   wire [0:0]pl_ps_irq1;
   wire pl_resetn0;
+  wire [48:0]saxigp2_araddr;
+  wire [1:0]saxigp2_arburst;
+  wire [3:0]saxigp2_arcache;
+  wire [5:0]saxigp2_arid;
+  wire [7:0]saxigp2_arlen;
+  wire saxigp2_arlock;
+  wire [2:0]saxigp2_arprot;
+  wire [3:0]saxigp2_arqos;
+  wire saxigp2_arready;
+  wire [2:0]saxigp2_arsize;
+  wire saxigp2_aruser;
+  wire saxigp2_arvalid;
+  wire [48:0]saxigp2_awaddr;
+  wire [1:0]saxigp2_awburst;
+  wire [3:0]saxigp2_awcache;
+  wire [5:0]saxigp2_awid;
+  wire [7:0]saxigp2_awlen;
+  wire saxigp2_awlock;
+  wire [2:0]saxigp2_awprot;
+  wire [3:0]saxigp2_awqos;
+  wire saxigp2_awready;
+  wire [2:0]saxigp2_awsize;
+  wire saxigp2_awuser;
+  wire saxigp2_awvalid;
+  wire [5:0]saxigp2_bid;
+  wire saxigp2_bready;
+  wire [1:0]saxigp2_bresp;
+  wire saxigp2_bvalid;
+  wire [127:0]saxigp2_rdata;
+  wire [5:0]saxigp2_rid;
+  wire saxigp2_rlast;
+  wire saxigp2_rready;
+  wire [1:0]saxigp2_rresp;
+  wire saxigp2_rvalid;
+  wire [127:0]saxigp2_wdata;
+  wire saxigp2_wlast;
+  wire saxigp2_wready;
+  wire [15:0]saxigp2_wstrb;
+  wire saxigp2_wvalid;
+  wire saxihp0_fpd_aclk;
   (* RTL_KEEP = "true" *) wire \trace_ctl_pipe[0] ;
   (* RTL_KEEP = "true" *) wire \trace_ctl_pipe[1] ;
   (* RTL_KEEP = "true" *) wire \trace_ctl_pipe[2] ;
@@ -11960,17 +11959,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   assign saxigp1_wcount[1] = \<const0> ;
   assign saxigp1_wcount[0] = \<const0> ;
   assign saxigp1_wready = \<const0> ;
-  assign saxigp2_arready = \<const0> ;
-  assign saxigp2_awready = \<const0> ;
-  assign saxigp2_bid[5] = \<const0> ;
-  assign saxigp2_bid[4] = \<const0> ;
-  assign saxigp2_bid[3] = \<const0> ;
-  assign saxigp2_bid[2] = \<const0> ;
-  assign saxigp2_bid[1] = \<const0> ;
-  assign saxigp2_bid[0] = \<const0> ;
-  assign saxigp2_bresp[1] = \<const0> ;
-  assign saxigp2_bresp[0] = \<const0> ;
-  assign saxigp2_bvalid = \<const0> ;
   assign saxigp2_racount[3] = \<const0> ;
   assign saxigp2_racount[2] = \<const0> ;
   assign saxigp2_racount[1] = \<const0> ;
@@ -11983,144 +11971,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   assign saxigp2_rcount[2] = \<const0> ;
   assign saxigp2_rcount[1] = \<const0> ;
   assign saxigp2_rcount[0] = \<const0> ;
-  assign saxigp2_rdata[127] = \<const0> ;
-  assign saxigp2_rdata[126] = \<const0> ;
-  assign saxigp2_rdata[125] = \<const0> ;
-  assign saxigp2_rdata[124] = \<const0> ;
-  assign saxigp2_rdata[123] = \<const0> ;
-  assign saxigp2_rdata[122] = \<const0> ;
-  assign saxigp2_rdata[121] = \<const0> ;
-  assign saxigp2_rdata[120] = \<const0> ;
-  assign saxigp2_rdata[119] = \<const0> ;
-  assign saxigp2_rdata[118] = \<const0> ;
-  assign saxigp2_rdata[117] = \<const0> ;
-  assign saxigp2_rdata[116] = \<const0> ;
-  assign saxigp2_rdata[115] = \<const0> ;
-  assign saxigp2_rdata[114] = \<const0> ;
-  assign saxigp2_rdata[113] = \<const0> ;
-  assign saxigp2_rdata[112] = \<const0> ;
-  assign saxigp2_rdata[111] = \<const0> ;
-  assign saxigp2_rdata[110] = \<const0> ;
-  assign saxigp2_rdata[109] = \<const0> ;
-  assign saxigp2_rdata[108] = \<const0> ;
-  assign saxigp2_rdata[107] = \<const0> ;
-  assign saxigp2_rdata[106] = \<const0> ;
-  assign saxigp2_rdata[105] = \<const0> ;
-  assign saxigp2_rdata[104] = \<const0> ;
-  assign saxigp2_rdata[103] = \<const0> ;
-  assign saxigp2_rdata[102] = \<const0> ;
-  assign saxigp2_rdata[101] = \<const0> ;
-  assign saxigp2_rdata[100] = \<const0> ;
-  assign saxigp2_rdata[99] = \<const0> ;
-  assign saxigp2_rdata[98] = \<const0> ;
-  assign saxigp2_rdata[97] = \<const0> ;
-  assign saxigp2_rdata[96] = \<const0> ;
-  assign saxigp2_rdata[95] = \<const0> ;
-  assign saxigp2_rdata[94] = \<const0> ;
-  assign saxigp2_rdata[93] = \<const0> ;
-  assign saxigp2_rdata[92] = \<const0> ;
-  assign saxigp2_rdata[91] = \<const0> ;
-  assign saxigp2_rdata[90] = \<const0> ;
-  assign saxigp2_rdata[89] = \<const0> ;
-  assign saxigp2_rdata[88] = \<const0> ;
-  assign saxigp2_rdata[87] = \<const0> ;
-  assign saxigp2_rdata[86] = \<const0> ;
-  assign saxigp2_rdata[85] = \<const0> ;
-  assign saxigp2_rdata[84] = \<const0> ;
-  assign saxigp2_rdata[83] = \<const0> ;
-  assign saxigp2_rdata[82] = \<const0> ;
-  assign saxigp2_rdata[81] = \<const0> ;
-  assign saxigp2_rdata[80] = \<const0> ;
-  assign saxigp2_rdata[79] = \<const0> ;
-  assign saxigp2_rdata[78] = \<const0> ;
-  assign saxigp2_rdata[77] = \<const0> ;
-  assign saxigp2_rdata[76] = \<const0> ;
-  assign saxigp2_rdata[75] = \<const0> ;
-  assign saxigp2_rdata[74] = \<const0> ;
-  assign saxigp2_rdata[73] = \<const0> ;
-  assign saxigp2_rdata[72] = \<const0> ;
-  assign saxigp2_rdata[71] = \<const0> ;
-  assign saxigp2_rdata[70] = \<const0> ;
-  assign saxigp2_rdata[69] = \<const0> ;
-  assign saxigp2_rdata[68] = \<const0> ;
-  assign saxigp2_rdata[67] = \<const0> ;
-  assign saxigp2_rdata[66] = \<const0> ;
-  assign saxigp2_rdata[65] = \<const0> ;
-  assign saxigp2_rdata[64] = \<const0> ;
-  assign saxigp2_rdata[63] = \<const0> ;
-  assign saxigp2_rdata[62] = \<const0> ;
-  assign saxigp2_rdata[61] = \<const0> ;
-  assign saxigp2_rdata[60] = \<const0> ;
-  assign saxigp2_rdata[59] = \<const0> ;
-  assign saxigp2_rdata[58] = \<const0> ;
-  assign saxigp2_rdata[57] = \<const0> ;
-  assign saxigp2_rdata[56] = \<const0> ;
-  assign saxigp2_rdata[55] = \<const0> ;
-  assign saxigp2_rdata[54] = \<const0> ;
-  assign saxigp2_rdata[53] = \<const0> ;
-  assign saxigp2_rdata[52] = \<const0> ;
-  assign saxigp2_rdata[51] = \<const0> ;
-  assign saxigp2_rdata[50] = \<const0> ;
-  assign saxigp2_rdata[49] = \<const0> ;
-  assign saxigp2_rdata[48] = \<const0> ;
-  assign saxigp2_rdata[47] = \<const0> ;
-  assign saxigp2_rdata[46] = \<const0> ;
-  assign saxigp2_rdata[45] = \<const0> ;
-  assign saxigp2_rdata[44] = \<const0> ;
-  assign saxigp2_rdata[43] = \<const0> ;
-  assign saxigp2_rdata[42] = \<const0> ;
-  assign saxigp2_rdata[41] = \<const0> ;
-  assign saxigp2_rdata[40] = \<const0> ;
-  assign saxigp2_rdata[39] = \<const0> ;
-  assign saxigp2_rdata[38] = \<const0> ;
-  assign saxigp2_rdata[37] = \<const0> ;
-  assign saxigp2_rdata[36] = \<const0> ;
-  assign saxigp2_rdata[35] = \<const0> ;
-  assign saxigp2_rdata[34] = \<const0> ;
-  assign saxigp2_rdata[33] = \<const0> ;
-  assign saxigp2_rdata[32] = \<const0> ;
-  assign saxigp2_rdata[31] = \<const0> ;
-  assign saxigp2_rdata[30] = \<const0> ;
-  assign saxigp2_rdata[29] = \<const0> ;
-  assign saxigp2_rdata[28] = \<const0> ;
-  assign saxigp2_rdata[27] = \<const0> ;
-  assign saxigp2_rdata[26] = \<const0> ;
-  assign saxigp2_rdata[25] = \<const0> ;
-  assign saxigp2_rdata[24] = \<const0> ;
-  assign saxigp2_rdata[23] = \<const0> ;
-  assign saxigp2_rdata[22] = \<const0> ;
-  assign saxigp2_rdata[21] = \<const0> ;
-  assign saxigp2_rdata[20] = \<const0> ;
-  assign saxigp2_rdata[19] = \<const0> ;
-  assign saxigp2_rdata[18] = \<const0> ;
-  assign saxigp2_rdata[17] = \<const0> ;
-  assign saxigp2_rdata[16] = \<const0> ;
-  assign saxigp2_rdata[15] = \<const0> ;
-  assign saxigp2_rdata[14] = \<const0> ;
-  assign saxigp2_rdata[13] = \<const0> ;
-  assign saxigp2_rdata[12] = \<const0> ;
-  assign saxigp2_rdata[11] = \<const0> ;
-  assign saxigp2_rdata[10] = \<const0> ;
-  assign saxigp2_rdata[9] = \<const0> ;
-  assign saxigp2_rdata[8] = \<const0> ;
-  assign saxigp2_rdata[7] = \<const0> ;
-  assign saxigp2_rdata[6] = \<const0> ;
-  assign saxigp2_rdata[5] = \<const0> ;
-  assign saxigp2_rdata[4] = \<const0> ;
-  assign saxigp2_rdata[3] = \<const0> ;
-  assign saxigp2_rdata[2] = \<const0> ;
-  assign saxigp2_rdata[1] = \<const0> ;
-  assign saxigp2_rdata[0] = \<const0> ;
-  assign saxigp2_rid[5] = \<const0> ;
-  assign saxigp2_rid[4] = \<const0> ;
-  assign saxigp2_rid[3] = \<const0> ;
-  assign saxigp2_rid[2] = \<const0> ;
-  assign saxigp2_rid[1] = \<const0> ;
-  assign saxigp2_rid[0] = \<const0> ;
-  assign saxigp2_rlast = \<const0> ;
-  assign saxigp2_rresp[1] = \<const0> ;
-  assign saxigp2_rresp[0] = \<const0> ;
-  assign saxigp2_rvalid = \<const0> ;
   assign saxigp2_wacount[3] = \<const0> ;
   assign saxigp2_wacount[2] = \<const0> ;
   assign saxigp2_wacount[1] = \<const0> ;
@@ -12133,7 +11983,6 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
   assign saxigp2_wcount[2] = \<const0> ;
   assign saxigp2_wcount[1] = \<const0> ;
   assign saxigp2_wcount[0] = \<const0> ;
-  assign saxigp2_wready = \<const0> ;
   assign saxigp3_arready = \<const0> ;
   assign saxigp3_awready = \<const0> ;
   assign saxigp3_bid[5] = \<const0> ;
@@ -13854,51 +13703,51 @@ module exdes_zynq_us_0_zynq_ultra_ps_e_v3_4_1_zynq_ultra_ps_e
         .SAXIGP1WREADY(PS8_i_n_229),
         .SAXIGP1WSTRB({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .SAXIGP1WVALID(1'b0),
-        .SAXIGP2ARADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2ARBURST({1'b0,1'b0}),
-        .SAXIGP2ARCACHE({1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2ARID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2ARLEN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2ARLOCK(1'b0),
-        .SAXIGP2ARPROT({1'b0,1'b0,1'b0}),
-        .SAXIGP2ARQOS({1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2ARREADY(PS8_i_n_230),
-        .SAXIGP2ARSIZE({1'b0,1'b0,1'b0}),
-        .SAXIGP2ARUSER(1'b0),
-        .SAXIGP2ARVALID(1'b0),
-        .SAXIGP2AWADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2AWBURST({1'b0,1'b0}),
-        .SAXIGP2AWCACHE({1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2AWID({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2AWLEN({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2AWLOCK(1'b0),
-        .SAXIGP2AWPROT({1'b0,1'b0,1'b0}),
-        .SAXIGP2AWQOS({1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2AWREADY(PS8_i_n_231),
-        .SAXIGP2AWSIZE({1'b0,1'b0,1'b0}),
-        .SAXIGP2AWUSER(1'b0),
-        .SAXIGP2AWVALID(1'b0),
-        .SAXIGP2BID({PS8_i_n_3034,PS8_i_n_3035,PS8_i_n_3036,PS8_i_n_3037,PS8_i_n_3038,PS8_i_n_3039}),
-        .SAXIGP2BREADY(1'b0),
-        .SAXIGP2BRESP({PS8_i_n_2070,PS8_i_n_2071}),
-        .SAXIGP2BVALID(PS8_i_n_232),
+        .SAXIGP2ARADDR(saxigp2_araddr),
+        .SAXIGP2ARBURST(saxigp2_arburst),
+        .SAXIGP2ARCACHE(saxigp2_arcache),
+        .SAXIGP2ARID(saxigp2_arid),
+        .SAXIGP2ARLEN(saxigp2_arlen),
+        .SAXIGP2ARLOCK(saxigp2_arlock),
+        .SAXIGP2ARPROT(saxigp2_arprot),
+        .SAXIGP2ARQOS(saxigp2_arqos),
+        .SAXIGP2ARREADY(saxigp2_arready),
+        .SAXIGP2ARSIZE(saxigp2_arsize),
+        .SAXIGP2ARUSER(saxigp2_aruser),
+        .SAXIGP2ARVALID(saxigp2_arvalid),
+        .SAXIGP2AWADDR(saxigp2_awaddr),
+        .SAXIGP2AWBURST(saxigp2_awburst),
+        .SAXIGP2AWCACHE(saxigp2_awcache),
+        .SAXIGP2AWID(saxigp2_awid),
+        .SAXIGP2AWLEN(saxigp2_awlen),
+        .SAXIGP2AWLOCK(saxigp2_awlock),
+        .SAXIGP2AWPROT(saxigp2_awprot),
+        .SAXIGP2AWQOS(saxigp2_awqos),
+        .SAXIGP2AWREADY(saxigp2_awready),
+        .SAXIGP2AWSIZE(saxigp2_awsize),
+        .SAXIGP2AWUSER(saxigp2_awuser),
+        .SAXIGP2AWVALID(saxigp2_awvalid),
+        .SAXIGP2BID(saxigp2_bid),
+        .SAXIGP2BREADY(saxigp2_bready),
+        .SAXIGP2BRESP(saxigp2_bresp),
+        .SAXIGP2BVALID(saxigp2_bvalid),
         .SAXIGP2RACOUNT({PS8_i_n_2677,PS8_i_n_2678,PS8_i_n_2679,PS8_i_n_2680}),
-        .SAXIGP2RCLK(1'b0),
+        .SAXIGP2RCLK(saxihp0_fpd_aclk),
         .SAXIGP2RCOUNT({PS8_i_n_3366,PS8_i_n_3367,PS8_i_n_3368,PS8_i_n_3369,PS8_i_n_3370,PS8_i_n_3371,PS8_i_n_3372,PS8_i_n_3373}),
-        .SAXIGP2RDATA({PS8_i_n_1156,PS8_i_n_1157,PS8_i_n_1158,PS8_i_n_1159,PS8_i_n_1160,PS8_i_n_1161,PS8_i_n_1162,PS8_i_n_1163,PS8_i_n_1164,PS8_i_n_1165,PS8_i_n_1166,PS8_i_n_1167,PS8_i_n_1168,PS8_i_n_1169,PS8_i_n_1170,PS8_i_n_1171,PS8_i_n_1172,PS8_i_n_1173,PS8_i_n_1174,PS8_i_n_1175,PS8_i_n_1176,PS8_i_n_1177,PS8_i_n_1178,PS8_i_n_1179,PS8_i_n_1180,PS8_i_n_1181,PS8_i_n_1182,PS8_i_n_1183,PS8_i_n_1184,PS8_i_n_1185,PS8_i_n_1186,PS8_i_n_1187,PS8_i_n_1188,PS8_i_n_1189,PS8_i_n_1190,PS8_i_n_1191,PS8_i_n_1192,PS8_i_n_1193,PS8_i_n_1194,PS8_i_n_1195,PS8_i_n_1196,PS8_i_n_1197,PS8_i_n_1198,PS8_i_n_1199,PS8_i_n_1200,PS8_i_n_1201,PS8_i_n_1202,PS8_i_n_1203,PS8_i_n_1204,PS8_i_n_1205,PS8_i_n_1206,PS8_i_n_1207,PS8_i_n_1208,PS8_i_n_1209,PS8_i_n_1210,PS8_i_n_1211,PS8_i_n_1212,PS8_i_n_1213,PS8_i_n_1214,PS8_i_n_1215,PS8_i_n_1216,PS8_i_n_1217,PS8_i_n_1218,PS8_i_n_1219,PS8_i_n_1220,PS8_i_n_1221,PS8_i_n_1222,PS8_i_n_1223,PS8_i_n_1224,PS8_i_n_1225,PS8_i_n_1226,PS8_i_n_1227,PS8_i_n_1228,PS8_i_n_1229,PS8_i_n_1230,PS8_i_n_1231,PS8_i_n_1232,PS8_i_n_1233,PS8_i_n_1234,PS8_i_n_1235,PS8_i_n_1236,PS8_i_n_1237,PS8_i_n_1238,PS8_i_n_1239,PS8_i_n_1240,PS8_i_n_1241,PS8_i_n_1242,PS8_i_n_1243,PS8_i_n_1244,PS8_i_n_1245,PS8_i_n_1246,PS8_i_n_1247,PS8_i_n_1248,PS8_i_n_1249,PS8_i_n_1250,PS8_i_n_1251,PS8_i_n_1252,PS8_i_n_1253,PS8_i_n_1254,PS8_i_n_1255,PS8_i_n_1256,PS8_i_n_1257,PS8_i_n_1258,PS8_i_n_1259,PS8_i_n_1260,PS8_i_n_1261,PS8_i_n_1262,PS8_i_n_1263,PS8_i_n_1264,PS8_i_n_1265,PS8_i_n_1266,PS8_i_n_1267,PS8_i_n_1268,PS8_i_n_1269,PS8_i_n_1270,PS8_i_n_1271,PS8_i_n_1272,PS8_i_n_1273,PS8_i_n_1274,PS8_i_n_1275,PS8_i_n_1276,PS8_i_n_1277,PS8_i_n_1278,PS8_i_n_1279,PS8_i_n_1280,PS8_i_n_1281,PS8_i_n_1282,PS8_i_n_1283}),
-        .SAXIGP2RID({PS8_i_n_3040,PS8_i_n_3041,PS8_i_n_3042,PS8_i_n_3043,PS8_i_n_3044,PS8_i_n_3045}),
-        .SAXIGP2RLAST(PS8_i_n_233),
-        .SAXIGP2RREADY(1'b0),
-        .SAXIGP2RRESP({PS8_i_n_2072,PS8_i_n_2073}),
-        .SAXIGP2RVALID(PS8_i_n_234),
+        .SAXIGP2RDATA(saxigp2_rdata),
+        .SAXIGP2RID(saxigp2_rid),
+        .SAXIGP2RLAST(saxigp2_rlast),
+        .SAXIGP2RREADY(saxigp2_rready),
+        .SAXIGP2RRESP(saxigp2_rresp),
+        .SAXIGP2RVALID(saxigp2_rvalid),
         .SAXIGP2WACOUNT({PS8_i_n_2681,PS8_i_n_2682,PS8_i_n_2683,PS8_i_n_2684}),
-        .SAXIGP2WCLK(1'b0),
+        .SAXIGP2WCLK(saxihp0_fpd_aclk),
         .SAXIGP2WCOUNT({PS8_i_n_3374,PS8_i_n_3375,PS8_i_n_3376,PS8_i_n_3377,PS8_i_n_3378,PS8_i_n_3379,PS8_i_n_3380,PS8_i_n_3381}),
-        .SAXIGP2WDATA({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2WLAST(1'b0),
-        .SAXIGP2WREADY(PS8_i_n_235),
-        .SAXIGP2WSTRB({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
-        .SAXIGP2WVALID(1'b0),
+        .SAXIGP2WDATA(saxigp2_wdata),
+        .SAXIGP2WLAST(saxigp2_wlast),
+        .SAXIGP2WREADY(saxigp2_wready),
+        .SAXIGP2WSTRB(saxigp2_wstrb),
+        .SAXIGP2WVALID(saxigp2_wvalid),
         .SAXIGP3ARADDR({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .SAXIGP3ARBURST({1'b0,1'b0}),
         .SAXIGP3ARCACHE({1'b0,1'b0,1'b0,1'b0}),

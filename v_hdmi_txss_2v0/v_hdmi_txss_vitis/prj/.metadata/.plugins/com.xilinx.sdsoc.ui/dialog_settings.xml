@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="sdx.custom.platform.repository.locations" value="E:\xilinx_axi\github\v_hdmi_txss\v_ss_vitis\prj\exde_hdmi\export\exde_hdmi;E:\xilinx_axi\github\v_hdmi_txss_2v0\v_hdmi_txss_vitis\prj\exde_hdmi_2v0\export\exde_hdmi_2v0;E:\xilinx_axi\github\v_hdmi_txss_2v0\v_hdmi_txss_vitis\prj\exde_hdmi_ps\export\exde_hdmi_ps"/>
+	<item key="sdx.custom.platform.repository.last.directory.dialog.location" value="E:\xilinx_axi\github\v_hdmi_txss_2v0\v_hdmi_txss_vitis\prj\exde_hdmi_ps\export\exde_hdmi_ps"/>
+</section>

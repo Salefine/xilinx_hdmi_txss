@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc rfile:../../../v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
+set_property SRC_FILE_INFO {cfile:e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc rfile:../../../v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc id:1 order:EARLY scoped_inst:U0} [current_design]
 current_instance U0
 set_property src_info {type:SCOPED_XDC file:1 line:61 export:INPUT save:INPUT read:READ} [current_design]
 create_waiver -internal -scope -type CDC -id {CDC-4} -user "axi_vdma" -tags "9601" -desc "The CDC-4 warning is waived as it is safe in the context of AXI VDMA. The Address and Data value do not change until AXI transaction is complete." -to [get_pins -hier -quiet -filter {NAME =~*AXI_LITE_REG_INTERFACE_I/GEN_AXI_LITE_IF.AXI_LITE_IF_I/GEN_LITE_IS_ASYNC.GEN_ASYNC_LITE_ACCESS.ip2axi_rddata_captured_mm2s_cdc_tig_reg[*]/D}]

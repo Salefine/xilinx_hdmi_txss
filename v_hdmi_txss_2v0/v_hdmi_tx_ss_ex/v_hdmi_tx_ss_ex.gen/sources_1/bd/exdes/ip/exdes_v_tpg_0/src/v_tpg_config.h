@@ -12,7 +12,7 @@
 #define MAX_WIDTH			4096	
 #define MAX_HEIGHT			2160
 
-#define ENABLE_AXI4S_SLAVE		1
+#define ENABLE_AXI4S_SLAVE		0
 #define REDUCE_RESOURCES		0
 
 #define ENABLE_SOLID_COLOR		0

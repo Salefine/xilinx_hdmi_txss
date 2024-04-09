@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Tue Apr  9 10:48:19 2024
+| Date         : Tue Apr  9 16:48:04 2024
 | Host         : weslie running 64-bit major release  (build 9200)
 | Command      : report_methodology -file exdes_wrapper_methodology_drc_routed.rpt -pb exdes_wrapper_methodology_drc_routed.pb -rpx exdes_wrapper_methodology_drc_routed.rpx
 | Design       : exdes_wrapper
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 26
+             Violations found: 25
 +-----------+----------+--------------------------------------------+------------+
 | Rule      | Severity | Description                                | Violations |
 +-----------+----------+--------------------------------------------+------------+
-| LUTAR-1   | Warning  | LUT drives async reset alert               | 9          |
+| LUTAR-1   | Warning  | LUT drives async reset alert               | 8          |
 | TIMING-9  | Warning  | Unknown CDC Logic                          | 1          |
 | TIMING-10 | Warning  | Missing property on synchronizer           | 1          |
 | TIMING-18 | Warning  | Missing input or output delay              | 10         |
@@ -141,13 +141,6 @@ exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exde
 exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/reset_synchronizer_resetin_rx_inst/rst_in_out_reg/PRE. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
 Related violations: <none>
 
-LUTAR-1#9 Warning
-LUT drives async reset alert  
-LUT cell exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[0].gen_plle4.PLLE4_BASE_INST_OTHER_i_1, with 2 or more inputs, drives asynchronous preset/clear pin(s) exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[0].gen_plle4.PLLE4_BASE_INST_OTHER/RST,
-exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[1].gen_plle4.PLLE4_BASE_INST_OTHER/RST
-exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/plle_loop[2].gen_plle4.PLLE4_BASE_INST_OTHER/RST. The LUT may glitch and trigger an unexpected reset, even if it is a properly timed path.
-Related violations: <none>
-
 TIMING-9#1 Warning
 Unknown CDC Logic  
 One or more asynchronous Clock Domain Crossing has been detected between 2 clock domains through a set_false_path or a set_clock_groups or set_max_delay -datapath_only constraint but no double-registers logic synchronizer has been found on the side of the capture clock. It is recommended to run report_cdc for a complete and detailed CDC coverage. Please consider using XPM_CDC to avoid Critical severities
@@ -190,7 +183,7 @@ Related violations: <none>
 
 TIMING-18#7 Warning
 Missing input or output delay  
-An input delay is missing on usr_rst relative to clock(s) usr_sys_clk_clk_p
+An input delay is missing on usr_rst relative to clock(s) clk_pl_0, clk_pl_1
 Related violations: <none>
 
 TIMING-18#8 Warning

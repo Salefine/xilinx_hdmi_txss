@@ -14,7 +14,7 @@
         "MAX_ROWS": [ { "value": "2160", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "MAX_DATA_WIDTH": [ { "value": "8", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "NUM_VIDEO_COMPONENTS": [ { "value": "3", "resolve_type": "user", "format": "long", "usage": "all" } ],
-        "HAS_AXI4S_SLAVE": [ { "value": "1", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
+        "HAS_AXI4S_SLAVE": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "HAS_AXI4_YUV422_YUV420": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "SOLID_COLOR": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
         "RAMP": [ { "value": "0", "value_src": "user", "resolve_type": "user", "format": "long", "usage": "all" } ],
@@ -86,16 +86,7 @@
         "m_axis_video_TUSER": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
         "m_axis_video_TLAST": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
         "m_axis_video_TID": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
-        "m_axis_video_TDEST": [ { "direction": "out", "size_left": "0", "size_right": "0" } ],
-        "s_axis_video_TVALID": [ { "direction": "in", "driver_value": "0" } ],
-        "s_axis_video_TREADY": [ { "direction": "out" } ],
-        "s_axis_video_TDATA": [ { "direction": "in", "size_left": "47", "size_right": "0", "driver_value": "0" } ],
-        "s_axis_video_TKEEP": [ { "direction": "in", "size_left": "5", "size_right": "0", "driver_value": "7" } ],
-        "s_axis_video_TSTRB": [ { "direction": "in", "size_left": "5", "size_right": "0", "driver_value": "7" } ],
-        "s_axis_video_TUSER": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
-        "s_axis_video_TLAST": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
-        "s_axis_video_TID": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ],
-        "s_axis_video_TDEST": [ { "direction": "in", "size_left": "0", "size_right": "0", "driver_value": "0" } ]
+        "m_axis_video_TDEST": [ { "direction": "out", "size_left": "0", "size_right": "0" } ]
       },
       "interfaces": {
         "s_axi_CTRL": {
@@ -161,7 +152,7 @@
           "abstraction_type": "xilinx.com:signal:clock_rtl:1.0",
           "mode": "slave",
           "parameters": {
-            "ASSOCIATED_BUSIF": [ { "value": "s_axi_CTRL:m_axis_video:s_axis_video", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
+            "ASSOCIATED_BUSIF": [ { "value": "s_axi_CTRL:m_axis_video", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
             "ASSOCIATED_RESET": [ { "value": "ap_rst_n", "value_src": "constant", "value_permission": "bd", "usage": "all" } ],
             "FREQ_HZ": [ { "value": "300000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "user", "usage": "all" } ],
             "FREQ_TOLERANCE_HZ": [ { "value": "0", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
@@ -227,37 +218,6 @@
             "TSTRB": [ { "physical_name": "m_axis_video_TSTRB" } ],
             "TUSER": [ { "physical_name": "m_axis_video_TUSER" } ],
             "TVALID": [ { "physical_name": "m_axis_video_TVALID" } ]
-          }
-        },
-        "s_axis_video": {
-          "vlnv": "xilinx.com:interface:axis:1.0",
-          "abstraction_type": "xilinx.com:interface:axis_rtl:1.0",
-          "mode": "slave",
-          "parameters": {
-            "TDATA_NUM_BYTES": [ { "value": "6", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TDEST_WIDTH": [ { "value": "1", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TID_WIDTH": [ { "value": "1", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "TUSER_WIDTH": [ { "value": "1", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TREADY": [ { "value": "1", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TSTRB": [ { "value": "1", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TKEEP": [ { "value": "1", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "HAS_TLAST": [ { "value": "1", "value_src": "constant", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "FREQ_HZ": [ { "value": "300000000", "value_src": "user_prop", "value_permission": "bd", "resolve_type": "generated", "format": "long", "is_ips_inferred": true, "is_static_object": false } ],
-            "PHASE": [ { "value": "0.0", "value_permission": "bd", "resolve_type": "generated", "format": "float", "is_ips_inferred": true, "is_static_object": false } ],
-            "CLK_DOMAIN": [ { "value": "exdes_zynq_us_0_pl_clk1", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "LAYERED_METADATA": [ { "value": "undef", "value_permission": "bd", "resolve_type": "generated", "is_ips_inferred": true, "is_static_object": false } ],
-            "INSERT_VIP": [ { "value": "0", "resolve_type": "user", "format": "long", "usage": "simulation.rtl", "is_ips_inferred": true, "is_static_object": false } ]
-          },
-          "port_maps": {
-            "TVALID": [ { "physical_name": "s_axis_video_TVALID" } ],
-            "TREADY": [ { "physical_name": "s_axis_video_TREADY" } ],
-            "TDATA": [ { "physical_name": "s_axis_video_TDATA" } ],
-            "TKEEP": [ { "physical_name": "s_axis_video_TKEEP" } ],
-            "TSTRB": [ { "physical_name": "s_axis_video_TSTRB" } ],
-            "TUSER": [ { "physical_name": "s_axis_video_TUSER" } ],
-            "TLAST": [ { "physical_name": "s_axis_video_TLAST" } ],
-            "TID": [ { "physical_name": "s_axis_video_TID" } ],
-            "TDEST": [ { "physical_name": "s_axis_video_TDEST" } ]
           }
         }
       },

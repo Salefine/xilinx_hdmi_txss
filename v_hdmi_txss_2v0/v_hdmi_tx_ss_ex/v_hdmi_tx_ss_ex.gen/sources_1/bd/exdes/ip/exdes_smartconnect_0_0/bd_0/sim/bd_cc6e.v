@@ -76,7 +76,7 @@ module bd_cc6e
     S01_AXI_wvalid,
     aclk,
     aresetn);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN exdes_ddr4_0_0_c0_ddr4_ui_clk, DATA_WIDTH 512, FREQ_HZ 266500000, HAS_BRESP 1, HAS_BURST 1, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 1, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.00, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [31:0]M00_AXI_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M00_AXI, ADDR_WIDTH 49, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, DATA_WIDTH 128, FREQ_HZ 250000000, HAS_BRESP 1, HAS_BURST 1, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 4, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) output [48:0]M00_AXI_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARBURST" *) output [1:0]M00_AXI_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARCACHE" *) output [3:0]M00_AXI_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARLEN" *) output [7:0]M00_AXI_arlen;
@@ -86,7 +86,7 @@ module bd_cc6e
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARREADY" *) input M00_AXI_arready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARSIZE" *) output [2:0]M00_AXI_arsize;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI ARVALID" *) output M00_AXI_arvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWADDR" *) output [31:0]M00_AXI_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWADDR" *) output [48:0]M00_AXI_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWBURST" *) output [1:0]M00_AXI_awburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWCACHE" *) output [3:0]M00_AXI_awcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI AWLEN" *) output [7:0]M00_AXI_awlen;
@@ -99,17 +99,17 @@ module bd_cc6e
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI BREADY" *) output M00_AXI_bready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI BRESP" *) input [1:0]M00_AXI_bresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI BVALID" *) input M00_AXI_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RDATA" *) input [511:0]M00_AXI_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RDATA" *) input [127:0]M00_AXI_rdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RLAST" *) input M00_AXI_rlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RREADY" *) output M00_AXI_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RRESP" *) input [1:0]M00_AXI_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI RVALID" *) input M00_AXI_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WDATA" *) output [511:0]M00_AXI_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WDATA" *) output [127:0]M00_AXI_wdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WLAST" *) output M00_AXI_wlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WREADY" *) input M00_AXI_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WSTRB" *) output [63:0]M00_AXI_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WSTRB" *) output [15:0]M00_AXI_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 M00_AXI WVALID" *) output M00_AXI_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN exdes_ddr4_0_0_c0_ddr4_ui_clk, DATA_WIDTH 64, FREQ_HZ 266500000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 8, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.00, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S00_AXI_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S00_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, DATA_WIDTH 64, FREQ_HZ 250000000, HAS_BRESP 0, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 0, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 8, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S00_AXI_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARBURST" *) input [1:0]S00_AXI_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARCACHE" *) input [3:0]S00_AXI_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI ARLEN" *) input [7:0]S00_AXI_arlen;
@@ -124,7 +124,7 @@ module bd_cc6e
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RREADY" *) input S00_AXI_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RRESP" *) output [1:0]S00_AXI_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S00_AXI RVALID" *) output S00_AXI_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI AWADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S01_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN exdes_ddr4_0_0_c0_ddr4_ui_clk, DATA_WIDTH 64, FREQ_HZ 266500000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 0, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 8, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.00, PROTOCOL AXI4, READ_WRITE_MODE WRITE_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S01_AXI_awaddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI AWADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S01_AXI, ADDR_WIDTH 32, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, DATA_WIDTH 64, FREQ_HZ 250000000, HAS_BRESP 1, HAS_BURST 0, HAS_CACHE 1, HAS_LOCK 0, HAS_PROT 1, HAS_QOS 0, HAS_REGION 0, HAS_RRESP 0, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 8, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE WRITE_ONLY, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [31:0]S01_AXI_awaddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI AWBURST" *) input [1:0]S01_AXI_awburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI AWCACHE" *) input [3:0]S01_AXI_awcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI AWLEN" *) input [7:0]S01_AXI_awlen;
@@ -142,7 +142,7 @@ module bd_cc6e
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI WREADY" *) output S01_AXI_wready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI WSTRB" *) input [7:0]S01_AXI_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 S01_AXI WVALID" *) input S01_AXI_wvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK, ASSOCIATED_BUSIF M00_AXI:S00_AXI:S01_AXI, ASSOCIATED_CLKEN m_sc_aclken, CLK_DOMAIN exdes_ddr4_0_0_c0_ddr4_ui_clk, FREQ_HZ 266500000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.00" *) input aclk;
+  (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.ACLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.ACLK, ASSOCIATED_BUSIF M00_AXI:S00_AXI:S01_AXI, ASSOCIATED_CLKEN m_sc_aclken, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input aclk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.ARESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.ARESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input aresetn;
 
   wire [31:0]S00_AXI_1_ARADDR;
@@ -209,22 +209,22 @@ module bd_cc6e
   wire S_SC_B_2_REQ;
   wire S_SC_B_2_SEND;
   wire [0:0]S_SC_R_1_INFO;
-  wire [532:0]S_SC_R_1_PAYLD;
+  wire [148:0]S_SC_R_1_PAYLD;
   wire [0:0]S_SC_R_1_RECV;
   wire [0:0]S_SC_R_1_REQ;
   wire [0:0]S_SC_R_1_SEND;
   wire [0:0]S_SC_R_2_INFO;
-  wire [532:0]S_SC_R_2_PAYLD;
+  wire [148:0]S_SC_R_2_PAYLD;
   wire [0:0]S_SC_R_2_RECV;
   wire S_SC_R_2_REQ;
   wire S_SC_R_2_SEND;
   wire [0:0]S_SC_W_1_INFO;
-  wire [591:0]S_SC_W_1_PAYLD;
+  wire [159:0]S_SC_W_1_PAYLD;
   wire [0:0]S_SC_W_1_RECV;
   wire S_SC_W_1_REQ;
   wire S_SC_W_1_SEND;
   wire [1:0]S_SC_W_2_INFO;
-  wire [591:0]S_SC_W_2_PAYLD;
+  wire [159:0]S_SC_W_2_PAYLD;
   wire [1:0]S_SC_W_2_RECV;
   wire [1:0]S_SC_W_2_REQ;
   wire [1:0]S_SC_W_2_SEND;
@@ -236,7 +236,7 @@ module bd_cc6e
   wire [0:0]aresetn_3;
   wire aresetn_net;
   wire clk_map_M00_ACLK;
-  wire [31:0]m00_exit_pipeline_m_axi_ARADDR;
+  wire [48:0]m00_exit_pipeline_m_axi_ARADDR;
   wire [1:0]m00_exit_pipeline_m_axi_ARBURST;
   wire [3:0]m00_exit_pipeline_m_axi_ARCACHE;
   wire [7:0]m00_exit_pipeline_m_axi_ARLEN;
@@ -246,7 +246,7 @@ module bd_cc6e
   wire m00_exit_pipeline_m_axi_ARREADY;
   wire [2:0]m00_exit_pipeline_m_axi_ARSIZE;
   wire m00_exit_pipeline_m_axi_ARVALID;
-  wire [31:0]m00_exit_pipeline_m_axi_AWADDR;
+  wire [48:0]m00_exit_pipeline_m_axi_AWADDR;
   wire [1:0]m00_exit_pipeline_m_axi_AWBURST;
   wire [3:0]m00_exit_pipeline_m_axi_AWCACHE;
   wire [7:0]m00_exit_pipeline_m_axi_AWLEN;
@@ -259,15 +259,15 @@ module bd_cc6e
   wire m00_exit_pipeline_m_axi_BREADY;
   wire [1:0]m00_exit_pipeline_m_axi_BRESP;
   wire m00_exit_pipeline_m_axi_BVALID;
-  wire [511:0]m00_exit_pipeline_m_axi_RDATA;
+  wire [127:0]m00_exit_pipeline_m_axi_RDATA;
   wire m00_exit_pipeline_m_axi_RLAST;
   wire m00_exit_pipeline_m_axi_RREADY;
   wire [1:0]m00_exit_pipeline_m_axi_RRESP;
   wire m00_exit_pipeline_m_axi_RVALID;
-  wire [511:0]m00_exit_pipeline_m_axi_WDATA;
+  wire [127:0]m00_exit_pipeline_m_axi_WDATA;
   wire m00_exit_pipeline_m_axi_WLAST;
   wire m00_exit_pipeline_m_axi_WREADY;
-  wire [63:0]m00_exit_pipeline_m_axi_WSTRB;
+  wire [15:0]m00_exit_pipeline_m_axi_WSTRB;
   wire m00_exit_pipeline_m_axi_WVALID;
   wire [0:0]m00_nodes_M_SC_AR_INFO;
   wire [139:0]m00_nodes_M_SC_AR_PAYLD;
@@ -285,12 +285,12 @@ module bd_cc6e
   wire [1:0]m00_nodes_M_SC_B_REQ;
   wire [1:0]m00_nodes_M_SC_B_SEND;
   wire [1:0]m00_nodes_M_SC_R_INFO;
-  wire [532:0]m00_nodes_M_SC_R_PAYLD;
+  wire [148:0]m00_nodes_M_SC_R_PAYLD;
   wire [1:0]m00_nodes_M_SC_R_RECV;
   wire [1:0]m00_nodes_M_SC_R_REQ;
   wire [1:0]m00_nodes_M_SC_R_SEND;
   wire [0:0]m00_nodes_M_SC_W_INFO;
-  wire [591:0]m00_nodes_M_SC_W_PAYLD;
+  wire [159:0]m00_nodes_M_SC_W_PAYLD;
   wire m00_nodes_M_SC_W_RECV;
   wire [0:0]m00_nodes_M_SC_W_REQ;
   wire [0:0]m00_nodes_M_SC_W_SEND;
@@ -319,17 +319,17 @@ module bd_cc6e
   wire [1:0]m00_sc2axi_M_AXI_BRESP;
   wire [1023:0]m00_sc2axi_M_AXI_BUSER;
   wire m00_sc2axi_M_AXI_BVALID;
-  wire [511:0]m00_sc2axi_M_AXI_RDATA;
+  wire [127:0]m00_sc2axi_M_AXI_RDATA;
   wire [1:0]m00_sc2axi_M_AXI_RID;
   wire m00_sc2axi_M_AXI_RLAST;
   wire m00_sc2axi_M_AXI_RREADY;
   wire [1:0]m00_sc2axi_M_AXI_RRESP;
   wire [1023:0]m00_sc2axi_M_AXI_RUSER;
   wire m00_sc2axi_M_AXI_RVALID;
-  wire [511:0]m00_sc2axi_M_AXI_WDATA;
+  wire [127:0]m00_sc2axi_M_AXI_WDATA;
   wire m00_sc2axi_M_AXI_WLAST;
   wire m00_sc2axi_M_AXI_WREADY;
-  wire [63:0]m00_sc2axi_M_AXI_WSTRB;
+  wire [15:0]m00_sc2axi_M_AXI_WSTRB;
   wire [1023:0]m00_sc2axi_M_AXI_WUSER;
   wire m00_sc2axi_M_AXI_WVALID;
   wire [0:0]m_axi_aresetn_1;
@@ -356,7 +356,7 @@ module bd_cc6e
   wire [0:0]s00_nodes_M_SC_AR_REQ;
   wire [0:0]s00_nodes_M_SC_AR_SEND;
   wire [0:0]s00_nodes_M_SC_R_INFO;
-  wire [532:0]s00_nodes_M_SC_R_PAYLD;
+  wire [148:0]s00_nodes_M_SC_R_PAYLD;
   wire s00_nodes_M_SC_R_RECV;
   wire [0:0]s00_nodes_M_SC_R_REQ;
   wire [0:0]s00_nodes_M_SC_R_SEND;
@@ -392,14 +392,14 @@ module bd_cc6e
   wire [0:0]s01_nodes_M_SC_B_REQ;
   wire [0:0]s01_nodes_M_SC_B_SEND;
   wire [0:0]s01_nodes_M_SC_W_INFO;
-  wire [591:0]s01_nodes_M_SC_W_PAYLD;
+  wire [159:0]s01_nodes_M_SC_W_PAYLD;
   wire [0:0]s01_nodes_M_SC_W_RECV;
   wire [0:0]s01_nodes_M_SC_W_REQ;
   wire [0:0]s01_nodes_M_SC_W_SEND;
   wire swbd_aclk_net;
   wire [0:0]swbd_aresetn_net;
 
-  assign M00_AXI_araddr[31:0] = m00_exit_pipeline_m_axi_ARADDR;
+  assign M00_AXI_araddr[48:0] = m00_exit_pipeline_m_axi_ARADDR;
   assign M00_AXI_arburst[1:0] = m00_exit_pipeline_m_axi_ARBURST;
   assign M00_AXI_arcache[3:0] = m00_exit_pipeline_m_axi_ARCACHE;
   assign M00_AXI_arlen[7:0] = m00_exit_pipeline_m_axi_ARLEN;
@@ -408,7 +408,7 @@ module bd_cc6e
   assign M00_AXI_arqos[3:0] = m00_exit_pipeline_m_axi_ARQOS;
   assign M00_AXI_arsize[2:0] = m00_exit_pipeline_m_axi_ARSIZE;
   assign M00_AXI_arvalid = m00_exit_pipeline_m_axi_ARVALID;
-  assign M00_AXI_awaddr[31:0] = m00_exit_pipeline_m_axi_AWADDR;
+  assign M00_AXI_awaddr[48:0] = m00_exit_pipeline_m_axi_AWADDR;
   assign M00_AXI_awburst[1:0] = m00_exit_pipeline_m_axi_AWBURST;
   assign M00_AXI_awcache[3:0] = m00_exit_pipeline_m_axi_AWCACHE;
   assign M00_AXI_awlen[7:0] = m00_exit_pipeline_m_axi_AWLEN;
@@ -419,9 +419,9 @@ module bd_cc6e
   assign M00_AXI_awvalid = m00_exit_pipeline_m_axi_AWVALID;
   assign M00_AXI_bready = m00_exit_pipeline_m_axi_BREADY;
   assign M00_AXI_rready = m00_exit_pipeline_m_axi_RREADY;
-  assign M00_AXI_wdata[511:0] = m00_exit_pipeline_m_axi_WDATA;
+  assign M00_AXI_wdata[127:0] = m00_exit_pipeline_m_axi_WDATA;
   assign M00_AXI_wlast = m00_exit_pipeline_m_axi_WLAST;
-  assign M00_AXI_wstrb[63:0] = m00_exit_pipeline_m_axi_WSTRB;
+  assign M00_AXI_wstrb[15:0] = m00_exit_pipeline_m_axi_WSTRB;
   assign M00_AXI_wvalid = m00_exit_pipeline_m_axi_WVALID;
   assign S00_AXI_1_ARADDR = S00_AXI_araddr[31:0];
   assign S00_AXI_1_ARBURST = S00_AXI_arburst[1:0];
@@ -462,7 +462,7 @@ module bd_cc6e
   assign m00_exit_pipeline_m_axi_AWREADY = M00_AXI_awready;
   assign m00_exit_pipeline_m_axi_BRESP = M00_AXI_bresp[1:0];
   assign m00_exit_pipeline_m_axi_BVALID = M00_AXI_bvalid;
-  assign m00_exit_pipeline_m_axi_RDATA = M00_AXI_rdata[511:0];
+  assign m00_exit_pipeline_m_axi_RDATA = M00_AXI_rdata[127:0];
   assign m00_exit_pipeline_m_axi_RLAST = M00_AXI_rlast;
   assign m00_exit_pipeline_m_axi_RRESP = M00_AXI_rresp[1:0];
   assign m00_exit_pipeline_m_axi_RVALID = M00_AXI_rvalid;
@@ -1072,7 +1072,7 @@ module m00_exit_pipeline_imp_1CGPZR
     s_axi_wvalid);
   input aclk;
   input aresetn;
-  output [31:0]m_axi_araddr;
+  output [48:0]m_axi_araddr;
   output [1:0]m_axi_arburst;
   output [3:0]m_axi_arcache;
   output [7:0]m_axi_arlen;
@@ -1082,7 +1082,7 @@ module m00_exit_pipeline_imp_1CGPZR
   input m_axi_arready;
   output [2:0]m_axi_arsize;
   output m_axi_arvalid;
-  output [31:0]m_axi_awaddr;
+  output [48:0]m_axi_awaddr;
   output [1:0]m_axi_awburst;
   output [3:0]m_axi_awcache;
   output [7:0]m_axi_awlen;
@@ -1095,15 +1095,15 @@ module m00_exit_pipeline_imp_1CGPZR
   output m_axi_bready;
   input [1:0]m_axi_bresp;
   input m_axi_bvalid;
-  input [511:0]m_axi_rdata;
+  input [127:0]m_axi_rdata;
   input m_axi_rlast;
   output m_axi_rready;
   input [1:0]m_axi_rresp;
   input m_axi_rvalid;
-  output [511:0]m_axi_wdata;
+  output [127:0]m_axi_wdata;
   output m_axi_wlast;
   input m_axi_wready;
-  output [63:0]m_axi_wstrb;
+  output [15:0]m_axi_wstrb;
   output m_axi_wvalid;
   input [31:0]s_axi_araddr;
   input [3:0]s_axi_arcache;
@@ -1130,23 +1130,23 @@ module m00_exit_pipeline_imp_1CGPZR
   output [1:0]s_axi_bresp;
   output [1023:0]s_axi_buser;
   output s_axi_bvalid;
-  output [511:0]s_axi_rdata;
+  output [127:0]s_axi_rdata;
   output [1:0]s_axi_rid;
   output s_axi_rlast;
   input s_axi_rready;
   output [1:0]s_axi_rresp;
   output [1023:0]s_axi_ruser;
   output s_axi_rvalid;
-  input [511:0]s_axi_wdata;
+  input [127:0]s_axi_wdata;
   input s_axi_wlast;
   output s_axi_wready;
-  input [63:0]s_axi_wstrb;
+  input [15:0]s_axi_wstrb;
   input [1023:0]s_axi_wuser;
   input s_axi_wvalid;
 
   wire aclk_1;
   wire aresetn_1;
-  wire [31:0]m00_exit_M_AXI_ARADDR;
+  wire [48:0]m00_exit_M_AXI_ARADDR;
   wire [1:0]m00_exit_M_AXI_ARBURST;
   wire [3:0]m00_exit_M_AXI_ARCACHE;
   wire [7:0]m00_exit_M_AXI_ARLEN;
@@ -1156,7 +1156,7 @@ module m00_exit_pipeline_imp_1CGPZR
   wire m00_exit_M_AXI_ARREADY;
   wire [2:0]m00_exit_M_AXI_ARSIZE;
   wire m00_exit_M_AXI_ARVALID;
-  wire [31:0]m00_exit_M_AXI_AWADDR;
+  wire [48:0]m00_exit_M_AXI_AWADDR;
   wire [1:0]m00_exit_M_AXI_AWBURST;
   wire [3:0]m00_exit_M_AXI_AWCACHE;
   wire [7:0]m00_exit_M_AXI_AWLEN;
@@ -1169,15 +1169,15 @@ module m00_exit_pipeline_imp_1CGPZR
   wire m00_exit_M_AXI_BREADY;
   wire [1:0]m00_exit_M_AXI_BRESP;
   wire m00_exit_M_AXI_BVALID;
-  wire [511:0]m00_exit_M_AXI_RDATA;
+  wire [127:0]m00_exit_M_AXI_RDATA;
   wire m00_exit_M_AXI_RLAST;
   wire m00_exit_M_AXI_RREADY;
   wire [1:0]m00_exit_M_AXI_RRESP;
   wire m00_exit_M_AXI_RVALID;
-  wire [511:0]m00_exit_M_AXI_WDATA;
+  wire [127:0]m00_exit_M_AXI_WDATA;
   wire m00_exit_M_AXI_WLAST;
   wire m00_exit_M_AXI_WREADY;
-  wire [63:0]m00_exit_M_AXI_WSTRB;
+  wire [15:0]m00_exit_M_AXI_WSTRB;
   wire m00_exit_M_AXI_WVALID;
   wire [31:0]s_axi_1_ARADDR;
   wire [3:0]s_axi_1_ARCACHE;
@@ -1204,17 +1204,17 @@ module m00_exit_pipeline_imp_1CGPZR
   wire [1:0]s_axi_1_BRESP;
   wire [1023:0]s_axi_1_BUSER;
   wire s_axi_1_BVALID;
-  wire [511:0]s_axi_1_RDATA;
+  wire [127:0]s_axi_1_RDATA;
   wire [1:0]s_axi_1_RID;
   wire s_axi_1_RLAST;
   wire s_axi_1_RREADY;
   wire [1:0]s_axi_1_RRESP;
   wire [1023:0]s_axi_1_RUSER;
   wire s_axi_1_RVALID;
-  wire [511:0]s_axi_1_WDATA;
+  wire [127:0]s_axi_1_WDATA;
   wire s_axi_1_WLAST;
   wire s_axi_1_WREADY;
-  wire [63:0]s_axi_1_WSTRB;
+  wire [15:0]s_axi_1_WSTRB;
   wire [1023:0]s_axi_1_WUSER;
   wire s_axi_1_WVALID;
 
@@ -1224,12 +1224,12 @@ module m00_exit_pipeline_imp_1CGPZR
   assign m00_exit_M_AXI_AWREADY = m_axi_awready;
   assign m00_exit_M_AXI_BRESP = m_axi_bresp[1:0];
   assign m00_exit_M_AXI_BVALID = m_axi_bvalid;
-  assign m00_exit_M_AXI_RDATA = m_axi_rdata[511:0];
+  assign m00_exit_M_AXI_RDATA = m_axi_rdata[127:0];
   assign m00_exit_M_AXI_RLAST = m_axi_rlast;
   assign m00_exit_M_AXI_RRESP = m_axi_rresp[1:0];
   assign m00_exit_M_AXI_RVALID = m_axi_rvalid;
   assign m00_exit_M_AXI_WREADY = m_axi_wready;
-  assign m_axi_araddr[31:0] = m00_exit_M_AXI_ARADDR;
+  assign m_axi_araddr[48:0] = m00_exit_M_AXI_ARADDR;
   assign m_axi_arburst[1:0] = m00_exit_M_AXI_ARBURST;
   assign m_axi_arcache[3:0] = m00_exit_M_AXI_ARCACHE;
   assign m_axi_arlen[7:0] = m00_exit_M_AXI_ARLEN;
@@ -1238,7 +1238,7 @@ module m00_exit_pipeline_imp_1CGPZR
   assign m_axi_arqos[3:0] = m00_exit_M_AXI_ARQOS;
   assign m_axi_arsize[2:0] = m00_exit_M_AXI_ARSIZE;
   assign m_axi_arvalid = m00_exit_M_AXI_ARVALID;
-  assign m_axi_awaddr[31:0] = m00_exit_M_AXI_AWADDR;
+  assign m_axi_awaddr[48:0] = m00_exit_M_AXI_AWADDR;
   assign m_axi_awburst[1:0] = m00_exit_M_AXI_AWBURST;
   assign m_axi_awcache[3:0] = m00_exit_M_AXI_AWCACHE;
   assign m_axi_awlen[7:0] = m00_exit_M_AXI_AWLEN;
@@ -1249,9 +1249,9 @@ module m00_exit_pipeline_imp_1CGPZR
   assign m_axi_awvalid = m00_exit_M_AXI_AWVALID;
   assign m_axi_bready = m00_exit_M_AXI_BREADY;
   assign m_axi_rready = m00_exit_M_AXI_RREADY;
-  assign m_axi_wdata[511:0] = m00_exit_M_AXI_WDATA;
+  assign m_axi_wdata[127:0] = m00_exit_M_AXI_WDATA;
   assign m_axi_wlast = m00_exit_M_AXI_WLAST;
-  assign m_axi_wstrb[63:0] = m00_exit_M_AXI_WSTRB;
+  assign m_axi_wstrb[15:0] = m00_exit_M_AXI_WSTRB;
   assign m_axi_wvalid = m00_exit_M_AXI_WVALID;
   assign s_axi_1_ARADDR = s_axi_araddr[31:0];
   assign s_axi_1_ARCACHE = s_axi_arcache[3:0];
@@ -1273,9 +1273,9 @@ module m00_exit_pipeline_imp_1CGPZR
   assign s_axi_1_AWVALID = s_axi_awvalid;
   assign s_axi_1_BREADY = s_axi_bready;
   assign s_axi_1_RREADY = s_axi_rready;
-  assign s_axi_1_WDATA = s_axi_wdata[511:0];
+  assign s_axi_1_WDATA = s_axi_wdata[127:0];
   assign s_axi_1_WLAST = s_axi_wlast;
-  assign s_axi_1_WSTRB = s_axi_wstrb[63:0];
+  assign s_axi_1_WSTRB = s_axi_wstrb[15:0];
   assign s_axi_1_WUSER = s_axi_wuser[1023:0];
   assign s_axi_1_WVALID = s_axi_wvalid;
   assign s_axi_arready = s_axi_1_ARREADY;
@@ -1284,7 +1284,7 @@ module m00_exit_pipeline_imp_1CGPZR
   assign s_axi_bresp[1:0] = s_axi_1_BRESP;
   assign s_axi_buser[1023:0] = s_axi_1_BUSER;
   assign s_axi_bvalid = s_axi_1_BVALID;
-  assign s_axi_rdata[511:0] = s_axi_1_RDATA;
+  assign s_axi_rdata[127:0] = s_axi_1_RDATA;
   assign s_axi_rid[1:0] = s_axi_1_RID;
   assign s_axi_rlast = s_axi_1_RLAST;
   assign s_axi_rresp[1:0] = s_axi_1_RRESP;
@@ -1327,7 +1327,7 @@ module m00_exit_pipeline_imp_1CGPZR
         .m_axi_wready(m00_exit_M_AXI_WREADY),
         .m_axi_wstrb(m00_exit_M_AXI_WSTRB),
         .m_axi_wvalid(m00_exit_M_AXI_WVALID),
-        .s_axi_araddr(s_axi_1_ARADDR),
+        .s_axi_araddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,s_axi_1_ARADDR}),
         .s_axi_arcache(s_axi_1_ARCACHE),
         .s_axi_arid(s_axi_1_ARID),
         .s_axi_arlen(s_axi_1_ARLEN),
@@ -1337,7 +1337,7 @@ module m00_exit_pipeline_imp_1CGPZR
         .s_axi_arready(s_axi_1_ARREADY),
         .s_axi_aruser(s_axi_1_ARUSER),
         .s_axi_arvalid(s_axi_1_ARVALID),
-        .s_axi_awaddr(s_axi_1_AWADDR),
+        .s_axi_awaddr({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,s_axi_1_AWADDR}),
         .s_axi_awcache(s_axi_1_AWCACHE),
         .s_axi_awid(s_axi_1_AWID),
         .s_axi_awlen(s_axi_1_AWLEN),
@@ -1438,12 +1438,12 @@ module m00_nodes_imp_NKE8JF
   output [1:0]M_SC_B_req;
   output [1:0]M_SC_B_send;
   output [1:0]M_SC_R_info;
-  output [532:0]M_SC_R_payld;
+  output [148:0]M_SC_R_payld;
   input [1:0]M_SC_R_recv;
   output [1:0]M_SC_R_req;
   output [1:0]M_SC_R_send;
   output [0:0]M_SC_W_info;
-  output [591:0]M_SC_W_payld;
+  output [159:0]M_SC_W_payld;
   input [0:0]M_SC_W_recv;
   output [0:0]M_SC_W_req;
   output [0:0]M_SC_W_send;
@@ -1463,12 +1463,12 @@ module m00_nodes_imp_NKE8JF
   input [0:0]S_SC_B_req;
   input [0:0]S_SC_B_send;
   input [0:0]S_SC_R_info;
-  input [532:0]S_SC_R_payld;
+  input [148:0]S_SC_R_payld;
   output [0:0]S_SC_R_recv;
   input [0:0]S_SC_R_req;
   input [0:0]S_SC_R_send;
   input [1:0]S_SC_W_info;
-  input [591:0]S_SC_W_payld;
+  input [159:0]S_SC_W_payld;
   output [1:0]S_SC_W_recv;
   input [1:0]S_SC_W_req;
   input [1:0]S_SC_W_send;
@@ -1493,12 +1493,12 @@ module m00_nodes_imp_NKE8JF
   wire [0:0]S_SC_B_1_REQ;
   wire [0:0]S_SC_B_1_SEND;
   wire [0:0]S_SC_R_1_INFO;
-  wire [532:0]S_SC_R_1_PAYLD;
+  wire [148:0]S_SC_R_1_PAYLD;
   wire [0:0]S_SC_R_1_RECV;
   wire [0:0]S_SC_R_1_REQ;
   wire [0:0]S_SC_R_1_SEND;
   wire [1:0]S_SC_W_1_INFO;
-  wire [591:0]S_SC_W_1_PAYLD;
+  wire [159:0]S_SC_W_1_PAYLD;
   wire [1:0]S_SC_W_1_RECV;
   wire [1:0]S_SC_W_1_REQ;
   wire [1:0]S_SC_W_1_SEND;
@@ -1521,12 +1521,12 @@ module m00_nodes_imp_NKE8JF
   wire [1:0]m00_b_node_M_SC_REQ;
   wire [1:0]m00_b_node_M_SC_SEND;
   wire [1:0]m00_r_node_M_SC_INFO;
-  wire [532:0]m00_r_node_M_SC_PAYLD;
+  wire [148:0]m00_r_node_M_SC_PAYLD;
   wire [1:0]m00_r_node_M_SC_RECV;
   wire [1:0]m00_r_node_M_SC_REQ;
   wire [1:0]m00_r_node_M_SC_SEND;
   wire [0:0]m00_w_node_M_SC_INFO;
-  wire [591:0]m00_w_node_M_SC_PAYLD;
+  wire [159:0]m00_w_node_M_SC_PAYLD;
   wire [0:0]m00_w_node_M_SC_RECV;
   wire [0:0]m00_w_node_M_SC_REQ;
   wire [0:0]m00_w_node_M_SC_SEND;
@@ -1548,11 +1548,11 @@ module m00_nodes_imp_NKE8JF
   assign M_SC_B_req[1:0] = m00_b_node_M_SC_REQ;
   assign M_SC_B_send[1:0] = m00_b_node_M_SC_SEND;
   assign M_SC_R_info[1:0] = m00_r_node_M_SC_INFO;
-  assign M_SC_R_payld[532:0] = m00_r_node_M_SC_PAYLD;
+  assign M_SC_R_payld[148:0] = m00_r_node_M_SC_PAYLD;
   assign M_SC_R_req[1:0] = m00_r_node_M_SC_REQ;
   assign M_SC_R_send[1:0] = m00_r_node_M_SC_SEND;
   assign M_SC_W_info[0] = m00_w_node_M_SC_INFO;
-  assign M_SC_W_payld[591:0] = m00_w_node_M_SC_PAYLD;
+  assign M_SC_W_payld[159:0] = m00_w_node_M_SC_PAYLD;
   assign M_SC_W_req[0] = m00_w_node_M_SC_REQ;
   assign M_SC_W_send[0] = m00_w_node_M_SC_SEND;
   assign S_SC_AR_1_INFO = S_SC_AR_info[1:0];
@@ -1571,12 +1571,12 @@ module m00_nodes_imp_NKE8JF
   assign S_SC_B_1_SEND = S_SC_B_send[0];
   assign S_SC_B_recv[0] = S_SC_B_1_RECV;
   assign S_SC_R_1_INFO = S_SC_R_info[0];
-  assign S_SC_R_1_PAYLD = S_SC_R_payld[532:0];
+  assign S_SC_R_1_PAYLD = S_SC_R_payld[148:0];
   assign S_SC_R_1_REQ = S_SC_R_req[0];
   assign S_SC_R_1_SEND = S_SC_R_send[0];
   assign S_SC_R_recv[0] = S_SC_R_1_RECV;
   assign S_SC_W_1_INFO = S_SC_W_info[1:0];
-  assign S_SC_W_1_PAYLD = S_SC_W_payld[591:0];
+  assign S_SC_W_1_PAYLD = S_SC_W_payld[159:0];
   assign S_SC_W_1_REQ = S_SC_W_req[1:0];
   assign S_SC_W_1_SEND = S_SC_W_send[1:0];
   assign S_SC_W_recv[1:0] = S_SC_W_1_RECV;
@@ -1990,7 +1990,7 @@ module s00_nodes_imp_14L9OR2
   output [0:0]M_SC_AR_req;
   output [0:0]M_SC_AR_send;
   output [0:0]M_SC_R_info;
-  output [532:0]M_SC_R_payld;
+  output [148:0]M_SC_R_payld;
   input [0:0]M_SC_R_recv;
   output [0:0]M_SC_R_req;
   output [0:0]M_SC_R_send;
@@ -2000,7 +2000,7 @@ module s00_nodes_imp_14L9OR2
   input [0:0]S_SC_AR_req;
   input [0:0]S_SC_AR_send;
   input [0:0]S_SC_R_info;
-  input [532:0]S_SC_R_payld;
+  input [148:0]S_SC_R_payld;
   output [0:0]S_SC_R_recv;
   input [0:0]S_SC_R_req;
   input [0:0]S_SC_R_send;
@@ -2015,7 +2015,7 @@ module s00_nodes_imp_14L9OR2
   wire [0:0]S_SC_AR_1_REQ;
   wire [0:0]S_SC_AR_1_SEND;
   wire [0:0]S_SC_R_1_INFO;
-  wire [532:0]S_SC_R_1_PAYLD;
+  wire [148:0]S_SC_R_1_PAYLD;
   wire [0:0]S_SC_R_1_RECV;
   wire [0:0]S_SC_R_1_REQ;
   wire [0:0]S_SC_R_1_SEND;
@@ -2027,7 +2027,7 @@ module s00_nodes_imp_14L9OR2
   wire [0:0]s00_ar_node_M_SC_REQ;
   wire [0:0]s00_ar_node_M_SC_SEND;
   wire [0:0]s00_r_node_M_SC_INFO;
-  wire [532:0]s00_r_node_M_SC_PAYLD;
+  wire [148:0]s00_r_node_M_SC_PAYLD;
   wire [0:0]s00_r_node_M_SC_RECV;
   wire [0:0]s00_r_node_M_SC_REQ;
   wire [0:0]s00_r_node_M_SC_SEND;
@@ -2039,7 +2039,7 @@ module s00_nodes_imp_14L9OR2
   assign M_SC_AR_req[0] = s00_ar_node_M_SC_REQ;
   assign M_SC_AR_send[0] = s00_ar_node_M_SC_SEND;
   assign M_SC_R_info[0] = s00_r_node_M_SC_INFO;
-  assign M_SC_R_payld[532:0] = s00_r_node_M_SC_PAYLD;
+  assign M_SC_R_payld[148:0] = s00_r_node_M_SC_PAYLD;
   assign M_SC_R_req[0] = s00_r_node_M_SC_REQ;
   assign M_SC_R_send[0] = s00_r_node_M_SC_SEND;
   assign S_SC_AR_1_INFO = S_SC_AR_info[0];
@@ -2048,7 +2048,7 @@ module s00_nodes_imp_14L9OR2
   assign S_SC_AR_1_SEND = S_SC_AR_send[0];
   assign S_SC_AR_recv[0] = S_SC_AR_1_RECV;
   assign S_SC_R_1_INFO = S_SC_R_info[0];
-  assign S_SC_R_1_PAYLD = S_SC_R_payld[532:0];
+  assign S_SC_R_1_PAYLD = S_SC_R_payld[148:0];
   assign S_SC_R_1_REQ = S_SC_R_req[0];
   assign S_SC_R_1_SEND = S_SC_R_send[0];
   assign S_SC_R_recv[0] = S_SC_R_1_RECV;
@@ -2482,7 +2482,7 @@ module s01_nodes_imp_48JC3C
   output [0:0]M_SC_B_req;
   output [0:0]M_SC_B_send;
   output [0:0]M_SC_W_info;
-  output [591:0]M_SC_W_payld;
+  output [159:0]M_SC_W_payld;
   input [0:0]M_SC_W_recv;
   output [0:0]M_SC_W_req;
   output [0:0]M_SC_W_send;
@@ -2497,7 +2497,7 @@ module s01_nodes_imp_48JC3C
   input [0:0]S_SC_B_req;
   input [0:0]S_SC_B_send;
   input [0:0]S_SC_W_info;
-  input [591:0]S_SC_W_payld;
+  input [159:0]S_SC_W_payld;
   output [0:0]S_SC_W_recv;
   input [0:0]S_SC_W_req;
   input [0:0]S_SC_W_send;
@@ -2517,7 +2517,7 @@ module s01_nodes_imp_48JC3C
   wire [0:0]S_SC_B_1_REQ;
   wire [0:0]S_SC_B_1_SEND;
   wire [0:0]S_SC_W_1_INFO;
-  wire [591:0]S_SC_W_1_PAYLD;
+  wire [159:0]S_SC_W_1_PAYLD;
   wire [0:0]S_SC_W_1_RECV;
   wire [0:0]S_SC_W_1_REQ;
   wire [0:0]S_SC_W_1_SEND;
@@ -2534,7 +2534,7 @@ module s01_nodes_imp_48JC3C
   wire [0:0]s01_b_node_M_SC_REQ;
   wire [0:0]s01_b_node_M_SC_SEND;
   wire [0:0]s01_w_node_M_SC_INFO;
-  wire [591:0]s01_w_node_M_SC_PAYLD;
+  wire [159:0]s01_w_node_M_SC_PAYLD;
   wire [0:0]s01_w_node_M_SC_RECV;
   wire [0:0]s01_w_node_M_SC_REQ;
   wire [0:0]s01_w_node_M_SC_SEND;
@@ -2550,7 +2550,7 @@ module s01_nodes_imp_48JC3C
   assign M_SC_B_req[0] = s01_b_node_M_SC_REQ;
   assign M_SC_B_send[0] = s01_b_node_M_SC_SEND;
   assign M_SC_W_info[0] = s01_w_node_M_SC_INFO;
-  assign M_SC_W_payld[591:0] = s01_w_node_M_SC_PAYLD;
+  assign M_SC_W_payld[159:0] = s01_w_node_M_SC_PAYLD;
   assign M_SC_W_req[0] = s01_w_node_M_SC_REQ;
   assign M_SC_W_send[0] = s01_w_node_M_SC_SEND;
   assign S_SC_AW_1_INFO = S_SC_AW_info[0];
@@ -2564,7 +2564,7 @@ module s01_nodes_imp_48JC3C
   assign S_SC_B_1_SEND = S_SC_B_send[0];
   assign S_SC_B_recv[0] = S_SC_B_1_RECV;
   assign S_SC_W_1_INFO = S_SC_W_info[0];
-  assign S_SC_W_1_PAYLD = S_SC_W_payld[591:0];
+  assign S_SC_W_1_PAYLD = S_SC_W_payld[159:0];
   assign S_SC_W_1_REQ = S_SC_W_req[0];
   assign S_SC_W_1_SEND = S_SC_W_send[0];
   assign S_SC_W_recv[0] = S_SC_W_1_RECV;
@@ -2716,12 +2716,12 @@ module switchboards_imp_1XAKOM2
   output M00_SC_B_req;
   output M00_SC_B_send;
   output [0:0]M00_SC_R_info;
-  output [532:0]M00_SC_R_payld;
+  output [148:0]M00_SC_R_payld;
   input [0:0]M00_SC_R_recv;
   output [0:0]M00_SC_R_req;
   output [0:0]M00_SC_R_send;
   output [1:0]M00_SC_W_info;
-  output [591:0]M00_SC_W_payld;
+  output [159:0]M00_SC_W_payld;
   input [1:0]M00_SC_W_recv;
   output [1:0]M00_SC_W_req;
   output [1:0]M00_SC_W_send;
@@ -2751,7 +2751,7 @@ module switchboards_imp_1XAKOM2
   input [1:0]S00_SC_B_req;
   input [1:0]S00_SC_B_send;
   input [1:0]S00_SC_R_info;
-  input [532:0]S00_SC_R_payld;
+  input [148:0]S00_SC_R_payld;
   output [1:0]S00_SC_R_recv;
   input [1:0]S00_SC_R_req;
   input [1:0]S00_SC_R_send;
@@ -2771,7 +2771,7 @@ module switchboards_imp_1XAKOM2
   input [0:0]S01_SC_AW_req;
   input [0:0]S01_SC_AW_send;
   input [0:0]S01_SC_W_info;
-  input [591:0]S01_SC_W_payld;
+  input [159:0]S01_SC_W_payld;
   output [0:0]S01_SC_W_recv;
   input [0:0]S01_SC_W_req;
   input [0:0]S01_SC_W_send;
@@ -2794,7 +2794,7 @@ module switchboards_imp_1XAKOM2
   wire [1:0]S00_SC_B_1_REQ;
   wire [1:0]S00_SC_B_1_SEND;
   wire [1:0]S00_SC_R_1_INFO;
-  wire [532:0]S00_SC_R_1_PAYLD;
+  wire [148:0]S00_SC_R_1_PAYLD;
   wire [1:0]S00_SC_R_1_RECV;
   wire [1:0]S00_SC_R_1_REQ;
   wire [1:0]S00_SC_R_1_SEND;
@@ -2814,7 +2814,7 @@ module switchboards_imp_1XAKOM2
   wire [0:0]S01_SC_AW_1_REQ;
   wire [0:0]S01_SC_AW_1_SEND;
   wire [0:0]S01_SC_W_1_INFO;
-  wire [591:0]S01_SC_W_1_PAYLD;
+  wire [159:0]S01_SC_W_1_PAYLD;
   wire [1:1]S01_SC_W_1_RECV;
   wire [0:0]S01_SC_W_1_REQ;
   wire [0:0]S01_SC_W_1_SEND;
@@ -2840,17 +2840,17 @@ module switchboards_imp_1XAKOM2
   wire [1:1]b_switchboard_M01_SC_REQ;
   wire [1:1]b_switchboard_M01_SC_SEND;
   wire [0:0]r_switchboard_M00_SC_INFO;
-  wire [532:0]r_switchboard_M00_SC_PAYLD;
+  wire [148:0]r_switchboard_M00_SC_PAYLD;
   wire [0:0]r_switchboard_M00_SC_RECV;
   wire [0:0]r_switchboard_M00_SC_REQ;
   wire [0:0]r_switchboard_M00_SC_SEND;
   wire [1:1]r_switchboard_M01_SC_INFO;
-  wire [1065:533]r_switchboard_M01_SC_PAYLD;
+  wire [297:149]r_switchboard_M01_SC_PAYLD;
   wire r_switchboard_M01_SC_RECV;
   wire [1:1]r_switchboard_M01_SC_REQ;
   wire [1:1]r_switchboard_M01_SC_SEND;
   wire [1:0]w_switchboard_M00_SC_INFO;
-  wire [591:0]w_switchboard_M00_SC_PAYLD;
+  wire [159:0]w_switchboard_M00_SC_PAYLD;
   wire [1:0]w_switchboard_M00_SC_RECV;
   wire [1:0]w_switchboard_M00_SC_REQ;
   wire [1:0]w_switchboard_M00_SC_SEND;
@@ -2868,11 +2868,11 @@ module switchboards_imp_1XAKOM2
   assign M00_SC_B_req = b_switchboard_M00_SC_REQ;
   assign M00_SC_B_send = b_switchboard_M00_SC_SEND;
   assign M00_SC_R_info[0] = r_switchboard_M00_SC_INFO;
-  assign M00_SC_R_payld[532:0] = r_switchboard_M00_SC_PAYLD;
+  assign M00_SC_R_payld[148:0] = r_switchboard_M00_SC_PAYLD;
   assign M00_SC_R_req[0] = r_switchboard_M00_SC_REQ;
   assign M00_SC_R_send[0] = r_switchboard_M00_SC_SEND;
   assign M00_SC_W_info[1:0] = w_switchboard_M00_SC_INFO;
-  assign M00_SC_W_payld[591:0] = w_switchboard_M00_SC_PAYLD;
+  assign M00_SC_W_payld[159:0] = w_switchboard_M00_SC_PAYLD;
   assign M00_SC_W_req[1:0] = w_switchboard_M00_SC_REQ;
   assign M00_SC_W_send[1:0] = w_switchboard_M00_SC_SEND;
   assign M01_SC_B_info[0] = b_switchboard_M01_SC_INFO;
@@ -2880,7 +2880,7 @@ module switchboards_imp_1XAKOM2
   assign M01_SC_B_req[0] = b_switchboard_M01_SC_REQ;
   assign M01_SC_B_send[0] = b_switchboard_M01_SC_SEND;
   assign M01_SC_R_info = r_switchboard_M01_SC_INFO;
-  assign M01_SC_R_payld = r_switchboard_M01_SC_PAYLD[533];
+  assign M01_SC_R_payld = r_switchboard_M01_SC_PAYLD[149];
   assign M01_SC_R_req = r_switchboard_M01_SC_REQ;
   assign M01_SC_R_send = r_switchboard_M01_SC_SEND;
   assign S00_SC_AR_1_INFO = S00_SC_AR_info[0];
@@ -2899,7 +2899,7 @@ module switchboards_imp_1XAKOM2
   assign S00_SC_B_1_SEND = S00_SC_B_send[1:0];
   assign S00_SC_B_recv[1:0] = S00_SC_B_1_RECV;
   assign S00_SC_R_1_INFO = S00_SC_R_info[1:0];
-  assign S00_SC_R_1_PAYLD = S00_SC_R_payld[532:0];
+  assign S00_SC_R_1_PAYLD = S00_SC_R_payld[148:0];
   assign S00_SC_R_1_REQ = S00_SC_R_req[1:0];
   assign S00_SC_R_1_SEND = S00_SC_R_send[1:0];
   assign S00_SC_R_recv[1:0] = S00_SC_R_1_RECV;
@@ -2919,7 +2919,7 @@ module switchboards_imp_1XAKOM2
   assign S01_SC_AW_1_SEND = S01_SC_AW_send[0];
   assign S01_SC_AW_recv[0] = S01_SC_AW_1_RECV;
   assign S01_SC_W_1_INFO = S01_SC_W_info[0];
-  assign S01_SC_W_1_PAYLD = S01_SC_W_payld[591:0];
+  assign S01_SC_W_1_PAYLD = S01_SC_W_payld[159:0];
   assign S01_SC_W_1_REQ = S01_SC_W_req[0];
   assign S01_SC_W_1_SEND = S01_SC_W_send[0];
   assign S01_SC_W_recv[0] = S01_SC_W_1_RECV;
@@ -2992,7 +2992,7 @@ module switchboards_imp_1XAKOM2
         .m_sc_req(w_switchboard_M00_SC_REQ),
         .m_sc_send(w_switchboard_M00_SC_SEND),
         .s_sc_info({S01_SC_W_1_INFO,S00_SC_W_1_INFO}),
-        .s_sc_payld({S01_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD}),
+        .s_sc_payld({S01_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD,S00_SC_W_1_PAYLD}),
         .s_sc_recv({S01_SC_W_1_RECV,S00_SC_W_1_RECV}),
         .s_sc_req({S01_SC_W_1_REQ,S00_SC_W_1_REQ}),
         .s_sc_send({S01_SC_W_1_SEND,S00_SC_W_1_SEND}));

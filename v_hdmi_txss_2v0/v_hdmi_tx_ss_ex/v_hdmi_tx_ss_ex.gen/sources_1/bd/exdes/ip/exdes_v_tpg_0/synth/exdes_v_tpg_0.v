@@ -85,16 +85,7 @@ module exdes_v_tpg_0 (
   m_axis_video_TUSER,
   m_axis_video_TLAST,
   m_axis_video_TID,
-  m_axis_video_TDEST,
-  s_axis_video_TVALID,
-  s_axis_video_TREADY,
-  s_axis_video_TDATA,
-  s_axis_video_TKEEP,
-  s_axis_video_TSTRB,
-  s_axis_video_TUSER,
-  s_axis_video_TLAST,
-  s_axis_video_TID,
-  s_axis_video_TDEST
+  m_axis_video_TDEST
 );
 
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL AWADDR" *)
@@ -133,7 +124,7 @@ output wire s_axi_CTRL_RVALID;
 HREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 s_axi_CTRL RREADY" *)
 input wire s_axi_CTRL_RREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_CTRL:m_axis_video:s_axis_video, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_clk, ASSOCIATED_BUSIF s_axi_CTRL:m_axis_video, ASSOCIATED_RESET ap_rst_n, FREQ_HZ 300000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 ap_clk CLK" *)
 input wire ap_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME ap_rst_n, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -163,25 +154,6 @@ output wire [0 : 0] m_axis_video_TID;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_axis_video, TDATA_NUM_BYTES 6, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 m_axis_video TDEST" *)
 output wire [0 : 0] m_axis_video_TDEST;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TVALID" *)
-input wire s_axis_video_TVALID;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TREADY" *)
-output wire s_axis_video_TREADY;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDATA" *)
-input wire [47 : 0] s_axis_video_TDATA;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TKEEP" *)
-input wire [5 : 0] s_axis_video_TKEEP;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TSTRB" *)
-input wire [5 : 0] s_axis_video_TSTRB;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TUSER" *)
-input wire [0 : 0] s_axis_video_TUSER;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TLAST" *)
-input wire [0 : 0] s_axis_video_TLAST;
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TID" *)
-input wire [0 : 0] s_axis_video_TID;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME s_axis_video, TDATA_NUM_BYTES 6, TDEST_WIDTH 1, TID_WIDTH 1, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0" *)
-(* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 s_axis_video TDEST" *)
-input wire [0 : 0] s_axis_video_TDEST;
 
   exdes_v_tpg_0_v_tpg #(
     .C_S_AXI_CTRL_ADDR_WIDTH(8),
@@ -217,15 +189,6 @@ input wire [0 : 0] s_axis_video_TDEST;
     .m_axis_video_TUSER(m_axis_video_TUSER),
     .m_axis_video_TLAST(m_axis_video_TLAST),
     .m_axis_video_TID(m_axis_video_TID),
-    .m_axis_video_TDEST(m_axis_video_TDEST),
-    .s_axis_video_TVALID(s_axis_video_TVALID),
-    .s_axis_video_TREADY(s_axis_video_TREADY),
-    .s_axis_video_TDATA(s_axis_video_TDATA),
-    .s_axis_video_TKEEP(s_axis_video_TKEEP),
-    .s_axis_video_TSTRB(s_axis_video_TSTRB),
-    .s_axis_video_TUSER(s_axis_video_TUSER),
-    .s_axis_video_TLAST(s_axis_video_TLAST),
-    .s_axis_video_TID(s_axis_video_TID),
-    .s_axis_video_TDEST(s_axis_video_TDEST)
+    .m_axis_video_TDEST(m_axis_video_TDEST)
   );
 endmodule

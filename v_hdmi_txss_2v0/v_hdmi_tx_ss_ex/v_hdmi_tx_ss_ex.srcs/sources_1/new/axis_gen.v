@@ -34,11 +34,16 @@ output  wire    m_axis_tlast,
 output  reg     [23:0]  m_axis_tdata,
 output  wire    [2:0]   m_axis_tkeep
     );
-    reg     [IMAGE_WIDTH - 1 : 0] h_cnt = 0;
-    reg     [IMAGE_HEIGHT- 1 : 0] v_cnt = 0;
+    reg     [31 - 1 : 0] h_cnt = 0;
+    reg     [31 - 1 : 0] v_cnt = 0;
     initial begin
         m_axis_tvalid <= 1;
         m_axis_tdata  <= 0;
+    end
+    always @(posedge m_axis_aclk)begin
+        if(!h_cnt)
+            m_axis_tvalid <= 1;
+        else m_axis_tvalid <= m_axis_tvalid;
     end
     always @(posedge m_axis_aclk)begin
         if(h_cnt == IMAGE_WIDTH)
