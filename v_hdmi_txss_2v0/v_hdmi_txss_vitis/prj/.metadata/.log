@@ -1,0 +1,1737 @@
+!SESSION 2024-04-09 14:55:26.301 -----------------------------------------------
+eclipse.buildId=2022.2
+java.version=11.0.11
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file E:\xilinx_axi\github\v_hdmi_txss_2v0\v_hdmi_txss_vitis\prj\.metadata\.bak_2.log
+Created Time: 2024-04-09 17:46:55.922
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.924
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_pmu_0], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.940
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_pmu_0], Result: [null, {"audio_ss_0_aud_pat_gen_axi": {"name": "audio_ss_0_aud_pat_gen",
+"base": "0x80000000",
+"high": "0x8000FFFF",
+"size": "65536",
+"slaveintf": "axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"audio_ss_0_clk_wiz_s_axi_lite": {"name": "audio_ss_0_clk_wiz",
+"base": "0x80010000",
+"high": "0x8001FFFF",
+"size": "65536",
+"slaveintf": "s_axi_lite",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"audio_ss_0_hdmi_acr_ctrl_axi": {"name": "audio_ss_0_hdmi_acr_ctrl",
+"base": "0x80020000",
+"high": "0x8002FFFF",
+"size": "65536",
+"slaveintf": "axi",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"v_tpg_ss_0_axi_gpio_S_AXI": {"name": "v_tpg_ss_0_axi_gpio",
+"base": "0x80030000",
+"high": "0x8003FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"v_hdmi_tx_ss_S_AXI_CPU_IN": {"name": "v_hdmi_tx_ss",
+"base": "0x80040000",
+"high": "0x8005FFFF",
+"size": "131072",
+"slaveintf": "S_AXI_CPU_IN",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"v_tpg_ss_0_v_tpg_s_axi_CTRL": {"name": "v_tpg_ss_0_v_tpg",
+"base": "0x80060000",
+"high": "0x8006FFFF",
+"size": "65536",
+"slaveintf": "s_axi_CTRL",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"vid_phy_controller_vid_phy_axi4lite": {"name": "vid_phy_controller",
+"base": "0x80070000",
+"high": "0x8007FFFF",
+"size": "65536",
+"slaveintf": "vid_phy_axi4lite",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"video_frame_crc_S_AXI": {"name": "video_frame_crc",
+"base": "0x80080000",
+"high": "0x8008FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"zynq_us_ss_0_fmch_axi_iic_S_AXI": {"name": "zynq_us_ss_0_fmch_axi_iic",
+"base": "0x80090000",
+"high": "0x8009FFFF",
+"size": "65536",
+"slaveintf": "S_AXI",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"video_gen_axi_vdma_0_S_AXI_LITE": {"name": "video_gen_axi_vdma_0",
+"base": "0x800A0000",
+"high": "0x800AFFFF",
+"size": "65536",
+"slaveintf": "S_AXI_LITE",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"psu_adma_0": {"name": "psu_adma_0",
+"base": "0xFFA80000",
+"high": "0xFFA8FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_adma_1": {"name": "psu_adma_1",
+"base": "0xFFA90000",
+"high": "0xFFA9FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_adma_2": {"name": "psu_adma_2",
+"base": "0xFFAA0000",
+"high": "0xFFAAFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_adma_3": {"name": "psu_adma_3",
+"base": "0xFFAB0000",
+"high": "0xFFABFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_adma_4": {"name": "psu_adma_4",
+"base": "0xFFAC0000",
+"high": "0xFFACFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_adma_5": {"name": "psu_adma_5",
+"base": "0xFFAD0000",
+"high": "0xFFADFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_adma_6": {"name": "psu_adma_6",
+"base": "0xFFAE0000",
+"high": "0xFFAEFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_adma_7": {"name": "psu_adma_7",
+"base": "0xFFAF0000",
+"high": "0xFFAFFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_afi_0": {"name": "psu_afi_0",
+"base": "0xFD360000",
+"high": "0xFD36FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_afi_1": {"name": "psu_afi_1",
+"base": "0xFD370000",
+"high": "0xFD37FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_afi_2": {"name": "psu_afi_2",
+"base": "0xFD380000",
+"high": "0xFD38FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_afi_3": {"name": "psu_afi_3",
+"base": "0xFD390000",
+"high": "0xFD39FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_afi_4": {"name": "psu_afi_4",
+"base": "0xFD3A0000",
+"high": "0xFD3AFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_afi_5": {"name": "psu_afi_5",
+"base": "0xFD3B0000",
+"high": "0xFD3BFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_afi_6": {"name": "psu_afi_6",
+"base": "0xFF9B0000",
+"high": "0xFF9BFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ams": {"name": "psu_ams",
+"base": "0xFFA50000",
+"high": "0xFFA5FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_apm_0": {"name": "psu_apm_0",
+"base": "0xFD0B0000",
+"high": "0xFD0BFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_apm_1": {"name": "psu_apm_1",
+"base": "0xFFA00000",
+"high": "0xFFA0FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_apm_2": {"name": "psu_apm_2",
+"base": "0xFFA10000",
+"high": "0xFFA1FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_apm_5": {"name": "psu_apm_5",
+"base": "0xFD490000",
+"high": "0xFD49FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_apu": {"name": "psu_apu",
+"base": "0xFD5C0000",
+"high": "0xFD5CFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_can_1": {"name": "psu_can_1",
+"base": "0xFF070000",
+"high": "0xFF07FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_cci_gpv": {"name": "psu_cci_gpv",
+"base": "0xFD6E0000",
+"high": "0xFD6EFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_cci_reg": {"name": "psu_cci_reg",
+"base": "0xFD5E0000",
+"high": "0xFD5EFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_crf_apb": {"name": "psu_crf_apb",
+"base": "0xFD1A0000",
+"high": "0xFD2DFFFF",
+"size": "1310720",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_crl_apb": {"name": "psu_crl_apb",
+"base": "0xFF5E0000",
+"high": "0xFF85FFFF",
+"size": "2621440",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_csu_0": {"name": "psu_csu_0",
+"base": "0xFFCA0000",
+"high": "0xFFCAFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_csudma": {"name": "psu_csudma",
+"base": "0xFFC80000",
+"high": "0xFFC9FFFF",
+"size": "131072",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ctrl_ipi": {"name": "psu_ctrl_ipi",
+"base": "0xFF380000",
+"high": "0xFF3FFFFF",
+"size": "524288",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_phy": {"name": "psu_ddr_phy",
+"base": "0xFD080000",
+"high": "0xFD08FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_qos_ctrl": {"name": "psu_ddr_qos_ctrl",
+"base": "0xFD090000",
+"high": "0xFD09FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_xmpu0_cfg": {"name": "psu_ddr_xmpu0_cfg",
+"base": "0xFD000000",
+"high": "0xFD00FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_xmpu1_cfg": {"name": "psu_ddr_xmpu1_cfg",
+"base": "0xFD010000",
+"high": "0xFD01FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_xmpu2_cfg": {"name": "psu_ddr_xmpu2_cfg",
+"base": "0xFD020000",
+"high": "0xFD02FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_xmpu3_cfg": {"name": "psu_ddr_xmpu3_cfg",
+"base": "0xFD030000",
+"high": "0xFD03FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_xmpu4_cfg": {"name": "psu_ddr_xmpu4_cfg",
+"base": "0xFD040000",
+"high": "0xFD04FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_xmpu5_cfg": {"name": "psu_ddr_xmpu5_cfg",
+"base": "0xFD050000",
+"high": "0xFD05FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddrc_0": {"name": "psu_ddrc_0",
+"base": "0xFD070000",
+"high": "0xFD070FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_dp": {"name": "psu_dp",
+"base": "0xFD4A0000",
+"high": "0xFD4AFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_dpdma": {"name": "psu_dpdma",
+"base": "0xFD4C0000",
+"high": "0xFD4CFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_efuse": {"name": "psu_efuse",
+"base": "0xFFCC0000",
+"high": "0xFFCCFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ethernet_3": {"name": "psu_ethernet_3",
+"base": "0xFF0E0000",
+"high": "0xFF0EFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_fpd_gpv": {"name": "psu_fpd_gpv",
+"base": "0xFD700000",
+"high": "0xFD7FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_fpd_slcr": {"name": "psu_fpd_slcr",
+"base": "0xFD610000",
+"high": "0xFD68FFFF",
+"size": "524288",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_fpd_slcr_secure": {"name": "psu_fpd_slcr_secure",
+"base": "0xFD690000",
+"high": "0xFD6CFFFF",
+"size": "262144",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_fpd_xmpu_cfg": {"name": "psu_fpd_xmpu_cfg",
+"base": "0xFD5D0000",
+"high": "0xFD5DFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_fpd_xmpu_sink": {"name": "psu_fpd_xmpu_sink",
+"base": "0xFD4F0000",
+"high": "0xFD4FFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gdma_0": {"name": "psu_gdma_0",
+"base": "0xFD500000",
+"high": "0xFD50FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gdma_1": {"name": "psu_gdma_1",
+"base": "0xFD510000",
+"high": "0xFD51FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gdma_2": {"name": "psu_gdma_2",
+"base": "0xFD520000",
+"high": "0xFD52FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gdma_3": {"name": "psu_gdma_3",
+"base": "0xFD530000",
+"high": "0xFD53FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gdma_4": {"name": "psu_gdma_4",
+"base": "0xFD540000",
+"high": "0xFD54FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gdma_5": {"name": "psu_gdma_5",
+"base": "0xFD550000",
+"high": "0xFD55FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gdma_6": {"name": "psu_gdma_6",
+"base": "0xFD560000",
+"high": "0xFD56FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gdma_7": {"name": "psu_gdma_7",
+"base": "0xFD570000",
+"high": "0xFD57FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gpio_0": {"name": "psu_gpio_0",
+"base": "0xFF0A0000",
+"high": "0xFF0AFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_gpu": {"name": "psu_gpu",
+"base": "0xFD4B0000",
+"high": "0xFD4BFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_i2c_0": {"name": "psu_i2c_0",
+"base": "0xFF020000",
+"high": "0xFF02FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_i2c_1": {"name": "psu_i2c_1",
+"base": "0xFF030000",
+"high": "0xFF03FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_iou_scntr": {"name": "psu_iou_scntr",
+"base": "0xFF250000",
+"high": "0xFF25FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_iou_scntrs": {"name": "psu_iou_scntrs",
+"base": "0xFF260000",
+"high": "0xFF26FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_iousecure_slcr": {"name": "psu_iousecure_slcr",
+"base": "0xFF240000",
+"high": "0xFF24FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_iouslcr_0": {"name": "psu_iouslcr_0",
+"base": "0xFF180000",
+"high": "0xFF23FFFF",
+"size": "786432",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ipi_3": {"name": "psu_ipi_3",
+"base": "0xFF330000",
+"high": "0xFF330FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "",
+},
+"psu_ipi_4": {"name": "psu_ipi_4",
+"base": "0xFF331000",
+"high": "0xFF331FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "",
+},
+"psu_ipi_5": {"name": "psu_ipi_5",
+"base": "0xFF332000",
+"high": "0xFF332FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "",
+},
+"psu_ipi_6": {"name": "psu_ipi_6",
+"base": "0xFF333000",
+"high": "0xFF333FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "",
+},
+"psu_lpd_slcr": {"name": "psu_lpd_slcr",
+"base": "0xFF410000",
+"high": "0xFF4AFFFF",
+"size": "655360",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_lpd_slcr_secure": {"name": "psu_lpd_slcr_secure",
+"base": "0xFF4B0000",
+"high": "0xFF4DFFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_lpd_xppu": {"name": "psu_lpd_xppu",
+"base": "0xFF980000",
+"high": "0xFF98FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_lpd_xppu_sink": {"name": "psu_lpd_xppu_sink",
+"base": "0xFF9C0000",
+"high": "0xFF9CFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_mbistjtag": {"name": "psu_mbistjtag",
+"base": "0xFFCF0000",
+"high": "0xFFCFFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_message_buffers": {"name": "psu_message_buffers",
+"base": "0xFF990000",
+"high": "0xFF99FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ocm": {"name": "psu_ocm",
+"base": "0xFF960000",
+"high": "0xFF96FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ocm_xmpu_cfg": {"name": "psu_ocm_xmpu_cfg",
+"base": "0xFFA70000",
+"high": "0xFFA7FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_pmu_global_0": {"name": "psu_pmu_global_0",
+"base": "0xFFD80000",
+"high": "0xFFDBFFFF",
+"size": "262144",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_pmu_iomodule": {"name": "psu_pmu_iomodule",
+"base": "0xFFD40000",
+"high": "0xFFD5FFFF",
+"size": "131072",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_qspi_0": {"name": "psu_qspi_0",
+"base": "0xFF0F0000",
+"high": "0xFF0FFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_qspi_linear_0": {"name": "psu_qspi_linear_0",
+"base": "0xC0000000",
+"high": "0xDFFFFFFF",
+"size": "536870912",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_rpu": {"name": "psu_rpu",
+"base": "0xFF9A0000",
+"high": "0xFF9AFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_rsa": {"name": "psu_rsa",
+"base": "0xFFCE0000",
+"high": "0xFFCEFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_rtc": {"name": "psu_rtc",
+"base": "0xFFA60000",
+"high": "0xFFA6FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_sata": {"name": "psu_sata",
+"base": "0xFD0C0000",
+"high": "0xFD0CFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_sd_1": {"name": "psu_sd_1",
+"base": "0xFF170000",
+"high": "0xFF17FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_serdes": {"name": "psu_serdes",
+"base": "0xFD400000",
+"high": "0xFD47FFFF",
+"size": "524288",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_siou": {"name": "psu_siou",
+"base": "0xFD3D0000",
+"high": "0xFD3DFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_smmu_gpv": {"name": "psu_smmu_gpv",
+"base": "0xFD800000",
+"high": "0xFDFFFFFF",
+"size": "8388608",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_smmu_reg": {"name": "psu_smmu_reg",
+"base": "0xFD5F0000",
+"high": "0xFD5FFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ttc_0": {"name": "psu_ttc_0",
+"base": "0xFF110000",
+"high": "0xFF11FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ttc_1": {"name": "psu_ttc_1",
+"base": "0xFF120000",
+"high": "0xFF12FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ttc_2": {"name": "psu_ttc_2",
+"base": "0xFF130000",
+"high": "0xFF13FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ttc_3": {"name": "psu_ttc_3",
+"base": "0xFF140000",
+"high": "0xFF14FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_uart_0": {"name": "psu_uart_0",
+"base": "0xFF000000",
+"high": "0xFF00FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_uart_1": {"name": "psu_uart_1",
+"base": "0xFF010000",
+"high": "0xFF01FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_usb_0": {"name": "psu_usb_0",
+"base": "0xFF9D0000",
+"high": "0xFF9DFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_usb_xhci_0": {"name": "psu_usb_xhci_0",
+"base": "0xFE200000",
+"high": "0xFE2FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_wdt_0": {"name": "psu_wdt_0",
+"base": "0xFF150000",
+"high": "0xFF15FFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_wdt_1": {"name": "psu_wdt_1",
+"base": "0xFD4D0000",
+"high": "0xFD4DFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_bbram_0_MEM_0": {"name": "psu_bbram_0",
+"base": "0xFFCD0000",
+"high": "0xFFCDFFFF",
+"size": "65536",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "MEM_0",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_0_MEM_0": {"name": "psu_ddr_0",
+"base": "0x7FF00000",
+"high": "0x7FFFFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "MEM_0",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ddr_0_MEM_1": {"name": "psu_ddr_0",
+"base": "0x0",
+"high": "0x7FEFFFFF",
+"size": "2146435072",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "MEM_1",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_ocm_ram_0_MEM_0": {"name": "psu_ocm_ram_0",
+"base": "0xFFFC0000",
+"high": "0xFFFFFFFF",
+"size": "262144",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "MEM_0",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+"psu_pmu_ram_MEM_0": {"name": "psu_pmu_ram",
+"base": "0xFFDC0000",
+"high": "0xFFDDFFFF",
+"size": "131072",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "MEM_0",
+"acctype": "Read/Write",
+"tz": "NonSecure",
+},
+}]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.941
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_cortexa53_0], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.943
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_cortexa53_0], Result: [null, audio_ss_0_aud_pat_gen audio_ss_0_clk_wiz audio_ss_0_hdmi_acr_ctrl psu_acpu_gic psu_adma_0 psu_adma_1 psu_adma_2 psu_adma_3 psu_adma_4 psu_adma_5 psu_adma_6 psu_adma_7 psu_afi_0 psu_afi_1 psu_afi_2 psu_afi_3 psu_afi_4 psu_afi_5 psu_afi_6 psu_ams psu_apm_0 psu_apm_1 psu_apm_2 psu_apm_5 psu_apu psu_can_1 psu_cci_gpv psu_cci_reg psu_coresight_0 psu_crf_apb psu_crl_apb psu_csu_0 psu_csudma psu_ctrl_ipi psu_ddr_0 psu_ddr_phy psu_ddr_qos_ctrl psu_ddr_xmpu0_cfg psu_ddr_xmpu1_cfg psu_ddr_xmpu2_cfg psu_ddr_xmpu3_cfg psu_ddr_xmpu4_cfg psu_ddr_xmpu5_cfg psu_ddrc_0 psu_dp psu_dpdma psu_efuse psu_ethernet_3 psu_fpd_gpv psu_fpd_slcr psu_fpd_slcr_secure psu_fpd_xmpu_cfg psu_fpd_xmpu_sink psu_gdma_0 psu_gdma_1 psu_gdma_2 psu_gdma_3 psu_gdma_4 psu_gdma_5 psu_gdma_6 psu_gdma_7 psu_gpio_0 psu_gpu psu_i2c_0 psu_i2c_1 psu_iou_scntr psu_iou_scntrs psu_iousecure_slcr psu_iouslcr_0 psu_ipi_0 psu_lpd_slcr psu_lpd_slcr_secure psu_lpd_xppu psu_lpd_xppu_sink psu_mbistjtag psu_message_buffers psu_ocm psu_ocm_ram_0 psu_ocm_xmpu_cfg psu_pmu_global_0 psu_qspi_0 psu_qspi_linear_0 psu_r5_0_atcm_global psu_r5_0_btcm_global psu_r5_1_atcm_global psu_r5_1_btcm_global psu_r5_tcm_ram_global psu_rcpu_gic psu_rpu psu_rsa psu_rtc psu_sata psu_sd_1 psu_serdes psu_siou psu_smmu_gpv psu_smmu_reg psu_ttc_0 psu_ttc_1 psu_ttc_2 psu_ttc_3 psu_uart_0 psu_uart_1 psu_usb_0 psu_usb_xhci_0 psu_wdt_0 psu_wdt_1 v_hdmi_tx_ss v_tpg_ss_0_axi_gpio v_tpg_ss_0_v_tpg vid_phy_controller video_frame_crc video_gen_axi_vdma_0 zynq_us_ss_0_fmch_axi_iic]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.943
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.945
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.946
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_0 C_S_AXI_BASEADDR], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.947
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_0 C_S_AXI_BASEADDR], Result: [null, 0xFD0B0000]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.948
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_0 C_ENABLE_PROFILE], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.949
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_0 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.949
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_0 C_ENABLE_ADVANCED], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.951
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_0 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.951
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_0 C_NUM_OF_COUNTERS], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.952
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_0 C_NUM_OF_COUNTERS], Result: [null, 10]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.953
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.954
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.955
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_1 C_S_AXI_BASEADDR], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.956
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_1 C_S_AXI_BASEADDR], Result: [null, 0xFFA00000]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.956
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_1 C_ENABLE_PROFILE], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.957
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_1 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.958
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_1 C_ENABLE_ADVANCED], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.959
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_1 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.959
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_1 C_NUM_OF_COUNTERS], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.961
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_1 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.961
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.963
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.964
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_2 C_S_AXI_BASEADDR], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.964
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_2 C_S_AXI_BASEADDR], Result: [null, 0xFFA10000]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.965
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_2 C_ENABLE_PROFILE], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.966
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_2 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.966
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_2 C_ENABLE_ADVANCED], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.967
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_2 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.968
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_2 C_NUM_OF_COUNTERS], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.969
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_2 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.970
+!MESSAGE XSCT Command: [::hsi::utils::get_apm_connection_info -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.971
+!MESSAGE XSCT command with result: [::hsi::utils::get_apm_connection_info -json E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa], Result: [null, {"psu_apm_5": "SLOT_0_AXI",
+"psu_apm_0": "SLOT_0_AXI SLOT_1_AXI SLOT_2_AXI SLOT_3_AXI SLOT_4_AXI SLOT_5_AXI",
+"psu_apm_2": "SLOT_0_AXI",
+"psu_apm_1": "SLOT_0_AXI",
+}]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.972
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_5 C_S_AXI_BASEADDR], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.973
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_5 C_S_AXI_BASEADDR], Result: [null, 0xFD490000]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.974
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_5 C_ENABLE_PROFILE], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.975
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_5 C_ENABLE_PROFILE], Result: [null, 0]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.975
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_5 C_ENABLE_ADVANCED], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.976
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_5 C_ENABLE_ADVANCED], Result: [null, 1]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.977
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_5 C_NUM_OF_COUNTERS], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.978
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa psu_apm_5 C_NUM_OF_COUNTERS], Result: [null, 3]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.978
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa zynq_us_ss_0_zynq_us PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.979
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa zynq_us_ss_0_zynq_us PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ], Result: [null, 250.000000]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.980
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.981
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#8]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.981
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.987
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.988
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.992
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:55.992
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.001
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Result: [null,      2  xczu7 (idcode 14730093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.003
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.007
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.007
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.017
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Result: [null,      2  xczu7 (idcode 14730093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.040
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.044
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.045
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.054
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Result: [null,      2  xczu7 (idcode 14730093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.055
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.058
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.059
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.068
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Result: [null,      2  xczu7 (idcode 14730093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.069
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.071
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.072
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.080
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Result: [null,      2  xczu7 (idcode 14730093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.081
+!MESSAGE XSCT Command: [version -server], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.082
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2022.2]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.082
+!MESSAGE XSCT Command: [version], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.083
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2022.2.0
+SW Build 0 on 2022-10-13-12:09:39
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.083
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.087
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.087
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.095
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Result: [null,      2  xczu7 (idcode 14730093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.096
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.105
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level == 0}], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.106
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.106
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.106
+!MESSAGE XSCT Command: [source D:/tools/xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.109
+!MESSAGE XSCT command with result: [source D:/tools/xilinx/Vitis/2022.2/scripts/vitis/util/zynqmp_utils.tcl], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.110
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.115
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.116
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.368
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:56.370
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:59.376
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:59.387
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:59.391
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:59.392
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:59.401
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Result: [null,      2  xczu7 (idcode 14730093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:59.403
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-94556A-14730093-0"}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:59.421
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==0 && jtag_device_ctx=="jsn-HW-Z1-ZCU104 FT4232H-94556A-14730093-0"}], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:46:59.422
+!MESSAGE XSCT Command: [fpga -file E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/TxOnly_A53_1/_ide/bitstream/exdes_wrapper_ps.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.531
+!MESSAGE XSCT command with result: [fpga -file E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/TxOnly_A53_1/_ide/bitstream/exdes_wrapper_ps.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.543
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.550
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.551
+!MESSAGE XSCT Command: [loadhw -hw E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.942
+!MESSAGE XSCT command with result: [loadhw -hw E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/hw/exdes_wrapper_ps.xsa -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}] -regs], Result: [null, exdes_wrapper_11]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.944
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.945
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.946
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.949
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Xilinx HW-Z1-ZCU104 FT4232H 94556A]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.950
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.958
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Xilinx HW-Z1-ZCU104 FT4232H 94556A" && level==1}], Result: [null,      2  xczu7 (idcode 14730093 irlen 12 fpga)
+     3  arm_dap (idcode 5ba00477 irlen 4)]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.959
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.964
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.965
+!MESSAGE XSCT Command: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.968
+!MESSAGE XSCT command with result: [set mode [expr [mrd -value 0xFF5E0200] & 0xf]], Result: [null, 0]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.969
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.974
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:10.974
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:11.091
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:11.092
+!MESSAGE XSCT Command: [dow E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/sw/exde_hdmi_ps/boot/fsbl.elf], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:11.647
+!MESSAGE XSCT command with result: [dow E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/sw/exde_hdmi_ps/boot/fsbl.elf], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:11.649
+!MESSAGE XSCT Command: [set bp_47_11_fsbl_bp [bpadd -addr &XFsbl_Exit]], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:11.684
+!MESSAGE XSCT command with result: [set bp_47_11_fsbl_bp [bpadd -addr &XFsbl_Exit]], Result: [null, 7]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:11.685
+!MESSAGE XSCT Command: [con -block -timeout 60], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:12.726
+!MESSAGE XSCT command with result: [con -block -timeout 60], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:12.729
+!MESSAGE XSCT Command: [bpremove $bp_47_11_fsbl_bp], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:12.740
+!MESSAGE XSCT command with result: [bpremove $bp_47_11_fsbl_bp], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:12.740
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:12.746
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:12.746
+!MESSAGE XSCT Command: [rst -processor], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:12.794
+!MESSAGE XSCT command with result: [rst -processor], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:12.795
+!MESSAGE XSCT Command: [dow E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/TxOnly_A53_1/Debug/TxOnly_A53_1.elf], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:14.017
+!MESSAGE XSCT command with result: [dow E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/TxOnly_A53_1/Debug/TxOnly_A53_1.elf], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:14.019
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:14.027
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:14.089
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A53*#0"}], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:14.096
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A53*#0"}], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:14.097
+!MESSAGE XSCT Command: [con], Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:47:14.133
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-42: Launching Debugger_TxOnly_A53_1-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2024-04-09 17:47:14.134
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '8'
+
+!ENTRY org.eclipse.tcf 4 0 2024-04-09 17:47:25.529
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-04-09 17:47:25.559
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY org.eclipse.tcf 4 0 2024-04-09 17:47:25.560
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1191)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:98)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:51:16.050
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-1080
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:51:16.080
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [{Format=channel "tcfchan#2" closed, Time=1712656276052, Code=1}, ]. Thread: Thread-1080
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:51:16.096
+!MESSAGE XSCT Command: [disconnect tcfchan#8], Thread: Thread-1083
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:51:16.099
+!MESSAGE XSCT command with result: [disconnect tcfchan#8], Result: [null, ]. Thread: Thread-1083
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:51:16.140
+!MESSAGE XSCT Command: [disconnect tcfchan#8], Thread: Thread-1086
+
+!ENTRY com.xilinx.sdk.utils 0 0 2024-04-09 17:51:16.142
+!MESSAGE XSCT command with result: [disconnect tcfchan#8], Result: [{Format=channel "tcfchan#8" closed, Time=1712656276142, Code=1}, ]. Thread: Thread-1086

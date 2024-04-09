@@ -18,12 +18,12 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev
 INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 7624
+INFO: [Synth 8-7075] Helper process launched with PID 12400
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 2527.746 ; gain = 337.395
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2527.016 ; gain = 337.844
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'exdes_axi_vdma_0_0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/synth/exdes_axi_vdma_0_0.vhd:131]
+INFO: [Synth 8-638] synthesizing module 'exdes_axi_vdma_0_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/synth/exdes_axi_vdma_0_0.vhd:131]
 	Parameter C_S_AXI_LITE_ADDR_WIDTH bound to: 9 - type: integer 
 	Parameter C_S_AXI_LITE_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_DLYTMR_RESOLUTION bound to: 125 - type: integer 
@@ -88,119 +88,119 @@ INFO: [Synth 8-638] synthesizing module 'exdes_axi_vdma_0_0' [e:/xilinx_axi/v_dm
 	Parameter C_SELECT_XPM bound to: 0 - type: integer 
 	Parameter C_ENABLE_VERT_FLIP bound to: 0 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-3491] module 'axi_vdma' declared at 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69488' bound to instance 'U0' of component 'axi_vdma' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/synth/exdes_axi_vdma_0_0.vhd:395]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69927]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_rst_module' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:16461]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_reset' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:14866]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-3491] module 'axi_vdma' declared at 'e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69488' bound to instance 'U0' of component 'axi_vdma' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/synth/exdes_axi_vdma_0_0.vhd:395]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69927]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_rst_module' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:16461]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reset' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:14866]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'REG_P_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:219]
+INFO: [Synth 8-113] binding component instance 'REG_P_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:219]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'REG_P_IN2_cdc_to' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:232]
+INFO: [Synth 8-113] binding component instance 'REG_P_IN2_cdc_to' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:232]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d2' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:269]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d2' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:269]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d3' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:279]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d3' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:279]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d4' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:289]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d4' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:289]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d5' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:299]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d5' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:299]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d6' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:309]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d6' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:309]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d7' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:320]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d7' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:320]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_scndry_out' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:330]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_scndry_out' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:330]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d1' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:339]
+INFO: [Synth 8-113] binding component instance 's_rst_d1' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:339]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d2' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:347]
+INFO: [Synth 8-113] binding component instance 's_rst_d2' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:347]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d3' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:355]
+INFO: [Synth 8-113] binding component instance 's_rst_d3' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:355]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d4' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:364]
+INFO: [Synth 8-113] binding component instance 's_rst_d4' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:364]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d5' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:374]
+INFO: [Synth 8-113] binding component instance 's_rst_d5' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:374]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d6' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:383]
+INFO: [Synth 8-113] binding component instance 's_rst_d6' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:383]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d7' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:392]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-113] binding component instance 's_rst_d7' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:392]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'REG_PLEVEL_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:491]
+INFO: [Synth 8-113] binding component instance 'REG_PLEVEL_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:491]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reset' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:14866]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_rst_module' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:16461]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_if' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39917]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_lite_if' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:16956]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reset' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:14866]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_rst_module' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:16461]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_if' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39917]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_lite_if' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:16956]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'REG_P_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:219]
+INFO: [Synth 8-113] binding component instance 'REG_P_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:219]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'REG_P_IN2_cdc_to' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:232]
+INFO: [Synth 8-113] binding component instance 'REG_P_IN2_cdc_to' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:232]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d2' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:269]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d2' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:269]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d3' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:279]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d3' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:279]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d4' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:289]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d4' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:289]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d5' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:299]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d5' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:299]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d6' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:309]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d6' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:309]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d7' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:320]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_s_out_d7' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:320]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_scndry_out' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:330]
+INFO: [Synth 8-113] binding component instance 'P_IN_CROSS2SCNDRY_scndry_out' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:330]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d1' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:339]
+INFO: [Synth 8-113] binding component instance 's_rst_d1' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:339]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d2' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:347]
+INFO: [Synth 8-113] binding component instance 's_rst_d2' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:347]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d3' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:355]
+INFO: [Synth 8-113] binding component instance 's_rst_d3' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:355]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d4' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:364]
+INFO: [Synth 8-113] binding component instance 's_rst_d4' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:364]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d5' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:374]
+INFO: [Synth 8-113] binding component instance 's_rst_d5' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:374]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d6' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:383]
+INFO: [Synth 8-113] binding component instance 's_rst_d6' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:383]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 's_rst_d7' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:392]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_lite_if' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:16956]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-113] binding component instance 's_rst_d7' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:392]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_lite_if' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:16956]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'REG_PLEVEL_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:491]
+INFO: [Synth 8-113] binding component instance 'REG_PLEVEL_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:491]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_if' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39917]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_intrpt' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:40643]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_intrpt' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:40643]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_axis_dwidth_converter' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:68616]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_if' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39917]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_intrpt' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:40643]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_intrpt' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:40643]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_axis_dwidth_converter' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:68616]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 64 - type: integer 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 48 - type: integer 
 	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
@@ -208,91 +208,91 @@ INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_axis_dwidth_converter' [e
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 8 - type: integer 
 	Parameter C_M_AXIS_TUSER_WIDTH bound to: 6 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-3491] module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' declared at 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937' bound to instance 'MM2S_AXIS_DWIDTH_CONVERTER_I' of component 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:68707]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1190]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1190]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1557]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1557]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mm2s_axis_dwidth_converter' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:68616]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39071]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_register' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:18717]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:18717]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:20533]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:20533]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:29596]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:29596]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39071]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64248]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:61909]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:61909]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63125]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63125]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_sts_mngr' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63632]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sts_mngr' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63632]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_vidreg_module' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:56087]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_vregister' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53973]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vregister' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53973]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_vaddrreg_mux' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:55564]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vaddrreg_mux' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:55564]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vidreg_module' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:56087]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58630]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58343]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58343]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mux' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:57368]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mux' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:57368]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58343]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58343]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58630]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64248]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53102]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53102]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_vid_cdc' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:13253]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vid_cdc' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:13253]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_sof_gen' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41253]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sof_gen' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41253]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_linebuf' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:46414]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_afifo_builtin' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:43595]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_afifo_builtin' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:43595]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41500]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41500]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized3' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-3491] module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' declared at 'e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937' bound to instance 'MM2S_AXIS_DWIDTH_CONVERTER_I' of component 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:68707]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1190]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1190]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1557]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1557]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mm2s_axis_dwidth_converter' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:68616]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39071]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_register' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:18717]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:18717]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:20533]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:20533]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:29596]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:29596]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39071]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64248]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:61909]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:61909]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63125]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63125]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sts_mngr' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63632]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sts_mngr' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63632]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vidreg_module' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:56087]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vregister' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53973]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vregister' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53973]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vaddrreg_mux' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:55564]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vaddrreg_mux' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:55564]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vidreg_module' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:56087]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58630]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58343]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58343]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mux' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:57368]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mux' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:57368]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_greycoder__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58343]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_greycoder__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58343]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58630]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64248]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53102]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53102]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_vid_cdc' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:13253]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_vid_cdc' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:13253]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sof_gen' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41253]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sof_gen' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41253]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mm2s_linebuf' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:46414]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_afifo_builtin' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:43595]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_afifo_builtin' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:43595]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41500]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41500]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync__parameterized3' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'REG_PLEVEL_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:491]
+INFO: [Synth 8-113] binding component instance 'REG_PLEVEL_IN_cdc_from' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:491]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized3' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mm2s_linebuf' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:46414]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41500]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41500]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_s2mm_axis_dwidth_converter' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69110]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync__parameterized3' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mm2s_linebuf' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:46414]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_skid_buf__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41500]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_skid_buf__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:41500]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_s2mm_axis_dwidth_converter' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69110]
 	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
 	Parameter C_M_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
@@ -300,176 +300,176 @@ INFO: [Synth 8-638] synthesizing module 'axi_vdma_s2mm_axis_dwidth_converter' [e
 	Parameter C_S_AXIS_TUSER_WIDTH bound to: 3 - type: integer 
 	Parameter C_M_AXIS_TUSER_WIDTH bound to: 4 - type: integer 
 	Parameter C_FAMILY bound to: zynquplus - type: string 
-INFO: [Synth 8-3491] module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' declared at 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937' bound to instance 'S2MM_AXIS_DWIDTH_CONVERTER_I' of component 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69198]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1190]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1190]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1557]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1557]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
-INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
-INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_s2mm_axis_dwidth_converter' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69110]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39071]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_register__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:18717]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:18717]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:20533]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:20533]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:29596]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:29596]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39071]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64248]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:61909]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:61909]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63125]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63125]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58630]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58630]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64248]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53102]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53102]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_s2mm_linebuf' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:49284]
-INFO: [Synth 8-638] synthesizing module 'axi_vdma_afifo_builtin__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:43595]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_afifo_builtin__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:43595]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma_s2mm_linebuf' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:49284]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:55439]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-INFO: [Synth 8-226] default block is never used [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized4' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized4' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized4' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized4' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized4' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized4' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized5' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized5' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized5' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized5' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized5' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized5' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ibttcc' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized6' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized6' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized6' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized6' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized6' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized6' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized6' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_scatter' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:45117]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_mssai_skid_buf' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:44167]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_ms_strb_set' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:42603]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ms_strb_set' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:42603]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mssai_skid_buf' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:44167]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_slice' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:44856]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_slice' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:44856]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized7' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized7' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized7' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized7' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized7' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized7' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized7' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized7' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_scatter' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:45117]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28430]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+INFO: [Synth 8-3491] module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' declared at 'e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937' bound to instance 'S2MM_AXIS_DWIDTH_CONVERTER_I' of component 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69198]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1190]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1190]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1557]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_downsizer__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1557]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_axis2vector__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:62]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axisc_register_slice__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:390]
+INFO: [Synth 8-6157] synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_infrastructure_v1_0_util_vector2axis__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:227]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_register_slice_v1_0_axis_register_slice__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:978]
+INFO: [Synth 8-6155] done synthesizing module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axis_dwidth_converter__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.v:1937]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_s2mm_axis_dwidth_converter' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69110]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_module__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39071]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_register__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:18717]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_register__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:18717]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_regdirect__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:20533]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_regdirect__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:20533]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_reg_mux__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:29596]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_mux__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:29596]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_reg_module__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:39071]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_mngr__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64248]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_sm__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:61909]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_sm__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:61909]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_cmdsts_if__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63125]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_cmdsts_if__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:63125]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_genlock_mngr__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58630]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_genlock_mngr__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:58630]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_mngr__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64248]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_fsync_gen__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53102]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_fsync_gen__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:53102]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_s2mm_linebuf' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:49284]
+INFO: [Synth 8-638] synthesizing module 'axi_vdma_afifo_builtin__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:43595]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_afifo_builtin__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:43595]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma_s2mm_linebuf' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:49284]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:55439]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mm2s_full_wrap' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_reset' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_reset' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:153]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rd_status_cntl' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rd_status_cntl' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:13746]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_pcc' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-226] default block is never used [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:9490]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_pcc' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:7416]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rddata_cntl' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_rdmux' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rdmux' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10681]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_rddata_cntl' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:12185]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mm2s_full_wrap' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:53572]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_full_wrap' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_cmd_status__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized3' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized3' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized3' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized3' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized3' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized3' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized3' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized3' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_cmd_status__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:2698]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_status_cntl' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized4' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized4' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized4' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized4' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized4' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized4' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized4' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized4' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized5' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized5' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized5' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized5' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized5' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized5' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized5' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized5' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_status_cntl' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:17704]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ibttcc' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ibttcc' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:25731]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_realign' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized6' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized6' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized6' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized6' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized6' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized6' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized6' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized6' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_s2mm_scatter' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:45117]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_mssai_skid_buf' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:44167]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_ms_strb_set' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:42603]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_ms_strb_set' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:42603]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_mssai_skid_buf' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:44167]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_strb_gen2__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_strb_gen2__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:4342]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_slice' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:44856]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_slice' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:44856]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized7' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized7' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized7' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'cntr_incr_decr_addn_f__parameterized1' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'cntr_incr_decr_addn_f__parameterized1' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:143]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized7' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized7' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized7' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized7' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized7' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_scatter' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:45117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_realign' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:47011]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_indet_btt' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28430]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2250]
 	Parameter FIFO_MEMORY_TYPE bound to: auto - type: string 
 	Parameter FIFO_WRITE_DEPTH bound to: 16 - type: integer 
 	Parameter WRITE_DATA_WIDTH bound to: 9 - type: integer 
@@ -485,7 +485,7 @@ INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg' [e:/xilinx_axi/v_dma_txss
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
 	Parameter ECC_MODE bound to: no_ecc - type: string 
 	Parameter WAKEUP_TIME bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2627]
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2627]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
@@ -510,10 +510,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized3' [D:/
 INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized3' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
-INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2250]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_sfifo_autord__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2250]
 	Parameter FIFO_MEMORY_TYPE bound to: block - type: string 
 	Parameter FIFO_WRITE_DEPTH bound to: 128 - type: integer 
 	Parameter WRITE_DATA_WIDTH bound to: 74 - type: integer 
@@ -529,7 +529,7 @@ INFO: [Synth 8-638] synthesizing module 'sync_fifo_fg__parameterized0' [e:/xilin
 	Parameter DOUT_RESET_VALUE bound to: 0 - type: string 
 	Parameter ECC_MODE bound to: no_ecc - type: string 
 	Parameter WAKEUP_TIME bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2627]
+INFO: [Synth 8-3491] module 'xpm_fifo_sync' declared at 'D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955' bound to instance 'xpm_fifo_sync_inst' of component 'xpm_fifo_sync' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2627]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_sync__parameterized1' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
 INFO: [Synth 8-6157] synthesizing module 'xpm_fifo_base__parameterized0' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
 INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized4' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
@@ -547,70 +547,70 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_counter_updn__parameterized7' [D:/
 INFO: [Synth 8-6155] done synthesizing module 'xpm_counter_updn__parameterized7' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1859]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_base__parameterized0' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:55]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_fifo_sync__parameterized1' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1955]
-INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2250]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_indet_btt' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28430]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized8' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized8' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized8' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized8' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized8' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized8' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
-INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized8' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized8' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
-INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
-INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:55439]
-INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69927]
-INFO: [Synth 8-256] done synthesizing module 'exdes_axi_vdma_0_0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/synth/exdes_axi_vdma_0_0.vhd:131]
-INFO: [Synth 8-3936] Found unconnected internal register 'GENLOCK_FOR_SLAVE.grey_frmstr_adjusted_reg' and it is trimmed from '6' to '2' bits. [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:59159]
-WARNING: [Synth 8-6014] Unused sequential element SLAVE_MODE_FRAME_CNT.frame_sync_d1_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64991]
-WARNING: [Synth 8-6014] Unused sequential element SLAVE_MODE_FRAME_CNT.frame_sync_d2_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64992]
-WARNING: [Synth 8-6014] Unused sequential element GEN_LINEBUF_NO_SOF.m_skid_reset_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:47466]
-WARNING: [Synth 8-6014] Unused sequential element sig_cmd_stat_rst_int_reg_n_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:191]
-WARNING: [Synth 8-6014] Unused sequential element sig_mmap_rst_reg_n_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:194]
-WARNING: [Synth 8-6014] Unused sequential element sig_stream_rst_reg_n_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:197]
-WARNING: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:8048]
-WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:8359]
-WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10410]
-WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10417]
-WARNING: [Synth 8-6014] Unused sequential element sig_next_dre_src_align_reg_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:12886]
-WARNING: [Synth 8-6014] Unused sequential element sig_next_dre_dest_align_reg_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:12887]
-WARNING: [Synth 8-6014] Unused sequential element sig_coelsc_reg_empty_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:13225]
-WARNING: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:26374]
-WARNING: [Synth 8-6014] Unused sequential element sig_psm_ld_calc2_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:26578]
-WARNING: [Synth 8-6014] Unused sequential element sig_child_cmd_reg_empty_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:27034]
-WARNING: [Synth 8-6014] Unused sequential element sig_first_child_xfer_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:27579]
-WARNING: [Synth 8-6014] Unused sequential element sig_xfer_is_seq_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28078]
-WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_empty_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28171]
-WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28172]
-WARNING: [Synth 8-6014] Unused sequential element sig_sm_ld_scatter_cmd_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:47510]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo_fg__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/6c82/hdl/lib_fifo_v1_0_rfs.vhd:2250]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_sfifo_autord__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1295]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_stbs_set__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_stbs_set__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:23410]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid_buf' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid_buf' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:19500]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_indet_btt' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28430]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_addr_cntl__parameterized0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_addr_cntl__parameterized0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10000]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wrdata_cntl' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_fifo__parameterized8' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_f__parameterized8' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-638] synthesizing module 'srl_fifo_rbu_f__parameterized8' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-638] synthesizing module 'dynshreg_f__parameterized8' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'dynshreg_f__parameterized8' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:397]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_rbu_f__parameterized8' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:697]
+INFO: [Synth 8-256] done synthesizing module 'srl_fifo_f__parameterized8' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/51ce/hdl/lib_srl_fifo_v1_0_rfs.vhd:1000]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_fifo__parameterized8' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1886]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wrdata_cntl' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:15674]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_skid2mm_buf' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+INFO: [Synth 8-638] synthesizing module 'axi_datamover_wr_demux' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_wr_demux' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:14117]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_skid2mm_buf' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:18998]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover_s2mm_full_wrap' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:49997]
+INFO: [Synth 8-256] done synthesizing module 'axi_datamover' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:55439]
+INFO: [Synth 8-256] done synthesizing module 'axi_vdma' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:69927]
+INFO: [Synth 8-256] done synthesizing module 'exdes_axi_vdma_0_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/synth/exdes_axi_vdma_0_0.vhd:131]
+INFO: [Synth 8-3936] Found unconnected internal register 'GENLOCK_FOR_SLAVE.grey_frmstr_adjusted_reg' and it is trimmed from '6' to '2' bits. [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:59159]
+WARNING: [Synth 8-6014] Unused sequential element SLAVE_MODE_FRAME_CNT.frame_sync_d1_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64991]
+WARNING: [Synth 8-6014] Unused sequential element SLAVE_MODE_FRAME_CNT.frame_sync_d2_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:64992]
+WARNING: [Synth 8-6014] Unused sequential element GEN_LINEBUF_NO_SOF.m_skid_reset_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/415b/hdl/axi_vdma_v6_3_rfs.vhd:47466]
+WARNING: [Synth 8-6014] Unused sequential element sig_cmd_stat_rst_int_reg_n_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element sig_mmap_rst_reg_n_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:194]
+WARNING: [Synth 8-6014] Unused sequential element sig_stream_rst_reg_n_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:197]
+WARNING: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:8048]
+WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:8359]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10410]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10417]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_dre_src_align_reg_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:12886]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_dre_dest_align_reg_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:12887]
+WARNING: [Synth 8-6014] Unused sequential element sig_coelsc_reg_empty_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:13225]
+WARNING: [Synth 8-6014] Unused sequential element sig_input_reg_full_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:26374]
+WARNING: [Synth 8-6014] Unused sequential element sig_psm_ld_calc2_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:26578]
+WARNING: [Synth 8-6014] Unused sequential element sig_child_cmd_reg_empty_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:27034]
+WARNING: [Synth 8-6014] Unused sequential element sig_first_child_xfer_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:27579]
+WARNING: [Synth 8-6014] Unused sequential element sig_xfer_is_seq_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28078]
+WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_empty_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28171]
+WARNING: [Synth 8-6014] Unused sequential element sig_xfer_reg_full_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:28172]
+WARNING: [Synth 8-6014] Unused sequential element sig_sm_ld_scatter_cmd_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:47510]
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
 WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
 WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:969]
 WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
-WARNING: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1513]
+WARNING: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1513]
 WARNING: [Synth 8-6014] Unused sequential element gen_rd_b.gen_doutb_pipe.enb_pipe_reg[0] was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:3017]
 WARNING: [Synth 8-6014] Unused sequential element gdvld.data_valid_std_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:537]
 WARNING: [Synth 8-6014] Unused sequential element gen_pntr_flags_cc.gae_cc_std.ram_aempty_i_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:969]
 WARNING: [Synth 8-6014] Unused sequential element gen_fwft.empty_fwft_fb_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/hdl/xpm_fifo.sv:1391]
-WARNING: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1513]
-WARNING: [Synth 8-6014] Unused sequential element INCLUDE_PACKING.lsig_packer_empty_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:29317]
-WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10410]
-WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10417]
-WARNING: [Synth 8-6014] Unused sequential element sig_next_last_strb_reg_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:16965]
-WARNING: [Synth 8-6014] Unused sequential element sig_next_eof_reg_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:16970]
+WARNING: [Synth 8-6014] Unused sequential element hold_ff_q_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:1513]
+WARNING: [Synth 8-6014] Unused sequential element INCLUDE_PACKING.lsig_packer_empty_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:29317]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_tag_reg_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10410]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_cmd_cmplt_reg_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:10417]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_last_strb_reg_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:16965]
+WARNING: [Synth 8-6014] Unused sequential element sig_next_eof_reg_reg was removed.  [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/2237/hdl/axi_datamover_v5_1_vh_rfs.vhd:16970]
 WARNING: [Synth 8-7129] Port debeat_saddr_lsb[2] in module axi_datamover_wr_demux is either unconnected or has no load
 WARNING: [Synth 8-7129] Port debeat_saddr_lsb[1] in module axi_datamover_wr_demux is either unconnected or has no load
 WARNING: [Synth 8-7129] Port debeat_saddr_lsb[0] in module axi_datamover_wr_demux is either unconnected or has no load
@@ -713,49 +713,49 @@ WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base is either unconnec
 WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2875.730 ; gain = 685.379
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2875.699 ; gain = 686.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2875.730 ; gain = 685.379
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2875.699 ; gain = 686.527
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 2875.730 ; gain = 685.379
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:17 . Memory (MB): peak = 2875.699 ; gain = 686.527
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.230 . Memory (MB): peak = 2877.488 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.297 . Memory (MB): peak = 2875.699 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 531 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0_ooc.xdc] for cell 'U0'
-Finished Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0_ooc.xdc] for cell 'U0'
-Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc] for cell 'U0'
-Finished Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc] for cell 'U0'
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/exdes_axi_vdma_0_0_propImpl.xdc].
+Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0_ooc.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc] for cell 'U0'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/exdes_axi_vdma_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/exdes_axi_vdma_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
-Parsing XDC File [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/dont_touch.xdc]
-Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0_clocks.xdc] for cell 'U0'
-Finished Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0_clocks.xdc] for cell 'U0'
+Parsing XDC File [E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0_clocks.xdc] for cell 'U0'
+Finished Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0_clocks.xdc] for cell 'U0'
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/exdes_axi_vdma_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/exdes_axi_vdma_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 2 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2996.723 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2990.469 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 531 instances were transformed.
   FDR => FDRE: 531 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.081 . Memory (MB): peak = 2996.723 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.107 . Memory (MB): peak = 2990.730 ; gain = 0.262
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 2996.723 ; gain = 806.371
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 2990.730 ; gain = 801.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -763,16 +763,16 @@ Start Loading Part and Timing Information
 Loading part: xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 2996.723 ; gain = 806.371
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 2990.730 ; gain = 801.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for U0. (constraint file  E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/dont_touch.xdc, line 9).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_XD_FIFO/\NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for U0/I_PRMRY_DATAMOVER/\GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER /\GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT /I_DATA_FIFO/\BLK_MEM.I_SYNC_FIFOGEN_FIFO /\xpm_fifo_instance.xpm_fifo_sync_inst . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:22 . Memory (MB): peak = 2996.723 ; gain = 806.371
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:31 . Memory (MB): peak = 2990.730 ; gain = 801.559
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_vdma_v6_3_15_axis_dwidth_converter_v1_0_axisc_upsizer'
 INFO: [Synth 8-802] inferred FSM for state register 'dmacntrl_cs_reg' in module 'axi_vdma_sm'
@@ -894,7 +894,7 @@ INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM 
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_fwft.curr_fwft_state_reg' using encoding 'sequential' in module 'xpm_fifo_base__parameterized0'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:26 . Memory (MB): peak = 2996.723 ; gain = 806.371
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:36 . Memory (MB): peak = 2990.730 ; gain = 801.559
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -1119,7 +1119,7 @@ INFO: [Synth 8-3332] Sequential element (GEN_SPRT_FOR_MM2S.MM2S_VID_CDC_I/GEN_CD
 INFO: [Synth 8-3332] Sequential element (GEN_SPRT_FOR_MM2S.MM2S_VID_CDC_I/GEN_CDC_FOR_ASYNC.OTHR_FSYNC_CDC_I/GENERATE_PULSE_P_S_CDC_OPEN_ENDED.s_rst_d5) is unused and will be removed from module axi_vdma.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:37 . Memory (MB): peak = 2996.723 ; gain = 806.371
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:48 . Memory (MB): peak = 2990.730 ; gain = 801.559
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
@@ -1151,7 +1151,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:45 . Memory (MB): peak = 3264.633 ; gain = 1074.281
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:57 . Memory (MB): peak = 3263.375 ; gain = 1074.203
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
@@ -1159,7 +1159,7 @@ Start Timing Optimization
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 INFO: [Synth 8-5775] Found 'rw_addr_collision' attribute set to 'no' on SDP RAM gen_wr_a.gen_word_narrow.mem_reg. Setting write mode to NO_CHANGE 
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:48 . Memory (MB): peak = 3353.219 ; gain = 1162.867
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:01:01 . Memory (MB): peak = 3355.293 ; gain = 1166.121
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1187,7 +1187,7 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:12 ; elapsed = 00:00:50 . Memory (MB): peak = 3380.012 ; gain = 1189.660
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:01:02 . Memory (MB): peak = 3379.035 ; gain = 1189.863
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -1205,37 +1205,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:12 ; elapsed = 00:00:52 . Memory (MB): peak = 3394.840 ; gain = 1204.488
+Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 3392.012 ; gain = 1202.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:12 ; elapsed = 00:00:52 . Memory (MB): peak = 3394.840 ; gain = 1204.488
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 3392.012 ; gain = 1202.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 3394.840 ; gain = 1204.488
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 3392.012 ; gain = 1202.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 3394.840 ; gain = 1204.488
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:01:05 . Memory (MB): peak = 3392.012 ; gain = 1202.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 3394.840 ; gain = 1204.488
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:01:06 . Memory (MB): peak = 3392.012 ; gain = 1202.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 3394.840 ; gain = 1204.488
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:01:06 . Memory (MB): peak = 3392.012 ; gain = 1202.840
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -1301,18 +1301,18 @@ Report Cell Usage:
 |16    |FDSE     |   109|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 3394.840 ; gain = 1204.488
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:01:06 . Memory (MB): peak = 3392.012 ; gain = 1202.840
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 1742 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:47 . Memory (MB): peak = 3394.840 ; gain = 1083.496
-Synthesis Optimization Complete : Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 3394.840 ; gain = 1204.488
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:58 . Memory (MB): peak = 3392.012 ; gain = 1087.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:01:06 . Memory (MB): peak = 3392.012 ; gain = 1202.840
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 3402.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.148 . Memory (MB): peak = 3401.094 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 298 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3426.012 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3424.172 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 264 instances were transformed.
   FDR => FDRE: 263 instances
@@ -1322,10 +1322,10 @@ Synth Design complete, checksum: b19459d3
 INFO: [Common 17-83] Releasing license: Synthesis
 551 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:14 ; elapsed = 00:01:00 . Memory (MB): peak = 3426.012 ; gain = 2342.094
-INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/exdes_axi_vdma_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP exdes_axi_vdma_0_0, cache-ID = bd8b960374bd8dcb
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:01:14 . Memory (MB): peak = 3424.172 ; gain = 2340.828
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/exdes_axi_vdma_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP exdes_axi_vdma_0_0, cache-ID = 2f170fc0d2d7be6f
 INFO: [Coretcl 2-1174] Renamed 206 cell refs.
-INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/exdes_axi_vdma_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axi_vdma_0_0_synth_1/exdes_axi_vdma_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file exdes_axi_vdma_0_0_utilization_synth.rpt -pb exdes_axi_vdma_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 09:48:49 2024...
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 16:38:50 2024...

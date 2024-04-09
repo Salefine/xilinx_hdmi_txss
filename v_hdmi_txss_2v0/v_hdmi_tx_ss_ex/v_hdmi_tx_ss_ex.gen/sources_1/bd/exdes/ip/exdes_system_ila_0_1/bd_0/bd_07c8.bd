@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xE9CE8E17F9B2AAC6",
+      "boundary_crc": "0x7498E7F37ABFD5BC",
       "design_src": "SBD",
       "device": "xczu7ev-ffvc1156-2-e",
       "name": "bd_07c8",
@@ -27,8 +27,8 @@
         "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
         "parameters": {
           "ADDR_WIDTH": {
-            "value": "32",
-            "value_src": "default_prop"
+            "value": "49",
+            "value_src": "default"
           },
           "ARUSER_WIDTH": {
             "value": "0",
@@ -43,15 +43,15 @@
             "value_src": "default"
           },
           "CLK_DOMAIN": {
-            "value": "exdes_ddr4_0_0_c0_ddr4_ui_clk",
+            "value": "exdes_clk_wiz_0_0_clk_out1",
             "value_src": "default_prop"
           },
           "DATA_WIDTH": {
-            "value": "512",
+            "value": "128",
             "value_src": "default"
           },
           "FREQ_HZ": {
-            "value": "266500000",
+            "value": "250000000",
             "value_src": "default"
           },
           "HAS_BRESP": {
@@ -99,7 +99,7 @@
             "value_src": "default"
           },
           "MAX_BURST_LENGTH": {
-            "value": "1",
+            "value": "4",
             "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
@@ -119,7 +119,7 @@
             "value_src": "default"
           },
           "PHASE": {
-            "value": "0.00",
+            "value": "0.0",
             "value_src": "default"
           },
           "PROTOCOL": {
@@ -165,11 +165,11 @@
             "value": "resetn"
           },
           "CLK_DOMAIN": {
-            "value": "exdes_ddr4_0_0_c0_ddr4_ui_clk",
+            "value": "exdes_clk_wiz_0_0_clk_out1",
             "value_src": "default_prop"
           },
           "FREQ_HZ": {
-            "value": "266500000",
+            "value": "250000000",
             "value_src": "default_prop"
           },
           "FREQ_TOLERANCE_HZ": {
@@ -181,8 +181,8 @@
             "value_src": "default"
           },
           "PHASE": {
-            "value": "0.00",
-            "value_src": "default_prop"
+            "value": "0.0",
+            "value_src": "default"
           }
         }
       },
@@ -227,7 +227,7 @@
             "value": "0"
           },
           "C_ILA_CLK_FREQ": {
-            "value": "266500000"
+            "value": "250000000"
           },
           "C_INPUT_PIPE_STAGES": {
             "value": "0"
@@ -248,7 +248,7 @@
             "value": "0"
           },
           "C_PROBE10_WIDTH": {
-            "value": "32"
+            "value": "49"
           },
           "C_PROBE11_TYPE": {
             "value": "0"
@@ -308,7 +308,7 @@
             "value": "0"
           },
           "C_PROBE1_WIDTH": {
-            "value": "32"
+            "value": "49"
           },
           "C_PROBE20_TYPE": {
             "value": "0"
@@ -320,7 +320,7 @@
             "value": "0"
           },
           "C_PROBE21_WIDTH": {
-            "value": "512"
+            "value": "128"
           },
           "C_PROBE22_TYPE": {
             "value": "0"
@@ -332,13 +332,13 @@
             "value": "0"
           },
           "C_PROBE23_WIDTH": {
-            "value": "512"
+            "value": "128"
           },
           "C_PROBE24_TYPE": {
             "value": "0"
           },
           "C_PROBE24_WIDTH": {
-            "value": "64"
+            "value": "16"
           },
           "C_PROBE25_TYPE": {
             "value": "0"
@@ -448,7 +448,7 @@
             "value": "0"
           },
           "C_SLOT_0_AXI_ADDR_WIDTH": {
-            "value": "32"
+            "value": "49"
           },
           "C_SLOT_0_AXI_ARUSER_WIDTH": {
             "value": "0"
@@ -475,7 +475,7 @@
             "value": "1"
           },
           "C_SLOT_0_AXI_DATA_WIDTH": {
-            "value": "512"
+            "value": "128"
           },
           "C_SLOT_0_AXI_ID_WIDTH": {
             "value": "0"

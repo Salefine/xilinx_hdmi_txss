@@ -39,9 +39,7 @@ The project modified the tpg data generation section based on xilinx's hdmi2.0 t
 
 ​	这个模块负责生成相应的视频流数据，模拟摄像头采集到的数据。这里配置一张图片的分辨率是3840*2160.时钟选择300MHz。同时这里设置了相关的图像控制信号。
 
-​	m_axis_tuser:一帧图像开始的信号。m_axis_tlast:一帧图像结束的信号。m_axis_tvalid:高有效，表明主机开始向从机发送数据。
-
-参考axis协议。
+​	m_axis_tuser:一帧图像开始的信号。m_axis_tlast:一帧图像结束的信号。m_axis_tvalid:高有效，表明主机开始向从机发送数据。参考axis协议。
 
 ### 2.vdma
 
@@ -65,7 +63,7 @@ The project modified the tpg data generation section based on xilinx's hdmi2.0 t
 
 ​	在许多视频应用中，数据的生产者和消费者运行速率不同。为了避免这种速率不匹配可能导致的潜在问题，通常会使用帧缓冲技术。帧缓冲为存储多帧数据分配了多个帧的内存空间。数据生产者向一个缓冲区写入数据，而消费者则从另一个缓冲区读取数据。AXI VDMA的Genlock功能通过防止读写通道同时访问同一帧数据来补偿这一点。
 
-	AXI VDMA支持四种Genlock同步模式。它们是Genlock主模式、Genlock从模式、动态Genlock主模式和动态Genlock从模式。图2-21和图2-22显示了有效的Genlock连接。
+​	AXI VDMA支持四种Genlock同步模式。它们是Genlock主模式、Genlock从模式、动态Genlock主模式和动态Genlock从模式。图2-21和图2-22显示了有效的Genlock连接。
 
 *重要提示：如果在内核内部建立了内部Genlock连接，并且参数C_MM2S_GENLOCK_NUM_MASTERS=1（C_S2MM_GENLOCK_NUM_MASTERS=1），则默认情况下不会暴露mm2s_frame_ptr_in（s2mm_frame_ptr_in）端口。当（i）两个VDMA通道都被启用，并且（ii）一个通道是主模式而另一个是从模式（或一个通道是动态主模式而另一个是动态从模式）时，就在内核内部建立了内部Genlock连接。这意味着您不需要进行显式的外部连接。*
 
@@ -117,6 +115,34 @@ e.   Set MM2S_VSIZE (50h) to the number of lines per frame. VSIZE must be set la
 
 ​	对应的，可以参考vitis下的code。
 
-<img src="E:\xilinx_axi\github\image\image-20240409124139714.png" alt="image-20240409124139714" style="zoom:80%;" />
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x30,0x8b);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xac,VIDEO_BASE_ADDR);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xb0,VIDEO_BASE_ADDR + 0x10000000);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xb4,VIDEO_BASE_ADDR + 0x20000000);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xa8,IMAGE_WIDTH*3);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xa4,IMAGE_WIDTH*3);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xa0,IMAGE_HEIGHT);
+	
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x00,0x8b);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x5c,VIDEO_BASE_ADDR);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x60,VIDEO_BASE_ADDR + 0x10000000);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x64,VIDEO_BASE_ADDR + 0x20000000);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x58,IMAGE_WIDTH*3);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x54,IMAGE_WIDTH*3);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x50,IMAGE_HEIGHT);
 
 接下来编译vitis并且下载到板卡上进行验证。
+
+下载完成之后可以看到串口打印的信息。VIDEO_BASE_ADDR为读写ddr的基地址，这里是pl端的，设置为0x00000000.如果是ps侧的ddr，起始地址要避免和指令的起始地址冲突。
+
+`mrd -bin -file image.bin 0x000000000 58982400`
+
+IMAGE_WIDTH  IMAGE_HEIGHT这两个需要自行声明，表示图像的宽度和高度。
+
+在vitis终端输入这条命令查看效果。
+
+<img src="E:\xilinx_axi\github\image\cfde137b44c4570818eea51f2afb795.png" alt="cfde137b44c4570818eea51f2afb795" style="zoom: 33%;" />
+
+注意：vdma在写入图像时会将RGB中的R,G和B倒换顺序。最后以BGR的格式写入DDR，所以读出的图片会和预期有差异。
+
+<img src="E:\xilinx_axi\github\image\7b9ea2185a5907bdc7ae851b1158eb7.png" alt="7b9ea2185a5907bdc7ae851b1158eb7" style="zoom: 80%;" />

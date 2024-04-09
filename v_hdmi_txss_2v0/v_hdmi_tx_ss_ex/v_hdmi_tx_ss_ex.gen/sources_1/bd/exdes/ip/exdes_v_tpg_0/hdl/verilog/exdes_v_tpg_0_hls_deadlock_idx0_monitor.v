@@ -20,7 +20,7 @@ wire seq_is_axis_block;
 
 assign block = monitor_find_block;
 assign all_sub_parallel_has_block = 1'b0;
-assign all_sub_single_has_block = 1'b0 | (idx1_block & (axis_block_sigs[0] | axis_block_sigs[1] | axis_block_sigs[2] | axis_block_sigs[3]));
+assign all_sub_single_has_block = 1'b0 | (idx1_block & (axis_block_sigs[1] | axis_block_sigs[2] | axis_block_sigs[0] | axis_block_sigs[3]));
 assign cur_axis_has_block = 1'b0;
 assign seq_is_axis_block = all_sub_parallel_has_block | all_sub_single_has_block | cur_axis_has_block;
 

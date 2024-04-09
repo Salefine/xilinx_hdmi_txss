@@ -133,6 +133,7 @@ class zynq_ultra_ps_e_tlm : public sc_core::sc_module   {
     public:
     // Non-AXI ports are declared here
     sc_core::sc_in<bool> maxihpm0_lpd_aclk;
+    sc_core::sc_in<bool> saxihp0_fpd_aclk;
     sc_core::sc_in<sc_dt::sc_bv<95> >  emio_gpio_i;
     sc_core::sc_out<sc_dt::sc_bv<95> >  emio_gpio_o;
     sc_core::sc_out<sc_dt::sc_bv<95> >  emio_gpio_t;
@@ -144,6 +145,8 @@ class zynq_ultra_ps_e_tlm : public sc_core::sc_module   {
      
     // Xtlm aximm slave sockets are delcared here. these XTLM sockets will hierachically bound with 
     // slave sockets defined in vivado generated wrapper.
+    xtlm::xtlm_aximm_target_socket*         S_AXI_HP0_FPD_wr_socket;
+    xtlm::xtlm_aximm_target_socket*         S_AXI_HP0_FPD_rd_socket;
 
     // Xtlm aximm master socket/s is/are delcared here. these XTLM sockets will hierachically bound with 
     // master sockets defined in vivado generated wrapper.
@@ -174,6 +177,8 @@ class zynq_ultra_ps_e_tlm : public sc_core::sc_module   {
     // Bridge's Xtlm wr/rd target sockets binds with 
     // xtlm initiator sockets of zynq_ultra_ps_e_tlm and tlm simple initiator 
     // socket with xilinx_zynqmp's target socket
+    xtlm::xaximm_xtlm2tlm_t<128,32> S_AXI_HP0_FPD_xtlm_brdg;
+    xtlm::xtlm_aximm_fifo *S_AXI_HP0_FPD_buff;
 
     // This Bridges converts b_transport to nb_transports and also
     // Converts tlm transactions to xtlm transactions.

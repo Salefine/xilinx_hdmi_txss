@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Tue Apr  9 10:33:11 2024
+//Date        : Tue Apr  9 16:36:39 2024
 //Host        : weslie running 64-bit major release  (build 9200)
 //Command     : generate_target exdes_wrapper.bd
 //Design      : exdes_wrapper
@@ -22,20 +22,6 @@ module exdes_wrapper
     TX_HPD_IN,
     TX_REFCLK_N_IN,
     TX_REFCLK_P_IN,
-    ddr4_sdram_act_n,
-    ddr4_sdram_adr,
-    ddr4_sdram_ba,
-    ddr4_sdram_bg,
-    ddr4_sdram_ck_c,
-    ddr4_sdram_ck_t,
-    ddr4_sdram_cke,
-    ddr4_sdram_cs_n,
-    ddr4_sdram_dm_n,
-    ddr4_sdram_dq,
-    ddr4_sdram_dqs_c,
-    ddr4_sdram_dqs_t,
-    ddr4_sdram_odt,
-    ddr4_sdram_reset_n,
     fmch_iic_scl_io,
     fmch_iic_sda_io,
     usr_rst,
@@ -53,20 +39,6 @@ module exdes_wrapper
   input TX_HPD_IN;
   input TX_REFCLK_N_IN;
   input TX_REFCLK_P_IN;
-  output ddr4_sdram_act_n;
-  output [16:0]ddr4_sdram_adr;
-  output [1:0]ddr4_sdram_ba;
-  output [1:0]ddr4_sdram_bg;
-  output ddr4_sdram_ck_c;
-  output ddr4_sdram_ck_t;
-  output ddr4_sdram_cke;
-  output ddr4_sdram_cs_n;
-  inout [7:0]ddr4_sdram_dm_n;
-  inout [63:0]ddr4_sdram_dq;
-  inout [7:0]ddr4_sdram_dqs_c;
-  inout [7:0]ddr4_sdram_dqs_t;
-  output ddr4_sdram_odt;
-  output ddr4_sdram_reset_n;
   inout fmch_iic_scl_io;
   inout fmch_iic_sda_io;
   input usr_rst;
@@ -91,20 +63,6 @@ module exdes_wrapper
   wire TX_HPD_IN;
   wire TX_REFCLK_N_IN;
   wire TX_REFCLK_P_IN;
-  wire ddr4_sdram_act_n;
-  wire [16:0]ddr4_sdram_adr;
-  wire [1:0]ddr4_sdram_ba;
-  wire [1:0]ddr4_sdram_bg;
-  wire ddr4_sdram_ck_c;
-  wire ddr4_sdram_ck_t;
-  wire ddr4_sdram_cke;
-  wire ddr4_sdram_cs_n;
-  wire [7:0]ddr4_sdram_dm_n;
-  wire [63:0]ddr4_sdram_dq;
-  wire [7:0]ddr4_sdram_dqs_c;
-  wire [7:0]ddr4_sdram_dqs_t;
-  wire ddr4_sdram_odt;
-  wire ddr4_sdram_reset_n;
   wire fmch_iic_scl_i;
   wire fmch_iic_scl_io;
   wire fmch_iic_scl_o;
@@ -144,20 +102,6 @@ module exdes_wrapper
         .TX_HPD_IN(TX_HPD_IN),
         .TX_REFCLK_N_IN(TX_REFCLK_N_IN),
         .TX_REFCLK_P_IN(TX_REFCLK_P_IN),
-        .ddr4_sdram_act_n(ddr4_sdram_act_n),
-        .ddr4_sdram_adr(ddr4_sdram_adr),
-        .ddr4_sdram_ba(ddr4_sdram_ba),
-        .ddr4_sdram_bg(ddr4_sdram_bg),
-        .ddr4_sdram_ck_c(ddr4_sdram_ck_c),
-        .ddr4_sdram_ck_t(ddr4_sdram_ck_t),
-        .ddr4_sdram_cke(ddr4_sdram_cke),
-        .ddr4_sdram_cs_n(ddr4_sdram_cs_n),
-        .ddr4_sdram_dm_n(ddr4_sdram_dm_n),
-        .ddr4_sdram_dq(ddr4_sdram_dq),
-        .ddr4_sdram_dqs_c(ddr4_sdram_dqs_c),
-        .ddr4_sdram_dqs_t(ddr4_sdram_dqs_t),
-        .ddr4_sdram_odt(ddr4_sdram_odt),
-        .ddr4_sdram_reset_n(ddr4_sdram_reset_n),
         .fmch_iic_scl_i(fmch_iic_scl_i),
         .fmch_iic_scl_o(fmch_iic_scl_o),
         .fmch_iic_scl_t(fmch_iic_scl_t),

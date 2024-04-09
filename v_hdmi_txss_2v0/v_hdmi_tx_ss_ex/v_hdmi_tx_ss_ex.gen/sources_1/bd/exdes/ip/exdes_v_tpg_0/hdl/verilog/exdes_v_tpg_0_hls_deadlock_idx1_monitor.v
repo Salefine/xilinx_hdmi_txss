@@ -21,7 +21,7 @@ wire all_process_stop;
 
 assign block = monitor_find_block;
 assign idx6_block = axis_block_sigs[3];
-assign process_axis_block_vec[0] = idx2_block & (1'b0 | axis_block_sigs[0] | axis_block_sigs[1] | axis_block_sigs[2]);
+assign process_axis_block_vec[0] = idx2_block & (1'b0 | axis_block_sigs[1] | axis_block_sigs[2] | axis_block_sigs[0]);
 assign process_idle_vec[0] = inst_idle_sigs[0];
 assign process_chan_block_vec[0] = inst_block_sigs[0];
 assign process_axis_block_vec[1] = 1'b0;

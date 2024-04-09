@@ -42,7 +42,7 @@ module bd_07c8_wrapper
     SLOT_0_AXI_wvalid,
     clk,
     resetn);
-  input [31:0]SLOT_0_AXI_araddr;
+  input [48:0]SLOT_0_AXI_araddr;
   input [1:0]SLOT_0_AXI_arburst;
   input [3:0]SLOT_0_AXI_arcache;
   input [7:0]SLOT_0_AXI_arlen;
@@ -52,7 +52,7 @@ module bd_07c8_wrapper
   input SLOT_0_AXI_arready;
   input [2:0]SLOT_0_AXI_arsize;
   input SLOT_0_AXI_arvalid;
-  input [31:0]SLOT_0_AXI_awaddr;
+  input [48:0]SLOT_0_AXI_awaddr;
   input [1:0]SLOT_0_AXI_awburst;
   input [3:0]SLOT_0_AXI_awcache;
   input [7:0]SLOT_0_AXI_awlen;
@@ -65,20 +65,20 @@ module bd_07c8_wrapper
   input SLOT_0_AXI_bready;
   input [1:0]SLOT_0_AXI_bresp;
   input SLOT_0_AXI_bvalid;
-  input [511:0]SLOT_0_AXI_rdata;
+  input [127:0]SLOT_0_AXI_rdata;
   input SLOT_0_AXI_rlast;
   input SLOT_0_AXI_rready;
   input [1:0]SLOT_0_AXI_rresp;
   input SLOT_0_AXI_rvalid;
-  input [511:0]SLOT_0_AXI_wdata;
+  input [127:0]SLOT_0_AXI_wdata;
   input SLOT_0_AXI_wlast;
   input SLOT_0_AXI_wready;
-  input [63:0]SLOT_0_AXI_wstrb;
+  input [15:0]SLOT_0_AXI_wstrb;
   input SLOT_0_AXI_wvalid;
   input clk;
   input resetn;
 
-  wire [31:0]SLOT_0_AXI_araddr;
+  wire [48:0]SLOT_0_AXI_araddr;
   wire [1:0]SLOT_0_AXI_arburst;
   wire [3:0]SLOT_0_AXI_arcache;
   wire [7:0]SLOT_0_AXI_arlen;
@@ -88,7 +88,7 @@ module bd_07c8_wrapper
   wire SLOT_0_AXI_arready;
   wire [2:0]SLOT_0_AXI_arsize;
   wire SLOT_0_AXI_arvalid;
-  wire [31:0]SLOT_0_AXI_awaddr;
+  wire [48:0]SLOT_0_AXI_awaddr;
   wire [1:0]SLOT_0_AXI_awburst;
   wire [3:0]SLOT_0_AXI_awcache;
   wire [7:0]SLOT_0_AXI_awlen;
@@ -101,15 +101,15 @@ module bd_07c8_wrapper
   wire SLOT_0_AXI_bready;
   wire [1:0]SLOT_0_AXI_bresp;
   wire SLOT_0_AXI_bvalid;
-  wire [511:0]SLOT_0_AXI_rdata;
+  wire [127:0]SLOT_0_AXI_rdata;
   wire SLOT_0_AXI_rlast;
   wire SLOT_0_AXI_rready;
   wire [1:0]SLOT_0_AXI_rresp;
   wire SLOT_0_AXI_rvalid;
-  wire [511:0]SLOT_0_AXI_wdata;
+  wire [127:0]SLOT_0_AXI_wdata;
   wire SLOT_0_AXI_wlast;
   wire SLOT_0_AXI_wready;
-  wire [63:0]SLOT_0_AXI_wstrb;
+  wire [15:0]SLOT_0_AXI_wstrb;
   wire SLOT_0_AXI_wvalid;
   wire clk;
   wire resetn;

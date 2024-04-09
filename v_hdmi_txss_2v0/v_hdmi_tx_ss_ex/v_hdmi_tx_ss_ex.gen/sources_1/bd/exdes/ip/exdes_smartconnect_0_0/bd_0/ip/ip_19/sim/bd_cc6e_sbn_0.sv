@@ -70,7 +70,7 @@ module bd_cc6e_sbn_0 (
   m_sc_payld
 );
 
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk, ASSOCIATED_BUSIF S_AXIS_ARB:M_AXIS_ARB:S_SC, ASSOCIATED_RESET s_sc_aresetn, ASSOCIATED_CLKEN s_sc_aclken, FREQ_HZ 266500000, FREQ_TOLERANCE_HZ 0, PHASE 0.00, CLK_DOMAIN exdes_ddr4_0_0_c0_ddr4_ui_clk, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aclk, ASSOCIATED_BUSIF S_AXIS_ARB:M_AXIS_ARB:S_SC, ASSOCIATED_RESET s_sc_aresetn, ASSOCIATED_CLKEN s_sc_aclken, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 aclk CLK" *)
 input wire s_sc_aclk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -86,7 +86,7 @@ input wire [0 : 0] s_sc_send;
 output wire [0 : 0] s_sc_recv;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC PAYLD" *)
 input wire [6 : 0] s_sc_payld;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sc_aclk, ASSOCIATED_BUSIF M_SC, ASSOCIATED_RESET m_sc_aresetn, ASSOCIATED_CLKEN m_sc_aclken, FREQ_HZ 266500000, FREQ_TOLERANCE_HZ 0, PHASE 0.00, CLK_DOMAIN exdes_ddr4_0_0_c0_ddr4_ui_clk, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sc_aclk, ASSOCIATED_BUSIF M_SC, ASSOCIATED_RESET m_sc_aresetn, ASSOCIATED_CLKEN m_sc_aclken, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m_sc_aclk CLK" *)
 input wire m_sc_aclk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sc_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
@@ -116,7 +116,7 @@ output wire [6 : 0] m_sc_payld;
     .C_NUM_MI(1),
     .C_CHANNEL(4),
     .C_PAYLD_WIDTH(7),
-    .C_S_NUM_BYTES_ARRAY(32'H00000040),
+    .C_S_NUM_BYTES_ARRAY(32'H00000010),
     .C_M_NUM_BYTES_ARRAY(32'H00000008),
     .C_PRIORITY_ARB_ARRAY(1'B0),
     .C_USER_BITS_PER_BYTE(0),
@@ -125,7 +125,7 @@ output wire [6 : 0] m_sc_payld;
     .C_ID_WIDTH(2),
     .C_ADDR_WIDTH(32),
     .C_USER_WIDTH(0),
-    .C_MAX_PAYLD_BYTES(64),
+    .C_MAX_PAYLD_BYTES(16),
     .C_S_PIPELINE(0),
     .C_M_PIPELINE(0),
     .C_M_SEND_PIPELINE(0),

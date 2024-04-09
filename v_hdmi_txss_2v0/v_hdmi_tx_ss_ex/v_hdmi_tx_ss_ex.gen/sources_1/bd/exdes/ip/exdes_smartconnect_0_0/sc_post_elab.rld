@@ -1,5 +1,4 @@
 /timing/S00_Entry/MMU_REGSLICE/value=1;range=0,1;strength=0
-/functional/S00_Entry/SUPPORTS_DECERR/value=1;range=0,1;strength=0
 /functional/S00_Entry/SUPPORTS_WRAP/value=1;range=0,1;strength=0
 /timing/S00_Entry/TR_REGSLICE/value=1;range=0,1;strength=0
 /timing/S00_Buffer/AR_SLR_PIPE/value=0;range=0..8;strength=0
@@ -11,7 +10,6 @@
 /config/S00_Entry/PROTOCOL/value=AXI4;annotatable=1
 /config/S00_Entry/ADDR_WIDTH/value=32;annotatable=1
 /timing/S01_Entry/MMU_REGSLICE/value=1;range=0,1;strength=0
-/functional/S01_Entry/SUPPORTS_DECERR/value=1;range=0,1;strength=0
 /functional/S01_Entry/SUPPORTS_WRAP/value=1;range=0,1;strength=0
 /timing/S01_Entry/TR_REGSLICE/value=1;range=0,1;strength=0
 /timing/S01_Buffer/AW_SLR_PIPE/value=0;range=0..8;strength=0
@@ -35,10 +33,10 @@
 /timing/M00_Buffer/R_M_SEND_PIPE/value=1;range=0,1;strength=0
 /timing/M00_Buffer/W_SLR_PIPE/value=0;range=0..8;strength=0
 /timing/M00_Exit/REGSLICE/value=1;range=0,1;strength=0
-/config/M00_Exit/DATA_WIDTH/value=512
-/config/M00_Exit/ID_WIDTH/value=1
+/config/M00_Exit/DATA_WIDTH/value=128
+/config/M00_Exit/ID_WIDTH/value=6
 /config/M00_Exit/PROTOCOL/value=AXI4
-/config/M00_Exit/ADDR_WIDTH/value=32
+/config/M00_Exit/ADDR_WIDTH/value=49
 /timing/SW0/AR_M_PIPE/value=1;range=0..8;strength=0
 /timing/SW0/AR_S_PIPE/value=0;range=0..8;strength=0
 /timing/SW0/AW_M_PIPE/value=1;range=0..8;strength=0
@@ -52,7 +50,7 @@
 /config/ip/num_si/value=2
 /config/ip/num_mi/value=1
 /config/ip/num_clks/value=1
-/config/aclk/csk/value=exdes_ddr4_0_0_c0_ddr4_ui_clk:266:0.00
+/config/aclk/csk/value=exdes_clk_wiz_0_0_clk_out1:250:0.0
 /clocking/S00_Entry/ASSOCIATED_CLK/value=aclk;range=aclk;editable=0
 /clocking/S01_Entry/ASSOCIATED_CLK/value=aclk;range=aclk;editable=0
 /clocking/M00_Exit/ASSOCIATED_CLK/value=aclk;range=aclk;editable=0
@@ -61,7 +59,7 @@
 /functional/S00_Entry/PKT_R_THR/value=0;range=0,1,2,4,8,16,32;strength=0
 /functional/S01_Entry/LIM_W_LEN/value=0;range=0,1,2,4,8;strength=0
 /functional/S01_Entry/PKT_W_THR/value=0;range=0,1,2,4,8,16,32;strength=0
-/functional/SW0/DATA_WIDTH/value=512;range=64,128,256,512,1024;strength=0
+/functional/SW0/DATA_WIDTH/value=128;range=64,128,256,512,1024;strength=0
 /functional/M00_Buffer/AR_SIZE/value=32;range=0,1,2,4,8,16,32;strength=0
 /functional/M00_Buffer/AW_SIZE/value=32;range=0,1,2,4,8,16,32;strength=0
 /functional/M00_Buffer/B_SIZE/value=32;range=0,1,2,4,8,16,32;strength=0
