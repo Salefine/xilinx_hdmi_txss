@@ -117,4 +117,6 @@ e.   Set MM2S_VSIZE (50h) to the number of lines per frame. VSIZE must be set la
 
 ​	对应的，可以参考vitis下的code。
 
+<img src="E:\xilinx_axi\github\image\image-20240409124139714.png" alt="image-20240409124139714" style="zoom:80%;" />
+
 接下来编译vitis并且下载到板卡上进行验证。
