@@ -1,0 +1,638 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Apr  8 14:57:32 2024
+# Process ID: 10912
+# Current directory: e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex
+# Command line: vivado.exe -notrace -source e:/xilinx_axi/v_dma_txss/ip/hdmi_ip_2v0/hdmi_ip_2v0.gen/sources_1/ip/v_hdmi_tx_ss/v_hdmi_tx_ss_ex.tcl
+# Log file: e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/vivado.log
+# Journal file: e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex\vivado.jou
+# Running On: weslie, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34074 MB
+#-----------------------------------------------------------
+start_gui
+source e:/xilinx_axi/v_dma_txss/ip/hdmi_ip_2v0/hdmi_ip_2v0.gen/sources_1/ip/v_hdmi_tx_ss/v_hdmi_tx_ss_ex.tcl -notrace
+INFO: [open_example_project] Creating new example project...
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Users/zhi/AppData/Roaming/Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store/XilinxBoardStore/Vivado/2022.2/boards/Xilinx/vek280/es/rev_b/1.0/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at D:/tools/xilinx/Vivado/2022.2/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tools/xilinx/Vivado/2022.2/data/ip'.
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1980.809 ; gain = 525.934
+INFO: [open_example_project] Importing original IP ...
+INFO: [open_example_project] Generating the example project IP ...
+INFO: [IP_Flow 19-1706] Not generating 'Instantiation Template' target for IP 'v_hdmi_tx_ss'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1686] Generating 'Synthesis' target for IP 'v_hdmi_tx_ss'...
+INFO: [IP_Flow 19-1686] Generating 'Simulation' target for IP 'v_hdmi_tx_ss'...
+Exporting to file e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/ip/v_hdmi_tx_ss/bd_0/hw_handoff/v_hdmi_tx_ss.hwh
+Generated Hardware Definition File e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/ip/v_hdmi_tx_ss/bd_0/synth/v_hdmi_tx_ss.hwdef
+INFO: [open_example_project] Adding example synthesis miscellaneous files ...
+INFO: [open_example_project] Adding example XDC files ...
+INFO: [open_example_project] Sourcing example extension scripts ...
+INFO: [open_example_project] Sourcing extension script: exdes_pre_bdgen.tcl
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+INFO: [open_example_project] Sourcing extension script: exdes_bdgen.tcl
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 3302.090 ; gain = 1111.141
+WARNING: [IP_Flow 19-3374] An attempt to modify the value of disabled parameter 'C_NIDRU_REFCLK_SEL' from '0' to '2' has been ignored for IP 'vid_phy_controller'
+create_bd_cell: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 3626.902 ; gain = 324.812
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [BD 5-235] No pins matched 'get_bd_pins TX_CLKSEL_OUT'
+Slave segment '/audio_ss_0/aud_pat_gen/axi/reg0' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8000_0000 [ 64K ]>.
+Slave segment '/audio_ss_0/clk_wiz/s_axi_lite/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8001_0000 [ 64K ]>.
+Slave segment '/audio_ss_0/hdmi_acr_ctrl/axi/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8002_0000 [ 64K ]>.
+Slave segment '/v_hdmi_tx_ss/S_AXI_CPU_IN/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8004_0000 [ 128K ]>.
+Slave segment '/v_tpg_ss_0/axi_gpio/S_AXI/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8003_0000 [ 64K ]>.
+Slave segment '/v_tpg_ss_0/v_tpg/s_axi_CTRL/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8006_0000 [ 64K ]>.
+Slave segment '/vid_phy_controller/vid_phy_axi4lite/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8007_0000 [ 64K ]>.
+Slave segment '/video_frame_crc/S_AXI/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8008_0000 [ 64K ]>.
+Slave segment '/zynq_us_ss_0/fmch_axi_iic/S_AXI/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8009_0000 [ 64K ]>.
+INFO: [open_example_project] Sourcing extension script: exdes_post_bdgen.tcl
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/M01_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M03_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M07_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M01_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M03_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M07_AXI'
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /audio_ss_0/clk_wiz clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /audio_ss_0/clk_wiz clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-927] Following properties on pin /video_frame_crc/vid_in_axis_aclk have been updated from connected ip, but BD cell '/video_frame_crc' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 300000000 
+Please resolve any mismatches by directly setting properties on BD cell </video_frame_crc> to completely resolve these warnings.
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/v_hdmi_tx_ss/AUDIO_IN_tid'(8) to pin: '/audio_ss_0/axis_audio_out_tid'(3) - Only lower order bits will be connected.
+Verilog Output written to : e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/synth/exdes.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/v_hdmi_tx_ss/AUDIO_IN_tid'(8) to pin: '/audio_ss_0/axis_audio_out_tid'(3) - Only lower order bits will be connected.
+Verilog Output written to : e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/sim/exdes.v
+Verilog Output written to : e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/hdl/exdes_wrapper.v
+INFO: [Project 1-1716] Could not find the wrapper file e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/hdl/exdes_wrapper.v, checking in project .gen location instead.
+INFO: [Vivado 12-12390] Found file e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/hdl/exdes_wrapper.v, adding it to Project
+Slave segment '/audio_ss_0/aud_pat_gen/axi/reg0' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8000_0000 [ 64K ]>.
+Slave segment '/audio_ss_0/clk_wiz/s_axi_lite/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8001_0000 [ 64K ]>.
+Slave segment '/audio_ss_0/hdmi_acr_ctrl/axi/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8002_0000 [ 64K ]>.
+Slave segment '/v_hdmi_tx_ss/S_AXI_CPU_IN/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8004_0000 [ 128K ]>.
+Slave segment '/v_tpg_ss_0/axi_gpio/S_AXI/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8003_0000 [ 64K ]>.
+Slave segment '/v_tpg_ss_0/v_tpg/s_axi_CTRL/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8006_0000 [ 64K ]>.
+Slave segment '/vid_phy_controller/vid_phy_axi4lite/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8007_0000 [ 64K ]>.
+Slave segment '/video_frame_crc/S_AXI/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8008_0000 [ 64K ]>.
+Slave segment '/zynq_us_ss_0/fmch_axi_iic/S_AXI/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x8009_0000 [ 64K ]>.
+WARNING: [Runs 36-537] File e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl is not part of fileset utils_1, but has specified as a Tcl hook script for run(s) impl_1. This file will not be handled as part of the project for archive and other project based functionality.
+WARNING: [Runs 36-537] File e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/imports/route_design.tcl is not part of fileset utils_1, but has specified as a Tcl hook script for run(s) impl_1. This file will not be handled as part of the project for archive and other project based functionality.
+WARNING: [Runs 36-537] File e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl is not part of fileset utils_1, but has specified as a Tcl hook script for run(s) impl_1. This file will not be handled as part of the project for archive and other project based functionality.
+INFO: [open_example_project] Rebuilding top IP...
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M03_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/M01_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M07_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M01_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M03_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M07_AXI'
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /audio_ss_0/clk_wiz clk_wiz propagate
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /audio_ss_0/clk_wiz clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-927] Following properties on pin /video_frame_crc/vid_in_axis_aclk have been updated from connected ip, but BD cell '/video_frame_crc' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 300000000 
+Please resolve any mismatches by directly setting properties on BD cell </video_frame_crc> to completely resolve these warnings.
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/v_hdmi_tx_ss/AUDIO_IN_tid'(8) to pin: '/audio_ss_0/axis_audio_out_tid'(3) - Only lower order bits will be connected.
+Verilog Output written to : e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/synth/exdes.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/v_hdmi_tx_ss/AUDIO_IN_tid'(8) to pin: '/audio_ss_0/axis_audio_out_tid'(3) - Only lower order bits will be connected.
+Verilog Output written to : e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/sim/exdes.v
+Verilog Output written to : e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/hdl/exdes_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vid_phy_controller .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vcc_const .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gnd_const .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx_video_axis_reg_slice .
+Exporting to file e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/hw_handoff/exdes_v_hdmi_tx_ss_0.hwh
+Generated Hardware Definition File e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/synth/exdes_v_hdmi_tx_ss_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_hdmi_tx_ss .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block gnd_array .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video_frame_crc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_crc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block concat_crc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block slice_crc .
+WARNING: [IP_Flow 19-1971] File named "sim/exdes_v_tpg_0.v" already exists in file group "xilinx_verilogsimulationwrapper", cannot add it again.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tpg_ss_0/v_tpg .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block v_tpg_ss_0/axi_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_ss_0/axi_interconnect/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_ss_0/clk_wiz .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_ss_0/aud_pat_gen .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_ss_0/hdmi_acr_ctrl .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/xlconcat0 .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.4-0] exdes_zynq_us_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_HPM0_LPD'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/zynq_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/fmch_axi_iic .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/rst_processor_1_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/rst_processor_1_300M .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_pc_0/exdes_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block audio_ss_0/axi_interconnect/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_pc_1/exdes_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_pc_2/exdes_auto_pc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_pc_3/exdes_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_cc_0/exdes_auto_cc_0_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_pc_4/exdes_auto_pc_4_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_cc_1/exdes_auto_cc_1_ooc.xdc'
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'S_AXI'. A default connection has been created.
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_pc_5/exdes_auto_pc_5_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_auto_pc_6/exdes_auto_pc_6_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc .
+Exporting to file e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/hw_handoff/exdes.hwh
+Generated Hardware Definition File e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/synth/exdes.hwdef
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:39 . Memory (MB): peak = 3985.594 ; gain = 161.660
+INFO: [exportsim-Tcl-40] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-72] Using boost library from 'D:/tools/xilinx/Vivado/2022.2/tps/boost_1_72_0'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XSIM" (Xilinx Vivado Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'D:/tools/xilinx/Vivado/2022.2/data/xsim'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/exdes.sh'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/bd_automation_ss.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/bd_automation_gt.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_commands.txt'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/v_tpg_config.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/v_tpg.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/v_tpg_zoneplate.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_opencv.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_axi_io.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_arithm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_core.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_fast.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_haar.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_harris.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_histogram.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_hough.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_imgbase.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_imgproc.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_io.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_mem.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_stereobm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_types.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/hls_video_undistort.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/zynq_ultra_ps_e_tlm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/psu_init.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/psu_init_gpl.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/psu_init.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xsim/exdes.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "MODELSIM" (Mentor Graphics ModelSim Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/compile_simlib/modelsim'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/exdes.sh'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/bd_automation_ss.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/bd_automation_gt.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_commands.txt'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/v_tpg_config.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/v_tpg.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/v_tpg_zoneplate.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_opencv.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_axi_io.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_arithm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_core.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_fast.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_haar.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_harris.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_histogram.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_hough.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_imgbase.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_imgproc.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_io.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_mem.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_stereobm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_types.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/hls_video_undistort.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/zynq_ultra_ps_e_tlm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/psu_init.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/psu_init_gpl.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/psu_init.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/modelsim/exdes.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "QUESTA" (Mentor Graphics Questa Advanced Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/compile_simlib/questa'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/exdes.sh'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/bd_automation_ss.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/bd_automation_gt.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_commands.txt'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/v_tpg_config.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/v_tpg.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/v_tpg_zoneplate.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_opencv.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_axi_io.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_arithm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_core.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_fast.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_haar.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_harris.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_histogram.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_hough.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_imgbase.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_imgproc.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_io.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_mem.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_stereobm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_types.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/hls_video_undistort.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/zynq_ultra_ps_e_tlm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/psu_init.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/psu_init_gpl.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/psu_init.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/questa/exdes.bda'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "XCELIUM" (Cadence Xcelium Parallel Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/compile_simlib/xcelium'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/exdes.sh'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/bd_automation_ss.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/bd_automation_gt.tcl'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_commands.txt'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/v_tpg_config.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/v_tpg.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/v_tpg_zoneplate.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_video.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_opencv.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_axi_io.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_video_arithm.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_video_core.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_video_fast.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_video_haar.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_video_harris.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_video_histogram.h'
+INFO: [SIM-utils-43] Exported 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/xcelium/hls_video_hough.h'
+INFO: [Common 17-14] Message 'SIM-utils 43' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [exportsim-Tcl-35] Exporting simulation files for "VCS" (Synopsys Verilog Compiler Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/compile_simlib/vcs'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/vcs/exdes.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "RIVIERA" (Aldec Riviera-PRO Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/compile_simlib/riviera'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/riviera/exdes.sh'
+INFO: [exportsim-Tcl-35] Exporting simulation files for "ACTIVEHDL" (Aldec Active-HDL Simulator)...
+INFO: [exportsim-Tcl-29] Pre-compiled simulation library path: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/compile_simlib/activehdl'
+INFO: [exportsim-Tcl-29] Script generated: 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.ip_user_files/sim_scripts/exdes/activehdl/exdes.sh'
+export_ip_user_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 3985.594 ; gain = 0.000
+INFO: [open_example_project] Open Example Project completed
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets zynq_us_ss_0/intf_net_axi_interconnect_0_M01_AXI] [get_bd_intf_pins zynq_us_ss_0/M01_AXI]
+regenerate_bd_layout
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets intf_net_v_tpg_ss_0_m_axis_video]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.3 axi_vdma_0
+endgroup
+set_property -dict [list \
+  CONFIG.c_mm2s_genlock_mode {1} \
+  CONFIG.c_s2mm_genlock_mode {0} \
+  CONFIG.c_use_s2mm_fsync {0} \
+] [get_bd_cells axi_vdma_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ddr4:2.2 ddr4_0
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+create_bd_cell: Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 4415.180 ; gain = 103.738
+endgroup
+set_property -dict [list \
+  CONFIG.ADDN_UI_CLKOUT1_FREQ_HZ {100} \
+  CONFIG.C0.DDR4_InputClockPeriod {3335} \
+  CONFIG.C0.DDR4_MemoryType {SODIMMs} \
+  CONFIG.C0.DDR4_TimePeriod {938} \
+  CONFIG.C0_CLOCK_BOARD_INTERFACE {clk_300mhz} \
+  CONFIG.C0_DDR4_BOARD_INTERFACE {ddr4_sdram} \
+  CONFIG.RESET_BOARD_INTERFACE {reset} \
+] [get_bd_cells ddr4_0]
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M00_AXI] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S] [get_bd_intf_pins smartconnect_0/S00_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXI_S2MM] [get_bd_intf_pins smartconnect_0/S01_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins tx_video_axis_reg_slice/S_AXIS]
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets v_tpg_ss_0/intf_net_v_tpg_m_axis_video] [get_bd_intf_pins v_tpg_ss_0/m_axis_video]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+set_property CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} [get_bd_cells system_ila_0]
+move_bd_cells [get_bd_cells v_tpg_ss_0] [get_bd_cells system_ila_0]
+connect_bd_intf_net [get_bd_intf_pins v_tpg_ss_0/v_tpg/m_axis_video] [get_bd_intf_pins v_tpg_ss_0/system_ila_0/SLOT_0_AXIS]
+connect_bd_net [get_bd_pins v_tpg_ss_0/ap_clk] [get_bd_pins v_tpg_ss_0/system_ila_0/clk]
+connect_bd_net [get_bd_pins v_tpg_ss_0/system_ila_0/resetn] [get_bd_pins v_tpg_ss_0/axi_gpio/gpio_io_o]
+regenerate_bd_layout
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {ddr4_sdram ( DDR4 SDRAM ) } Manual_Source {Auto}}  [get_bd_intf_pins ddr4_0/C0_DDR4]
+INFO: [board_rule 100-100] set_property CONFIG.C0_DDR4_BOARD_INTERFACE ddr4_sdram [get_bd_cells /ddr4_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Master -vlnv xilinx.com:interface:ddr4_rtl:1.0 ddr4_sdram
+INFO: [BoardRule 102-9] connect_bd_intf_net /ddr4_sdram /ddr4_0/C0_DDR4
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {clk_300mhz ( Programmable Differential Clock (300MHz) ) } Manual_Source {Auto}}  [get_bd_intf_pins ddr4_0/C0_SYS_CLK]
+INFO: [board_rule 100-100] set_property CONFIG.C0_CLOCK_BOARD_INTERFACE clk_300mhz [get_bd_cells /ddr4_0]
+INFO: [BoardRule 102-8] create_bd_intf_port -mode Slave -vlnv xilinx.com:interface:diff_clock_rtl:1.0 clk_300mhz
+INFO: [BoardRule 102-4] set_property CONFIG.FREQ_HZ 100000000 /clk_300mhz
+INFO: [BoardRule 102-9] connect_bd_intf_net /clk_300mhz /ddr4_0/C0_SYS_CLK
+INFO: [BoardRule 102-16] set_property CONFIG.FREQ_HZ 300000000 /clk_300mhz
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( FPGA Reset ) } Manual_Source {Auto}}  [get_bd_pins ddr4_0/sys_rst]
+INFO: [board_rule 100-100] set_property CONFIG.RESET_BOARD_INTERFACE reset [get_bd_cells /ddr4_0]
+INFO: [BoardRule 102-10] create_bd_port -dir I reset_0 -type rst
+INFO: [BoardRule 102-7] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_0
+INFO: [BoardRule 102-15] connect_bd_net /reset_0 /ddr4_0/sys_rst
+INFO: [BoardRule 102-18] set_property CONFIG.POLARITY ACTIVE_HIGH /reset_0
+endgroup
+regenerate_bd_layout
+set_property name usr_sys_clk [get_bd_intf_ports clk_300mhz]
+delete_bd_objs [get_bd_nets net_bdry_in_reset] [get_bd_ports reset]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins zynq_us_ss_0/ext_reset_in]
+expected number but got ""
+ERROR: [IP_Flow 19-3317] Tcl Error found in 'validate_PARAM_VALUE.CONST_VAL' method. expected number but got ""
+startgroup
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_0]
+endgroup
+regenerate_bd_layout
+move_bd_cells [get_bd_cells zynq_us_ss_0] [get_bd_cells xlconstant_0]
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins smartconnect_0/aclk]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk]
+connect_bd_net [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins ddr4_0/c0_ddr4_ui_clk]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_pins ddr4_0/c0_init_calib_complete]
+endgroup
+set_property name c0_init_calib [get_bd_ports c0_init_calib_complete_0]
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins zynq_us_ss_0/axi_interconnect_0/M03_AXI] [get_bd_intf_pins axi_vdma_0/S_AXI_LITE]
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins zynq_us_ss_0/zynq_us/pl_clk0]
+connect_bd_net [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins zynq_us_ss_0/rst_processor_1_100M/peripheral_aresetn]
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins zynq_us_ss_0/clk_out2]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+file mkdir e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new
+close [ open e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v w ]
+add_files e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference axis_gen axis_gen_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'm_axis_aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+connect_bd_intf_net [get_bd_intf_pins axis_gen_0/m_axis] [get_bd_intf_pins axi_vdma_0/S_AXIS_S2MM]
+set_property location {3 829 1238} [get_bd_cells axi_vdma_0]
+connect_bd_net [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins axis_gen_0/m_axis_aclk]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axis_gen_0/m_axis_aclk] [get_bd_pins zynq_us_ss_0/clk_out2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins axis_gen_0/m_axis_aresetn]
+regenerate_bd_layout
+save_bd_design
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+assign_bd_address
+Slave segment '/axi_vdma_0/S_AXI_LITE/Reg' is being assigned into address space '/zynq_us_ss_0/zynq_us/Data' at <0x800A_0000 [ 64K ]>.
+Slave segment '/ddr4_0/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK' is being assigned into address space '/axi_vdma_0/Data_MM2S' at <0x0_0000_0000 [ 4G ]>.
+Slave segment '/ddr4_0/C0_DDR4_MEMORY_MAP/C0_DDR4_ADDRESS_BLOCK' is being assigned into address space '/axi_vdma_0/Data_S2MM' at <0x0_0000_0000 [ 4G ]>.
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M01_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M07_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M01_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M07_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_ilmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /second_dlmb_cntlr/SLMB/Mem'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/Reg'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -of_object /iomodule_0/SLMB/IO'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] exdes_smartconnect_0_0: SmartConnect exdes_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [xilinx.com:ip:axi_vdma:6.3-155] /axi_vdma_0 
+                    To get the better performance, ensure AXI Memory Map clock frequency is greater than equal to AXI Streaming clock frequency.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /audio_ss_0/clk_wiz clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m03_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m03_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-927] Following properties on pin /video_frame_crc/vid_in_axis_aclk have been updated from connected ip, but BD cell '/video_frame_crc' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 300000000 
+Please resolve any mismatches by directly setting properties on BD cell </video_frame_crc> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 4750.523 ; gain = 139.469
+validate_bd_design -force
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M07_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M01_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M01_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M07_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] exdes_smartconnect_0_0: SmartConnect exdes_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [xilinx.com:ip:axi_vdma:6.3-155] /axi_vdma_0 
+                    To get the better performance, ensure AXI Memory Map clock frequency is greater than equal to AXI Streaming clock frequency.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /audio_ss_0/clk_wiz clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m03_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m03_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-927] Following properties on pin /video_frame_crc/vid_in_axis_aclk have been updated from connected ip, but BD cell '/video_frame_crc' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 300000000 
+Please resolve any mismatches by directly setting properties on BD cell </video_frame_crc> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 4823.672 ; gain = 45.211
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+update_compile_order -fileset sources_1
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_0_AXI] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins smartconnect_0/aresetn]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins ddr4_0/c0_ddr4_aresetn]
+connect_bd_net [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins ddr4_0/c0_ddr4_ui_clk]
+connect_bd_net [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins xlconstant_0/dout]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins system_ila_0/clk] [get_bd_pins ddr4_0/c0_ddr4_ui_clk]
+connect_bd_net [get_bd_pins system_ila_0/resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+regenerate_bd_layout
+save_bd_design
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+validate_bd_design
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M01_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 41-2670] Found an incomplete address path from address space '/zynq_us_ss_0/zynq_us/Data' to master interface '/zynq_us_ss_0/axi_interconnect_0/M07_AXI'. Please either complete or remove this path to resolve.
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M01_AXI'
+WARNING: [BD 5-699] No address segments matched 'get_bd_addr_segs -addressables -of_objects /zynq_us_ss_0/axi_interconnect_0/xbar/M07_AXI'
+INFO: [xilinx.com:ip:smartconnect:1.0-1] exdes_smartconnect_0_0: SmartConnect exdes_smartconnect_0_0 is in High-performance Mode.
+INFO: [xilinx.com:ip:axi_vdma:6.3-15] /axi_vdma_0 
+                    All clocks connected to AXI VDMA are not identical, therefore configuring AXI-VDMA in ASYNC mode.
+WARNING: [xilinx.com:ip:axi_vdma:6.3-155] /axi_vdma_0 
+                    To get the better performance, ensure AXI Memory Map clock frequency is greater than equal to AXI Streaming clock frequency.
+INFO: [xilinx.com:ip:clk_wiz:6.0-1] /audio_ss_0/clk_wiz clk_wiz propagate
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m02_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m03_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m03_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M03_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m04_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M04_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /audio_ss_0/axi_interconnect/s00_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M06_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m09_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/xbar/M09_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m05_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_pc/S_AXI(0) and /zynq_us_ss_0/axi_interconnect_0/m08_couplers/auto_cc/M_AXI(16)
+WARNING: [BD 41-927] Following properties on pin /video_frame_crc/vid_in_axis_aclk have been updated from connected ip, but BD cell '/video_frame_crc' does not accept parameter changes, so they may not be synchronized with cell properties:
+	FREQ_HZ = 300000000 
+Please resolve any mismatches by directly setting properties on BD cell </video_frame_crc> to completely resolve these warnings.
+validate_bd_design: Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 4922.492 ; gain = 50.012
+set_property name axis_gen [get_bd_cells axis_gen_0]
+save_bd_design
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+regenerate_bd_layout
+regenerate_bd_layout
+set_property name usr_rst [get_bd_ports reset_0]
+save_bd_design
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+regenerate_bd_layout
+update_module_reference exdes_axis_gen_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'm_axis_aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/exdes.bd'
+INFO: [IP_Flow 19-3420] Updated exdes_axis_gen_0_0 to use current project options
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+Wrote  : <e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/ui/bd_1328df.ui> 
+regenerate_bd_layout
+CRITICAL WARNING: [HDL 9-1206] Syntax error near '<' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:52]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'else' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:53]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near '<' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:52]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'else' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:53]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'end' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:59]
+CRITICAL WARNING: [HDL 9-1206] Syntax error near 'end' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:59]
+update_module_reference exdes_axis_gen_0_0
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis' of definition 'xilinx.com:interface:axis:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aresetn' of definition 'xilinx.com:signal:reset:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'm_axis_aclk' of definition 'xilinx.com:signal:clock:1.0' (from Xilinx Repository).
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'm_axis'.
+INFO: [IP_Flow 19-4728] Bus Interface 'm_axis_aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'm_axis_aresetn'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+Upgrading 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/exdes.bd'
+INFO: [IP_Flow 19-3420] Updated exdes_axis_gen_0_0 to use current project options
+Wrote  : <e:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.srcs\sources_1\bd\exdes\exdes.bd> 
+regenerate_bd_layout
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Apr  8 15:28:50 2024...

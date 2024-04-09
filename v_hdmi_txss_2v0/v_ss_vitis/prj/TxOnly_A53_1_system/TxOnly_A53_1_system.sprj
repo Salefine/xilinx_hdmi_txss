@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ASCII"?>
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="TxOnly_A53_1_system" platform="E:/xilinx_axi/github/v_hdmi_txss/v_ss_vitis/prj/exde_hdmi/export/exde_hdmi/exde_hdmi.xpfm" platformUID="xilinx:zcu104::0.0(custom)" sysConfig="exde_hdmi" runtime="C/C++">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1497515571">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="TxOnly_A53_1" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexa53_0" appBuildConfig="Debug"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.71958054">
+    <configBuildOptions xsi:type="systemproject:SystemOptions">
+      <applications name="TxOnly_A53_1" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexa53_0" appBuildConfig="Release"/>
+      <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
+    </configBuildOptions>
+  </configuration>
+</systemproject:SystemProject>

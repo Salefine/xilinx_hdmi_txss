@@ -1,0 +1,4 @@
+1 warning and 26 errors generated.
+Error while processing E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp.
+clang-tidy applied 373 of 373 suggested fixes.
+Suppressed 1 warnings (1 with check filters).

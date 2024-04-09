@@ -1,0 +1,527 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Tue Apr  9 09:42:51 2024
+# Process ID: 21044
+# Current directory: E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/bd_3ea7_v_hdmi_tx_0_synth_1
+# Command line: vivado.exe -log bd_3ea7_v_hdmi_tx_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source bd_3ea7_v_hdmi_tx_0.tcl
+# Log file: E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/bd_3ea7_v_hdmi_tx_0_synth_1/bd_3ea7_v_hdmi_tx_0.vds
+# Journal file: E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/bd_3ea7_v_hdmi_tx_0_synth_1\vivado.jou
+# Running On: weslie, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34074 MB
+#-----------------------------------------------------------
+source bd_3ea7_v_hdmi_tx_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: bd_3ea7_v_hdmi_tx_0
+Command: synth_design -top bd_3ea7_v_hdmi_tx_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 5716
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 2527.277 ; gain = 337.711
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'bd_3ea7_v_hdmi_tx_0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/ip/ip_0/synth/bd_3ea7_v_hdmi_tx_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized0' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized0' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized1' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized1' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized2' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized2' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized2' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized2' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_gray__parameterized3' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_gray__parameterized3' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:283]
+INFO: [Synth 8-6155] done synthesizing module 'bd_3ea7_v_hdmi_tx_0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/ip/ip_0/synth/bd_3ea7_v_hdmi_tx_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-6014] Unused sequential element dest_out_bin_ff_reg was removed.  [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:417]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRC_RST_IN in module v_hdmi_tx_v3_0_0_lib_cdc__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DST_RST_IN in module v_hdmi_tx_v3_0_0_lib_cdc__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST_IN in module v_hdmi_tx_v3_0_0_pkt_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK_IN in module v_hdmi_tx_v3_0_0_pkt_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CKE_IN in module v_hdmi_tx_v3_0_0_pkt_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SOP_OUT in module v_hdmi_tx_v3_0_0_pkt_ecc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EOP_OUT in module v_hdmi_tx_v3_0_0_pkt_ecc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SOP_IN in module v_hdmi_tx_v3_0_0_pkt_ecc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EOP_IN in module v_hdmi_tx_v3_0_0_pkt_ecc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.sop in module v_hdmi_tx_v3_0_0_enc__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.eop in module v_hdmi_tx_v3_0_0_enc__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vld in module v_hdmi_tx_v3_0_0_enc__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vld in module v_hdmi_tx_v3_0_0_scrm__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vgb[-1] in module v_hdmi_tx_v3_0_0_gb__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vgb[0] in module v_hdmi_tx_v3_0_0_gb__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dlgb[-1] in module v_hdmi_tx_v3_0_0_gb__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dlgb[0] in module v_hdmi_tx_v3_0_0_gb__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dtgb[-1] in module v_hdmi_tx_v3_0_0_gb__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dtgb[0] in module v_hdmi_tx_v3_0_0_gb__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_IN\.id in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_IN\.vgb[1] in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_IN\.vgb[0] in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_IN\.dlgb[1] in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_IN\.dlgb[0] in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_IN\.dtgb[1] in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_IN\.dtgb[0] in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port RST_IN in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK_IN in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CKE_IN in module v_hdmi_tx_v3_0_0_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.id in module v_hdmi_tx_v3_0_0_dly is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vgb[1] in module v_hdmi_tx_v3_0_0_dly is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vgb[0] in module v_hdmi_tx_v3_0_0_dly is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dlgb[1] in module v_hdmi_tx_v3_0_0_dly is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dlgb[0] in module v_hdmi_tx_v3_0_0_dly is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dtgb[1] in module v_hdmi_tx_v3_0_0_dly is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dtgb[0] in module v_hdmi_tx_v3_0_0_dly is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_CTL_IN[3] in module v_hdmi_tx_v3_0_0_ch__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_CTL_IN[2] in module v_hdmi_tx_v3_0_0_ch__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.sop in module v_hdmi_tx_v3_0_0_enc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.eop in module v_hdmi_tx_v3_0_0_enc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vld in module v_hdmi_tx_v3_0_0_enc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vld in module v_hdmi_tx_v3_0_0_scrm__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vgb[-1] in module v_hdmi_tx_v3_0_0_gb__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vgb[0] in module v_hdmi_tx_v3_0_0_gb__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dlgb[-1] in module v_hdmi_tx_v3_0_0_gb__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dlgb[0] in module v_hdmi_tx_v3_0_0_gb__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dtgb[-1] in module v_hdmi_tx_v3_0_0_gb__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dtgb[0] in module v_hdmi_tx_v3_0_0_gb__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_CTL_IN[3] in module v_hdmi_tx_v3_0_0_ch__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_CTL_IN[2] in module v_hdmi_tx_v3_0_0_ch__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.sop in module v_hdmi_tx_v3_0_0_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.eop in module v_hdmi_tx_v3_0_0_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vld in module v_hdmi_tx_v3_0_0_enc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSCP_IN in module v_hdmi_tx_v3_0_0_scrm is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vgb[-1] in module v_hdmi_tx_v3_0_0_gb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.vgb[0] in module v_hdmi_tx_v3_0_0_gb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dlgb[-1] in module v_hdmi_tx_v3_0_0_gb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dlgb[0] in module v_hdmi_tx_v3_0_0_gb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dtgb[-1] in module v_hdmi_tx_v3_0_0_gb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LNK_IN\.dtgb[0] in module v_hdmi_tx_v3_0_0_gb is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_CTL_IN[3] in module v_hdmi_tx_v3_0_0_ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port VID_CTL_IN[2] in module v_hdmi_tx_v3_0_0_ch is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRC_RST_IN in module v_hdmi_tx_v3_0_0_lib_cdc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DST_RST_IN in module v_hdmi_tx_v3_0_0_lib_cdc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.trdy in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EGRESS\.trdy in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tid in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[31] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[30] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[29] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[28] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[27] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[26] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[25] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[24] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[23] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[22] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[21] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[20] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[19] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[18] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[17] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[16] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[15] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[14] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[13] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[12] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[11] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[10] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[9] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[8] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[7] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[6] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[5] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[4] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[3] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+WARNING: [Synth 8-7129] Port INGRESS\.tusr[2] in module v_hdmi_tx_v3_0_0_core is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 2717.586 ; gain = 528.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2735.504 ; gain = 545.938
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2735.504 ; gain = 545.938
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.182 . Memory (MB): peak = 2735.504 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/ip/ip_0/bd_3ea7_v_hdmi_tx_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/ip/ip_0/bd_3ea7_v_hdmi_tx_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/bd_3ea7_v_hdmi_tx_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/bd_3ea7_v_hdmi_tx_0_synth_1/dont_touch.xdc]
+Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/ip/ip_0/bd_3ea7_v_hdmi_tx_0_core.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/ip/ip_0/bd_3ea7_v_hdmi_tx_0_core.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_v_hdmi_tx_ss_0/bd_0/ip/ip_0/bd_3ea7_v_hdmi_tx_0_core.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_3ea7_v_hdmi_tx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_3ea7_v_hdmi_tx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_gray.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_3ea7_v_hdmi_tx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_3ea7_v_hdmi_tx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_3ea7_v_hdmi_tx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_3ea7_v_hdmi_tx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/bd_3ea7_v_hdmi_tx_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/bd_3ea7_v_hdmi_tx_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 92 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2859.078 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 2859.078 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.078 ; gain = 669.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2859.078 ; gain = 669.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/bd_3ea7_v_hdmi_tx_0_synth_1/dont_touch.xdc, line 6).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/HDR_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/HDR_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/ACR_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/ACR_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/AUD_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/AUD_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/SUB_FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/SUB_FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH0_INST/\VID_WO_ARB.VID_INST /FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH0_INST/\VID_WO_ARB.VID_INST /FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH1_INST/\VID_WO_ARB.VID_INST /FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH1_INST/\VID_WO_ARB.VID_INST /FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH2_INST/\VID_WO_ARB.VID_INST /FIFO_INST/RP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH2_INST/\VID_WO_ARB.VID_INST /FIFO_INST/WP_CDA_INST/XPM_GRAY_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CFG_CS_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH0_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH1_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH2_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/VCLK_CD_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/BRDG_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/VIDEO_FORMAT_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/ACLK_CTRL_FMT_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/LCLK_CTRL_FMT_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_RV_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_GY_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_BU_CDC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/HPD_INST/HPD_CAP_INST/XPM_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CFG_CS_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_RV_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_GY_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_BU_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/ACLK_CTRL_FMT_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/LCLK_CTRL_FMT_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH0_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH1_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH2_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/VCLK_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/BRDG_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/VIDEO_FORMAT_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CFG_CS_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_RV_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_GY_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_BU_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/LCLK_CFG_CD_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/LCLK_CFG_PP_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/ACLK_CTRL_FMT_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/LCLK_CTRL_FMT_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/LCLK_CTRL_CH_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CFG_SR_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH0_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH1_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CH2_INST/\VID_WO_ARB.VID_INST /VCLK_CFG_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/STA_PP_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/VCLK_CD_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/BRDG_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/VIDEO_FORMAT_CDC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CTRL_REG_RUN_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/\GEN_MASK.MASK_INST /VCLK_CTRL_REG_NOISE_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/VID_VS_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/VID_BRDG_LOCKED_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/VID_BRDG_UNDERFLOW_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/GCP_AVMUTE_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/GCP_CLEARAVMUTE_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/SCLK_PKT_RDY_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/LCLK_CTRL_RUN_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUX_INST/LCLK_VID_VS_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/ACLK_PKT_RDY_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/ACLK_CTRL_RUN_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/AUD_INST/LCLK_CTRL_RUN_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CFG_MODE_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/CORE_INST/CFG_MODE_SCRM_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/PIO_CDC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/ARST_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SRST_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/S_AXIS_VIDEO_RST_CDC_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/VRST_INST/XPM_RST_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/SYS_INST/LRST_INST/XPM_RST_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/VIDEO_RST_INST/XPM_RST_INST. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/AXIS_RST_INST/XPM_RST_INST. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:22 . Memory (MB): peak = 2859.078 ; gain = 669.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'clk_sm_cur_reg' in module 'v_hdmi_tx_v3_0_0_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'lclk_sm_cur_reg' in module 'v_hdmi_tx_v3_0_0_aud'
+INFO: [Synth 8-802] inferred FSM for state register 'vclk_vid_reg[state]' in module 'v_hdmi_tx_v3_0_0_vid__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'clk_sm_cur_reg' in module 'v_hdmi_tx_v3_0_0_dly'
+INFO: [Synth 8-802] inferred FSM for state register 'vclk_vid_reg[state]' in module 'v_hdmi_tx_v3_0_0_vid__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'vclk_vid_reg[state]' in module 'v_hdmi_tx_v3_0_0_vid'
+INFO: [Synth 8-802] inferred FSM for state register 'clk_rsm_cur_reg' in module 'v_hdmi_tx_v3_0_0_pkt_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                           000001 | 00000000000000000000000000000000
+                   sm_wr |                           000010 | 00000000000000000000000000000001
+               sm_wr_end |                           000100 | 00000000000000000000000000000010
+                   sm_rd |                           001000 | 00000000000000000000000000000011
+              sm_rd_loop |                           010000 | 00000000000000000000000000000100
+               sm_rd_end |                           100000 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'clk_sm_cur_reg' using encoding 'one-hot' in module 'v_hdmi_tx_v3_0_0_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                               00 | 00000000000000000000000000000000
+                  sm_acr |                               01 | 00000000000000000000000000000001
+                  sm_aud |                               10 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'lclk_sm_cur_reg' using encoding 'sequential' in module 'v_hdmi_tx_v3_0_0_aud'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'vclk_vid_reg[state]' using encoding 'sequential' in module 'v_hdmi_tx_v3_0_0_vid__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sm_idle |                              001 | 00000000000000000000000000000000
+                   sm_ld |                              010 | 00000000000000000000000000000001
+                  sm_run |                              100 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'clk_sm_cur_reg' using encoding 'one-hot' in module 'v_hdmi_tx_v3_0_0_dly'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'vclk_vid_reg[state]' using encoding 'sequential' in module 'v_hdmi_tx_v3_0_0_vid__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                                0 |                               00
+                 iSTATE0 |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'vclk_vid_reg[state]' using encoding 'sequential' in module 'v_hdmi_tx_v3_0_0_vid'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                rsm_idle |                               00 | 00000000000000000000000000000000
+                 rsm_err |                               01 | 00000000000000000000000000000011
+                 rsm_sop |                               10 | 00000000000000000000000000000001
+                 rsm_eop |                               11 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'clk_rsm_cur_reg' using encoding 'sequential' in module 'v_hdmi_tx_v3_0_0_pkt_fifo'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:26 . Memory (MB): peak = 2859.078 ; gain = 669.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:49 . Memory (MB): peak = 2859.078 ; gain = 669.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:32 ; elapsed = 00:00:58 . Memory (MB): peak = 3257.004 ; gain = 1067.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:59 . Memory (MB): peak = 3279.285 ; gain = 1089.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:33 ; elapsed = 00:01:02 . Memory (MB): peak = 3389.641 ; gain = 1200.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:01:04 . Memory (MB): peak = 3403.047 ; gain = 1213.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:01:04 . Memory (MB): peak = 3403.047 ; gain = 1213.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 3403.047 ; gain = 1213.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 3403.047 ; gain = 1213.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 3403.047 ; gain = 1213.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 3403.047 ; gain = 1213.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    17|
+|2     |LUT1     |   113|
+|3     |LUT2     |   673|
+|4     |LUT3     |   357|
+|5     |LUT4     |   838|
+|6     |LUT5     |   882|
+|7     |LUT6     |  1797|
+|8     |MUXF7    |    56|
+|9     |RAM32M   |     2|
+|10    |RAM32M16 |    31|
+|11    |RAM64M   |     4|
+|12    |RAM64M8  |    69|
+|13    |SRL16E   |   191|
+|14    |FDCE     |  1632|
+|15    |FDPE     |    75|
+|16    |FDRE     |  3806|
+|17    |FDSE     |    72|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 3403.047 ; gain = 1213.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 292 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:25 ; elapsed = 00:00:59 . Memory (MB): peak = 3403.047 ; gain = 1089.906
+Synthesis Optimization Complete : Time (s): cpu = 00:00:34 ; elapsed = 00:01:05 . Memory (MB): peak = 3403.047 ; gain = 1213.480
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.114 . Memory (MB): peak = 3415.066 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 179 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3431.211 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 106 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 31 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 4 instances
+  RAM64M8 => RAM64M8 (RAMD64E(x8)): 69 instances
+
+Synth Design complete, checksum: 657b3588
+INFO: [Common 17-83] Releasing license: Synthesis
+65 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:01:15 . Memory (MB): peak = 3431.211 ; gain = 2347.789
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/bd_3ea7_v_hdmi_tx_0_synth_1/bd_3ea7_v_hdmi_tx_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP bd_3ea7_v_hdmi_tx_0, cache-ID = 86c13a2c3be15532
+INFO: [Coretcl 2-1174] Renamed 240 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/bd_3ea7_v_hdmi_tx_0_synth_1/bd_3ea7_v_hdmi_tx_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file bd_3ea7_v_hdmi_tx_0_utilization_synth.rpt -pb bd_3ea7_v_hdmi_tx_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 09:44:20 2024...

@@ -1,0 +1,1943 @@
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:2350:7: warning: Added loop label VITIS_LOOP_1211_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1211_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:2350:7: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3324:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3324:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3338:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3338:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3352:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:3352:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:4963:7: warning: Added loop label VITIS_LOOP_1245_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1245_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:4963:7: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13234:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                       ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13235:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                       ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13236:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                       ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13237:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K3 type=ROM_1P impl=LUTRAM
+                                                                       ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13238:72: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_cos_K4 type=ROM_1P impl=LUTRAM
+                                                                       ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13268:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13269:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13270:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13271:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13272:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::cos_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13273:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13274:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13275:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13276:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K3 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13277:68: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=fourth_order_double::sin_K4 type=ROM_1P impl=LUTRAM
+                                                                   ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13327:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                      ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13328:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                      ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13329:71: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_cos_K2 type=ROM_1P impl=LUTRAM
+                                                                      ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13356:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13357:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13358:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::cos_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13359:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K0 type=ROM_1P impl=LUTRAM
+                                                                  ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13360:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K1 type=ROM_1P impl=LUTRAM
+                                                                  ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13361:67: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=second_order_float::sin_K2 type=ROM_1P impl=LUTRAM
+                                                                  ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13397:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K0 type=ROM_1P impl=LUTRAM
+                                                                        ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13398:73: error: Invalid Directive: for current device, ROM_1P + LUTRAM is invalid combination for BIND_STORAGE's option 'type + impl' [clang-diagnostic-error]
+#pragma HLS BIND_STORAGE variable=first_order_fixed_16::sin_cos_K1 type=ROM_1P impl=LUTRAM
+                                                                        ^
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13672:5: warning: Added loop label VITIS_LOOP_87_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_87_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13672:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13718:5: warning: Added loop label VITIS_LOOP_143_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_143_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13718:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13881:9: warning: Added loop label VITIS_LOOP_315_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_315_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:13881:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14033:9: warning: Added loop label VITIS_LOOP_475_1:   [xilinx-label-all-loops]
+        for(int i=0;i<W-1;i++){
+        ^~~
+        VITIS_LOOP_475_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14033:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14213:5: warning: Added loop label VITIS_LOOP_655_1:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_655_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14213:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14217:5: warning: Added loop label VITIS_LOOP_659_2:   [xilinx-label-all-loops]
+    for(int i=0;i<W+1;i++){
+    ^~~
+    VITIS_LOOP_659_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14217:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14327:5: warning: Added loop label VITIS_LOOP_769_1:   [xilinx-label-all-loops]
+    for (int n=0; n<Nmax; n++){
+    ^~~
+    VITIS_LOOP_769_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14327:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14417:7: warning: Added loop label VITIS_LOOP_866_1:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_866_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14417:7: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14436:7: warning: Added loop label VITIS_LOOP_885_2:   [xilinx-label-all-loops]
+      for(int i=0;i<W-1;i++){
+      ^~~
+      VITIS_LOOP_885_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14436:7: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14726:5: warning: Added loop label VITIS_LOOP_1199_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1199_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14726:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14809:5: warning: Added loop label VITIS_LOOP_1282_1:   [xilinx-label-all-loops]
+    for(int i=0; i<Nmax; i++) {
+    ^~~
+    VITIS_LOOP_1282_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:14809:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15215:13: warning: Added loop label VITIS_LOOP_94_1:   [xilinx-label-all-loops]
+            for (int j = 3; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_94_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15215:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15221:17: warning: Added loop label VITIS_LOOP_100_2:   [xilinx-label-all-loops]
+                for (int j = 3; j >= I_+1; j--){
+                ^~~
+                VITIS_LOOP_100_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15221:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15225:17: warning: Added loop label VITIS_LOOP_104_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_104_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15225:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15273:13: warning: Added loop label VITIS_LOOP_171_4:   [xilinx-label-all-loops]
+            for (int j = 9; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_171_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15273:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15279:17: warning: Added loop label VITIS_LOOP_177_5:   [xilinx-label-all-loops]
+                for (int j = 9; j >= I_+4; j--){
+                ^~~
+                VITIS_LOOP_177_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15279:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15283:17: warning: Added loop label VITIS_LOOP_181_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--){
+                ^~~
+                VITIS_LOOP_181_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15283:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15298:9: warning: Added loop label VITIS_LOOP_196_7:   [xilinx-label-all-loops]
+        for (int j = 14; j < 22; j++){
+        ^~~
+        VITIS_LOOP_196_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15298:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15306:17: warning: Added loop label VITIS_LOOP_204_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++){
+                ^~~
+                VITIS_LOOP_204_8: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15306:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15371:13: warning: Added loop label VITIS_LOOP_269_9:   [xilinx-label-all-loops]
+            for (int j = 21; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_269_9: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15371:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15377:17: warning: Added loop label VITIS_LOOP_275_10:   [xilinx-label-all-loops]
+                for (int j = 21; j >= I_+10; j--) {
+                ^~~
+                VITIS_LOOP_275_10: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15377:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15381:17: warning: Added loop label VITIS_LOOP_279_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_279_11: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15381:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15396:9: warning: Added loop label VITIS_LOOP_294_12:   [xilinx-label-all-loops]
+        for (int j = 27; j < 46; j++){
+        ^~~
+        VITIS_LOOP_294_12: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15396:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15404:17: warning: Added loop label VITIS_LOOP_302_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_302_13: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15404:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15633:13: warning: Added loop label VITIS_LOOP_531_14:   [xilinx-label-all-loops]
+            for (int j = 45; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_531_14: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15633:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15639:17: warning: Added loop label VITIS_LOOP_537_15:   [xilinx-label-all-loops]
+                for (int j = 45; j >= I_+22; j--){
+                ^~~
+                VITIS_LOOP_537_15: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15639:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15643:17: warning: Added loop label VITIS_LOOP_541_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_541_16: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15643:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15653:9: warning: Added loop label VITIS_LOOP_551_17:   [xilinx-label-all-loops]
+        for (int j = 32-F_; j < 32+I_; j++){
+        ^~~
+        VITIS_LOOP_551_17: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15653:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15657:9: warning: Added loop label VITIS_LOOP_555_18:   [xilinx-label-all-loops]
+        for (int j = 32+I_; j <= 64; j++){
+        ^~~
+        VITIS_LOOP_555_18: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15657:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15667:9: warning: Added loop label VITIS_LOOP_565_19:   [xilinx-label-all-loops]
+        for (int j = 37; j < 64; j++) {
+        ^~~
+        VITIS_LOOP_565_19: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15667:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15675:17: warning: Added loop label VITIS_LOOP_573_20:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++){
+                ^~~
+                VITIS_LOOP_573_20: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:15675:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16036:13: warning: Added loop label VITIS_LOOP_934_21:   [xilinx-label-all-loops]
+            for (int j = 63; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_934_21: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16036:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16042:17: warning: Added loop label VITIS_LOOP_940_22:   [xilinx-label-all-loops]
+                for (int j = 63; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_940_22: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16042:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16046:17: warning: Added loop label VITIS_LOOP_944_23:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_944_23: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16046:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16162:13: warning: Added loop label VITIS_LOOP_1060_1:   [xilinx-label-all-loops]
+            for (int j = 4; j >= I_+1; j--) {
+            ^~~
+            VITIS_LOOP_1060_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16162:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16168:17: warning: Added loop label VITIS_LOOP_1066_2:   [xilinx-label-all-loops]
+                for (int j = 4; j >= I_+1; j--) {
+                ^~~
+                VITIS_LOOP_1066_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16168:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16172:17: warning: Added loop label VITIS_LOOP_1070_3:   [xilinx-label-all-loops]
+                for (int j = I_; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1070_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16172:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16259:13: warning: Added loop label VITIS_LOOP_1157_4:   [xilinx-label-all-loops]
+            for (int j = 10; j >= I_+4; j--) {
+            ^~~
+            VITIS_LOOP_1157_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16259:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16265:17: warning: Added loop label VITIS_LOOP_1163_5:   [xilinx-label-all-loops]
+                for (int j = 10; j >= I_+4; j--) {
+                ^~~
+                VITIS_LOOP_1163_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16265:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16269:17: warning: Added loop label VITIS_LOOP_1167_6:   [xilinx-label-all-loops]
+                for (int j = I_+3; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1167_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16269:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16288:9: warning: Added loop label VITIS_LOOP_1186_7:   [xilinx-label-all-loops]
+        for (int j = wf+3; j < w-1; j++) {
+        ^~~
+        VITIS_LOOP_1186_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16288:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16295:17: warning: Added loop label VITIS_LOOP_1193_8:   [xilinx-label-all-loops]
+                for (int j = 0; j < 22; j++) {
+                ^~~
+                VITIS_LOOP_1193_8: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16295:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16411:13: warning: Added loop label VITIS_LOOP_1309_9:   [xilinx-label-all-loops]
+            for (int j = 22; j >= I_+10; j--) {
+            ^~~
+            VITIS_LOOP_1309_9: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16411:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16417:17: warning: Added loop label VITIS_LOOP_1315_10:   [xilinx-label-all-loops]
+                for (int j = 22; j >= I_+10; j--){
+                ^~~
+                VITIS_LOOP_1315_10: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16417:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16421:17: warning: Added loop label VITIS_LOOP_1319_11:   [xilinx-label-all-loops]
+                for (int j = I_+9; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1319_11: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16421:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16441:9: warning: Added loop label VITIS_LOOP_1339_12:   [xilinx-label-all-loops]
+        for (int j = wf+4; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1339_12: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16441:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16448:17: warning: Added loop label VITIS_LOOP_1346_13:   [xilinx-label-all-loops]
+                for (int j = 0; j < 46; j++) {
+                ^~~
+                VITIS_LOOP_1346_13: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16448:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16710:13: warning: Added loop label VITIS_LOOP_1608_14:   [xilinx-label-all-loops]
+            for (int j = 46; j >= I_+22; j--) {
+            ^~~
+            VITIS_LOOP_1608_14: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16710:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16716:17: warning: Added loop label VITIS_LOOP_1614_15:   [xilinx-label-all-loops]
+                for (int j = 46; j >= I_+22; j--) {
+                ^~~
+                VITIS_LOOP_1614_15: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16716:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16720:17: warning: Added loop label VITIS_LOOP_1618_16:   [xilinx-label-all-loops]
+                for (int j = I_+21; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_1618_16: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16720:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16744:9: warning: Added loop label VITIS_LOOP_1642_17:   [xilinx-label-all-loops]
+        for (int j = wf+5; j < w-1; j++){
+        ^~~
+        VITIS_LOOP_1642_17: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16744:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16751:17: warning: Added loop label VITIS_LOOP_1649_18:   [xilinx-label-all-loops]
+                for (int j = 0; j < 64; j++) {
+                ^~~
+                VITIS_LOOP_1649_18: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:16751:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17181:13: warning: Added loop label VITIS_LOOP_2079_19:   [xilinx-label-all-loops]
+            for (int j = 64; j >= I_+31; j--) {
+            ^~~
+            VITIS_LOOP_2079_19: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17181:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17187:17: warning: Added loop label VITIS_LOOP_2085_20:   [xilinx-label-all-loops]
+                for (int j = 64; j >= I_+31; j--) {
+                ^~~
+                VITIS_LOOP_2085_20: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17187:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17191:17: warning: Added loop label VITIS_LOOP_2089_21:   [xilinx-label-all-loops]
+                for (int j = I_+30; j >= 0; j--) {
+                ^~~
+                VITIS_LOOP_2089_21: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17191:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17321:13: warning: Added loop label VITIS_LOOP_2219_1:   [xilinx-label-all-loops]
+            for(int j=3; j>=I+1; j--) {
+            ^~~
+            VITIS_LOOP_2219_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17321:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17328:17: warning: Added loop label VITIS_LOOP_2226_2:   [xilinx-label-all-loops]
+                for(int j=3; j>=I+1; j--) {
+                ^~~
+                VITIS_LOOP_2226_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17328:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17332:17: warning: Added loop label VITIS_LOOP_2230_3:   [xilinx-label-all-loops]
+                for(int j=I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2230_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17332:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17379:13: warning: Added loop label VITIS_LOOP_2277_4:   [xilinx-label-all-loops]
+            for(int j=7; j>=3+I; j--) {
+            ^~~
+            VITIS_LOOP_2277_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17379:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17386:17: warning: Added loop label VITIS_LOOP_2284_5:   [xilinx-label-all-loops]
+                for(int j=7; j>=3+I; j--) {
+                ^~~
+                VITIS_LOOP_2284_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17386:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17390:17: warning: Added loop label VITIS_LOOP_2288_6:   [xilinx-label-all-loops]
+                for(int j=I+2; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2288_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17390:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17408:9: warning: Added loop label VITIS_LOOP_2306_7:   [xilinx-label-all-loops]
+        for(int j=11; j<16; j++) {
+        ^~~
+        VITIS_LOOP_2306_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17408:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17463:13: warning: Added loop label VITIS_LOOP_2361_8:   [xilinx-label-all-loops]
+            for(int j=15; j>=7+I; j--) {
+            ^~~
+            VITIS_LOOP_2361_8: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17463:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17470:17: warning: Added loop label VITIS_LOOP_2368_9:   [xilinx-label-all-loops]
+                for(int j=15; j>=7+I; j--) {
+                ^~~
+                VITIS_LOOP_2368_9: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17470:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17474:17: warning: Added loop label VITIS_LOOP_2372_10:   [xilinx-label-all-loops]
+                for(int j=6+I; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2372_10: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17474:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17492:9: warning: Added loop label VITIS_LOOP_2390_11:   [xilinx-label-all-loops]
+        for(int j=20; j<32; j++) {
+        ^~~
+        VITIS_LOOP_2390_11: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17492:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17581:13: warning: Added loop label VITIS_LOOP_2479_12:   [xilinx-label-all-loops]
+            for(int j=31; j>=I+15; j--) {
+            ^~~
+            VITIS_LOOP_2479_12: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17581:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17588:17: warning: Added loop label VITIS_LOOP_2486_13:   [xilinx-label-all-loops]
+                for(int j=31; j>=I+15; j--) {
+                ^~~
+                VITIS_LOOP_2486_13: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17588:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17592:17: warning: Added loop label VITIS_LOOP_2490_14:   [xilinx-label-all-loops]
+                for(int j=I+14; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2490_14: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17592:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17602:9: warning: Added loop label VITIS_LOOP_2500_15:   [xilinx-label-all-loops]
+        for(int j=32-F; j<32+I; j++) {
+        ^~~
+        VITIS_LOOP_2500_15: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17602:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17606:9: warning: Added loop label VITIS_LOOP_2504_16:   [xilinx-label-all-loops]
+        for(int j=32+I; j<=64; j++) {
+        ^~~
+        VITIS_LOOP_2504_16: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17606:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17617:9: warning: Added loop label VITIS_LOOP_2515_17:   [xilinx-label-all-loops]
+        for(int j=37; j<64; j++) {
+        ^~~
+        VITIS_LOOP_2515_17: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17617:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17625:17: warning: Added loop label VITIS_LOOP_2523_18:   [xilinx-label-all-loops]
+                for(int j=0; j<64; j++) {
+                ^~~
+                VITIS_LOOP_2523_18: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17625:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17950:13: warning: Added loop label VITIS_LOOP_2848_19:   [xilinx-label-all-loops]
+            for(int j=63; j>=I+31; j--) {
+            ^~~
+            VITIS_LOOP_2848_19: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17950:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17957:17: warning: Added loop label VITIS_LOOP_2855_20:   [xilinx-label-all-loops]
+                for(int j=63; j>=I+31; j--) {
+                ^~~
+                VITIS_LOOP_2855_20: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17957:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17961:17: warning: Added loop label VITIS_LOOP_2859_21:   [xilinx-label-all-loops]
+                for(int j=I+30; j>=0; j--) {
+                ^~~
+                VITIS_LOOP_2859_21: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:17961:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18049:4: warning: Added loop label VITIS_LOOP_2947_1:   [xilinx-label-all-loops]
+   for(int j = 5; j>=I_+2; j--) {
+   ^~~
+   VITIS_LOOP_2947_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18049:4: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18056:5: warning: Added loop label VITIS_LOOP_2954_2:   [xilinx-label-all-loops]
+    for(int j = 5; j>=I_+2; j--) {
+    ^~~
+    VITIS_LOOP_2954_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18056:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18060:5: warning: Added loop label VITIS_LOOP_2958_3:   [xilinx-label-all-loops]
+    for(int j = I_+1; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_2958_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18060:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18075:3: warning: Added loop label VITIS_LOOP_2973_4:   [xilinx-label-all-loops]
+  for(int j = 11; j >=7; j--) {
+  ^~~
+  VITIS_LOOP_2973_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18075:3: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18107:4: warning: Added loop label VITIS_LOOP_3005_5:   [xilinx-label-all-loops]
+   for(int j = 11; j >= I_+5; j--) {
+   ^~~
+   VITIS_LOOP_3005_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18107:4: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18114:5: warning: Added loop label VITIS_LOOP_3012_6:   [xilinx-label-all-loops]
+    for(int j = 11; j>= I_+5; j--) {
+    ^~~
+    VITIS_LOOP_3012_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18114:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18118:5: warning: Added loop label VITIS_LOOP_3016_7:   [xilinx-label-all-loops]
+    for(int j = I_+4; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3016_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18118:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18133:3: warning: Added loop label VITIS_LOOP_3031_8:   [xilinx-label-all-loops]
+  for(int j = 25; j>=15; j--) {
+  ^~~
+  VITIS_LOOP_3031_8: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18133:3: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18183:4: warning: Added loop label VITIS_LOOP_3081_9:   [xilinx-label-all-loops]
+   for(int j = 25; j>= I_+12; j--) {
+   ^~~
+   VITIS_LOOP_3081_9: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18183:4: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18190:5: warning: Added loop label VITIS_LOOP_3088_10:   [xilinx-label-all-loops]
+    for(int j = 25; j>=I_+12; j--) {
+    ^~~
+    VITIS_LOOP_3088_10: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18190:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18194:5: warning: Added loop label VITIS_LOOP_3092_11:   [xilinx-label-all-loops]
+    for(int j = I_+11; j>=0; j--) {
+    ^~~
+    VITIS_LOOP_3092_11: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18194:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18209:3: warning: Added loop label VITIS_LOOP_3107_12:   [xilinx-label-all-loops]
+  for(int j = 51; j >= 29; j--) {
+  ^~~
+  VITIS_LOOP_3107_12: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18209:3: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18346:4: warning: Added loop label VITIS_LOOP_3244_13:   [xilinx-label-all-loops]
+   for(int j = 51; j >= 25 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3244_13: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18346:4: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18353:5: warning: Added loop label VITIS_LOOP_3251_14:   [xilinx-label-all-loops]
+    for(int j = 51; j>=25 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3251_14: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18353:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18357:5: warning: Added loop label VITIS_LOOP_3255_15:   [xilinx-label-all-loops]
+    for(int j = 24 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3255_15: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18357:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18372:3: warning: Added loop label VITIS_LOOP_3270_16:   [xilinx-label-all-loops]
+  for(int j = 63; j >= 36; j--) {
+  ^~~
+  VITIS_LOOP_3270_16: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18372:3: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18532:4: warning: Added loop label VITIS_LOOP_3430_17:   [xilinx-label-all-loops]
+   for(int j = 63; j >= 31 + I_; j--) {
+   ^~~
+   VITIS_LOOP_3430_17: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18532:4: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18539:5: warning: Added loop label VITIS_LOOP_3437_18:   [xilinx-label-all-loops]
+    for(int j = 63; j >= 31 + I_; j--) {
+    ^~~
+    VITIS_LOOP_3437_18: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18539:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18543:5: warning: Added loop label VITIS_LOOP_3441_19:   [xilinx-label-all-loops]
+    for(int j = 30 + I_; j >= 0; j--) {
+    ^~~
+    VITIS_LOOP_3441_19: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:18543:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:19258:13: warning: Added loop label VITIS_LOOP_729_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_729_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:19258:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:19476:13: warning: Added loop label VITIS_LOOP_947_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_947_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:19476:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:19893:13: warning: Added loop label VITIS_LOOP_1371_1:   [xilinx-label-all-loops]
+            for (b_exp = I_-1; b_exp >= -F_; b_exp--) {
+            ^~~
+            VITIS_LOOP_1371_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:19893:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20207:9: warning: Added loop label VITIS_LOOP_266_1:   [xilinx-label-all-loops]
+        for ( int pos = msbr-1; pos >= 0; pos-- ) {
+        ^~~
+        VITIS_LOOP_266_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20207:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20235:9: warning: Added loop label VITIS_LOOP_294_2:   [xilinx-label-all-loops]
+        for ( int pos = -1; pos >= -F_-1; pos-- ) {
+        ^~~
+        VITIS_LOOP_294_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20235:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20930:13: warning: Added loop label VITIS_LOOP_74_1:   [xilinx-label-all-loops]
+            for (int j = 0; j < W_-1; j++){
+            ^~~
+            VITIS_LOOP_74_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20930:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20983:5: warning: Added loop label VITIS_LOOP_135_2:   [xilinx-label-all-loops]
+    for (int j = F_l+F_+I_m-1; j < F_l+W_+5; j++){
+    ^~~
+    VITIS_LOOP_135_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20983:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20997:13: warning: Added loop label VITIS_LOOP_149_3:   [xilinx-label-all-loops]
+            for (int j = WO_m-1; j >= W_-1; j--) {
+            ^~~
+            VITIS_LOOP_149_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:20997:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21027:13: warning: Added loop label VITIS_LOOP_179_4:   [xilinx-label-all-loops]
+            for (int j = W_-2; j >= 0; j--){
+            ^~~
+            VITIS_LOOP_179_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21027:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21112:12: warning: Added loop label VITIS_LOOP_307_1:   [xilinx-label-all-loops]
+           for(int i = wf_log+we_log-2; i > WI_e - 2; --i) {
+           ^~~
+           VITIS_LOOP_307_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21112:12: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21132:16: warning: Added loop label VITIS_LOOP_327_2:   [xilinx-label-all-loops]
+               for (int j = WO_e-1; j >= W_-1; j--) {
+               ^~~
+               VITIS_LOOP_327_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21132:16: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21146:20: warning: Added loop label VITIS_LOOP_341_3:   [xilinx-label-all-loops]
+                   for(int i = 0; i < W_-1; ++i) {
+                   ^~~
+                   VITIS_LOOP_341_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21146:20: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21239:12: warning: Added loop label VITIS_LOOP_459_1:   [xilinx-label-all-loops]
+           for (int j =WO_d-1; j >= W_-1; j--) {
+           ^~~
+           VITIS_LOOP_459_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21239:12: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21253:15: warning: Added loop label VITIS_LOOP_473_2:   [xilinx-label-all-loops]
+              for(int i = 0; i < W_-1; ++i) {
+              ^~~
+              VITIS_LOOP_473_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21253:15: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21366:13: warning: Added loop label VITIS_LOOP_59_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_59_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21366:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21490:13: warning: Added loop label VITIS_LOOP_209_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_209_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21490:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21545:13: warning: Added loop label VITIS_LOOP_274_1:   [xilinx-label-all-loops]
+            for (int i = 0; i < W_-1; i++){
+            ^~~
+            VITIS_LOOP_274_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:21545:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22050:2: warning: Added loop label VITIS_LOOP_42_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_42_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22050:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22061:2: warning: Added loop label VITIS_LOOP_53_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_53_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22061:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22072:2: warning: Added loop label VITIS_LOOP_64_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_64_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22072:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22083:2: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_75_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22083:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22094:2: warning: Added loop label VITIS_LOOP_86_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_86_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22094:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22105:2: warning: Added loop label VITIS_LOOP_97_1:   [xilinx-label-all-loops]
+ for (int i=0; i<W_;i++)
+ ^~~
+ VITIS_LOOP_97_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22105:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22116:2: warning: Added loop label VITIS_LOOP_108_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_108_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22116:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22127:2: warning: Added loop label VITIS_LOOP_119_1:   [xilinx-label-all-loops]
+ for (int i=0; i<I_;i++)
+ ^~~
+ VITIS_LOOP_119_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:22127:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24428:12: warning: Added loop label VITIS_LOOP_23_1:   [xilinx-label-all-loops]
+           for(int i = 0; i < W_-1; ++i) {
+           ^~~
+           VITIS_LOOP_23_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24428:12: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24492:7: warning: Added loop label VITIS_LOOP_66_1:   [xilinx-label-all-loops]
+      for(int pos = msbr - 1 ; pos >= -F-1; pos--) {
+      ^~~
+      VITIS_LOOP_66_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24492:7: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24609:9: warning: Added loop label VITIS_LOOP_75_1:   [xilinx-label-all-loops]
+        for(int pos = msbr - 1; pos >= 0; pos--) {
+        ^~~
+        VITIS_LOOP_75_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24609:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24634:5: warning: Added loop label VITIS_LOOP_107_2:   [xilinx-label-all-loops]
+    for(int pos = -1; pos >= -F-1; pos--) {
+    ^~~
+    VITIS_LOOP_107_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24634:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24704:8: warning: Added loop label VITIS_LOOP_195_3:   [xilinx-label-all-loops]
+       for(int i = 0; i < W - 1; ++i) {
+       ^~~
+       VITIS_LOOP_195_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:24704:8: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27369:5: warning: Added loop label VITIS_LOOP_123_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_123_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27369:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27371:2: warning: Added loop label VITIS_LOOP_125_2:   [xilinx-label-all-loops]
+ for(j = 0; j < COLS-1; j++) {
+ ^~~
+ VITIS_LOOP_125_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27371:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27393:5: warning: Added loop label VITIS_LOOP_161_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_161_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27393:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27395:2: warning: Added loop label VITIS_LOOP_163_2:   [xilinx-label-all-loops]
+ for(j = COLS-1; j > 0; j--) {
+ ^~~
+ VITIS_LOOP_163_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27395:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27417:5: warning: Added loop label VITIS_LOOP_199_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^~~
+    VITIS_LOOP_199_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27417:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27419:2: warning: Added loop label VITIS_LOOP_201_2:   [xilinx-label-all-loops]
+ for(j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_201_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27419:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27441:5: warning: Added loop label VITIS_LOOP_237_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_237_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27441:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27443:2: warning: Added loop label VITIS_LOOP_239_2:   [xilinx-label-all-loops]
+ for(j = 0; j < COLS; j++) {
+ ^~~
+ VITIS_LOOP_239_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27443:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27481:5: warning: Added loop label VITIS_LOOP_306_1:   [xilinx-label-all-loops]
+    for(j = 0; j < COLS; j++) {
+    ^~~
+    VITIS_LOOP_306_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27481:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27533:5: warning: Added loop label VITIS_LOOP_403_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_403_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27533:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27723:5: warning: Added loop label VITIS_LOOP_688_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_688_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27723:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27745:5: warning: Added loop label VITIS_LOOP_728_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^~~
+    VITIS_LOOP_728_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27745:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27793:5: warning: Added loop label VITIS_LOOP_824_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_824_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27793:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27900:5: warning: Added loop label VITIS_LOOP_976_1:   [xilinx-label-all-loops]
+    for(i = ROWS-1; i > 0; i--) {
+    ^~~
+    VITIS_LOOP_976_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27900:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27922:5: warning: Added loop label VITIS_LOOP_1016_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS-1; i++) {
+    ^~~
+    VITIS_LOOP_1016_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27922:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27970:5: warning: Added loop label VITIS_LOOP_1112_1:   [xilinx-label-all-loops]
+    for(i = 0; i < ROWS; i++) {
+    ^~~
+    VITIS_LOOP_1112_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:27970:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28171:2: warning: Added loop label VITIS_LOOP_218_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < N; k++) {
+ ^~~
+ VITIS_LOOP_218_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28171:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28192:2: warning: Added loop label VITIS_LOOP_239_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < N; k++) {
+ ^~~
+ VITIS_LOOP_239_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28192:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28202:5: warning: Added loop label VITIS_LOOP_249_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_249_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28202:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28213:5: warning: Added loop label VITIS_LOOP_260_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_260_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28213:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28224:5: warning: Added loop label VITIS_LOOP_271_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_271_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28224:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28235:5: warning: Added loop label VITIS_LOOP_282_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_282_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28235:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28247:5: warning: Added loop label VITIS_LOOP_294_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_294_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28247:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28258:5: warning: Added loop label VITIS_LOOP_305_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_305_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28258:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28270:5: warning: Added loop label VITIS_LOOP_317_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_317_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28270:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28281:5: warning: Added loop label VITIS_LOOP_328_1:   [xilinx-label-all-loops]
+    for (int k = 0; k < N; k++) {
+    ^~~
+    VITIS_LOOP_328_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28281:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28558:2: warning: Added loop label VITIS_LOOP_605_1:   [xilinx-label-all-loops]
+ for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+ ^~~
+ VITIS_LOOP_605_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28558:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28635:2: warning: Added loop label VITIS_LOOP_682_1:   [xilinx-label-all-loops]
+ for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+ ^~~
+ VITIS_LOOP_682_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28635:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28659:2: warning: Added loop label VITIS_LOOP_706_1:   [xilinx-label-all-loops]
+ for (i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+ ^~~
+ VITIS_LOOP_706_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28659:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28682:5: warning: Added loop label VITIS_LOOP_729_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T i = 0; i < ((((T) & ((512 - 1) << 11)) >> 11) + 1); i++) {
+    ^~~
+    VITIS_LOOP_729_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28682:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28812:25: warning: Added loop label VITIS_LOOP_194_1:   [xilinx-label-all-loops]
+                        for(int k=0;k<num;k++)
+                        ^~~
+                        VITIS_LOOP_194_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28812:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28948:9: warning: Added loop label VITIS_LOOP_175_1:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T col = 0; col < cols; col++) {
+        ^~~
+        VITIS_LOOP_175_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:28948:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:29014:9: warning: Added loop label VITIS_LOOP_241_1:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T col = 0; col < cols; col++) {
+        ^~~
+        VITIS_LOOP_241_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:29014:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:29918:5: warning: Added loop label VITIS_LOOP_1011_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^~~
+    VITIS_LOOP_1011_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:29918:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:29977:13: warning: Added loop label VITIS_LOOP_1091_1:   [xilinx-label-all-loops]
+            for (HLS_CHANNEL_T k = 0; k < ((((DST_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^~~
+            VITIS_LOOP_1091_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:29977:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:29993:5: warning: Added loop label VITIS_LOOP_1107_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^~~
+    VITIS_LOOP_1107_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:29993:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30009:5: warning: Added loop label VITIS_LOOP_1123_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^~~
+    VITIS_LOOP_1123_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30009:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30027:5: warning: Added loop label VITIS_LOOP_1141_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^~~
+    VITIS_LOOP_1141_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30027:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30065:5: warning: Added loop label VITIS_LOOP_1179_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^~~
+    VITIS_LOOP_1179_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30065:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30085:5: warning: Added loop label VITIS_LOOP_1199_1:   [xilinx-label-all-loops]
+    for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+    ^~~
+    VITIS_LOOP_1199_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30085:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30373:13: warning: Added loop label VITIS_LOOP_1494_1:   [xilinx-label-all-loops]
+            for (HLS_CHANNEL_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^~~
+            VITIS_LOOP_1494_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30373:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30922:21: warning: Added loop label VITIS_LOOP_457_1:   [xilinx-label-all-loops]
+                    for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                    ^~~
+                    VITIS_LOOP_457_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30922:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30935:29: warning: Added loop label VITIS_LOOP_470_2:   [xilinx-label-all-loops]
+                            for(int buf_row=2*K_HEIGHT-1; buf_row>=0; buf_row--) {
+                            ^~~
+                            VITIS_LOOP_470_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30935:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30944:29: warning: Added loop label VITIS_LOOP_479_3:   [xilinx-label-all-loops]
+                            for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                            ^~~
+                            VITIS_LOOP_479_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30944:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30945:33: warning: Added loop label VITIS_LOOP_480_4:   [xilinx-label-all-loops]
+                                for(int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                                ^~~
+                                VITIS_LOOP_480_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30945:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30953:29: warning: Added loop label VITIS_LOOP_488_5:   [xilinx-label-all-loops]
+                            for(int buf_row=2*K_HEIGHT-1; buf_row>0; buf_row--) {
+                            ^~~
+                            VITIS_LOOP_488_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30953:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30967:21: warning: Added loop label VITIS_LOOP_502_6:   [xilinx-label-all-loops]
+                    for(int buf_row=0; buf_row<K_HEIGHT; buf_row++){
+                    ^~~
+                    VITIS_LOOP_502_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:30967:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31103:25: warning: Added loop label VITIS_LOOP_638_1:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>0; buf_row--) {
+                        ^~~
+                        VITIS_LOOP_638_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31103:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31107:25: warning: Added loop label VITIS_LOOP_642_2:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>=0; buf_row--) {
+                        ^~~
+                        VITIS_LOOP_642_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31107:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31114:29: warning: Added loop label VITIS_LOOP_649_3:   [xilinx-label-all-loops]
+                            for(int buf_row=K_HEIGHT-1; buf_row>0; buf_row--) {
+                            ^~~
+                            VITIS_LOOP_649_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31114:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31131:25: warning: Added loop label VITIS_LOOP_666_4:   [xilinx-label-all-loops]
+                        for(int buf_row=K_HEIGHT-1; buf_row>=0; buf_row--) {
+                        ^~~
+                        VITIS_LOOP_666_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31131:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31132:29: warning: Added loop label VITIS_LOOP_667_5:   [xilinx-label-all-loops]
+                            for(int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                            ^~~
+                            VITIS_LOOP_667_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31132:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31234:17: warning: Added loop label VITIS_LOOP_769_1:   [xilinx-label-all-loops]
+                for(int buf_row=0; buf_row<K_HEIGHT; buf_row++) {
+                ^~~
+                VITIS_LOOP_769_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31234:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31244:21: warning: Added loop label VITIS_LOOP_779_2:   [xilinx-label-all-loops]
+                    for(int buf_row=2*K_HEIGHT-1; buf_row>=0; buf_row--) {
+                    ^~~
+                    VITIS_LOOP_779_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31244:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31251:21: warning: Added loop label VITIS_LOOP_786_3:   [xilinx-label-all-loops]
+                    for(int buf_row=2*K_HEIGHT-1; buf_row>0; buf_row--) {
+                    ^~~
+                    VITIS_LOOP_786_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31251:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31261:17: warning: Added loop label VITIS_LOOP_796_4:   [xilinx-label-all-loops]
+                for(int buf_row=0; buf_row<K_HEIGHT; buf_row++){
+                ^~~
+                VITIS_LOOP_796_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31261:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31387:17: warning: Added loop label VITIS_LOOP_922_1:   [xilinx-label-all-loops]
+                for (int buf_col=K_WIDTH-1; buf_col>0; buf_col--) {
+                ^~~
+                VITIS_LOOP_922_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31387:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31409:17: warning: Added loop label VITIS_LOOP_944_2:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<2*K_WIDTH; buf_col++) {
+                ^~~
+                VITIS_LOOP_944_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31409:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31415:17: warning: Added loop label VITIS_LOOP_950_3:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<K_WIDTH; buf_col++) {
+                ^~~
+                VITIS_LOOP_950_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31415:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31535:17: warning: Added loop label VITIS_LOOP_1070_1:   [xilinx-label-all-loops]
+                for(int buf_col=K_WIDTH-1; buf_col>=1; buf_col--) {
+                ^~~
+                VITIS_LOOP_1070_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31535:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31540:21: warning: Added loop label VITIS_LOOP_1075_2:   [xilinx-label-all-loops]
+                    for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--) {
+                    ^~~
+                    VITIS_LOOP_1075_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31540:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31568:17: warning: Added loop label VITIS_LOOP_1103_3:   [xilinx-label-all-loops]
+                for (int buf_col=0; buf_col<K_WIDTH; buf_col++) {
+                ^~~
+                VITIS_LOOP_1103_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31568:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31976:2: warning: Added loop label VITIS_LOOP_1511_1:   [xilinx-label-all-loops]
+ for(int i=0; i<CN1; i++) {
+ ^~~
+ VITIS_LOOP_1511_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31976:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31985:2: warning: Added loop label VITIS_LOOP_1520_1:   [xilinx-label-all-loops]
+ for(int i=0; i<CN1; i++) {
+ ^~~
+ VITIS_LOOP_1520_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:31985:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32546:5: warning: Added loop label VITIS_LOOP_2081_1:   [xilinx-label-all-loops]
+    for (i=0; i<NPHASES; i++) {
+    ^~~
+    VITIS_LOOP_2081_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32546:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32553:5: warning: Added loop label VITIS_LOOP_2088_2:   [xilinx-label-all-loops]
+    for (i = 0; i < NPHASES; i++) {
+    ^~~
+    VITIS_LOOP_2088_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32553:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32554:9: warning: Added loop label VITIS_LOOP_2089_3:   [xilinx-label-all-loops]
+        for (j = 0; j < NTAPS; j++) {
+        ^~~
+        VITIS_LOOP_2089_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32554:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32697:27: warning: Added loop label VITIS_LOOP_2232_1:   [xilinx-label-all-loops]
+                          for (int m = 0; m < ((((T) & ((512 - 1) << 11)) >> 11) + 1); m++)
+                          ^~~
+                          VITIS_LOOP_2232_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32697:27: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32704:15: warning: Added loop label VITIS_LOOP_2239_2:   [xilinx-label-all-loops]
+              for (int i = 0; i < NTAPS; i++) {
+              ^~~
+              VITIS_LOOP_2239_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32704:15: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32710:23: warning: Added loop label VITIS_LOOP_2245_3:   [xilinx-label-all-loops]
+                      for (int i = NTAPS - 1; i > 0; i--) {
+                      ^~~
+                      VITIS_LOOP_2245_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32710:23: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32724:23: warning: Added loop label VITIS_LOOP_2259_4:   [xilinx-label-all-loops]
+                      for (int i = NTAPS - 1; i >= 0; i--) {
+                      ^~~
+                      VITIS_LOOP_2259_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32724:23: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32735:15: warning: Added loop label VITIS_LOOP_2270_5:   [xilinx-label-all-loops]
+              for (int i = 0; i < NTAPS; i++) {
+              ^~~
+              VITIS_LOOP_2270_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32735:15: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32780:5: warning: Added loop label VITIS_LOOP_2315_1:   [xilinx-label-all-loops]
+    for(short i= 0;i<rows;i++) {
+    ^~~
+    VITIS_LOOP_2315_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32780:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32781:9: warning: Added loop label VITIS_LOOP_2316_2:   [xilinx-label-all-loops]
+        for(short j= 0;j<cols;j++) {
+        ^~~
+        VITIS_LOOP_2316_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32781:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32861:17: warning: Added loop label VITIS_LOOP_2396_3:   [xilinx-label-all-loops]
+                for(int r= 0;r<2;r++)
+                ^~~
+                VITIS_LOOP_2396_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32861:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32885:21: warning: Added loop label VITIS_LOOP_2420_4:   [xilinx-label-all-loops]
+                    for(int r= 0;r<2;r++)
+                    ^~~
+                    VITIS_LOOP_2420_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32885:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32895:17: warning: Added loop label VITIS_LOOP_2430_5:   [xilinx-label-all-loops]
+                for(int k=0;k<((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1);k++)
+                ^~~
+                VITIS_LOOP_2430_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:32895:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33013:5: warning: Added loop label VITIS_LOOP_2548_1:   [xilinx-label-all-loops]
+    for(int k=0; k<2; k++)
+    ^~~
+    VITIS_LOOP_2548_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33013:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33030:13: warning: Added loop label VITIS_LOOP_2565_2:   [xilinx-label-all-loops]
+            for(int i=0; i<SIZE; i++)
+            ^~~
+            VITIS_LOOP_2565_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33030:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33033:13: warning: Added loop label VITIS_LOOP_2568_3:   [xilinx-label-all-loops]
+            for(int i=0; i<SIZE-order-1; i++)
+            ^~~
+            VITIS_LOOP_2568_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33033:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33036:17: warning: Added loop label VITIS_LOOP_2571_4:   [xilinx-label-all-loops]
+                for(int j = 1; j <= SIZE; j++ )
+                ^~~
+                VITIS_LOOP_2571_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33036:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33044:13: warning: Added loop label VITIS_LOOP_2579_5:   [xilinx-label-all-loops]
+            for(int i = 0; i < order; i++ )
+            ^~~
+            VITIS_LOOP_2579_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33044:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33047:17: warning: Added loop label VITIS_LOOP_2582_6:   [xilinx-label-all-loops]
+                for(int j = 1; j <= SIZE; j++ )
+                ^~~
+                VITIS_LOOP_2582_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33047:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33056:9: warning: Added loop label VITIS_LOOP_2591_7:   [xilinx-label-all-loops]
+        for(int i=0; i<SIZE; i++) {
+        ^~~
+        VITIS_LOOP_2591_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33056:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33064:5: warning: Added loop label VITIS_LOOP_2599_8:   [xilinx-label-all-loops]
+    for(int i=0; i<SIZE; i++) {
+    ^~~
+    VITIS_LOOP_2599_8: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33064:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33065:9: warning: Added loop label VITIS_LOOP_2600_9:   [xilinx-label-all-loops]
+        for(int j=0; j<SIZE; j++) {
+        ^~~
+        VITIS_LOOP_2600_9: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33065:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33115:6: warning: Added loop label VITIS_LOOP_2650_1:   [xilinx-label-all-loops]
+     for (int i = 0; i < KH; i++) {
+     ^~~
+     VITIS_LOOP_2650_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33115:6: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33116:13: warning: Added loop label VITIS_LOOP_2651_2:   [xilinx-label-all-loops]
+            for (int j = 0; j < KW; j++) {
+            ^~~
+            VITIS_LOOP_2651_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33116:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33124:6: warning: Added loop label VITIS_LOOP_2659_3:   [xilinx-label-all-loops]
+     for (int i = 0; i < KH; i++) {
+     ^~~
+     VITIS_LOOP_2659_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33124:6: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33125:10: warning: Added loop label VITIS_LOOP_2660_4:   [xilinx-label-all-loops]
+         for (int j = 0; j < KW; j++) {
+         ^~~
+         VITIS_LOOP_2660_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33125:10: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33167:5: warning: Added loop label VITIS_LOOP_2702_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < KW; i++) {
+    ^~~
+    VITIS_LOOP_2702_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33167:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33171:5: warning: Added loop label VITIS_LOOP_2706_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < KH; i++) {
+    ^~~
+    VITIS_LOOP_2706_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33171:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33225:5: warning: Added loop label VITIS_LOOP_2760_1:   [xilinx-label-all-loops]
+    for(int i=0; i<5; i++)
+    ^~~
+    VITIS_LOOP_2760_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33225:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33226:9: warning: Added loop label VITIS_LOOP_2761_2:   [xilinx-label-all-loops]
+        for(int j=0; j<5; j++)
+        ^~~
+        VITIS_LOOP_2761_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33226:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33285:25: warning: Added loop label VITIS_LOOP_2820_1:   [xilinx-label-all-loops]
+                        for(int row= 0;row<K_HEIGHT;row++)
+                        ^~~
+                        VITIS_LOOP_2820_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33285:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33286:29: warning: Added loop label VITIS_LOOP_2821_2:   [xilinx-label-all-loops]
+                            for(int col= K_WIDTH-1;col>=1;col--)
+                            ^~~
+                            VITIS_LOOP_2821_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33286:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33289:25: warning: Added loop label VITIS_LOOP_2824_3:   [xilinx-label-all-loops]
+                        for(int buf_row = 0; buf_row < K_HEIGHT; buf_row++)
+                        ^~~
+                        VITIS_LOOP_2824_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33289:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33301:33: warning: Added loop label VITIS_LOOP_2836_4:   [xilinx-label-all-loops]
+                                for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                                ^~~
+                                VITIS_LOOP_2836_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33301:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33312:37: warning: Added loop label VITIS_LOOP_2847_5:   [xilinx-label-all-loops]
+                                    for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                                    ^~~
+                                    VITIS_LOOP_2847_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33312:37: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33328:33: warning: Added loop label VITIS_LOOP_2863_6:   [xilinx-label-all-loops]
+                                for(int buf_row = 0;buf_row < K_HEIGHT; buf_row++)
+                                ^~~
+                                VITIS_LOOP_2863_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33328:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33334:33: warning: Added loop label VITIS_LOOP_2869_7:   [xilinx-label-all-loops]
+                                for(int buf_row= 0;buf_row < K_HEIGHT; buf_row++)
+                                ^~~
+                                VITIS_LOOP_2869_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33334:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33340:36: warning: Added loop label VITIS_LOOP_2875_8:   [xilinx-label-all-loops]
+                                   for(int buf_row= K_HEIGHT-1;buf_row>0;buf_row--)
+                                   ^~~
+                                   VITIS_LOOP_2875_8: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33340:36: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33352:29: warning: Added loop label VITIS_LOOP_2887_9:   [xilinx-label-all-loops]
+                            for(int buf_row= 0;buf_row<K_HEIGHT;buf_row++)
+                            ^~~
+                            VITIS_LOOP_2887_9: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33352:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33366:33: warning: Added loop label VITIS_LOOP_2901_10:   [xilinx-label-all-loops]
+                                for(int buf_row= K_HEIGHT-1;buf_row>0;buf_row--)
+                                ^~~
+                                VITIS_LOOP_2901_10: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33366:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33380:33: warning: Added loop label VITIS_LOOP_2915_11:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT; m++)
+                                ^~~
+                                VITIS_LOOP_2915_11: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33380:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33381:37: warning: Added loop label VITIS_LOOP_2916_12:   [xilinx-label-all-loops]
+                                    for(int n=0; n<K_WIDTH; n++)
+                                    ^~~
+                                    VITIS_LOOP_2916_12: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33381:37: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33386:33: warning: Added loop label VITIS_LOOP_2921_13:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT; m++)
+                                ^~~
+                                VITIS_LOOP_2921_13: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33386:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33387:37: warning: Added loop label VITIS_LOOP_2922_14:   [xilinx-label-all-loops]
+                                    for(int n=1; n<K_WIDTH; n++)
+                                    ^~~
+                                    VITIS_LOOP_2922_14: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33387:37: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33394:33: warning: Added loop label VITIS_LOOP_2929_15:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT-1; m++)
+                                ^~~
+                                VITIS_LOOP_2929_15: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33394:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33395:37: warning: Added loop label VITIS_LOOP_2930_16:   [xilinx-label-all-loops]
+                                    for(int n=0; n<K_WIDTH; n++)
+                                    ^~~
+                                    VITIS_LOOP_2930_16: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33395:37: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33401:33: warning: Added loop label VITIS_LOOP_2936_17:   [xilinx-label-all-loops]
+                                for(int m=0; m<K_HEIGHT-1; m++)
+                                ^~~
+                                VITIS_LOOP_2936_17: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33401:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33402:37: warning: Added loop label VITIS_LOOP_2937_18:   [xilinx-label-all-loops]
+                                    for(int n=1; n<K_WIDTH; n++)
+                                    ^~~
+                                    VITIS_LOOP_2937_18: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33402:37: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33485:21: warning: Added loop label VITIS_LOOP_3020_1:   [xilinx-label-all-loops]
+                    for(int row= 0;row<K_HEIGHT;row++)
+                    ^~~
+                    VITIS_LOOP_3020_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33485:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33486:25: warning: Added loop label VITIS_LOOP_3021_2:   [xilinx-label-all-loops]
+                        for(int col= K_WIDTH-1;col>=1;col--)
+                        ^~~
+                        VITIS_LOOP_3021_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33486:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33489:21: warning: Added loop label VITIS_LOOP_3024_3:   [xilinx-label-all-loops]
+                    for(int buf_row = 0; buf_row < K_HEIGHT; buf_row++)
+                    ^~~
+                    VITIS_LOOP_3024_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33489:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33506:29: warning: Added loop label VITIS_LOOP_3041_4:   [xilinx-label-all-loops]
+                            for(int buf_row= K_HEIGHT-1;buf_row >= 1;buf_row--)
+                            ^~~
+                            VITIS_LOOP_3041_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33506:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33522:29: warning: Added loop label VITIS_LOOP_3057_5:   [xilinx-label-all-loops]
+                            for(int buf_row = 0;buf_row < K_HEIGHT; buf_row++)
+                            ^~~
+                            VITIS_LOOP_3057_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33522:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33529:29: warning: Added loop label VITIS_LOOP_3064_6:   [xilinx-label-all-loops]
+                            for(int buf_row= 0;buf_row < K_HEIGHT; buf_row++)
+                            ^~~
+                            VITIS_LOOP_3064_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33529:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33541:25: warning: Added loop label VITIS_LOOP_3076_7:   [xilinx-label-all-loops]
+                        for(int buf_row= 0;buf_row<K_HEIGHT;buf_row++)
+                        ^~~
+                        VITIS_LOOP_3076_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33541:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33560:29: warning: Added loop label VITIS_LOOP_3095_8:   [xilinx-label-all-loops]
+                            for(int m=0; m<K_HEIGHT; m++)
+                            ^~~
+                            VITIS_LOOP_3095_8: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33560:29: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33561:33: warning: Added loop label VITIS_LOOP_3096_9:   [xilinx-label-all-loops]
+                                for(int n=0; n<K_WIDTH; n++)
+                                ^~~
+                                VITIS_LOOP_3096_9: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33561:33: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33609:5: warning: Added loop label VITIS_LOOP_63_1:   [xilinx-label-all-loops]
+    for(int i=0;i<NUM_STATES;i++) {
+    ^~~
+    VITIS_LOOP_63_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33609:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33615:5: warning: Added loop label VITIS_LOOP_69_2:   [xilinx-label-all-loops]
+    for(int i=0;i<N;i++)
+    ^~~
+    VITIS_LOOP_69_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33615:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33636:13: warning: Added loop label VITIS_LOOP_90_3:   [xilinx-label-all-loops]
+            for (int m=0; m<NUM_STATES; m++) {
+            ^~~
+            VITIS_LOOP_90_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33636:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33648:13: warning: Added loop label VITIS_LOOP_102_4:   [xilinx-label-all-loops]
+            for (int m=NUM_STATES-1; m>0; m--) {
+            ^~~
+            VITIS_LOOP_102_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33648:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33688:5: warning: Added loop label VITIS_LOOP_142_5:   [xilinx-label-all-loops]
+    for (int m=0; m<NUM_STATES/2; m++) {
+    ^~~
+    VITIS_LOOP_142_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33688:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33747:5: warning: Added loop label VITIS_LOOP_55_1:   [xilinx-label-all-loops]
+    for(int index=0;index<K;index++) {
+    ^~~
+    VITIS_LOOP_55_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33747:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33796:9: warning: Added loop label VITIS_LOOP_104_1:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-1;i++) {
+        ^~~
+        VITIS_LOOP_104_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33796:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33800:9: warning: Added loop label VITIS_LOOP_108_2:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-3;i++) {
+        ^~~
+        VITIS_LOOP_108_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33800:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33805:9: warning: Added loop label VITIS_LOOP_113_3:   [xilinx-label-all-loops]
+        for(int i=0;i<NUM-7;i++) {
+        ^~~
+        VITIS_LOOP_113_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33805:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33816:5: warning: Added loop label VITIS_LOOP_124_4:   [xilinx-label-all-loops]
+    for(int i=0;i<PSize;i+=2) {
+    ^~~
+    VITIS_LOOP_124_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33816:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33821:13: warning: Added loop label VITIS_LOOP_129_5:   [xilinx-label-all-loops]
+            for(int j=1;j<PSize/2+1;j++) {
+            ^~~
+            VITIS_LOOP_129_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33821:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33829:5: warning: Added loop label VITIS_LOOP_137_6:   [xilinx-label-all-loops]
+    for(int i=0;i<PSize;i+=2) {
+    ^~~
+    VITIS_LOOP_137_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33829:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33834:13: warning: Added loop label VITIS_LOOP_142_7:   [xilinx-label-all-loops]
+            for(int j=1;j<PSize/2+1;j++) {
+            ^~~
+            VITIS_LOOP_142_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33834:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33860:5: warning: Added loop label VITIS_LOOP_168_1:   [xilinx-label-all-loops]
+    for(int c=1;c<PSize+PSize/2+1;c++)
+    ^~~
+    VITIS_LOOP_168_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33860:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33887:5: warning: Added loop label VITIS_LOOP_195_1:   [xilinx-label-all-loops]
+    for(int k=0;k<3;k++) {
+    ^~~
+    VITIS_LOOP_195_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33887:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33893:5: warning: Added loop label VITIS_LOOP_201_2:   [xilinx-label-all-loops]
+    for(int k=0;k<3;k++) {
+    ^~~
+    VITIS_LOOP_201_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33893:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33942:17: warning: Added loop label VITIS_LOOP_250_1:   [xilinx-label-all-loops]
+                for(int r= 0;r<KERNEL_SIZE;r++) {
+                ^~~
+                VITIS_LOOP_250_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33942:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33943:21: warning: Added loop label VITIS_LOOP_251_2:   [xilinx-label-all-loops]
+                    for(int c=0;c<KERNEL_SIZE-1;c++) {
+                    ^~~
+                    VITIS_LOOP_251_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33943:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33948:17: warning: Added loop label VITIS_LOOP_256_3:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KERNEL_SIZE-1;buf_row++) {
+                ^~~
+                VITIS_LOOP_256_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33948:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33958:13: warning: Added loop label VITIS_LOOP_266_4:   [xilinx-label-all-loops]
+            for(int r= 0;r<3;r++)
+            ^~~
+            VITIS_LOOP_266_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33958:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33960:17: warning: Added loop label VITIS_LOOP_268_5:   [xilinx-label-all-loops]
+                for(int c=0;c<3-1;c++)
+                ^~~
+                VITIS_LOOP_268_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33960:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33966:13: warning: Added loop label VITIS_LOOP_274_6:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row< 3-1;buf_row++)
+            ^~~
+            VITIS_LOOP_274_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:33966:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34058:17: warning: Added loop label VITIS_LOOP_366_1:   [xilinx-label-all-loops]
+                for(int r= 0;r<KERNEL_SIZE;r++) {
+                ^~~
+                VITIS_LOOP_366_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34058:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34059:21: warning: Added loop label VITIS_LOOP_367_2:   [xilinx-label-all-loops]
+                    for(int c=0;c<KERNEL_SIZE-1;c++) {
+                    ^~~
+                    VITIS_LOOP_367_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34059:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34064:17: warning: Added loop label VITIS_LOOP_372_3:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KERNEL_SIZE-1;buf_row++) {
+                ^~~
+                VITIS_LOOP_372_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34064:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34074:13: warning: Added loop label VITIS_LOOP_382_4:   [xilinx-label-all-loops]
+            for(int r= 0;r<3;r++)
+            ^~~
+            VITIS_LOOP_382_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34074:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34076:17: warning: Added loop label VITIS_LOOP_384_5:   [xilinx-label-all-loops]
+                for(int c=0;c<3-1;c++)
+                ^~~
+                VITIS_LOOP_384_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34076:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34082:13: warning: Added loop label VITIS_LOOP_390_6:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row< 3-1;buf_row++)
+            ^~~
+            VITIS_LOOP_390_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34082:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34193:5: warning: Added loop label VITIS_LOOP_90_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++)
+    ^~~
+    VITIS_LOOP_90_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34193:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34197:5: warning: Added loop label VITIS_LOOP_94_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_94_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34197:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34199:9: warning: Added loop label VITIS_LOOP_96_3:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) {
+        ^~~
+        VITIS_LOOP_96_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34199:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34205:5: warning: Added loop label VITIS_LOOP_102_4:   [xilinx-label-all-loops]
+    for (int j = 0; j < N; j++) {
+    ^~~
+    VITIS_LOOP_102_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34205:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34206:9: warning: Added loop label VITIS_LOOP_103_5:   [xilinx-label-all-loops]
+        for (int i = 0; i < j; i++) {
+        ^~~
+        VITIS_LOOP_103_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34206:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34208:13: warning: Added loop label VITIS_LOOP_105_6:   [xilinx-label-all-loops]
+            for (int k = 0; k < i; k++) sum -= A[i][k] * A[k][j];
+            ^~~
+            VITIS_LOOP_105_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34208:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34212:9: warning: Added loop label VITIS_LOOP_109_7:   [xilinx-label-all-loops]
+        for (int i = j; i < N; i++) {
+        ^~~
+        VITIS_LOOP_109_7: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34212:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34214:13: warning: Added loop label VITIS_LOOP_111_8:   [xilinx-label-all-loops]
+            for (int k = 0; k < j; k++) sum -= A[i][k] * A[k][j];
+            ^~~
+            VITIS_LOOP_111_8: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34214:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34223:13: warning: Added loop label VITIS_LOOP_120_9:   [xilinx-label-all-loops]
+            for (int i = 0; i < N; i++) {
+            ^~~
+            VITIS_LOOP_120_9: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34223:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34235:13: warning: Added loop label VITIS_LOOP_132_10:   [xilinx-label-all-loops]
+            for (int i = j + 1; i < N; i++) A[i][j] *= dum;
+            ^~~
+            VITIS_LOOP_132_10: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34235:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34243:5: warning: Added loop label VITIS_LOOP_140_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_140_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34243:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34252:13: warning: Added loop label VITIS_LOOP_149_2:   [xilinx-label-all-loops]
+            for (int j = ii - 1; j < i; j++) sum -= A[i][j] * b[j];
+            ^~~
+            VITIS_LOOP_149_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34252:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34257:5: warning: Added loop label VITIS_LOOP_154_3:   [xilinx-label-all-loops]
+    for (int i = N - 1; i >= 0; i--) {
+    ^~~
+    VITIS_LOOP_154_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34257:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34259:9: warning: Added loop label VITIS_LOOP_156_4:   [xilinx-label-all-loops]
+        for (int j = i + 1; j < N; j++) sum -= A[i][j]*b[j];
+        ^~~
+        VITIS_LOOP_156_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34259:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34270:5: warning: Added loop label VITIS_LOOP_167_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_167_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34270:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34275:5: warning: Added loop label VITIS_LOOP_172_2:   [xilinx-label-all-loops]
+    for (int i = 0; i < N; i++) {
+    ^~~
+    VITIS_LOOP_172_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34275:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34276:9: warning: Added loop label VITIS_LOOP_173_3:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) b[j] = 0;
+        ^~~
+        VITIS_LOOP_173_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34276:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34279:9: warning: Added loop label VITIS_LOOP_176_4:   [xilinx-label-all-loops]
+        for (int j = 0; j < N; j++) Ar[j][i] = b[j];
+        ^~~
+        VITIS_LOOP_176_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34279:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34355:21: warning: Added loop label VITIS_LOOP_252_1:   [xilinx-label-all-loops]
+                    for(int k=0;k<((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1);k++) {
+                    ^~~
+                    VITIS_LOOP_252_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34355:21: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34475:17: warning: Added loop label VITIS_LOOP_384_1:   [xilinx-label-all-loops]
+                for(int k = 0; k < ((((DST_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+                ^~~
+                VITIS_LOOP_384_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34475:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34893:2: warning: Added loop label VITIS_LOOP_201_1:   [xilinx-label-all-loops]
+ for(int row=2;row>=0;row--)
+ ^~~
+ VITIS_LOOP_201_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34893:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34895:17: warning: Added loop label VITIS_LOOP_203_2:   [xilinx-label-all-loops]
+                for(int col=2;col>=1;col--)
+                ^~~
+                VITIS_LOOP_203_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:34895:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35028:5: warning: Added loop label VITIS_LOOP_90_1:   [xilinx-label-all-loops]
+    for(int i=0;i<KH;i++) {
+    ^~~
+    VITIS_LOOP_90_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35028:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35029:9: warning: Added loop label VITIS_LOOP_91_2:   [xilinx-label-all-loops]
+        for(int j=0;j<KW;j++) {
+        ^~~
+        VITIS_LOOP_91_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35029:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35051:5: warning: Added loop label VITIS_LOOP_113_1:   [xilinx-label-all-loops]
+    for(HLS_SIZE_T i=0;i<rows+ioffset;i++)
+    ^~~
+    VITIS_LOOP_113_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35051:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35054:2: warning: Added loop label VITIS_LOOP_116_2:   [xilinx-label-all-loops]
+ for(HLS_SIZE_T j=0;j<cols+joffset;j++)
+ ^~~
+ VITIS_LOOP_116_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35054:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35061:13: warning: Added loop label VITIS_LOOP_123_3:   [xilinx-label-all-loops]
+            for(int r= 0;r<KH;r++)
+            ^~~
+            VITIS_LOOP_123_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35061:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35063:17: warning: Added loop label VITIS_LOOP_125_4:   [xilinx-label-all-loops]
+                for(int c=0;c<KW-1;c++)
+                ^~~
+                VITIS_LOOP_125_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35063:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35071:17: warning: Added loop label VITIS_LOOP_133_5:   [xilinx-label-all-loops]
+                for(int buf_row= 1;buf_row< KH-1;buf_row++)
+                ^~~
+                VITIS_LOOP_133_5: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35071:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35084:17: warning: Added loop label VITIS_LOOP_146_6:   [xilinx-label-all-loops]
+                for(int i= 1;i< KW;i++)
+                ^~~
+                VITIS_LOOP_146_6: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35084:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35120:5: warning: Added loop label VITIS_LOOP_182_1:   [xilinx-label-all-loops]
+    for(HLS_SIZE_T i=0;i<rows;i++)
+    ^~~
+    VITIS_LOOP_182_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35120:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35123:2: warning: Added loop label VITIS_LOOP_185_2:   [xilinx-label-all-loops]
+ for(HLS_SIZE_T j=0;j<cols;j++)
+ ^~~
+ VITIS_LOOP_185_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35123:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35352:9: warning: Added loop label VITIS_LOOP_134_1:   [xilinx-label-all-loops]
+        for(int i=0;i<STAGE;i++)
+        ^~~
+        VITIS_LOOP_134_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35352:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35360:9: warning: Added loop label VITIS_LOOP_142_2:   [xilinx-label-all-loops]
+        for(int i=0;i<CLASSIFIER_ALL;i++)
+        ^~~
+        VITIS_LOOP_142_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35360:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35363:16: warning: Added loop label VITIS_LOOP_145_3:   [xilinx-label-all-loops]
+               for(int j=0;j<FEATURE_MAX;j++)
+               ^~~
+               VITIS_LOOP_145_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35363:16: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35371:23: warning: Added loop label VITIS_LOOP_153_4:   [xilinx-label-all-loops]
+                      for(int n=0;n<3;n++)
+                      ^~~
+                      VITIS_LOOP_153_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35371:23: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35394:5: warning: Added loop label VITIS_LOOP_176_1:   [xilinx-label-all-loops]
+    for(int j=0;j<COLS;j++)
+    ^~~
+    VITIS_LOOP_176_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35394:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35397:9: warning: Added loop label VITIS_LOOP_179_2:   [xilinx-label-all-loops]
+        for(int i=0;i<ROWS;i++)
+        ^~~
+        VITIS_LOOP_179_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35397:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35414:5: warning: Added loop label VITIS_LOOP_196_1:   [xilinx-label-all-loops]
+    for(m=0;m<FEATURE_MAX;m++)
+    ^~~
+    VITIS_LOOP_196_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35414:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35421:13: warning: Added loop label VITIS_LOOP_203_2:   [xilinx-label-all-loops]
+            for(int j=1;j<3;j++)
+            ^~~
+            VITIS_LOOP_203_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35421:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35450:5: warning: Added loop label VITIS_LOOP_232_1:   [xilinx-label-all-loops]
+    for (int i=0;i<CLASSIFIER_ALL;i++)
+    ^~~
+    VITIS_LOOP_232_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35450:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35498:5: warning: Added loop label VITIS_LOOP_280_1:   [xilinx-label-all-loops]
+    for(int i=0;i<rows;i++)
+    ^~~
+    VITIS_LOOP_280_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35498:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35500:9: warning: Added loop label VITIS_LOOP_282_2:   [xilinx-label-all-loops]
+        for(int j=0;j<cols;j++)
+        ^~~
+        VITIS_LOOP_282_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35500:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35513:13: warning: Added loop label VITIS_LOOP_295_3:   [xilinx-label-all-loops]
+            for(int buf_row= 1;buf_row<K_H;buf_row++)
+            ^~~
+            VITIS_LOOP_295_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35513:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35613:9: warning: Added loop label VITIS_LOOP_416_1:   [xilinx-label-all-loops]
+        for(int i=0;i<m;i++)
+        ^~~
+        VITIS_LOOP_416_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35613:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35615:17: warning: Added loop label VITIS_LOOP_418_2:   [xilinx-label-all-loops]
+                for(int j=0;j<num;j++)
+                ^~~
+                VITIS_LOOP_418_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35615:17: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35623:9: warning: Added loop label VITIS_LOOP_426_3:   [xilinx-label-all-loops]
+        for(int i=0;i<num;i++)
+        ^~~
+        VITIS_LOOP_426_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35623:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35652:5: warning: Added loop label VITIS_LOOP_455_1:   [xilinx-label-all-loops]
+    for(int i=0;i<rows;i++)
+    ^~~
+    VITIS_LOOP_455_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35652:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35657:9: warning: Added loop label VITIS_LOOP_460_2:   [xilinx-label-all-loops]
+        for(int j=0;j<cols;j++)
+        ^~~
+        VITIS_LOOP_460_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35657:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35819:13: warning: Added loop label VITIS_LOOP_186_1:   [xilinx-label-all-loops]
+            for (int i = 0; i< PWSIZE; i++) {
+            ^~~
+            VITIS_LOOP_186_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35819:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35825:13: warning: Added loop label VITIS_LOOP_192_2:   [xilinx-label-all-loops]
+            for (int i = 0; i < PWSIZE; i++) {
+            ^~~
+            VITIS_LOOP_192_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35825:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35829:13: warning: Added loop label VITIS_LOOP_196_3:   [xilinx-label-all-loops]
+            for (int j = PWSIZE-1; j > 0; j--) {
+            ^~~
+            VITIS_LOOP_196_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35829:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35860:5: warning: Added loop label VITIS_LOOP_227_1:   [xilinx-label-all-loops]
+    for (HLS_SIZE_T i = 0; i < rows; i++) {
+    ^~~
+    VITIS_LOOP_227_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35860:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35861:9: warning: Added loop label VITIS_LOOP_228_2:   [xilinx-label-all-loops]
+        for (HLS_SIZE_T j = 0; j < cols; j++) {
+        ^~~
+        VITIS_LOOP_228_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35861:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35864:13: warning: Added loop label VITIS_LOOP_231_3:   [xilinx-label-all-loops]
+            for (HLS_SIZE_T k = 0; k < ((((SRC_T) & ((512 - 1) << 11)) >> 11) + 1); k++) {
+            ^~~
+            VITIS_LOOP_231_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35864:13: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35900:5: warning: Added loop label VITIS_LOOP_267_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < WSIZE; i++) {
+    ^~~
+    VITIS_LOOP_267_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35900:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35918:5: warning: Added loop label VITIS_LOOP_285_1:   [xilinx-label-all-loops]
+    for (int i = 0; i < WSIZE; i++) {
+    ^~~
+    VITIS_LOOP_285_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35918:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35926:5: warning: Added loop label VITIS_LOOP_293_2:   [xilinx-label-all-loops]
+    for (int j = WSIZE-1; j > 0; j--) {
+    ^~~
+    VITIS_LOOP_293_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35926:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35944:9: warning: Added loop label VITIS_LOOP_311_1:   [xilinx-label-all-loops]
+        for(int i = 0; i < SIZE/2; i++) {
+        ^~~
+        VITIS_LOOP_311_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35944:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35947:9: warning: Added loop label VITIS_LOOP_314_2:   [xilinx-label-all-loops]
+        for(int i = 0; i < SIZE-SIZE/2; i++) {
+        ^~~
+        VITIS_LOOP_314_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:35947:9: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:36051:25: warning: Added loop label VITIS_LOOP_418_1:   [xilinx-label-all-loops]
+                        for (int i = 0; i < WSIZE; i++) {
+                        ^~~
+                        VITIS_LOOP_418_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:36051:25: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:38821:2: warning: Added loop label VITIS_LOOP_518_1:   [xilinx-label-all-loops]
+ for (y = 0; y < loopHeight; ++y)
+ ^~~
+ VITIS_LOOP_518_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:38821:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:38823:3: warning: Added loop label VITIS_LOOP_520_2:   [xilinx-label-all-loops]
+  for (x = 0; x < loopWidth; x += 2)
+  ^~~
+  VITIS_LOOP_520_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:38823:3: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:38992:5: warning: Added loop label VITIS_LOOP_689_3:   [xilinx-label-all-loops]
+    for (int k = 0; k < 2; k++)
+    ^~~
+    VITIS_LOOP_689_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:38992:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39030:2: warning: Added loop label VITIS_LOOP_727_1:   [xilinx-label-all-loops]
+ for (y = 0; y < loopHeight; ++y)
+ ^~~
+ VITIS_LOOP_727_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39030:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39032:3: warning: Added loop label VITIS_LOOP_729_2:   [xilinx-label-all-loops]
+  for (x = 0; x < loopWidth; x += 2)
+  ^~~
+  VITIS_LOOP_729_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39032:3: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39119:5: warning: Added loop label VITIS_LOOP_824_1:   [xilinx-label-all-loops]
+    for (int l = 0; l < 2; l++)
+    ^~~
+    VITIS_LOOP_824_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39119:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39121:6: warning: Added loop label VITIS_LOOP_826_2:   [xilinx-label-all-loops]
+     for (int k = 0; k < 3; k++)
+     ^~~
+     VITIS_LOOP_826_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39121:6: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39190:2: warning: Added loop label VITIS_LOOP_934_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < rows; i++)
+ ^~~
+ VITIS_LOOP_934_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39190:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39192:3: warning: Added loop label VITIS_LOOP_936_2:   [xilinx-label-all-loops]
+  for (int j = 0; j < cols / 2; j++)
+  ^~~
+  VITIS_LOOP_936_2: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39192:3: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39222:4: warning: Added loop label VITIS_LOOP_966_3:   [xilinx-label-all-loops]
+   for (int l = 0; l < 2; l++)
+   ^~~
+   VITIS_LOOP_966_3: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39222:4: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39224:5: warning: Added loop label VITIS_LOOP_968_4:   [xilinx-label-all-loops]
+    for (int k = 0; k < 3; k++)
+    ^~~
+    VITIS_LOOP_968_4: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39224:5: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39286:2: warning: Added loop label VITIS_LOOP_1030_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1030_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39286:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39314:2: warning: Added loop label VITIS_LOOP_1058_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1058_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39314:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39329:2: warning: Added loop label VITIS_LOOP_1073_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1073_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39329:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39344:2: warning: Added loop label VITIS_LOOP_1088_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1088_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39344:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39365:2: warning: Added loop label VITIS_LOOP_1109_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1109_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39365:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39386:2: warning: Added loop label VITIS_LOOP_1130_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1130_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39386:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39407:2: warning: Added loop label VITIS_LOOP_1151_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1151_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39407:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39429:2: warning: Added loop label VITIS_LOOP_1173_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1173_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39429:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39454:2: warning: Added loop label VITIS_LOOP_1198_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1198_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39454:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39488:2: warning: Added loop label VITIS_LOOP_1232_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1232_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39488:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39560:2: warning: Added loop label VITIS_LOOP_1304_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1304_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39560:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39607:2: warning: Added loop label VITIS_LOOP_1351_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1351_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39607:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39676:2: warning: Added loop label VITIS_LOOP_1420_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1420_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39676:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39746:2: warning: Added loop label VITIS_LOOP_1490_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1490_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39746:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39789:2: warning: Added loop label VITIS_LOOP_1533_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1533_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39789:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39846:2: warning: Added loop label VITIS_LOOP_1590_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1590_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39846:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39887:2: warning: Added loop label VITIS_LOOP_1679_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1679_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39887:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39924:2: warning: Added loop label VITIS_LOOP_1716_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1716_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39924:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39996:2: warning: Added loop label VITIS_LOOP_1788_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1788_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:39996:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:40093:2: warning: Added loop label VITIS_LOOP_1885_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1885_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:40093:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:40124:2: warning: Added loop label VITIS_LOOP_1916_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1916_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:40124:2: note: FIX-IT applied suggested code changes
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:40150:2: warning: Added loop label VITIS_LOOP_1942_1:   [xilinx-label-all-loops]
+ for (int k = 0; k < 2; k++)
+ ^~~
+ VITIS_LOOP_1942_1: 
+E:\xilinx_axi\v_dma_txss\v_hdmi_tx_ss_ex\v_hdmi_tx_ss_ex.runs\exdes_v_tpg_0_synth_1\prj\sol\.autopilot\db\v_tpg.pp.0.cpp:40150:2: note: FIX-IT applied suggested code changes

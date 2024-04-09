@@ -1,0 +1,130 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.29322",
+   "Default View_TopLeft":"926,596",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port fmch_iic -pg 1 -lvl 6 -x 3590 -y 1490 -defaultsOSRD
+preplace port TX_DDC_OUT -pg 1 -lvl 6 -x 3590 -y 880 -defaultsOSRD
+preplace port ddr4_sdram -pg 1 -lvl 6 -x 3590 -y 1330 -defaultsOSRD
+preplace port usr_sys_clk -pg 1 -lvl 0 -x 0 -y 1350 -defaultsOSRD
+preplace port port-id_TX_HPD_IN -pg 1 -lvl 0 -x 0 -y 1330 -defaultsOSRD
+preplace port port-id_TX_REFCLK_P_IN -pg 1 -lvl 0 -x 0 -y 160 -defaultsOSRD
+preplace port port-id_TX_REFCLK_N_IN -pg 1 -lvl 0 -x 0 -y 180 -defaultsOSRD
+preplace port port-id_HDMI_TX_CLK_P_OUT -pg 1 -lvl 6 -x 3590 -y 170 -defaultsOSRD
+preplace port port-id_HDMI_TX_CLK_N_OUT -pg 1 -lvl 6 -x 3590 -y 190 -defaultsOSRD
+preplace port port-id_IDT_8T49N241_LOL_IN -pg 1 -lvl 0 -x 0 -y 140 -defaultsOSRD
+preplace port port-id_LED0 -pg 1 -lvl 6 -x 3590 -y 920 -defaultsOSRD
+preplace port port-id_usr_rst -pg 1 -lvl 0 -x 0 -y 1430 -defaultsOSRD
+preplace portBus HDMI_TX_DAT_P_OUT -pg 1 -lvl 6 -x 3590 -y 230 -defaultsOSRD
+preplace portBus HDMI_TX_DAT_N_OUT -pg 1 -lvl 6 -x 3590 -y 210 -defaultsOSRD
+preplace portBus TX_EN_OUT -pg 1 -lvl 6 -x 3590 -y 1760 -defaultsOSRD
+preplace inst vid_phy_controller -pg 1 -lvl 3 -x 830 -y 190 -defaultsOSRD
+preplace inst vcc_const -pg 1 -lvl 4 -x 1480 -y 2094 -defaultsOSRD
+preplace inst gnd_const -pg 1 -lvl 1 -x 100 -y 610 -defaultsOSRD
+preplace inst tx_video_axis_reg_slice -pg 1 -lvl 5 -x 3390 -y 1650 -defaultsOSRD
+preplace inst v_hdmi_tx_ss -pg 1 -lvl 4 -x 1480 -y 870 -defaultsOSRD
+preplace inst gnd_array -pg 1 -lvl 2 -x 330 -y 850 -defaultsOSRD
+preplace inst video_frame_crc -pg 1 -lvl 3 -x 830 -y 1030 -defaultsOSRD
+preplace inst const_crc -pg 1 -lvl 1 -x 100 -y 990 -defaultsOSRD
+preplace inst concat_crc -pg 1 -lvl 2 -x 330 -y 980 -defaultsOSRD
+preplace inst slice_crc -pg 1 -lvl 3 -x 830 -y 1260 -defaultsOSRD
+preplace inst v_tpg_ss_0 -pg 1 -lvl 3 -x 830 -y 480 -defaultsOSRD
+preplace inst audio_ss_0 -pg 1 -lvl 3 -x 830 -y 730 -defaultsOSRD
+preplace inst zynq_us_ss_0 -pg 1 -lvl 2 -x 330 -y 630 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 5 -x 3390 -y 1410 -defaultsOSRD
+preplace inst video_gen -pg 1 -lvl 4 -x 1480 -y 1382 -defaultsOSRD
+preplace inst video_gen|smartconnect_0 -pg 1 -lvl 4 -x 2400 -y 1432 -defaultsOSRD
+preplace inst video_gen|axi_vdma_0 -pg 1 -lvl 3 -x 2040 -y 1462 -defaultsOSRD
+preplace inst video_gen|xlconstant_0 -pg 1 -lvl 1 -x 1480 -y 1552 -defaultsOSRD
+preplace inst video_gen|axis_gen -pg 1 -lvl 2 -x 1700 -y 1532 -defaultsOSRD
+preplace inst video_gen|proc_sys_reset_0 -pg 1 -lvl 4 -x 2400 -y 1732 -defaultsOSRD
+preplace inst video_gen|ddr4_0 -pg 1 -lvl 5 -x 2770 -y 1642 -defaultsOSRD
+preplace netloc ddr4_0_c0_ddr4_ui_clk 1 4 1 3140 1410n
+preplace netloc net_audio_ss_0_aud_acr_cts_out 1 3 1 1170 700n
+preplace netloc net_audio_ss_0_aud_acr_n_out 1 3 1 1160 720n
+preplace netloc net_audio_ss_0_aud_acr_valid_out 1 3 1 1050 740n
+preplace netloc net_audio_ss_0_aud_rstn 1 3 1 1070 760n
+preplace netloc net_audio_ss_0_audio_clk 1 3 1 1060 780n
+preplace netloc net_bdry_in_IDT_8T49N241_LOL_IN 1 0 3 NJ 140 NJ 140 NJ
+preplace netloc net_bdry_in_TX_HPD_IN 1 0 4 NJ 1330 NJ 1330 NJ 1330 1170J
+preplace netloc net_bdry_in_TX_REFCLK_N_IN 1 0 3 NJ 180 NJ 180 NJ
+preplace netloc net_bdry_in_TX_REFCLK_P_IN 1 0 3 NJ 160 NJ 160 NJ
+preplace netloc net_concat_crc_dout 1 2 1 580 970n
+preplace netloc net_const_crc_dout 1 1 1 NJ 990
+preplace netloc net_gnd_array_dout 1 2 1 540 760n
+preplace netloc net_gnd_const_dout 1 1 1 NJ 610
+preplace netloc net_slice_crc_Dout 1 3 1 1110J 740n
+preplace netloc net_tx_video_axis_reg_slice_m_axis_tdata 1 1 5 190 1510 NJ 1510 1060J 1894 3200J 1510 3570
+preplace netloc net_tx_video_axis_reg_slice_m_axis_tlast 1 2 4 580 1530 1040J 1914 3220J 1530 3550
+preplace netloc net_tx_video_axis_reg_slice_m_axis_tready 1 2 4 610 1520 1050J 1904 3210J 1520 3530
+preplace netloc net_tx_video_axis_reg_slice_m_axis_tuser 1 2 4 600 1540 1030J 1924 3230J 1540 3540
+preplace netloc net_tx_video_axis_reg_slice_m_axis_tvalid 1 2 4 620 1500 1070J 1884 3170J 1500 3560
+preplace netloc net_v_hdmi_tx_ss_irq 1 1 4 180 910 560J 870 1150J 1140 3120
+preplace netloc net_v_hdmi_tx_ss_locked 1 4 2 NJ 920 NJ
+preplace netloc net_vcc_const_dout 1 2 4 590 1480 1090J 1864 3250 1760 NJ
+preplace netloc net_vid_phy_controller_irq 1 1 3 190 790 530J 570 1160
+preplace netloc net_vid_phy_controller_phy_txn_out 1 3 3 NJ 210 NJ 210 NJ
+preplace netloc net_vid_phy_controller_phy_txp_out 1 3 3 NJ 230 NJ 230 NJ
+preplace netloc net_vid_phy_controller_tx_tmds_clk 1 2 2 630 580 1170
+preplace netloc net_vid_phy_controller_tx_tmds_clk_n 1 3 3 NJ 190 NJ 190 NJ
+preplace netloc net_vid_phy_controller_tx_tmds_clk_p 1 3 3 NJ 170 NJ 170 NJ
+preplace netloc net_vid_phy_controller_tx_video_clk 1 3 1 1180 150n
+preplace netloc net_vid_phy_controller_txoutclk 1 2 2 630 390 1200
+preplace netloc net_video_frame_crc_vid_out_axis_tdata 1 2 2 630 1320 1050
+preplace netloc net_video_frame_crc_vid_out_axis_tlast 1 3 1 1080 760n
+preplace netloc net_video_frame_crc_vid_out_axis_tready 1 3 1 1090 780n
+preplace netloc net_video_frame_crc_vid_out_axis_tuser 1 3 1 1140 800n
+preplace netloc net_video_frame_crc_vid_out_axis_tvalid 1 3 1 1030 820n
+preplace netloc net_zynq_us_ss_0_clk_out2 1 2 3 570 1190 1180 2034 3240J
+preplace netloc net_zynq_us_ss_0_dcm_locked 1 2 3 480 860 1040 1270 3190
+preplace netloc net_zynq_us_ss_0_peripheral_aresetn 1 2 2 550 850 1130
+preplace netloc net_zynq_us_ss_0_s_axi_aclk 1 2 2 520 1200 1190
+preplace netloc proc_sys_reset_0_peripheral_aresetn 1 4 1 3150 1430n
+preplace netloc reset_0_1 1 0 4 NJ 1430 NJ 1430 NJ 1430 1100J
+preplace netloc axi_vdma_0_M_AXIS_MM2S 1 4 1 3180 1342n
+preplace netloc clk_300mhz_1 1 0 4 NJ 1350 NJ 1350 NJ 1350 1110J
+preplace netloc ddr4_0_C0_DDR4 1 4 2 3130J 1330 NJ
+preplace netloc intf_net_audio_ss_0_axis_audio_out 1 3 1 N 680
+preplace netloc intf_net_v_hdmi_tx_ss_DDC_OUT 1 4 2 NJ 880 NJ
+preplace netloc intf_net_v_hdmi_tx_ss_LINK_DATA0_OUT 1 2 3 620 380 NJ 380 3190
+preplace netloc intf_net_v_hdmi_tx_ss_LINK_DATA1_OUT 1 2 3 600 590 NJ 590 3130
+preplace netloc intf_net_v_hdmi_tx_ss_LINK_DATA2_OUT 1 2 3 610 600 NJ 600 3120
+preplace netloc intf_net_vid_phy_controller_vid_phy_status_sb_tx 1 3 1 1220 110n
+preplace netloc intf_net_zynq_us_ss_0_IIC 1 2 4 500J 1490 1080J 1874 3160J 1490 NJ
+preplace netloc intf_net_zynq_us_ss_0_M00_AXI 1 2 1 470 60n
+preplace netloc intf_net_zynq_us_ss_0_M02_AXI 1 2 2 NJ 560 1210
+preplace netloc intf_net_zynq_us_ss_0_M05_AXI 1 2 1 490 450n
+preplace netloc intf_net_zynq_us_ss_0_M06_AXI 1 2 1 540 600n
+preplace netloc intf_net_zynq_us_ss_0_M08_AXI 1 2 1 510 470n
+preplace netloc intf_net_zynq_us_ss_0_M09_AXI 1 2 1 510 640n
+preplace netloc smartconnect_0_M00_AXI 1 4 1 3120 1322n
+preplace netloc zynq_us_ss_0_M03_AXI 1 2 2 470 1340 1120J
+preplace netloc video_gen|ddr4_0_c0_ddr4_ui_clk 1 2 4 1870 1592 2220 1622 2570J 1512 2950
+preplace netloc video_gen|ddr4_0_c0_init_calib_complete 1 5 1 2940 1602n
+preplace netloc video_gen|net_zynq_us_ss_0_clk_out2 1 0 3 1390J 1452 1560 1452 1860
+preplace netloc video_gen|net_zynq_us_ss_0_peripheral_aresetn 1 0 3 1400J 1462 NJ 1462 1850
+preplace netloc video_gen|net_zynq_us_ss_0_s_axi_aclk 1 0 3 1380J 1432 NJ 1432 N
+preplace netloc video_gen|proc_sys_reset_0_interconnect_aresetn 1 3 2 2230 1632 2570
+preplace netloc video_gen|proc_sys_reset_0_peripheral_aresetn 1 4 2 2590 1522 2960J
+preplace netloc video_gen|reset_0_1 1 0 5 NJ 1832 NJ 1832 NJ 1832 NJ 1832 2600
+preplace netloc video_gen|xlconstant_0_dout 1 1 3 1560 1602 NJ 1602 2210
+preplace netloc video_gen|axi_vdma_0_M_AXIS_MM2S 1 3 3 2210 1342 NJ 1342 NJ
+preplace netloc video_gen|axi_vdma_0_M_AXI_MM2S 1 3 1 N 1402
+preplace netloc video_gen|axi_vdma_0_M_AXI_S2MM 1 3 1 N 1422
+preplace netloc video_gen|axis_gen_0_m_axis 1 2 1 1840 1412n
+preplace netloc video_gen|clk_300mhz_1 1 0 5 NJ 1612 NJ 1612 NJ 1612 NJ 1612 N
+preplace netloc video_gen|ddr4_0_C0_DDR4 1 5 1 N 1582
+preplace netloc video_gen|smartconnect_0_M00_AXI 1 4 2 2580 1322 NJ
+preplace netloc video_gen|zynq_us_ss_0_M03_AXI 1 0 3 NJ 1392 NJ 1392 N
+levelinfo -pg 1 0 100 330 830 1480 3390 3590
+levelinfo -hier video_gen * 1480 1700 2040 2400 2770 *
+pagesize -pg 1 -db -bbox -sgen -210 0 3830 2160
+pagesize -hier video_gen -db -bbox -sgen 1350 1302 2990 1842
+"
+}
+{
+   "da_board_cnt":"3",
+   "da_zynq_ultra_ps_e_cnt":"1"
+}

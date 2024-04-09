@@ -1,0 +1,146 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Mon Apr  8 14:57:32 2024
+# Process ID: 10912
+# Current directory: e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex
+# Command line: vivado.exe -notrace -source e:/xilinx_axi/v_dma_txss/ip/hdmi_ip_2v0/hdmi_ip_2v0.gen/sources_1/ip/v_hdmi_tx_ss/v_hdmi_tx_ss_ex.tcl
+# Log file: e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/vivado.log
+# Journal file: e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex\vivado.jou
+# Running On: weslie, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34074 MB
+#-----------------------------------------------------------
+start_gui
+source e:/xilinx_axi/v_dma_txss/ip/hdmi_ip_2v0/hdmi_ip_2v0.gen/sources_1/ip/v_hdmi_tx_ss/v_hdmi_tx_ss_ex.tcl -notrace
+update_compile_order -fileset sources_1
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets zynq_us_ss_0/intf_net_axi_interconnect_0_M01_AXI] [get_bd_intf_pins zynq_us_ss_0/M01_AXI]
+regenerate_bd_layout
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets intf_net_v_tpg_ss_0_m_axis_video]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_vdma:6.3 axi_vdma_0
+endgroup
+set_property -dict [list \
+  CONFIG.c_mm2s_genlock_mode {1} \
+  CONFIG.c_s2mm_genlock_mode {0} \
+  CONFIG.c_use_s2mm_fsync {0} \
+] [get_bd_cells axi_vdma_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:ddr4:2.2 ddr4_0
+endgroup
+set_property -dict [list \
+  CONFIG.ADDN_UI_CLKOUT1_FREQ_HZ {100} \
+  CONFIG.C0.DDR4_InputClockPeriod {3335} \
+  CONFIG.C0.DDR4_MemoryType {SODIMMs} \
+  CONFIG.C0.DDR4_TimePeriod {938} \
+  CONFIG.C0_CLOCK_BOARD_INTERFACE {clk_300mhz} \
+  CONFIG.C0_DDR4_BOARD_INTERFACE {ddr4_sdram} \
+  CONFIG.RESET_BOARD_INTERFACE {reset} \
+] [get_bd_cells ddr4_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 smartconnect_0
+endgroup
+connect_bd_intf_net [get_bd_intf_pins smartconnect_0/M00_AXI] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXI_MM2S] [get_bd_intf_pins smartconnect_0/S00_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXI_S2MM] [get_bd_intf_pins smartconnect_0/S01_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_vdma_0/M_AXIS_MM2S] [get_bd_intf_pins tx_video_axis_reg_slice/S_AXIS]
+regenerate_bd_layout
+delete_bd_objs [get_bd_intf_nets v_tpg_ss_0/intf_net_v_tpg_m_axis_video] [get_bd_intf_pins v_tpg_ss_0/m_axis_video]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+set_property CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} [get_bd_cells system_ila_0]
+move_bd_cells [get_bd_cells v_tpg_ss_0] [get_bd_cells system_ila_0]
+connect_bd_intf_net [get_bd_intf_pins v_tpg_ss_0/v_tpg/m_axis_video] [get_bd_intf_pins v_tpg_ss_0/system_ila_0/SLOT_0_AXIS]
+connect_bd_net [get_bd_pins v_tpg_ss_0/ap_clk] [get_bd_pins v_tpg_ss_0/system_ila_0/clk]
+connect_bd_net [get_bd_pins v_tpg_ss_0/system_ila_0/resetn] [get_bd_pins v_tpg_ss_0/axi_gpio/gpio_io_o]
+regenerate_bd_layout
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {ddr4_sdram ( DDR4 SDRAM ) } Manual_Source {Auto}}  [get_bd_intf_pins ddr4_0/C0_DDR4]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {clk_300mhz ( Programmable Differential Clock (300MHz) ) } Manual_Source {Auto}}  [get_bd_intf_pins ddr4_0/C0_SYS_CLK]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Board_Interface {reset ( FPGA Reset ) } Manual_Source {Auto}}  [get_bd_pins ddr4_0/sys_rst]
+endgroup
+regenerate_bd_layout
+set_property name usr_sys_clk [get_bd_intf_ports clk_300mhz]
+delete_bd_objs [get_bd_nets net_bdry_in_reset] [get_bd_ports reset]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins zynq_us_ss_0/ext_reset_in]
+startgroup
+set_property CONFIG.CONST_VAL {0} [get_bd_cells xlconstant_0]
+endgroup
+regenerate_bd_layout
+move_bd_cells [get_bd_cells zynq_us_ss_0] [get_bd_cells xlconstant_0]
+regenerate_bd_layout
+regenerate_bd_layout
+save_bd_design
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins smartconnect_0/aclk]
+connect_bd_net [get_bd_pins ddr4_0/c0_ddr4_ui_clk] [get_bd_pins axi_vdma_0/m_axi_s2mm_aclk]
+connect_bd_net [get_bd_pins axi_vdma_0/m_axi_mm2s_aclk] [get_bd_pins ddr4_0/c0_ddr4_ui_clk]
+regenerate_bd_layout
+startgroup
+make_bd_pins_external  [get_bd_pins ddr4_0/c0_init_calib_complete]
+endgroup
+set_property name c0_init_calib [get_bd_ports c0_init_calib_complete_0]
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins zynq_us_ss_0/axi_interconnect_0/M03_AXI] [get_bd_intf_pins axi_vdma_0/S_AXI_LITE]
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axi_vdma_0/s_axi_lite_aclk] [get_bd_pins zynq_us_ss_0/zynq_us/pl_clk0]
+connect_bd_net [get_bd_pins axi_vdma_0/axi_resetn] [get_bd_pins zynq_us_ss_0/rst_processor_1_100M/peripheral_aresetn]
+regenerate_bd_layout
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axi_vdma_0/m_axis_mm2s_aclk] [get_bd_pins zynq_us_ss_0/clk_out2]
+regenerate_bd_layout
+save_bd_design
+file mkdir e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new
+close [ open e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v w ]
+add_files e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v
+update_compile_order -fileset sources_1
+create_bd_cell -type module -reference axis_gen axis_gen_0
+connect_bd_intf_net [get_bd_intf_pins axis_gen_0/m_axis] [get_bd_intf_pins axi_vdma_0/S_AXIS_S2MM]
+set_property location {3 829 1238} [get_bd_cells axi_vdma_0]
+connect_bd_net [get_bd_pins axi_vdma_0/s_axis_s2mm_aclk] [get_bd_pins axis_gen_0/m_axis_aclk]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins axis_gen_0/m_axis_aclk] [get_bd_pins zynq_us_ss_0/clk_out2]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0
+endgroup
+connect_bd_net [get_bd_pins xlconstant_0/dout] [get_bd_pins axis_gen_0/m_axis_aresetn]
+regenerate_bd_layout
+save_bd_design
+assign_bd_address
+validate_bd_design
+validate_bd_design -force
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0
+endgroup
+update_compile_order -fileset sources_1
+connect_bd_intf_net [get_bd_intf_pins system_ila_0/SLOT_0_AXI] [get_bd_intf_pins ddr4_0/C0_DDR4_S_AXI]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins smartconnect_0/aresetn]
+connect_bd_net [get_bd_pins proc_sys_reset_0/peripheral_aresetn] [get_bd_pins ddr4_0/c0_ddr4_aresetn]
+connect_bd_net [get_bd_pins proc_sys_reset_0/slowest_sync_clk] [get_bd_pins ddr4_0/c0_ddr4_ui_clk]
+connect_bd_net [get_bd_pins proc_sys_reset_0/ext_reset_in] [get_bd_pins xlconstant_0/dout]
+regenerate_bd_layout
+connect_bd_net [get_bd_pins system_ila_0/clk] [get_bd_pins ddr4_0/c0_ddr4_ui_clk]
+connect_bd_net [get_bd_pins system_ila_0/resetn] [get_bd_pins proc_sys_reset_0/peripheral_aresetn]
+regenerate_bd_layout
+save_bd_design
+validate_bd_design
+set_property name axis_gen [get_bd_cells axis_gen_0]
+save_bd_design
+regenerate_bd_layout
+regenerate_bd_layout
+set_property name usr_rst [get_bd_ports reset_0]
+save_bd_design
+regenerate_bd_layout
+update_module_reference exdes_axis_gen_0_0
+regenerate_bd_layout
+update_module_reference exdes_axis_gen_0_0
+regenerate_bd_layout

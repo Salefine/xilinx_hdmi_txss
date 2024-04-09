@@ -1,0 +1,597 @@
+
+*** Running vivado
+    with args -log exdes_aud_pat_gen_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source exdes_aud_pat_gen_0.tcl
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source exdes_aud_pat_gen_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: exdes_aud_pat_gen_0
+Command: synth_design -top exdes_aud_pat_gen_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev'
+INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 9660
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+INFO: [Synth 8-11241] undeclared symbol 'axis_tready_to_patgen', assumed default net type 'wire' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_top.v:149]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 2524.910 ; gain = 338.125
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'exdes_aud_pat_gen_0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/synth/exdes_aud_pat_gen_0.sv:53]
+INFO: [Synth 8-638] synthesizing module 'aud_pat_gen_v1_0_0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0.vhd:60]
+WARNING: [Synth 8-3819] Generic 'C_FAMILY' not present in instantiated entity will be ignored [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/synth/exdes_aud_pat_gen_0.sv:167]
+INFO: [Synth 8-3491] module 'aud_pat_gen_v1_0_0_top' declared at 'e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_top.v:39' bound to instance 'aud_pat_gen_v1_0_0_top_inst' of component 'aud_pat_gen_v1_0_0_top' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0.vhd:169]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_top' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_top.v:39]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_dport' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_lib_pls_cdc' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:187]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_lib_pls_cdc' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:187]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_dport' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:45]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_lib_rst' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:31]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_sync_rst' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_sync_rst' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1058]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_lib_rst' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:31]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_regs' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen_v1_0_0/aud_pat_gen_v1_0_0_regs.sv:35]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_regs' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen_v1_0_0/aud_pat_gen_v1_0_0_regs.sv:35]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc__parameterized0' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_single__parameterized0' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_single__parameterized0' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:152]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc__parameterized0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc__parameterized1' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized0' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized0' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc__parameterized1' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc__parameterized2' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized1' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized1' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc__parameterized2' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc__parameterized3' [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_handshake__parameterized2' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_handshake__parameterized2' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:468]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_lib_cdc__parameterized3' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:66]
+INFO: [Synth 8-6155] done synthesizing module 'aud_pat_gen_v1_0_0_top' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_top.v:39]
+INFO: [Synth 8-256] done synthesizing module 'aud_pat_gen_v1_0_0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0.vhd:60]
+INFO: [Synth 8-6155] done synthesizing module 'exdes_aud_pat_gen_0' (0#1) [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/synth/exdes_aud_pat_gen_0.sv:53]
+WARNING: [Synth 8-6014] Unused sequential element cntr_250ms_ch2_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:518]
+WARNING: [Synth 8-6014] Unused sequential element toggle_pat_read_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:522]
+WARNING: [Synth 8-6014] Unused sequential element ch_rd_index_d_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:837]
+WARNING: [Synth 8-6014] Unused sequential element i_axis_tvalid_q_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:842]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[6] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[7] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[8] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[10] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[18] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[19] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[20] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[22] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element Sine_new_48k_reg[23] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:106]
+WARNING: [Synth 8-6014] Unused sequential element SppLUT_reg[11] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:171]
+WARNING: [Synth 8-6014] Unused sequential element SppLUT_reg[12] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:171]
+WARNING: [Synth 8-6014] Unused sequential element SppLUT_reg[13] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:171]
+WARNING: [Synth 8-6014] Unused sequential element SppLUT_reg[14] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:171]
+WARNING: [Synth 8-6014] Unused sequential element SppLUT_reg[15] was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_dport.sv:171]
+WARNING: [Synth 8-6014] Unused sequential element gen_handshake.bclk_dest_run_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:169]
+WARNING: [Synth 8-6014] Unused sequential element gen_handshake.bclk_dest_run_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:169]
+WARNING: [Synth 8-6014] Unused sequential element gen_handshake.bclk_dest_run_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:169]
+WARNING: [Synth 8-6014] Unused sequential element gen_handshake.bclk_dest_run_reg was removed.  [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/aud_pat_gen_v1_0_0_lib.sv:169]
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DST_RST_IN in module aud_pat_gen_v1_0_0_lib_cdc__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DST_RST_IN in module aud_pat_gen_v1_0_0_lib_cdc__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DST_RST_IN in module aud_pat_gen_v1_0_0_lib_cdc__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DST_RST_IN in module aud_pat_gen_v1_0_0_lib_cdc__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[31] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[30] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[29] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[28] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[27] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[26] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[25] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[24] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[23] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[22] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[21] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[20] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[19] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[18] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[17] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[16] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[15] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[14] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[13] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[12] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[11] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[10] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[9] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[8] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[2] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[1] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awprot[0] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[31] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[30] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[29] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[28] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[27] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[26] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[25] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[24] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[23] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[22] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[21] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[20] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[19] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[18] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[17] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[16] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[15] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[14] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[13] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[12] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[11] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[10] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[9] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_araddr[8] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[2] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[1] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_arprot[0] in module aud_pat_gen_v1_0_0_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SRC_RST_IN in module aud_pat_gen_v1_0_0_lib_cdc is either unconnected or has no load
+WARNING: [Synth 8-7129] Port DST_RST_IN in module aud_pat_gen_v1_0_0_lib_cdc is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 2636.484 ; gain = 449.699
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2654.391 ; gain = 467.605
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:08 . Memory (MB): peak = 2654.391 ; gain = 467.605
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.064 . Memory (MB): peak = 2654.391 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes_aud_pat_gen_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes_aud_pat_gen_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/AudioGen.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_aud_pat_gen_0/exdes/rtl/aud_pat_gen/AudioGen.xdc] for cell 'inst'
+Parsing XDC File [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_aud_pat_gen_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_aud_pat_gen_0_synth_1/dont_touch.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_handshake.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/exdes_aud_pat_gen_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/exdes_aud_pat_gen_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_single.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/exdes_aud_pat_gen_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/exdes_aud_pat_gen_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Project 1-1714] 67 XPM XDC files have been applied to the design.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2777.973 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.057 . Memory (MB): peak = 2777.973 ; gain = 0.000
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 2777.973 ; gain = 591.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu7ev-ffvc1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 2777.973 ; gain = 591.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_aud_pat_gen_0_synth_1/dont_touch.xdc, line 9).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_SAMPLE_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_CHANNEL_COUNT_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD1_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD2_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD3_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD4_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD5_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD6_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD7_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD8_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_CHANNEL_STATUS_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_OFFSET_ADDR_CNTR_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN1_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN2_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN3_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN4_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN5_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN6_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN7_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN8_RATE_SYNC_INST/\gen_handshake.XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst/PULSE_SYNC_INST/REQ_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst/AUD_CONFIG_UPDATE_SYNC_INST/REQ_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_CFGUPD_CLK_CROSS_INST/REQ_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_START_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AXIS_START_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AXISCLK_AUDDROP_SYNC_INST/\gen_single.genblk1[0].XPM_INST . (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_SAMPLE_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_CHANNEL_COUNT_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_CHANNEL_STATUS_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN1_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN2_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN3_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN4_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN5_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN6_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN7_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN8_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD1_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD2_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD3_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD4_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD5_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD6_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD7_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD8_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_OFFSET_ADDR_CNTR_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_dest2src_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_SAMPLE_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_CHANNEL_COUNT_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_CHANNEL_STATUS_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN1_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN2_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN3_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN4_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN5_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN6_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN7_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PATTERN8_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD1_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD2_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD3_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD4_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD5_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD6_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD7_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_PERIOD8_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_OFFSET_ADDR_CNTR_RATE_SYNC_INST/\gen_handshake.XPM_INST /xpm_cdc_single_src2dest_inst. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for inst/aud_pat_gen_v1_0_0_top_inst/AUD_RST_CLK_CROSS_INST/XPM_RST_INST. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 2777.973 ; gain = 591.188
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'stmAxi4LiteWrite_reg' in module 'aud_pat_gen_v1_0_0_regs'
+INFO: [Synth 8-802] inferred FSM for state register 'stmAxi4LiteRead_reg' in module 'aud_pat_gen_v1_0_0_regs'
+INFO: [Synth 8-6904] The RAM "aud_pat_gen_v1_0_0_dport:/ch1_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "aud_pat_gen_v1_0_0_dport:/ch2_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "aud_pat_gen_v1_0_0_dport:/ch3_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "aud_pat_gen_v1_0_0_dport:/ch4_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "aud_pat_gen_v1_0_0_dport:/ch5_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "aud_pat_gen_v1_0_0_dport:/ch6_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "aud_pat_gen_v1_0_0_dport:/ch7_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "aud_pat_gen_v1_0_0_dport:/ch8_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sWrIdle |                               00 | 00000000000000000000000000000000
+            sWrAddrValid |                               01 | 00000000000000000000000000000001
+                 sWrResp |                               10 | 00000000000000000000000000000010
+            sWrRespValid |                               11 | 00000000000000000000000000000011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stmAxi4LiteWrite_reg' using encoding 'sequential' in module 'aud_pat_gen_v1_0_0_regs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 sRdIdle |                              001 | 00000000000000000000000000000000
+            sRdAddrValid |                              010 | 00000000000000000000000000000001
+            sRdDataValid |                              100 | 00000000000000000000000000000010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'stmAxi4LiteRead_reg' using encoding 'one-hot' in module 'aud_pat_gen_v1_0_0_regs'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:19 . Memory (MB): peak = 2777.973 ; gain = 591.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   24 Bit       Adders := 8     
+	   2 Input   12 Bit       Adders := 1     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 2     
+	   2 Input    3 Bit       Adders := 10    
++---XORs : 
+	   2 Input      1 Bit         XORs := 11    
++---XORs : 
+	               24 Bit    Wide XORs := 8     
++---Registers : 
+	              192 Bit    Registers := 5     
+	               42 Bit    Registers := 1     
+	               40 Bit    Registers := 11    
+	               32 Bit    Registers := 10    
+	               24 Bit    Registers := 13    
+	               16 Bit    Registers := 37    
+	               12 Bit    Registers := 2     
+	                9 Bit    Registers := 4     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 31    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 72    
+	                1 Bit    Registers := 110   
++---RAMs : 
+	              256 Bit	(8 X 32 bit)          RAMs := 8     
++---Muxes : 
+	   2 Input  192 Bit        Muxes := 3     
+	   7 Input  192 Bit        Muxes := 1     
+	   4 Input  192 Bit        Muxes := 1     
+	   2 Input  150 Bit        Muxes := 2     
+	  17 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 1     
+	   2 Input   24 Bit        Muxes := 14    
+	   4 Input   24 Bit        Muxes := 8     
+	   2 Input   16 Bit        Muxes := 2     
+	   8 Input   16 Bit        Muxes := 1     
+	   2 Input   12 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    5 Bit        Muxes := 2     
+	  17 Input    5 Bit        Muxes := 1     
+	  17 Input    3 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 1     
+	   4 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 30    
+	  17 Input    1 Bit        Muxes := 20    
+	   4 Input    1 Bit        Muxes := 29    
+	   3 Input    1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1728 (col length:144)
+BRAMs: 624 (col length: RAMB18 144 RAMB36 72)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch1_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch2_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch3_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch4_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch5_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch6_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch7_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch8_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+WARNING: [Synth 8-7129] Port src_clk in module xpm_cdc_single__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__8 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1__xdcDup__7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1__xdcDup__6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1__xdcDup__5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1__xdcDup__4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1__xdcDup__3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1__xdcDup__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized1__xdcDup__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dest_ack in module xpm_cdc_handshake__xdcDup__1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[31] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[30] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[29] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[28] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[27] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[26] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[25] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[24] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[23] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[22] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[21] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[20] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[19] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port axi_awaddr[18] in module aud_pat_gen_v1_0_0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch1_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch2_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch3_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch4_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch5_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch6_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch7_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst /ch8_sample_queue_reg" of size (depth=8 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:24 . Memory (MB): peak = 2777.973 ; gain = 591.188
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-----------------------------------------------------------------+----------------------+-----------+----------------------+---------------+
+|Module Name                                                      | RTL Object           | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------+----------------------+-----------+----------------------+---------------+
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch1_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch2_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch3_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch4_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch5_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch6_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch7_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch8_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
++-----------------------------------------------------------------+----------------------+-----------+----------------------+---------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:35 . Memory (MB): peak = 3218.836 ; gain = 1032.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping Report
++-----------------------------------------------------------------+----------------------+-----------+----------------------+---------------+
+|Module Name                                                      | RTL Object           | Inference | Size (Depth x Width) | Primitives    | 
++-----------------------------------------------------------------+----------------------+-----------+----------------------+---------------+
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch1_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch2_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch3_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch4_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch5_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch6_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch7_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
+|inst/\aud_pat_gen_v1_0_0_top_inst/aud_pat_gen_v1_0_0_dport_inst  | ch8_sample_queue_reg | Implied   | 8 x 32               | RAM32M16 x 3  | 
++-----------------------------------------------------------------+----------------------+-----------+----------------------+---------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:38 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:00:42 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY8   |    28|
+|2     |LUT1     |    59|
+|3     |LUT2     |   212|
+|4     |LUT3     |   115|
+|5     |LUT4     |    84|
+|6     |LUT5     |   187|
+|7     |LUT6     |   347|
+|8     |MUXF7    |    34|
+|9     |RAM32M   |     8|
+|10    |RAM32M16 |    16|
+|11    |FDCE     |    29|
+|12    |FDRE     |  2004|
+|13    |FDSE     |    27|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 76 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:36 . Memory (MB): peak = 3298.094 ; gain = 987.727
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:42 . Memory (MB): peak = 3298.094 ; gain = 1111.309
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.036 . Memory (MB): peak = 3303.012 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 86 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3319.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 24 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 8 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 16 instances
+
+Synth Design complete, checksum: 95aecd51
+INFO: [Common 17-83] Releasing license: Synthesis
+91 Infos, 124 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:51 . Memory (MB): peak = 3319.129 ; gain = 2236.238
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_aud_pat_gen_0_synth_1/exdes_aud_pat_gen_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP exdes_aud_pat_gen_0, cache-ID = 5a2b547a3d9b7257
+INFO: [Coretcl 2-1174] Renamed 101 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_aud_pat_gen_0_synth_1/exdes_aud_pat_gen_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file exdes_aud_pat_gen_0_utilization_synth.rpt -pb exdes_aud_pat_gen_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 09:43:52 2024...

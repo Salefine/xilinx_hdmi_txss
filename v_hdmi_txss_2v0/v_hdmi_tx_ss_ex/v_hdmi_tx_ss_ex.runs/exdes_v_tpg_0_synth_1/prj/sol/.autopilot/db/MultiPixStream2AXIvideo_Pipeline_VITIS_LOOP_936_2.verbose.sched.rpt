@@ -1,0 +1,222 @@
+
+
+================================================================
+== Vitis HLS Report for 'MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2'
+================================================================
+* Date:           Tue Apr  9 10:34:54 2024
+
+* Version:        2022.2 (Build 3670227 on Oct 13 2022)
+* Project:        prj
+* Solution:       sol (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu7ev-ffvc1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+---------+----------+------------+
+    |  Clock |  Target | Estimated| Uncertainty|
+    +--------+---------+----------+------------+
+    |ap_clk  |  3.33 ns|  1.615 ns|     0.90 ns|
+    +--------+---------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min    |    max   | min |  max |   Type  |
+    +---------+---------+-----------+----------+-----+------+---------+
+    |        4|     2051|  13.332 ns|  6.836 us|    4|  2051|       no|
+    +---------+---------+-----------+----------+-----+------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  |   Trip   |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  |   Count  | Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+        |- VITIS_LOOP_936_2  |        1|     2048|         2|          1|          1|  1 ~ 2048|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+----------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 2
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 2, States = { 2 3 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 4 3 
+3 --> 2 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.42>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%j = alloca i32 1"   --->   Operation 6 'alloca' 'j' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%sub_cast_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %sub_cast"   --->   Operation 7 'read' 'sub_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%field_id_load_read = read i16 @_ssdm_op_Read.ap_auto.i16, i16 %field_id_load"   --->   Operation 8 'read' 'field_id_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%icmp_ln975_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln975"   --->   Operation 9 'read' 'icmp_ln975_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%icmp_ln975_1_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %icmp_ln975_1"   --->   Operation 10 'read' 'icmp_ln975_1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%fid_in_load_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %fid_in_load"   --->   Operation 11 'read' 'fid_in_load_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%div283_cast_read = read i12 @_ssdm_op_Read.ap_auto.i12, i12 %div283_cast"   --->   Operation 12 'read' 'div283_cast_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%tmp = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %empty"   --->   Operation 13 'read' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%sof_read = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %sof"   --->   Operation 14 'read' 'sof_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%sub_cast_cast = sext i12 %sub_cast_read"   --->   Operation 15 'sext' 'sub_cast_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%specaxissidechannel_ln0 = specaxissidechannel void @_ssdm_op_SpecAXISSideChannel, i48 %m_axis_video_V_data_V, i6 %m_axis_video_V_keep_V, i6 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, void @empty_27"   --->   Operation 16 'specaxissidechannel' 'specaxissidechannel_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i1 %m_axis_video_V_dest_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_user_V, i6 %m_axis_video_V_strb_V, i6 %m_axis_video_V_keep_V, i48 %m_axis_video_V_data_V, void @empty_39, i32 0, i32 0, void @empty_5, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 17 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i48 %ovrlayYUV, void @empty_29, i32 0, i32 0, void @empty_6, i32 0, i32 0, void @empty_6, void @empty_6, void @empty_6, i32 0, i32 0, i32 0, i32 0, void @empty_6, void @empty_6, i32 4294967295, i32 0"   --->   Operation 18 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.42ns)   --->   "%store_ln0 = store i12 0, i12 %j"   --->   Operation 19 'store' 'store_ln0' <Predicate = true> <Delay = 0.42>
+ST_1 : Operation 20 [1/1] (0.42ns)   --->   "%br_ln0 = br void %for.body35"   --->   Operation 20 'br' 'br_ln0' <Predicate = true> <Delay = 0.42>
+
+State 2 <SV = 1> <Delay = 1.40>
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%tmp_user_V = phi i1 0, void %for.inc124, i1 %sof_read, void %newFuncRoot"   --->   Operation 21 'phi' 'tmp_user_V' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 22 [1/1] (0.00ns)   --->   "%p_phi = phi i1 %empty_144, void %for.inc124, i1 %tmp, void %newFuncRoot" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 22 'phi' 'p_phi' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%j_1 = load i12 %j" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936]   --->   Operation 23 'load' 'j_1' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln936 = zext i12 %j_1" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936]   --->   Operation 24 'zext' 'zext_ln936' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 25 [1/1] (0.97ns)   --->   "%icmp_ln936 = icmp_eq  i12 %j_1, i12 %div283_cast_read" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936]   --->   Operation 25 'icmp' 'icmp_ln936' <Predicate = true> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 26 [1/1] (0.00ns)   --->   "%speclooptripcount_ln0 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 1, i64 2048, i64 0"   --->   Operation 26 'speclooptripcount' 'speclooptripcount_ln0' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 27 [1/1] (0.80ns)   --->   "%j_2 = add i12 %j_1, i12 1" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936]   --->   Operation 27 'add' 'j_2' <Predicate = true> <Delay = 0.80> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.80> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/1] (0.00ns)   --->   "%br_ln936 = br i1 %icmp_ln936, void %for.body35.split, void %for.inc127.loopexit.exitStub" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936]   --->   Operation 28 'br' 'br_ln936' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 29 [1/1] (0.00ns)   --->   "%specpipeline_ln939 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, void @empty_6" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:939]   --->   Operation 29 'specpipeline' 'specpipeline_ln939' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%specloopname_ln928 = specloopname void @_ssdm_op_SpecLoopName, void @empty_37" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:928]   --->   Operation 30 'specloopname' 'specloopname_ln928' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_2 : Operation 31 [1/1] (0.97ns)   --->   "%tmp_last_V = icmp_eq  i13 %zext_ln936, i13 %sub_cast_cast" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:949]   --->   Operation 31 'icmp' 'tmp_last_V' <Predicate = (!icmp_ln936)> <Delay = 0.97> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/1] (0.00ns)   --->   "%br_ln958 = br i1 %tmp_user_V, void %for.body58_ifconv, void %if.then48" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:958]   --->   Operation 32 'br' 'br_ln958' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_2 : Operation 33 [1/1] (0.00ns)   --->   "%counter_loc_1_out_load = load i16 %counter_loc_1_out" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:960]   --->   Operation 33 'load' 'counter_loc_1_out_load' <Predicate = (!icmp_ln936 & tmp_user_V)> <Delay = 0.00>
+ST_2 : Operation 34 [1/1] (0.85ns)   --->   "%add_ln960 = add i16 %counter_loc_1_out_load, i16 1" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:960]   --->   Operation 34 'add' 'add_ln960' <Predicate = (!icmp_ln936 & tmp_user_V)> <Delay = 0.85> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 0.85> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 35 [1/1] (0.00ns)   --->   "%store_ln960 = store i16 %add_ln960, i16 %counter" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:960]   --->   Operation 35 'store' 'store_ln960' <Predicate = (!icmp_ln936 & tmp_user_V)> <Delay = 0.00>
+ST_2 : Operation 36 [1/1] (0.00ns)   --->   "%store_ln961 = store i16 %add_ln960, i16 %counter_loc_1_out" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:961]   --->   Operation 36 'store' 'store_ln961' <Predicate = (!icmp_ln936 & tmp_user_V)> <Delay = 0.00>
+ST_2 : Operation 37 [1/1] (0.00ns)   --->   "%br_ln961 = br void %for.body58_ifconv" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:961]   --->   Operation 37 'br' 'br_ln961' <Predicate = (!icmp_ln936 & tmp_user_V)> <Delay = 0.00>
+ST_2 : Operation 38 [1/1] (0.44ns)   --->   "%switch_ln993 = switch i16 %field_id_load_read, void %if.else119, i16 0, void %if.then106, i16 1, void %if.then110, i16 2, void %if.then114, i16 3, void %if.then118" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:993]   --->   Operation 38 'switch' 'switch_ln993' <Predicate = (!icmp_ln936)> <Delay = 0.44>
+ST_2 : Operation 39 [1/1] (0.00ns)   --->   "%write_ln1004 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %fid, i1 1" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1004]   --->   Operation 39 'write' 'write_ln1004' <Predicate = (!icmp_ln936 & field_id_load_read == 2)> <Delay = 0.00>
+ST_2 : Operation 40 [1/1] (0.57ns)   --->   "%br_ln1005 = br void %for.inc124" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1005]   --->   Operation 40 'br' 'br_ln1005' <Predicate = (!icmp_ln936 & field_id_load_read == 2)> <Delay = 0.57>
+ST_2 : Operation 41 [1/1] (0.00ns)   --->   "%write_ln995 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %fid, i1 0" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:995]   --->   Operation 41 'write' 'write_ln995' <Predicate = (!icmp_ln936 & field_id_load_read == 0)> <Delay = 0.00>
+ST_2 : Operation 42 [1/1] (0.57ns)   --->   "%br_ln996 = br void %for.inc124" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:996]   --->   Operation 42 'br' 'br_ln996' <Predicate = (!icmp_ln936 & field_id_load_read == 0)> <Delay = 0.57>
+ST_2 : Operation 43 [1/1] (0.00ns)   --->   "%write_ln1013 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %fid, i1 %fid_in_load_read" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1013]   --->   Operation 43 'write' 'write_ln1013' <Predicate = (!icmp_ln936 & field_id_load_read != 0 & field_id_load_read != 1 & field_id_load_read != 2 & field_id_load_read != 3)> <Delay = 0.00>
+ST_2 : Operation 44 [1/1] (0.57ns)   --->   "%br_ln0 = br void %for.inc124"   --->   Operation 44 'br' 'br_ln0' <Predicate = (!icmp_ln936 & field_id_load_read != 0 & field_id_load_read != 1 & field_id_load_read != 2 & field_id_load_read != 3)> <Delay = 0.57>
+ST_2 : Operation 45 [1/1] (0.42ns)   --->   "%store_ln936 = store i12 %j_2, i12 %j" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936]   --->   Operation 45 'store' 'store_ln936' <Predicate = (!icmp_ln936)> <Delay = 0.42>
+ST_2 : Operation 46 [1/1] (0.00ns)   --->   "%br_ln936 = br void %for.body35" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936]   --->   Operation 46 'br' 'br_ln936' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+
+State 3 <SV = 2> <Delay = 1.61>
+ST_3 : Operation 47 [1/1] (0.00ns)   --->   "%counter_loc_1_out_load_1 = load i16 %counter_loc_1_out" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 47 'load' 'counter_loc_1_out_load_1' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 48 [1/1] (0.00ns)   --->   "%fid_toggle = trunc i16 %counter_loc_1_out_load_1" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 48 'trunc' 'fid_toggle' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 49 [1/1] (1.21ns)   --->   "%ovrlayYUV_read = read i48 @_ssdm_op_Read.ap_fifo.volatile.i48P0A, i48 %ovrlayYUV" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 49 'read' 'ovrlayYUV_read' <Predicate = (!icmp_ln936)> <Delay = 1.21> <CoreInst = "FIFO_SRL">   --->   Core 81 'FIFO_SRL' <Latency = 0> <II = 1> <Delay = 2.04> <Storage> <Opcode : 'read' 'write' 'nbread' 'nbwrite'> <Ports = 0> <Width = 48> <Depth = 16> <FIFO>
+ST_3 : Operation 50 [1/1] (0.00ns)   --->   "%pix_444_V = trunc i48 %ovrlayYUV_read" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 50 'trunc' 'pix_444_V' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 51 [1/1] (0.00ns)   --->   "%pix_rgb_V = partselect i8 @_ssdm_op_PartSelect.i8.i48.i32.i32, i48 %ovrlayYUV_read, i32 32, i32 39" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 51 'partselect' 'pix_rgb_V' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 52 [1/1] (0.00ns)   --->   "%pix_rgb_V_6 = partselect i8 @_ssdm_op_PartSelect.i8.i48.i32.i32, i48 %ovrlayYUV_read, i32 40, i32 47" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 52 'partselect' 'pix_rgb_V_6' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 53 [1/1] (0.00ns)   --->   "%pix_rgb_V_4 = partselect i8 @_ssdm_op_PartSelect.i8.i48.i32.i32, i48 %ovrlayYUV_read, i32 8, i32 15" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 53 'partselect' 'pix_rgb_V_4' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 54 [1/1] (0.00ns)   --->   "%pix_rgb_V_5 = partselect i8 @_ssdm_op_PartSelect.i8.i48.i32.i32, i48 %ovrlayYUV_read, i32 16, i32 23" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 54 'partselect' 'pix_rgb_V_5' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 55 [1/1] (0.00ns)   --->   "%pix_422_V = partselect i8 @_ssdm_op_PartSelect.i8.i48.i32.i32, i48 %ovrlayYUV_read, i32 24, i32 31" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 55 'partselect' 'pix_422_V' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 56 [1/1] (0.00ns)   --->   "%p_Result_s = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i1.i8, i1 1, i8 %pix_444_V"   --->   Operation 56 'bitconcatenate' 'p_Result_s' <Predicate = (!icmp_ln936 & !icmp_ln975_1_read)> <Delay = 0.00>
+ST_3 : Operation 57 [1/1] (0.00ns)   --->   "%p_Result_1 = bitconcatenate i9 @_ssdm_op_BitConcatenate.i9.i1.i8, i1 1, i8 %pix_rgb_V_4"   --->   Operation 57 'bitconcatenate' 'p_Result_1' <Predicate = (!icmp_ln936 & icmp_ln975_1_read)> <Delay = 0.00>
+ST_3 : Operation 58 [1/1] (0.39ns)   --->   "%axi_data_V = select i1 %icmp_ln975_1_read, i9 %p_Result_1, i9 %p_Result_s" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 58 'select' 'axi_data_V' <Predicate = (!icmp_ln936)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 59 [1/1] (0.00ns)   --->   "%sext_ln880 = sext i9 %axi_data_V" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:880]   --->   Operation 59 'sext' 'sext_ln880' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 60 [1/1] (0.39ns)   --->   "%select_ln975 = select i1 %icmp_ln975_1_read, i8 %pix_rgb_V_5, i8 %pix_rgb_V_4" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 60 'select' 'select_ln975' <Predicate = (!icmp_ln936)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 61 [1/1] (0.00ns) (grouped into LUT with out node select_ln975_2)   --->   "%select_ln975_1 = select i1 %icmp_ln975_read, i8 %pix_rgb_V_5, i8 %pix_422_V" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 61 'select' 'select_ln975_1' <Predicate = (!icmp_ln936 & !icmp_ln975_1_read)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 62 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln975_2 = select i1 %icmp_ln975_1_read, i8 %pix_444_V, i8 %select_ln975_1" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 62 'select' 'select_ln975_2' <Predicate = (!icmp_ln936)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 63 [1/1] (0.00ns) (grouped into LUT with out node select_ln975_4)   --->   "%select_ln975_3 = select i1 %icmp_ln975_read, i8 %pix_422_V, i8 %pix_rgb_V" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 63 'select' 'select_ln975_3' <Predicate = (!icmp_ln936 & !icmp_ln975_1_read)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 64 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln975_4 = select i1 %icmp_ln975_1_read, i8 %pix_rgb_V, i8 %select_ln975_3" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 64 'select' 'select_ln975_4' <Predicate = (!icmp_ln936)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 65 [1/1] (0.00ns) (grouped into LUT with out node select_ln975_6)   --->   "%select_ln975_5 = select i1 %icmp_ln975_read, i8 %pix_rgb_V, i8 %pix_rgb_V_6" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 65 'select' 'select_ln975_5' <Predicate = (!icmp_ln936 & !icmp_ln975_1_read)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 66 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln975_6 = select i1 %icmp_ln975_1_read, i8 %pix_rgb_V_6, i8 %select_ln975_5" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 66 'select' 'select_ln975_6' <Predicate = (!icmp_ln936)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 67 [1/1] (0.00ns) (grouped into LUT with out node select_ln975_8)   --->   "%select_ln975_7 = select i1 %icmp_ln975_read, i8 %pix_rgb_V_6, i8 %pix_rgb_V_5" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 67 'select' 'select_ln975_7' <Predicate = (!icmp_ln936 & !icmp_ln975_1_read)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 68 [1/1] (0.39ns) (out node of the LUT)   --->   "%select_ln975_8 = select i1 %icmp_ln975_1_read, i8 %pix_422_V, i8 %select_ln975_7" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 68 'select' 'select_ln975_8' <Predicate = (!icmp_ln936)> <Delay = 0.39> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.39> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 69 [1/1] (0.00ns)   --->   "%tmp_s = bitconcatenate i40 @_ssdm_op_BitConcatenate.i40.i8.i8.i8.i8.i8, i8 %select_ln975_8, i8 %select_ln975_6, i8 %select_ln975_4, i8 %select_ln975_2, i8 %select_ln975" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 69 'bitconcatenate' 'tmp_s' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 70 [1/1] (0.00ns)   --->   "%axi_data_V_3 = partset i48 @_ssdm_op_PartSet.i48.i48.i40.i32.i32, i48 %sext_ln880, i40 %tmp_s, i32 8, i32 47" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975]   --->   Operation 70 'partset' 'axi_data_V_3' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+ST_3 : Operation 71 [1/1] (0.00ns)   --->   "%write_ln258 = write void @_ssdm_op_Write.axis.volatile.i48P0A.i6P0A.i6P0A.i1P0A.i1P0A.i1P0A.i1P0A, i48 %m_axis_video_V_data_V, i6 %m_axis_video_V_keep_V, i6 %m_axis_video_V_strb_V, i1 %m_axis_video_V_user_V, i1 %m_axis_video_V_last_V, i1 %m_axis_video_V_id_V, i1 %m_axis_video_V_dest_V, i48 %axi_data_V_3, i6 63, i6 0, i1 %tmp_user_V, i1 %tmp_last_V, i1 0, i1 0"   --->   Operation 71 'write' 'write_ln258' <Predicate = (!icmp_ln936)> <Delay = 0.00> <CoreInst = "axis">   --->   Core 123 'axis' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_3 : Operation 72 [1/1] (0.28ns)   --->   "%fid_toggle_1 = xor i1 %fid_toggle, i1 1" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1008]   --->   Operation 72 'xor' 'fid_toggle_1' <Predicate = (!icmp_ln936 & field_id_load_read == 3)> <Delay = 0.28> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.28> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 73 [1/1] (0.00ns)   --->   "%write_ln1009 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %fid, i1 %fid_toggle_1" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1009]   --->   Operation 73 'write' 'write_ln1009' <Predicate = (!icmp_ln936 & field_id_load_read == 3)> <Delay = 0.00>
+ST_3 : Operation 74 [1/1] (0.57ns)   --->   "%br_ln1010 = br void %for.inc124" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1010]   --->   Operation 74 'br' 'br_ln1010' <Predicate = (!icmp_ln936 & field_id_load_read == 3)> <Delay = 0.57>
+ST_3 : Operation 75 [1/1] (0.00ns)   --->   "%write_ln999 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %fid, i1 %fid_toggle" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:999]   --->   Operation 75 'write' 'write_ln999' <Predicate = (!icmp_ln936 & field_id_load_read == 1)> <Delay = 0.00>
+ST_3 : Operation 76 [1/1] (0.57ns)   --->   "%br_ln1001 = br void %for.inc124" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:1001]   --->   Operation 76 'br' 'br_ln1001' <Predicate = (!icmp_ln936 & field_id_load_read == 1)> <Delay = 0.57>
+ST_3 : Operation 77 [1/1] (0.00ns)   --->   "%empty_144 = phi i1 0, void %if.then106, i1 %fid_toggle, void %if.then110, i1 1, void %if.then114, i1 %fid_in_load_read, void %if.else119, i1 %fid_toggle_1, void %if.then118"   --->   Operation 77 'phi' 'empty_144' <Predicate = (!icmp_ln936)> <Delay = 0.00>
+
+State 4 <SV = 2> <Delay = 0.00>
+ST_4 : Operation 78 [1/1] (0.00ns)   --->   "%store_ln963 = store i1 %p_phi, i1 %p_phi_out" [E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963]   --->   Operation 78 'store' 'store_ln963' <Predicate = true> <Delay = 0.00>
+
+State 5 <SV = 3> <Delay = 0.00>
+ST_5 : Operation 79 [1/1] (0.00ns)   --->   "%ret_ln0 = ret"   --->   Operation 79 'ret' 'ret_ln0' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 3.33ns, clock uncertainty: 0.9ns.
+
+ <State 1>: 0.427ns
+The critical path consists of the following:
+	'alloca' operation ('j') [21]  (0 ns)
+	'store' operation ('store_ln0') of constant 0 on local variable 'j' [34]  (0.427 ns)
+
+ <State 2>: 1.4ns
+The critical path consists of the following:
+	'load' operation ('j', E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936) on local variable 'j' [39]  (0 ns)
+	'add' operation ('j', E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936) [43]  (0.809 ns)
+	'store' operation ('store_ln936', E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936) of variable 'j', E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:936 on local variable 'j' [101]  (0.427 ns)
+	blocking operation 0.167 ns on control path)
+
+ <State 3>: 1.61ns
+The critical path consists of the following:
+	fifo read operation ('ovrlayYUV_read', E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963) on port 'ovrlayYUV' (E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:963) [59]  (1.22 ns)
+	'select' operation ('axi.data.V', E:/xilinx_axi/v_dma_txss/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_v_tpg_0_synth_1/prj/sol/.autopilot/db/v_tpg.cpp:975) [68]  (0.398 ns)
+
+ <State 4>: 0ns
+The critical path consists of the following:
+
+ <State 5>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

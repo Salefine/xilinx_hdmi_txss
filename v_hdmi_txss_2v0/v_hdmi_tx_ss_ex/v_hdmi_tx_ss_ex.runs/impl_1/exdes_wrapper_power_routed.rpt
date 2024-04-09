@@ -1,0 +1,242 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
+| Date             : Tue Apr  9 10:48:46 2024
+| Host             : weslie running 64-bit major release  (build 9200)
+| Command          : report_power -file exdes_wrapper_power_routed.rpt -pb exdes_wrapper_power_summary_routed.pb -rpx exdes_wrapper_power_routed.rpx
+| Design           : exdes_wrapper
+| Device           : xczu7ev-ffvc1156-2-e
+| Design State     : routed
+| Grade            : extended
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+--------------+
+| Total On-Chip Power (W)  | 5.735        |
+| Design Power Budget (W)  | Unspecified* |
+| Power Budget Margin (W)  | NA           |
+| Dynamic (W)              | 4.965        |
+| Device Static (W)        | 0.769        |
+| Effective TJA (C/W)      | 1.0          |
+| Max Ambient (C)          | 94.4         |
+| Junction Temperature (C) | 30.6         |
+| Confidence Level         | Low          |
+| Setting File             | ---          |
+| Simulation Activity File | ---          |
+| Design Nets Matched      | NA           |
++--------------------------+--------------+
+* Specify Design Power Budget using, set_operating_conditions -design_power_budget <value in Watts>
+
+
+1.1 On-Chip Components
+----------------------
+
++--------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
++--------------------------+-----------+----------+-----------+-----------------+
+| Clocks                   |     0.431 |       39 |       --- |             --- |
+| CLB Logic                |     0.251 |   129883 |       --- |             --- |
+|   LUT as Distributed RAM |     0.165 |     3594 |    101760 |            3.53 |
+|   LUT as Logic           |     0.063 |    35615 |    230400 |           15.46 |
+|   LUT as Shift Register  |     0.014 |     2902 |    101760 |            2.85 |
+|   Register               |     0.008 |    66358 |    460800 |           14.40 |
+|   CARRY8                 |     0.001 |      482 |     28800 |            1.67 |
+|   Others                 |    <0.001 |     3957 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |     1206 |    230400 |            0.52 |
+|   BUFG                   |     0.000 |        2 |        64 |            3.13 |
+| Signals                  |     0.122 |   113835 |       --- |             --- |
+| Block RAM                |     0.067 |     67.5 |       312 |           21.63 |
+| MMCM                     |     0.313 |        0 |       --- |             --- |
+| PLL                      |     0.170 |        3 |       --- |             --- |
+| DSPs                     |    <0.001 |        3 |      1728 |            0.17 |
+| I/O                      |     0.704 |      129 |       360 |           35.83 |
+| GTH                      |     0.263 |        3 |        20 |           15.00 |
+| PS8                      |     2.643 |        1 |       --- |             --- |
+| Static Power             |     0.769 |          |           |                 |
+|   PS Static              |     0.101 |          |           |                 |
+|   PL Static              |     0.668 |          |           |                 |
+| Total                    |     5.735 |          |           |                 |
++--------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+| Vccint          |       0.850 |     1.253 |       1.087 |      0.166 |       NA    | Unspecified | NA         |
+| Vccint_io       |       0.850 |     0.406 |       0.335 |      0.072 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.012 |       0.010 |      0.002 |       NA    | Unspecified | NA         |
+| Vccaux          |       1.800 |     0.411 |       0.264 |      0.146 |       NA    | Unspecified | NA         |
+| Vccaux_io       |       1.800 |     0.220 |       0.165 |      0.055 |       NA    | Unspecified | NA         |
+| Vcco33          |       3.300 |     0.007 |       0.000 |      0.007 |       NA    | Unspecified | NA         |
+| Vcco25          |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco18          |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco15          |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco135         |       1.350 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco12          |       1.200 |     0.101 |       0.101 |      0.000 |       NA    | Unspecified | NA         |
+| Vcco10          |       1.000 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| Vccadc          |       1.800 |     0.008 |       0.000 |      0.008 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP     |       0.850 |     1.047 |       1.010 |      0.037 |       NA    | Unspecified | NA         |
+| VCC_PSINTLP     |       0.850 |     0.253 |       0.245 |      0.007 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVCC    |       0.850 |     0.139 |       0.138 |      0.001 |       NA    | Unspecified | NA         |
+| VCC_PSINTFP_DDR |       0.850 |     0.719 |       0.714 |      0.005 |       NA    | Unspecified | NA         |
+| VCC_PSPLL       |       1.200 |     0.075 |       0.073 |      0.002 |       NA    | Unspecified | NA         |
+| VPS_MGTRAVTT    |       1.800 |     0.034 |       0.033 |      0.001 |       NA    | Unspecified | NA         |
+| VCCO_PSDDR_504  |       1.200 |     0.620 |       0.586 |      0.034 |       NA    | Unspecified | NA         |
+| VCC_PSAUX       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCC_PSBATT      |       1.200 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
+| VCC_PSDDR_PLL   |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| VCCO_PSIO0_500  |       1.800 |     0.001 |       0.001 |      0.001 |       NA    | Unspecified | NA         |
+| VCCO_PSIO1_501  |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| VCCO_PSIO2_502  |       1.800 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| VCCO_PSIO3_503  |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| VCC_PSADC       |       1.800 |     0.002 |       0.000 |      0.002 |       NA    | Unspecified | NA         |
+| VCCINT_VCU      |       0.900 |     0.029 |       0.000 |      0.029 |       NA    | Unspecified | NA         |
+| MGTAVcc         |       0.900 |     0.084 |       0.072 |      0.012 |       NA    | Unspecified | NA         |
+| MGTAVtt         |       1.200 |     0.144 |       0.121 |      0.023 |       NA    | Unspecified | NA         |
+| MGTVccaux       |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
++-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                     |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                            |
+| Clock nodes activity        | High       | User specified more than 95% of clocks                 |                                                                                                            |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view   |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views |
+| Device models               | High       | Device models are Production                           |                                                                                                            |
+|                             |            |                                                        |                                                                                                            |
+| Overall confidence level    | Low        |                                                        |                                                                                                            |
++-----------------------------+------------+--------------------------------------------------------+------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 1.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 1.5                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| Clock                                                                                                                                                                                                                                                                                                                                                      | Domain                                                                                                                                                                                                                                                                                                                                      | Constraint (ns) |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+| GTHE4_CHANNEL_RXOUTCLKPCS[0]                                                                                                                                                                                                                                                                                                                               | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[0]                                                                   |             3.4 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[1]                                                                                                                                                                                                                                                                                                                               | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[1]                                                                   |             3.4 |
+| GTHE4_CHANNEL_RXOUTCLKPCS[2]                                                                                                                                                                                                                                                                                                                               | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLKPCS[2]                                                                   |             3.4 |
+| GTHE4_CHANNEL_RXOUTCLK[0]                                                                                                                                                                                                                                                                                                                                  | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLK[0]                                                                      |             3.4 |
+| GTHE4_CHANNEL_RXOUTCLK[1]                                                                                                                                                                                                                                                                                                                                  | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLK[1]                                                                      |             3.4 |
+| GTHE4_CHANNEL_RXOUTCLK[2]                                                                                                                                                                                                                                                                                                                                  | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_RXOUTCLK[2]                                                                      |             3.4 |
+| GTHE4_CHANNEL_TXOUTCLK[0]                                                                                                                                                                                                                                                                                                                                  | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_TXOUTCLK[0]                                                                      |             3.4 |
+| GTHE4_CHANNEL_TXOUTCLK[1]                                                                                                                                                                                                                                                                                                                                  | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_TXOUTCLK[1]                                                                      |             3.4 |
+| GTHE4_CHANNEL_TXOUTCLK[2]                                                                                                                                                                                                                                                                                                                                  | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_channel_container[4].gen_enabled_channel.gthe4_channel_wrapper_inst/channel_inst/GTHE4_CHANNEL_TXOUTCLK[2]                                                                      |             3.4 |
+| clk_out1_exdes_clk_wiz_0                                                                                                                                                                                                                                                                                                                                   | exdes_i/audio_ss_0/clk_wiz/inst/CLK_CORE_DRP_I/clk_inst/clk_out1_exdes_clk_wiz_0                                                                                                                                                                                                                                                            |            10.0 |
+| clk_pl_0                                                                                                                                                                                                                                                                                                                                                   | exdes_i/zynq_us_ss_0/zynq_us/inst/pl_clk_unbuffered[0]                                                                                                                                                                                                                                                                                      |            10.0 |
+| clk_pl_1                                                                                                                                                                                                                                                                                                                                                   | exdes_i/zynq_us_ss_0/zynq_us/inst/pl_clk_unbuffered[1]                                                                                                                                                                                                                                                                                      |             3.3 |
+| clkout1                                                                                                                                                                                                                                                                                                                                                    | exdes_i/vid_phy_controller/inst/gt_usrclk_source_inst/tx_mmcm.txoutclk_mmcm0_i/clkout1                                                                                                                                                                                                                                                      |             3.4 |
+| clkout2                                                                                                                                                                                                                                                                                                                                                    | exdes_i/vid_phy_controller/inst/gt_usrclk_source_inst/tx_mmcm.txoutclk_mmcm0_i/clkout2                                                                                                                                                                                                                                                      |             3.4 |
+| dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/SERIES7_BSCAN.bscan_inst/INTERNAL_TCK                                                                                                                                                                                                                                                        | dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/DRCK                                                                                                                                                                                                                                                                          |            50.0 |
+| exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_rx_i/gen_cal_rx_en.bufg_gt_rxoutclkmon_inst/O | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_rx_i/gen_cal_rx_en.rxoutclkmon |             3.4 |
+| exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O               | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[0].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_tx_i/txoutclkmon               |             3.4 |
+| exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_rx_i/gen_cal_rx_en.bufg_gt_rxoutclkmon_inst/O | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_rx_i/gen_cal_rx_en.rxoutclkmon |             3.4 |
+| exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O               | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[1].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_tx_i/txoutclkmon               |             3.4 |
+| exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_rx_i/gen_cal_rx_en.bufg_gt_rxoutclkmon_inst/O | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_rx_i/gen_cal_rx_en.rxoutclkmon |             3.4 |
+| exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_tx_i/bufg_gt_txoutclkmon_inst/O               | exdes_i/vid_phy_controller/inst/gt_wrapper_inst/inst/gen_gtwizard_gthe4_top.exdes_vid_phy_controller_0_gtwrapper_gtwizard_gthe4_inst/gen_gtwizard_gthe4.gen_cpll_cal_gthe4.gen_cpll_cal_inst[2].gen_inst_cpll_cal.gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_inst/gtwizard_ultrascale_v1_7_14_gthe4_cpll_cal_tx_i/txoutclkmon               |             3.4 |
+| mmcm_clkout0                                                                                                                                                                                                                                                                                                                                               | exdes_i/video_gen/ddr4_0/inst/u_ddr4_infrastructure/mmcm_clkout0                                                                                                                                                                                                                                                                            |             3.8 |
+| mmcm_clkout5                                                                                                                                                                                                                                                                                                                                               | exdes_i/video_gen/ddr4_0/inst/u_ddr4_infrastructure/mmcm_clkout5                                                                                                                                                                                                                                                                            |            15.0 |
+| mmcm_clkout6                                                                                                                                                                                                                                                                                                                                               | exdes_i/video_gen/ddr4_0/inst/u_ddr4_infrastructure/mmcm_clkout6                                                                                                                                                                                                                                                                            |             7.5 |
+| net_vid_phy_controller_txoutclk                                                                                                                                                                                                                                                                                                                            | exdes_i/vid_phy_controller/inst/gt_usrclk_source_inst/txoutclk                                                                                                                                                                                                                                                                              |             3.4 |
+| pll_clk[0]                                                                                                                                                                                                                                                                                                                                                 | exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/pll_clk[0]                                                                                                                                                                                                                                                |             0.5 |
+| pll_clk[0]_DIV                                                                                                                                                                                                                                                                                                                                             | exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[0].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_CONTROL[0].GEN_I_CONTROL.u_xiphy_control/TX_BIT_CTRL_OUT2[26]                                                                                                                          |             3.8 |
+| pll_clk[1]                                                                                                                                                                                                                                                                                                                                                 | exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/pll_clk[1]                                                                                                                                                                                                                                                |             0.5 |
+| pll_clk[1]_DIV                                                                                                                                                                                                                                                                                                                                             | exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[3].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_CONTROL[0].GEN_I_CONTROL.u_xiphy_control/TX_BIT_CTRL_OUT0[26]                                                                                                                          |             3.8 |
+| pll_clk[2]                                                                                                                                                                                                                                                                                                                                                 | exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/u_ddr4_phy_pll/pll_clk[2]                                                                                                                                                                                                                                                |             0.5 |
+| pll_clk[2]_DIV                                                                                                                                                                                                                                                                                                                                             | exdes_i/video_gen/ddr4_0/inst/u_ddr4_mem_intfc/u_mig_ddr4_phy/inst/generate_block1.u_ddr_xiphy/byte_num[10].xiphy_byte_wrapper.u_xiphy_byte_wrapper/I_CONTROL[0].GEN_I_CONTROL.u_xiphy_control/TX_BIT_CTRL_OUT0[26]                                                                                                                         |             3.8 |
+| qpll0clk_in[0]                                                                                                                                                                                                                                                                                                                                             | exdes_i/vid_phy_controller/inst/gt_common_inst/common_inst/qpll0clk_in[0]                                                                                                                                                                                                                                                                   |             0.2 |
+| qpll0refclk_in[0]                                                                                                                                                                                                                                                                                                                                          | exdes_i/vid_phy_controller/inst/gt_common_inst/common_inst/qpll0refclk_in[0]                                                                                                                                                                                                                                                                |             3.4 |
+| qpll1clk_in[0]                                                                                                                                                                                                                                                                                                                                             | exdes_i/vid_phy_controller/inst/gt_common_inst/common_inst/qpll1clk_in[0]                                                                                                                                                                                                                                                                   |             0.2 |
+| qpll1refclk_in[0]                                                                                                                                                                                                                                                                                                                                          | exdes_i/vid_phy_controller/inst/gt_common_inst/common_inst/qpll1refclk_in[0]                                                                                                                                                                                                                                                                |             3.4 |
+| tx_mgt_refclk                                                                                                                                                                                                                                                                                                                                              | TX_REFCLK_P_IN                                                                                                                                                                                                                                                                                                                              |             3.4 |
+| usr_sys_clk_clk_p                                                                                                                                                                                                                                                                                                                                          | usr_sys_clk_clk_p                                                                                                                                                                                                                                                                                                                           |             3.3 |
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------+-----------+
+| Name                        | Power (W) |
++-----------------------------+-----------+
+| exdes_wrapper               |     4.965 |
+|   dbg_hub                   |     0.002 |
+|     inst                    |     0.002 |
+|       BSCANID.u_xsdbm_id    |     0.002 |
+|   exdes_i                   |     4.962 |
+|     audio_ss_0              |     0.123 |
+|       aud_pat_gen           |     0.008 |
+|       axi_interconnect      |     0.005 |
+|       clk_wiz               |     0.102 |
+|       hdmi_acr_ctrl         |     0.008 |
+|     system_ila_0            |     0.101 |
+|       inst                  |     0.101 |
+|     tx_video_axis_reg_slice |     0.001 |
+|       inst                  |     0.001 |
+|     v_hdmi_tx_ss            |     0.080 |
+|       inst                  |     0.080 |
+|     v_tpg_ss_0              |     0.011 |
+|       v_tpg                 |     0.010 |
+|     vid_phy_controller      |     0.405 |
+|       inst                  |     0.405 |
+|     video_frame_crc         |     0.007 |
+|       inst                  |     0.007 |
+|     video_gen               |     1.511 |
+|       axi_vdma_0            |     0.044 |
+|       ddr4_0                |     1.223 |
+|       smartconnect_0        |     0.244 |
+|     zynq_us_ss_0            |     2.723 |
+|       axi_interconnect_0    |     0.073 |
+|       fmch_axi_iic          |     0.002 |
+|       zynq_us               |     2.647 |
++-----------------------------+-----------+
+
+

@@ -1,0 +1,166 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'MultiPixStream2AXIvideo'" level="0">
+<item name = "Date">Tue Apr  9 10:34:59 2024
+</item>
+<item name = "Version">2022.2 (Build 3670227 on Oct 13 2022)</item>
+<item name = "Project">prj</item>
+<item name = "Solution">sol (Vivado IP Flow Target)</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu7ev-ffvc1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">3.33 ns, 1.615 ns, 0.90 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">1, 4436641, 3.333 ns, 14.787 ms, 1, 4436641, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2_fu_149">MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2, 4, 2051, 13.332 ns, 6.836 us, 4, 2051, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+<column name="- VITIS_LOOP_934_1">0, 4436640, 2 ~ 2054, -, -, 0 ~ 2160, no</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 90, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 36, 343, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 99, -</column>
+<column name="Register">-, -, 106, -, -</column>
+<specialColumn name="Available">624, 1728, 460800, 230400, 96</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, ~0, ~0, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2_fu_149">MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2, 0, 0, 36, 343, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="i_2_fu_261_p2">+, 0, 0, 19, 12, 1</column>
+<column name="sub_fu_205_p2">+, 0, 0, 19, 12, 2</column>
+<column name="ap_block_state4_on_subcall_done">and, 0, 0, 2, 1, 1</column>
+<column name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2_fu_149_m_axis_video_TREADY">and, 0, 0, 2, 1, 1</column>
+<column name="cmp33265_fu_211_p2">icmp, 0, 0, 12, 12, 1</column>
+<column name="icmp_ln934_fu_256_p2">icmp, 0, 0, 12, 12, 12</column>
+<column name="icmp_ln975_1_fu_227_p2">icmp, 0, 0, 11, 8, 1</column>
+<column name="icmp_ln975_fu_221_p2">icmp, 0, 0, 11, 8, 1</column>
+<column name="ap_block_state1">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">26, 5, 1, 5</column>
+<column name="ap_done">9, 2, 1, 2</column>
+<column name="counter_loc_0_fu_108">9, 2, 16, 32</column>
+<column name="empty_fu_104">9, 2, 1, 2</column>
+<column name="fid">14, 3, 1, 3</column>
+<column name="fid_ap_vld">14, 3, 1, 3</column>
+<column name="i_fu_96">9, 2, 12, 24</column>
+<column name="ovrlayYUV_read">9, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">4, 0, 4, 0</column>
+<column name="ap_done_reg">1, 0, 1, 0</column>
+<column name="cmp33265_reg_338">1, 0, 1, 0</column>
+<column name="counter">16, 0, 16, 0</column>
+<column name="counter_loc_0_fu_108">16, 0, 16, 0</column>
+<column name="div283_cast_reg_318">12, 0, 12, 0</column>
+<column name="empty_fu_104">1, 0, 1, 0</column>
+<column name="fidStored">1, 0, 1, 0</column>
+<column name="fid_preg">1, 0, 1, 0</column>
+<column name="grp_MultiPixStream2AXIvideo_Pipeline_VITIS_LOOP_936_2_fu_149_ap_start_reg">1, 0, 1, 0</column>
+<column name="i_2_reg_355">12, 0, 12, 0</column>
+<column name="i_fu_96">12, 0, 12, 0</column>
+<column name="icmp_ln975_1_reg_347">1, 0, 1, 0</column>
+<column name="icmp_ln975_reg_342">1, 0, 1, 0</column>
+<column name="p_load_reg_360">1, 0, 1, 0</column>
+<column name="sof_fu_100">1, 0, 1, 0</column>
+<column name="sub_reg_323">12, 0, 12, 0</column>
+<column name="trunc_ln882_reg_313">12, 0, 12, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, MultiPixStream2AXIvideo, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, MultiPixStream2AXIvideo, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, MultiPixStream2AXIvideo, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, MultiPixStream2AXIvideo, return value</column>
+<column name="ap_continue">in, 1, ap_ctrl_hs, MultiPixStream2AXIvideo, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, MultiPixStream2AXIvideo, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, MultiPixStream2AXIvideo, return value</column>
+<column name="ovrlayYUV_dout">in, 48, ap_fifo, ovrlayYUV, pointer</column>
+<column name="ovrlayYUV_num_data_valid">in, 5, ap_fifo, ovrlayYUV, pointer</column>
+<column name="ovrlayYUV_fifo_cap">in, 5, ap_fifo, ovrlayYUV, pointer</column>
+<column name="ovrlayYUV_empty_n">in, 1, ap_fifo, ovrlayYUV, pointer</column>
+<column name="ovrlayYUV_read">out, 1, ap_fifo, ovrlayYUV, pointer</column>
+<column name="m_axis_video_TDATA">out, 48, axis, m_axis_video_V_data_V, pointer</column>
+<column name="m_axis_video_TVALID">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TREADY">in, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TDEST">out, 1, axis, m_axis_video_V_dest_V, pointer</column>
+<column name="m_axis_video_TKEEP">out, 6, axis, m_axis_video_V_keep_V, pointer</column>
+<column name="m_axis_video_TSTRB">out, 6, axis, m_axis_video_V_strb_V, pointer</column>
+<column name="m_axis_video_TUSER">out, 1, axis, m_axis_video_V_user_V, pointer</column>
+<column name="m_axis_video_TLAST">out, 1, axis, m_axis_video_V_last_V, pointer</column>
+<column name="m_axis_video_TID">out, 1, axis, m_axis_video_V_id_V, pointer</column>
+<column name="height">in, 16, ap_stable, height, pointer</column>
+<column name="width">in, 16, ap_stable, width, pointer</column>
+<column name="colorFormat">in, 8, ap_stable, colorFormat, pointer</column>
+<column name="fid_in">in, 1, ap_stable, fid_in, pointer</column>
+<column name="fid">out, 1, ap_vld, fid, pointer</column>
+<column name="fid_ap_vld">out, 1, ap_vld, fid, pointer</column>
+<column name="field_id">in, 16, ap_stable, field_id, pointer</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,13 @@
+timestamp=[2024-04-09 11:26:29], mode=WORKBENCH_START, duration=0:00:03.875, duration_ms=3875, data={}
+timestamp=[2024-04-09 11:26:29], mode=WORKBENCH_UI_INIT, duration=0:00:00.265, duration_ms=265, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2024-04-09 11:26:30], mode=PLATFORM_REPOSITORY_INIT, duration=0:00:00.675, duration_ms=675, data={}
+timestamp=[2024-04-09 11:27:46], mode=PLATFORM_CREATION, duration=0:00:19.663, duration_ms=19663, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2024-04-09 11:28:36], mode=PLATFORM_GENERATION, duration=0:00:39.403, duration_ms=39403, data={name=exde_hdmi}
+timestamp=[2024-04-09 11:29:14], mode=APP_CREATION, duration=0:00:09.070, duration_ms=9070, data={name=TxOnly_A53_1, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=exde_hdmi, application_type=application}
+timestamp=[2024-04-09 11:29:23], mode=BUILD, duration=0:00:02.169, duration_ms=2169, data={name=TxOnly_A53_1, configuration=Debug, clean_build=false}
+timestamp=[2024-04-09 12:31:29], mode=BUILD, duration=0:00:00.404, duration_ms=404, data={name=TxOnly_A53_1, configuration=Debug, clean_build=false}
+timestamp=[2024-04-09 12:31:45], mode=BUILD, duration=0:00:00.409, duration_ms=409, data={name=TxOnly_A53_1, configuration=Debug, clean_build=false}
+timestamp=[2024-04-09 12:32:10], mode=BUILD, duration=0:00:00.471, duration_ms=471, data={name=TxOnly_A53_1, configuration=Debug, clean_build=false}
+timestamp=[2024-04-09 12:35:01], mode=BUILD, duration=0:00:00.483, duration_ms=483, data={name=TxOnly_A53_1, configuration=Debug, clean_build=false}
+timestamp=[2024-04-09 12:37:43], mode=BUILD, duration=0:00:00.466, duration_ms=466, data={name=TxOnly_A53_1, configuration=Debug, clean_build=false}
+timestamp=[2024-04-09 12:40:56], mode=BUILD, duration=0:00:00.099, duration_ms=99, data={name=TxOnly_A53_1, configuration=Debug, clean_build=false}

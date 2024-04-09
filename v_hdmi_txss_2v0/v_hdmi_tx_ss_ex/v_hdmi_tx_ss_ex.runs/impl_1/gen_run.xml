@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1712630013">
+  <File Type="ROUTE-PWR" Name="exdes_wrapper_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="exdes_wrapper.tcl"/>
+  <File Type="ROUTE-PWR-SUM" Name="exdes_wrapper_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="exdes_wrapper_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="exdes_wrapper.msk"/>
+  <File Type="ROUTE-CLK" Name="exdes_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="RDI-RDI" Name="exdes_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="exdes_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="exdes_wrapper.bit"/>
+  <File Type="BG-DRC" Name="exdes_wrapper.drc"/>
+  <File Type="BG-BGN" Name="exdes_wrapper.bgn"/>
+  <File Type="BG-BIN" Name="exdes_wrapper.bin"/>
+  <File Type="BITSTR-RBT" Name="exdes_wrapper.rbt"/>
+  <File Type="BITSTR-NKY" Name="exdes_wrapper.nky"/>
+  <File Type="BITSTR-BMM" Name="exdes_wrapper_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="exdes_wrapper.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="exdes_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-SYSDEF" Name="exdes_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="exdes_wrapper.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="exdes_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="exdes_wrapper.hwdef"/>
+  <File Type="PLACE-IO" Name="exdes_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="exdes_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="exdes_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="exdes_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="exdes_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="exdes_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="exdes_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="exdes_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="exdes_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="exdes_wrapper_route_status.pb"/>
+  <File Type="ROUTE-DCP" Name="exdes_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="exdes_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="exdes_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="exdes_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="exdes_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="exdes_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW" Name="exdes_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="exdes_wrapper_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="exdes_wrapper_bus_skew_routed.rpx"/>
+  <File Type="OPT-DCP" Name="exdes_wrapper_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="exdes_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="exdes_wrapper_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="exdes_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="exdes_wrapper_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="exdes_wrapper_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="exdes_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="exdes_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="exdes_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="exdes_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="exdes_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="exdes_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="exdes_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="exdes_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="exdes_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="PDI-FILE" Name="exdes_wrapper.pdi"/>
+  <File Type="RCFI_FILE" Name="exdes_wrapper.rcfi"/>
+  <File Type="CFI_FILE" Name="exdes_wrapper.cfi"/>
+  <File Type="RNPI_FILE" Name="exdes_wrapper.rnpi"/>
+  <File Type="NPI_FILE" Name="exdes_wrapper.npi"/>
+  <File Type="RBD_FILE" Name="exdes_wrapper.rbd"/>
+  <File Type="ROUTE-RQS" Name="exdes_wrapper_routed.rqs"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="exdes_wrapper_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/axis_gen.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/exdes/exdes.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PGENDIR/sources_1/bd/exdes/hdl/exdes_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="exdes_wrapper"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/imports/hdmi_example_zcu104.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/exdes_wrapper.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design">
+      <Option Id="Directive">8</Option>
+    </Step>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" PostStepTclHook="$PPRDIR/imports/phys_opt_design.tcl">
+      <Option Id="Directive">4</Option>
+    </Step>
+    <Step Id="route_design" PostStepTclHook="$PPRDIR/imports/route_design.tcl">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="post_route_phys_opt_design" EnableStepBool="1" PostStepTclHook="$PPRDIR/imports/postroute_phys_opt_design.tcl">
+      <Option Id="Directive">0</Option>
+    </Step>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_vid_phy_controller_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_tx_video_axis_reg_slice_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_3ea7_v_hdmi_tx_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_v_hdmi_tx_ss_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_3ea7_v_tc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_3ea7_axi_crossbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_3ea7_v_axi4s_vid_out_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_3ea7_util_vector_logic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_video_frame_crc_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_v_tpg_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_axi_gpio_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_clk_wiz_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_aud_pat_gen_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_proc_sys_reset_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_hdmi_acr_ctrl_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_rst_processor_1_300M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_zynq_us_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_fmch_axi_iic_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_axis_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_rst_processor_1_100M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_axi_vdma_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="exdes_ddr4_0_0"/>
+</GenRun>
