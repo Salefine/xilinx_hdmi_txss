@@ -43,7 +43,7 @@ module bd_07c8
     SLOT_0_AXI_wvalid,
     clk,
     resetn);
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXI, ADDR_WIDTH 49, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, DATA_WIDTH 128, FREQ_HZ 250000000, HAS_BRESP 1, HAS_BURST 1, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 4, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [48:0]SLOT_0_AXI_araddr;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARADDR" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME SLOT_0_AXI, ADDR_WIDTH 49, ARUSER_WIDTH 0, AWUSER_WIDTH 0, BUSER_WIDTH 0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, DATA_WIDTH 64, FREQ_HZ 250000000, HAS_BRESP 1, HAS_BURST 1, HAS_CACHE 1, HAS_LOCK 1, HAS_PROT 1, HAS_QOS 1, HAS_REGION 0, HAS_RRESP 1, HAS_WSTRB 1, ID_WIDTH 0, INSERT_VIP 0, MAX_BURST_LENGTH 8, NUM_READ_OUTSTANDING 2, NUM_READ_THREADS 1, NUM_WRITE_OUTSTANDING 2, NUM_WRITE_THREADS 1, PHASE 0.0, PROTOCOL AXI4, READ_WRITE_MODE READ_WRITE, RUSER_BITS_PER_BYTE 0, RUSER_WIDTH 0, SUPPORTS_NARROW_BURST 0, WUSER_BITS_PER_BYTE 0, WUSER_WIDTH 0" *) input [48:0]SLOT_0_AXI_araddr;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARBURST" *) input [1:0]SLOT_0_AXI_arburst;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARCACHE" *) input [3:0]SLOT_0_AXI_arcache;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI ARLEN" *) input [7:0]SLOT_0_AXI_arlen;
@@ -66,15 +66,15 @@ module bd_07c8
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI BREADY" *) input SLOT_0_AXI_bready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI BRESP" *) input [1:0]SLOT_0_AXI_bresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI BVALID" *) input SLOT_0_AXI_bvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RDATA" *) input [127:0]SLOT_0_AXI_rdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RDATA" *) input [63:0]SLOT_0_AXI_rdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RLAST" *) input SLOT_0_AXI_rlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RREADY" *) input SLOT_0_AXI_rready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RRESP" *) input [1:0]SLOT_0_AXI_rresp;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI RVALID" *) input SLOT_0_AXI_rvalid;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI WDATA" *) input [127:0]SLOT_0_AXI_wdata;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI WDATA" *) input [63:0]SLOT_0_AXI_wdata;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI WLAST" *) input SLOT_0_AXI_wlast;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI WREADY" *) input SLOT_0_AXI_wready;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI WSTRB" *) input [15:0]SLOT_0_AXI_wstrb;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI WSTRB" *) input [7:0]SLOT_0_AXI_wstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:aximm:1.0 SLOT_0_AXI WVALID" *) input SLOT_0_AXI_wvalid;
   (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 CLK.CLK CLK" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME CLK.CLK, ASSOCIATED_BUSIF SLOT_0_AXI, ASSOCIATED_RESET resetn, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, INSERT_VIP 0, PHASE 0.0" *) input clk;
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 RST.RESETN RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME RST.RESETN, INSERT_VIP 0, POLARITY ACTIVE_LOW" *) input resetn;
@@ -102,15 +102,15 @@ module bd_07c8
   wire Conn_BREADY;
   wire [1:0]Conn_BRESP;
   wire Conn_BVALID;
-  wire [127:0]Conn_RDATA;
+  wire [63:0]Conn_RDATA;
   wire Conn_RLAST;
   wire Conn_RREADY;
   wire [1:0]Conn_RRESP;
   wire Conn_RVALID;
-  wire [127:0]Conn_WDATA;
+  wire [63:0]Conn_WDATA;
   wire Conn_WLAST;
   wire Conn_WREADY;
-  wire [15:0]Conn_WSTRB;
+  wire [7:0]Conn_WSTRB;
   wire Conn_WVALID;
   wire clk_1;
   wire [1:0]net_slot_0_axi_ar_cnt;
@@ -144,16 +144,16 @@ module bd_07c8
   wire net_slot_0_axi_bvalid;
   wire [1:0]net_slot_0_axi_r_cnt;
   wire [2:0]net_slot_0_axi_r_ctrl;
-  wire [127:0]net_slot_0_axi_rdata;
+  wire [63:0]net_slot_0_axi_rdata;
   wire net_slot_0_axi_rlast;
   wire net_slot_0_axi_rready;
   wire [1:0]net_slot_0_axi_rresp;
   wire net_slot_0_axi_rvalid;
   wire [2:0]net_slot_0_axi_w_ctrl;
-  wire [127:0]net_slot_0_axi_wdata;
+  wire [63:0]net_slot_0_axi_wdata;
   wire net_slot_0_axi_wlast;
   wire net_slot_0_axi_wready;
-  wire [15:0]net_slot_0_axi_wstrb;
+  wire [7:0]net_slot_0_axi_wstrb;
   wire net_slot_0_axi_wvalid;
   wire resetn_1;
 
@@ -180,15 +180,15 @@ module bd_07c8
   assign Conn_BREADY = SLOT_0_AXI_bready;
   assign Conn_BRESP = SLOT_0_AXI_bresp[1:0];
   assign Conn_BVALID = SLOT_0_AXI_bvalid;
-  assign Conn_RDATA = SLOT_0_AXI_rdata[127:0];
+  assign Conn_RDATA = SLOT_0_AXI_rdata[63:0];
   assign Conn_RLAST = SLOT_0_AXI_rlast;
   assign Conn_RREADY = SLOT_0_AXI_rready;
   assign Conn_RRESP = SLOT_0_AXI_rresp[1:0];
   assign Conn_RVALID = SLOT_0_AXI_rvalid;
-  assign Conn_WDATA = SLOT_0_AXI_wdata[127:0];
+  assign Conn_WDATA = SLOT_0_AXI_wdata[63:0];
   assign Conn_WLAST = SLOT_0_AXI_wlast;
   assign Conn_WREADY = SLOT_0_AXI_wready;
-  assign Conn_WSTRB = SLOT_0_AXI_wstrb[15:0];
+  assign Conn_WSTRB = SLOT_0_AXI_wstrb[7:0];
   assign Conn_WVALID = SLOT_0_AXI_wvalid;
   assign clk_1 = clk;
   assign resetn_1 = resetn;

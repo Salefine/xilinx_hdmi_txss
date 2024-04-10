@@ -1,10 +1,10 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Tue Apr  9 15:26:22 2024
+// Date        : Wed Apr 10 10:47:47 2024
 // Host        : weslie running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim
-//               e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axis_data_fifo_0_0/exdes_axis_data_fifo_0_0_sim_netlist.v
+//               e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axis_data_fifo_0_0/exdes_axis_data_fifo_0_0_sim_netlist.v
 // Design      : exdes_axis_data_fifo_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,13 +20,13 @@ module exdes_axis_data_fifo_0_0
     s_axis_tvalid,
     s_axis_tready,
     s_axis_tdata,
-    s_axis_tkeep,
+    s_axis_tstrb,
     s_axis_tlast,
     s_axis_tuser,
     m_axis_tvalid,
     m_axis_tready,
     m_axis_tdata,
-    m_axis_tkeep,
+    m_axis_tstrb,
     m_axis_tlast,
     m_axis_tuser);
   (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 S_RSTIF RST" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_RSTIF, POLARITY ACTIVE_LOW, INSERT_VIP 0, TYPE INTERCONNECT" *) input s_axis_aresetn;
@@ -34,28 +34,28 @@ module exdes_axis_data_fifo_0_0
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TVALID" *) input s_axis_tvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TREADY" *) output s_axis_tready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TDATA" *) input [23:0]s_axis_tdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TKEEP" *) input [2:0]s_axis_tkeep;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TSTRB" *) input [2:0]s_axis_tstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TLAST" *) input s_axis_tlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TUSER" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0" *) input [0:0]s_axis_tuser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 S_AXIS TUSER" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0" *) input [0:0]s_axis_tuser;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TVALID" *) output m_axis_tvalid;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TREADY" *) input m_axis_tready;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TDATA" *) output [23:0]m_axis_tdata;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TKEEP" *) output [2:0]m_axis_tkeep;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TSTRB" *) output [2:0]m_axis_tstrb;
   (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TLAST" *) output m_axis_tlast;
-  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0" *) output [0:0]m_axis_tuser;
+  (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 M_AXIS TUSER" *) (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0" *) output [0:0]m_axis_tuser;
 
   wire [23:0]m_axis_tdata;
-  wire [2:0]m_axis_tkeep;
   wire m_axis_tlast;
   wire m_axis_tready;
+  wire [2:0]m_axis_tstrb;
   wire [0:0]m_axis_tuser;
   wire m_axis_tvalid;
   wire s_axis_aclk;
   wire s_axis_aresetn;
   wire [23:0]s_axis_tdata;
-  wire [2:0]s_axis_tkeep;
   wire s_axis_tlast;
   wire s_axis_tready;
+  wire [2:0]s_axis_tstrb;
   wire [0:0]s_axis_tuser;
   wire s_axis_tvalid;
   wire NLW_inst_almost_empty_UNCONNECTED;
@@ -68,10 +68,10 @@ module exdes_axis_data_fifo_0_0
   wire [31:0]NLW_inst_axis_wr_data_count_UNCONNECTED;
   wire [0:0]NLW_inst_m_axis_tdest_UNCONNECTED;
   wire [0:0]NLW_inst_m_axis_tid_UNCONNECTED;
-  wire [2:0]NLW_inst_m_axis_tstrb_UNCONNECTED;
+  wire [2:0]NLW_inst_m_axis_tkeep_UNCONNECTED;
 
   (* C_ACLKEN_CONV_MODE = "0" *) 
-  (* C_AXIS_SIGNAL_SET = "155" *) 
+  (* C_AXIS_SIGNAL_SET = "151" *) 
   (* C_AXIS_TDATA_WIDTH = "24" *) 
   (* C_AXIS_TDEST_WIDTH = "1" *) 
   (* C_AXIS_TID_WIDTH = "1" *) 
@@ -136,10 +136,10 @@ module exdes_axis_data_fifo_0_0
         .m_axis_tdata(m_axis_tdata),
         .m_axis_tdest(NLW_inst_m_axis_tdest_UNCONNECTED[0]),
         .m_axis_tid(NLW_inst_m_axis_tid_UNCONNECTED[0]),
-        .m_axis_tkeep(m_axis_tkeep),
+        .m_axis_tkeep(NLW_inst_m_axis_tkeep_UNCONNECTED[2:0]),
         .m_axis_tlast(m_axis_tlast),
         .m_axis_tready(m_axis_tready),
-        .m_axis_tstrb(NLW_inst_m_axis_tstrb_UNCONNECTED[2:0]),
+        .m_axis_tstrb(m_axis_tstrb),
         .m_axis_tuser(m_axis_tuser),
         .m_axis_tvalid(m_axis_tvalid),
         .prog_empty(NLW_inst_prog_empty_UNCONNECTED),
@@ -150,16 +150,16 @@ module exdes_axis_data_fifo_0_0
         .s_axis_tdata(s_axis_tdata),
         .s_axis_tdest(1'b0),
         .s_axis_tid(1'b0),
-        .s_axis_tkeep(s_axis_tkeep),
+        .s_axis_tkeep({1'b1,1'b1,1'b1}),
         .s_axis_tlast(s_axis_tlast),
         .s_axis_tready(s_axis_tready),
-        .s_axis_tstrb({1'b1,1'b1,1'b1}),
+        .s_axis_tstrb(s_axis_tstrb),
         .s_axis_tuser(s_axis_tuser),
         .s_axis_tvalid(s_axis_tvalid),
         .sbiterr(NLW_inst_sbiterr_UNCONNECTED));
 endmodule
 
-(* C_ACLKEN_CONV_MODE = "0" *) (* C_AXIS_SIGNAL_SET = "155" *) (* C_AXIS_TDATA_WIDTH = "24" *) 
+(* C_ACLKEN_CONV_MODE = "0" *) (* C_AXIS_SIGNAL_SET = "151" *) (* C_AXIS_TDATA_WIDTH = "24" *) 
 (* C_AXIS_TDEST_WIDTH = "1" *) (* C_AXIS_TID_WIDTH = "1" *) (* C_AXIS_TUSER_WIDTH = "1" *) 
 (* C_ECC_MODE = "0" *) (* C_FAMILY = "zynquplus" *) (* C_FIFO_DEPTH = "512" *) 
 (* C_FIFO_MEMORY_TYPE = "auto" *) (* C_FIFO_MODE = "1" *) (* C_IS_ACLK_ASYNC = "0" *) 
@@ -273,22 +273,22 @@ module exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top
   wire \gen_fifo.xpm_fifo_axis_inst_n_60 ;
   wire \gen_fifo.xpm_fifo_axis_inst_n_61 ;
   wire [23:0]m_axis_tdata;
-  wire [2:0]m_axis_tkeep;
   wire m_axis_tlast;
   wire m_axis_tready;
+  wire [2:0]m_axis_tstrb;
   wire [0:0]m_axis_tuser;
   wire m_axis_tvalid;
   wire s_axis_aclk;
   wire s_axis_aresetn;
   wire [23:0]s_axis_tdata;
-  wire [2:0]s_axis_tkeep;
   wire s_axis_tlast;
   wire s_axis_tready;
+  wire [2:0]s_axis_tstrb;
   wire [0:0]s_axis_tuser;
   wire s_axis_tvalid;
   wire [0:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED ;
   wire [0:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED ;
-  wire [2:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED ;
+  wire [2:0]\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED ;
 
   assign almost_empty = \<const0> ;
   assign almost_full = \<const0> ;
@@ -359,9 +359,9 @@ module exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top
   assign dbiterr = \<const0> ;
   assign m_axis_tdest[0] = \<const0> ;
   assign m_axis_tid[0] = \<const0> ;
-  assign m_axis_tstrb[2] = \<const0> ;
-  assign m_axis_tstrb[1] = \<const0> ;
-  assign m_axis_tstrb[0] = \<const0> ;
+  assign m_axis_tkeep[2] = \<const0> ;
+  assign m_axis_tkeep[1] = \<const0> ;
+  assign m_axis_tkeep[0] = \<const0> ;
   assign prog_empty = \<const0> ;
   assign prog_full = \<const0> ;
   assign sbiterr = \<const0> ;
@@ -417,10 +417,10 @@ module exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top
         .m_axis_tdata(m_axis_tdata),
         .m_axis_tdest(\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED [0]),
         .m_axis_tid(\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED [0]),
-        .m_axis_tkeep(m_axis_tkeep),
+        .m_axis_tkeep(\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED [2:0]),
         .m_axis_tlast(m_axis_tlast),
         .m_axis_tready(m_axis_tready),
-        .m_axis_tstrb(\NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED [2:0]),
+        .m_axis_tstrb(m_axis_tstrb),
         .m_axis_tuser(m_axis_tuser),
         .m_axis_tvalid(m_axis_tvalid),
         .prog_empty_axis(\gen_fifo.xpm_fifo_axis_inst_n_48 ),
@@ -431,10 +431,10 @@ module exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top
         .s_axis_tdata(s_axis_tdata),
         .s_axis_tdest(1'b0),
         .s_axis_tid(1'b0),
-        .s_axis_tkeep(s_axis_tkeep),
+        .s_axis_tkeep({1'b0,1'b0,1'b0}),
         .s_axis_tlast(s_axis_tlast),
         .s_axis_tready(s_axis_tready),
-        .s_axis_tstrb({1'b0,1'b0,1'b0}),
+        .s_axis_tstrb(s_axis_tstrb),
         .s_axis_tuser(s_axis_tuser),
         .s_axis_tvalid(s_axis_tvalid),
         .sbiterr_axis(\gen_fifo.xpm_fifo_axis_inst_n_60 ),
@@ -1621,18 +1621,18 @@ module exdes_axis_data_fifo_0_0_xpm_fifo_axis
   wire \<const0> ;
   wire \gaxis_rst_sync.xpm_cdc_sync_rst_inst_i_1_n_0 ;
   wire [23:0]m_axis_tdata;
-  wire [2:0]m_axis_tkeep;
   wire m_axis_tlast;
   wire m_axis_tready;
+  wire [2:0]m_axis_tstrb;
   wire [0:0]m_axis_tuser;
   wire m_axis_tvalid;
   wire rst_axis;
   wire s_aclk;
   wire s_aresetn;
   wire [23:0]s_axis_tdata;
-  wire [2:0]s_axis_tkeep;
   wire s_axis_tlast;
   wire s_axis_tready;
+  wire [2:0]s_axis_tstrb;
   wire [0:0]s_axis_tuser;
   wire s_axis_tvalid;
   wire xpm_fifo_base_inst_i_1_n_0;
@@ -1649,7 +1649,7 @@ module exdes_axis_data_fifo_0_0_xpm_fifo_axis
   wire NLW_xpm_fifo_base_inst_underflow_UNCONNECTED;
   wire NLW_xpm_fifo_base_inst_wr_ack_UNCONNECTED;
   wire NLW_xpm_fifo_base_inst_wr_rst_busy_UNCONNECTED;
-  wire [31:24]NLW_xpm_fifo_base_inst_dout_UNCONNECTED;
+  wire [31:27]NLW_xpm_fifo_base_inst_dout_UNCONNECTED;
   wire [9:0]NLW_xpm_fifo_base_inst_rd_data_count_UNCONNECTED;
   wire [9:0]NLW_xpm_fifo_base_inst_wr_data_count_UNCONNECTED;
 
@@ -1658,9 +1658,9 @@ module exdes_axis_data_fifo_0_0_xpm_fifo_axis
   assign dbiterr_axis = \<const0> ;
   assign m_axis_tdest[0] = \<const0> ;
   assign m_axis_tid[0] = \<const0> ;
-  assign m_axis_tstrb[2] = \<const0> ;
-  assign m_axis_tstrb[1] = \<const0> ;
-  assign m_axis_tstrb[0] = \<const0> ;
+  assign m_axis_tkeep[2] = \<const0> ;
+  assign m_axis_tkeep[1] = \<const0> ;
+  assign m_axis_tkeep[0] = \<const0> ;
   assign prog_empty_axis = \<const0> ;
   assign prog_full_axis = \<const0> ;
   assign rd_data_count_axis[9] = \<const0> ;
@@ -1770,8 +1770,8 @@ module exdes_axis_data_fifo_0_0_xpm_fifo_axis
         .almost_full(NLW_xpm_fifo_base_inst_almost_full_UNCONNECTED),
         .data_valid(m_axis_tvalid),
         .dbiterr(NLW_xpm_fifo_base_inst_dbiterr_UNCONNECTED),
-        .din({s_axis_tlast,s_axis_tuser,1'b0,1'b0,s_axis_tkeep,1'b0,1'b0,1'b0,s_axis_tdata}),
-        .dout({m_axis_tlast,m_axis_tuser,NLW_xpm_fifo_base_inst_dout_UNCONNECTED[31:30],m_axis_tkeep,NLW_xpm_fifo_base_inst_dout_UNCONNECTED[26:24],m_axis_tdata}),
+        .din({s_axis_tlast,s_axis_tuser,1'b0,1'b0,1'b0,1'b0,1'b0,s_axis_tstrb,s_axis_tdata}),
+        .dout({m_axis_tlast,m_axis_tuser,NLW_xpm_fifo_base_inst_dout_UNCONNECTED[31:27],m_axis_tstrb,m_axis_tdata}),
         .empty(NLW_xpm_fifo_base_inst_empty_UNCONNECTED),
         .full(NLW_xpm_fifo_base_inst_full_UNCONNECTED),
         .full_n(s_axis_tready),
@@ -1922,7 +1922,7 @@ module exdes_axis_data_fifo_0_0_xpm_fifo_base
   wire \NLW_gen_sdpram.xpm_memory_base_inst_sbiterra_UNCONNECTED ;
   wire \NLW_gen_sdpram.xpm_memory_base_inst_sbiterrb_UNCONNECTED ;
   wire [33:0]\NLW_gen_sdpram.xpm_memory_base_inst_douta_UNCONNECTED ;
-  wire [31:24]\NLW_gen_sdpram.xpm_memory_base_inst_doutb_UNCONNECTED ;
+  wire [31:27]\NLW_gen_sdpram.xpm_memory_base_inst_doutb_UNCONNECTED ;
 
   assign almost_empty = \<const0> ;
   assign almost_full = \<const0> ;
@@ -1930,11 +1930,10 @@ module exdes_axis_data_fifo_0_0_xpm_fifo_base
   assign dout[33:32] = \^dout [33:32];
   assign dout[31] = \<const0> ;
   assign dout[30] = \<const0> ;
-  assign dout[29:27] = \^dout [29:27];
-  assign dout[26] = \<const0> ;
-  assign dout[25] = \<const0> ;
-  assign dout[24] = \<const0> ;
-  assign dout[23:0] = \^dout [23:0];
+  assign dout[29] = \<const0> ;
+  assign dout[28] = \<const0> ;
+  assign dout[27] = \<const0> ;
+  assign dout[26:0] = \^dout [26:0];
   assign empty = \<const0> ;
   assign full = \<const0> ;
   assign overflow = \<const0> ;
@@ -2145,7 +2144,7 @@ module exdes_axis_data_fifo_0_0_xpm_fifo_base
         .clkb(1'b0),
         .dbiterra(\NLW_gen_sdpram.xpm_memory_base_inst_dbiterra_UNCONNECTED ),
         .dbiterrb(\NLW_gen_sdpram.xpm_memory_base_inst_dbiterrb_UNCONNECTED ),
-        .dina({din[33:32],1'b0,1'b0,din[29:27],1'b0,1'b0,1'b0,din[23:0]}),
+        .dina({din[33:32],1'b0,1'b0,1'b0,1'b0,1'b0,din[26:0]}),
         .dinb({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .douta(\NLW_gen_sdpram.xpm_memory_base_inst_douta_UNCONNECTED [33:0]),
         .doutb(\^dout ),
@@ -2493,11 +2492,10 @@ module exdes_axis_data_fifo_0_0_xpm_memory_base
   assign doutb[33:32] = \^doutb [33:32];
   assign doutb[31] = \<const0> ;
   assign doutb[30] = \<const0> ;
-  assign doutb[29:27] = \^doutb [29:27];
-  assign doutb[26] = \<const0> ;
-  assign doutb[25] = \<const0> ;
-  assign doutb[24] = \<const0> ;
-  assign doutb[23:0] = \^doutb [23:0];
+  assign doutb[29] = \<const0> ;
+  assign doutb[28] = \<const0> ;
+  assign doutb[27] = \<const0> ;
+  assign doutb[26:0] = \^doutb [26:0];
   assign sbiterra = \<const0> ;
   assign sbiterrb = \<const0> ;
   GND GND
@@ -2645,11 +2643,11 @@ module exdes_axis_data_fifo_0_0_xpm_memory_base
         .CLKARDCLK(clka),
         .CLKBWRCLK(clka),
         .DINADIN(dina[15:0]),
-        .DINBDIN({1'b1,1'b1,1'b1,dina[33:32],dina[29:27],dina[23:16]}),
+        .DINBDIN({1'b1,1'b1,1'b1,dina[33:32],dina[26:16]}),
         .DINPADINP({1'b1,1'b1}),
         .DINPBDINP({1'b1,1'b1}),
         .DOUTADOUT(\^doutb [15:0]),
-        .DOUTBDOUT({\NLW_gen_wr_a.gen_word_narrow.mem_reg_DOUTBDOUT_UNCONNECTED [15:13],\^doutb [33:32],\^doutb [29:27],\^doutb [23:16]}),
+        .DOUTBDOUT({\NLW_gen_wr_a.gen_word_narrow.mem_reg_DOUTBDOUT_UNCONNECTED [15:13],\^doutb [33:32],\^doutb [26:16]}),
         .DOUTPADOUTP(\NLW_gen_wr_a.gen_word_narrow.mem_reg_DOUTPADOUTP_UNCONNECTED [1:0]),
         .DOUTPBDOUTP(\NLW_gen_wr_a.gen_word_narrow.mem_reg_DOUTPBDOUTP_UNCONNECTED [1:0]),
         .ENARDEN(enb),

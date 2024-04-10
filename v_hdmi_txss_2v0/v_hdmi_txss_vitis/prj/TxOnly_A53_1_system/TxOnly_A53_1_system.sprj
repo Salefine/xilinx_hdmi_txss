@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ASCII"?>
-<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="TxOnly_A53_1_system" platform="E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/exde_hdmi_ps.xpfm" platformUID="xilinx:zcu104::0.0(custom)" sysConfig="exde_hdmi_ps" runtime="C/C++" dimmRepoPath="">
-  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1116504280">
+<systemproject:SystemProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdsproject="http://www.xilinx.com/sdsproject" xmlns:systemproject="http://www.xilinx.com/systemproject" name="TxOnly_A53_1_system" platform="E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/hdmi_tx/export/hdmi_tx/hdmi_tx.xpfm" platformUID="xilinx:zcu104::0.0(custom)" sysConfig="hdmi_tx" runtime="C/C++">
+  <configuration name="Debug" id="com.xilinx.sdx.system.managedbuilder.debugConfiguration.1898925637">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
       <applications name="TxOnly_A53_1" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexa53_0" appBuildConfig="Debug"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>
     </configBuildOptions>
   </configuration>
-  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.1519667682">
+  <configuration name="Release" id="com.xilinx.sdx.system.managedbuilder.releaseConfiguration.380707538">
     <configBuildOptions xsi:type="systemproject:SystemOptions">
       <applications name="TxOnly_A53_1" domainName="standalone_domain" domainPrettyName="standalone on psu_cortexa53_0" appBuildConfig="Release"/>
       <options xsi:type="sdsproject:Option" gensdcard="true" dmclkid="0"/>

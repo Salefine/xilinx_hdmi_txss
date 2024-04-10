@@ -195,7 +195,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     xsc::common_cpp::properties S_AXI_HP0_FPD_transactor_param_props;
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "64");
     S_AXI_HP0_FPD_transactor_param_props.addLong("FREQ_HZ", "250000000");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
@@ -214,7 +214,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_BRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "4");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "8");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -226,7 +226,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     S_AXI_HP0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S_AXI_HP0_FPD_transactor_param_props.addString("CLK_DOMAIN", "exdes_clk_wiz_0_0_clk_out1");
 
-    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
+    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<64,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
 
     // S_AXI_HP0_FPD' transactor ports
 
@@ -430,7 +430,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     xsc::common_cpp::properties S_AXI_HP0_FPD_transactor_param_props;
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "64");
     S_AXI_HP0_FPD_transactor_param_props.addLong("FREQ_HZ", "250000000");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
@@ -449,7 +449,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_BRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "4");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "8");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -461,7 +461,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     S_AXI_HP0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S_AXI_HP0_FPD_transactor_param_props.addString("CLK_DOMAIN", "exdes_clk_wiz_0_0_clk_out1");
 
-    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
+    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<64,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
 
     // S_AXI_HP0_FPD' transactor ports
 
@@ -665,7 +665,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     xsc::common_cpp::properties S_AXI_HP0_FPD_transactor_param_props;
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "64");
     S_AXI_HP0_FPD_transactor_param_props.addLong("FREQ_HZ", "250000000");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
@@ -684,7 +684,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_BRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "4");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "8");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -696,7 +696,7 @@ void exdes_zynq_us_0::before_end_of_elaboration()
     S_AXI_HP0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S_AXI_HP0_FPD_transactor_param_props.addString("CLK_DOMAIN", "exdes_clk_wiz_0_0_clk_out1");
 
-    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
+    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<64,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
 
     // S_AXI_HP0_FPD' transactor ports
 
@@ -870,7 +870,7 @@ exdes_zynq_us_0::exdes_zynq_us_0(const sc_core::sc_module_name& nm) : exdes_zynq
     xsc::common_cpp::properties S_AXI_HP0_FPD_transactor_param_props;
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "64");
     S_AXI_HP0_FPD_transactor_param_props.addLong("FREQ_HZ", "250000000");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
@@ -889,7 +889,7 @@ exdes_zynq_us_0::exdes_zynq_us_0(const sc_core::sc_module_name& nm) : exdes_zynq
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_BRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "4");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "8");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -901,7 +901,7 @@ exdes_zynq_us_0::exdes_zynq_us_0(const sc_core::sc_module_name& nm) : exdes_zynq
     S_AXI_HP0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S_AXI_HP0_FPD_transactor_param_props.addString("CLK_DOMAIN", "exdes_clk_wiz_0_0_clk_out1");
 
-    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
+    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<64,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
   mp_saxigp2_aruser_converter = new xsc::common::scalar2vectorN_converter<1>("saxigp2_aruser_converter");
   mp_saxigp2_aruser_converter->scalar_in(saxigp2_aruser);
   mp_saxigp2_aruser_converter->vector_out(m_saxigp2_aruser_converter_signal);
@@ -1105,7 +1105,7 @@ exdes_zynq_us_0::exdes_zynq_us_0(const sc_core::sc_module_name& nm) : exdes_zynq
     xsc::common_cpp::properties S_AXI_HP0_FPD_transactor_param_props;
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_OUTSTANDING", "16");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_OUTSTANDING", "16");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "128");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("DATA_WIDTH", "64");
     S_AXI_HP0_FPD_transactor_param_props.addLong("FREQ_HZ", "250000000");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ID_WIDTH", "6");
     S_AXI_HP0_FPD_transactor_param_props.addLong("ADDR_WIDTH", "49");
@@ -1124,7 +1124,7 @@ exdes_zynq_us_0::exdes_zynq_us_0(const sc_core::sc_module_name& nm) : exdes_zynq
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_BRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("HAS_RRESP", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("SUPPORTS_NARROW_BURST", "0");
-    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "4");
+    S_AXI_HP0_FPD_transactor_param_props.addLong("MAX_BURST_LENGTH", "8");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_READ_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("NUM_WRITE_THREADS", "1");
     S_AXI_HP0_FPD_transactor_param_props.addLong("RUSER_BITS_PER_BYTE", "0");
@@ -1136,7 +1136,7 @@ exdes_zynq_us_0::exdes_zynq_us_0(const sc_core::sc_module_name& nm) : exdes_zynq
     S_AXI_HP0_FPD_transactor_param_props.addString("READ_WRITE_MODE", "READ_WRITE");
     S_AXI_HP0_FPD_transactor_param_props.addString("CLK_DOMAIN", "exdes_clk_wiz_0_0_clk_out1");
 
-    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<128,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
+    mp_S_AXI_HP0_FPD_transactor = new xtlm::xaximm_pin2xtlm_t<64,49,6,1,1,1,1,1>("S_AXI_HP0_FPD_transactor", S_AXI_HP0_FPD_transactor_param_props);
   mp_saxigp2_aruser_converter = new xsc::common::scalar2vectorN_converter<1>("saxigp2_aruser_converter");
   mp_saxigp2_aruser_converter->scalar_in(saxigp2_aruser);
   mp_saxigp2_aruser_converter->vector_out(m_saxigp2_aruser_converter_signal);
@@ -1255,6 +1255,6 @@ XMSC_MODULE_EXPORT(exdes_zynq_us_0);
 
 #ifdef RIVIERA
 SC_MODULE_EXPORT(exdes_zynq_us_0);
-SC_REGISTER_BV(128);
+SC_REGISTER_BV(95);
 #endif
 

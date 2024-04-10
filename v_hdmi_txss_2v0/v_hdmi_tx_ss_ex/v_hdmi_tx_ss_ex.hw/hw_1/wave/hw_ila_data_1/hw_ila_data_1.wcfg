@@ -3,18 +3,18 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+      <db_ref path="E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0"></ZoomStartTime>
-      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <ZoomStartTime time="253"></ZoomStartTime>
+      <ZoomEndTime time="638"></ZoomEndTime>
       <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="535"></NameColumnWidth>
+      <NameColumnWidth column_width="529"></NameColumnWidth>
       <ValueColumnWidth column_width="90"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="1" />
@@ -30,13 +30,43 @@
       <obj_property name="UseCustomSignalColor">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       <obj_property name="isExpanded"></obj_property>
-      <wvobject fp_name="group126" type="group">
+      <wvobject fp_name="group77" type="group">
+         <obj_property name="label">slot_0 : S_AXI_HP0_FPD_1 : Write Transactions 1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">ila_1___slot_0___S_AXI_HP0_FPD_1___Write_Transactions_1_tooltip</obj_property>
+         <obj_property name="Render_Data">ila_1___slot_0___S_AXI_HP0_FPD_1___Write_Transactions_1</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">LightSeaGreen</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group76" type="group">
+         <obj_property name="label">slot_0 : S_AXI_HP0_FPD_1 : Write Transactions 0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">ila_1___slot_0___S_AXI_HP0_FPD_1___Write_Transactions_0_tooltip</obj_property>
+         <obj_property name="Render_Data">ila_1___slot_0___S_AXI_HP0_FPD_1___Write_Transactions_0</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">LightSeaGreen</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group75" type="group">
+         <obj_property name="label">slot_0 : S_AXI_HP0_FPD_1 : Read Transactions 1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Detail_Data">ila_1___slot_0___S_AXI_HP0_FPD_1___Read_Transactions_1_tooltip</obj_property>
+         <obj_property name="Render_Data">ila_1___slot_0___S_AXI_HP0_FPD_1___Read_Transactions_1</obj_property>
+         <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
+         <obj_property name="CustomSignalColor">Orange</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
+      </wvobject>
+      <wvobject fp_name="group74" type="group">
          <obj_property name="label">slot_0 : S_AXI_HP0_FPD_1 : Read Transactions 0</obj_property>
          <obj_property name="DisplayName">label</obj_property>
          <obj_property name="Detail_Data">ila_1___slot_0___S_AXI_HP0_FPD_1___Read_Transactions_0_tooltip</obj_property>
          <obj_property name="Render_Data">ila_1___slot_0___S_AXI_HP0_FPD_1___Read_Transactions_0</obj_property>
          <obj_property name="EnumTransactionColorTable">0000=blank</obj_property>
-         <obj_property name="CustomSignalColor">Red</obj_property>
+         <obj_property name="CustomSignalColor">Orange</obj_property>
          <obj_property name="UseCustomSignalColor">true</obj_property>
          <obj_property name="WaveformStyle">STYLE_ENUM_TRANSACTION</obj_property>
       </wvobject>
@@ -181,8 +211,8 @@
          </wvobject>
          <wvobject fp_name="exdes_i/system_ila_0/inst/net_slot_0_axi_rdata" type="array">
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">exdes_i/system_ila_0/inst/net_slot_0_axi_rdata[127:0]</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axi_rdata[127:0]</obj_property>
+            <obj_property name="ElementShortName">exdes_i/system_ila_0/inst/net_slot_0_axi_rdata[63:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axi_rdata[63:0]</obj_property>
             <obj_property name="label">slot_0 : S_AXI_HP0_FPD_1 : RDATA</obj_property>
             <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
@@ -348,8 +378,8 @@
          </wvobject>
          <wvobject fp_name="exdes_i/system_ila_0/inst/net_slot_0_axi_wdata" type="array">
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">exdes_i/system_ila_0/inst/net_slot_0_axi_wdata[127:0]</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axi_wdata[127:0]</obj_property>
+            <obj_property name="ElementShortName">exdes_i/system_ila_0/inst/net_slot_0_axi_wdata[63:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axi_wdata[63:0]</obj_property>
             <obj_property name="label">slot_0 : S_AXI_HP0_FPD_1 : WDATA</obj_property>
             <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
@@ -357,8 +387,8 @@
          </wvobject>
          <wvobject fp_name="exdes_i/system_ila_0/inst/net_slot_0_axi_wstrb" type="array">
             <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">exdes_i/system_ila_0/inst/net_slot_0_axi_wstrb[15:0]</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axi_wstrb[15:0]</obj_property>
+            <obj_property name="ElementShortName">exdes_i/system_ila_0/inst/net_slot_0_axi_wstrb[7:0]</obj_property>
+            <obj_property name="ObjectShortName">net_slot_0_axi_wstrb[7:0]</obj_property>
             <obj_property name="label">slot_0 : S_AXI_HP0_FPD_1 : WSTRB</obj_property>
             <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>

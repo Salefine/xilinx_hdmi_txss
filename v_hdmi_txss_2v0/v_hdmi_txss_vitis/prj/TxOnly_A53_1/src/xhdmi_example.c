@@ -111,6 +111,8 @@
 #include "xhdmi_menu.h"
 #include "xhdmi_hdcp_keys_table.h"
 #include "xhdmi_example.h"
+#include "xparameters.h"
+#include "xil_io.h"
 
 /***************** Macros (Inline Functions) Definitions *********************/
 /* These macro values need to changed whenever there is a change in version */
@@ -118,8 +120,8 @@
 #define APP_MIN_VERSION 4
 
 #define IMAGE_WIDTH		3840
-#define IMAGE_HEIGHT    2160
-#define VIDEO_BASE_ADDR 0x10000000
+#define IMAGE_HEIGHT 	2160
+#define VIDEO_BASE_ADDR 0x40000000
 /**************************** Type Definitions *******************************/
 
 /************************** Function Prototypes ******************************/
@@ -1923,21 +1925,23 @@ int main() {
 	XIicPs_Config *XIic0Ps_ConfigPtr;
 	XIicPs_Config *XIic1Ps_ConfigPtr;
 #endif
-
+	/*
+	 * control the video data memory access
+	 * */
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x30,0x8b);
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xac,VIDEO_BASE_ADDR);
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xb0,VIDEO_BASE_ADDR + 0x10000000);
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xb4,VIDEO_BASE_ADDR + 0x20000000);
-	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xa8,IMAGE_WIDTH * 3);
-	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xa4,IMAGE_WIDTH * 3);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xa8,IMAGE_WIDTH*3);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xa4,IMAGE_WIDTH*3);
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0xa0,IMAGE_HEIGHT);
 
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x00,0x8b);
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x5c,VIDEO_BASE_ADDR);
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x60,VIDEO_BASE_ADDR + 0x10000000);
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x64,VIDEO_BASE_ADDR + 0x20000000);
-	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x58,IMAGE_WIDTH * 3);
-	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x54,IMAGE_WIDTH * 3);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x58,IMAGE_WIDTH*3);
+	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x54,IMAGE_WIDTH*3);
 	Xil_Out32(XPAR_VIDEO_GEN_AXI_VDMA_0_BASEADDR + 0x50,IMAGE_HEIGHT);
 
 	xil_printf("\r\n\r\n");
@@ -2473,7 +2477,7 @@ int main() {
 	TxInfoFrameReset();
 	XV_HdmiTxSs_SetStream(
 		&HdmiTxSs,
-		XVIDC_VM_3840x2160_30_P,
+		XVIDC_VM_1920x1080_60_P,
 		XVIDC_CSF_RGB,
 		XVIDC_BPC_8,
 		NULL);

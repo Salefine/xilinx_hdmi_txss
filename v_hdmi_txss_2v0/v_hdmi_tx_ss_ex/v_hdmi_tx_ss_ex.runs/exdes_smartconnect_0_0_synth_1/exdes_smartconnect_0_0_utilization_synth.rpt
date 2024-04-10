@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date         : Tue Apr  9 16:39:09 2024
+| Date         : Wed Apr 10 10:48:37 2024
 | Host         : weslie running 64-bit major release  (build 9200)
 | Command      : report_utilization -file exdes_smartconnect_0_0_utilization_synth.rpt -pb exdes_smartconnect_0_0_utilization_synth.pb
 | Design       : exdes_smartconnect_0_0
@@ -32,13 +32,13 @@ Table of Contents
 +----------------------------+------+-------+------------+-----------+-------+
 |          Site Type         | Used | Fixed | Prohibited | Available | Util% |
 +----------------------------+------+-------+------------+-----------+-------+
-| CLB LUTs*                  | 2310 |     0 |          0 |    230400 |  1.00 |
-|   LUT as Logic             | 1694 |     0 |          0 |    230400 |  0.74 |
-|   LUT as Memory            |  616 |     0 |          0 |    101760 |  0.61 |
-|     LUT as Distributed RAM |  582 |     0 |            |           |       |
+| CLB LUTs*                  | 2008 |     0 |          0 |    230400 |  0.87 |
+|   LUT as Logic             | 1542 |     0 |          0 |    230400 |  0.67 |
+|   LUT as Memory            |  466 |     0 |          0 |    101760 |  0.46 |
+|     LUT as Distributed RAM |  432 |     0 |            |           |       |
 |     LUT as Shift Register  |   34 |     0 |            |           |       |
-| CLB Registers              | 4066 |     0 |          0 |    460800 |  0.88 |
-|   Register as Flip Flop    | 4066 |     0 |          0 |    460800 |  0.88 |
+| CLB Registers              | 3208 |     0 |          0 |    460800 |  0.70 |
+|   Register as Flip Flop    | 3208 |     0 |          0 |    460800 |  0.70 |
 |   Register as Latch        |    0 |     0 |          0 |    460800 |  0.00 |
 | CARRY8                     |    0 |     0 |          0 |     28800 |  0.00 |
 | F7 Muxes                   |    0 |     0 |          0 |    115200 |  0.00 |
@@ -63,8 +63,8 @@ Warning! LUT value is adjusted to account for LUT combining.
 | 0     |          Yes |           - |            - |
 | 0     |          Yes |           - |          Set |
 | 81    |          Yes |           - |        Reset |
-| 156   |          Yes |         Set |            - |
-| 3829  |          Yes |       Reset |            - |
+| 154   |          Yes |         Set |            - |
+| 2973  |          Yes |       Reset |            - |
 +-------+--------------+-------------+--------------+
 
 
@@ -159,16 +159,16 @@ Warning! LUT value is adjusted to account for LUT combining.
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| FDRE     | 3829 |            Register |
-| RAMD32   | 1016 |                 CLB |
-| LUT3     |  949 |                 CLB |
-| LUT6     |  435 |                 CLB |
-| LUT5     |  378 |                 CLB |
-| LUT4     |  267 |                 CLB |
-| LUT1     |  165 |                 CLB |
-| LUT2     |  161 |                 CLB |
-| FDSE     |  156 |            Register |
-| RAMS32   |  146 |                 CLB |
+| FDRE     | 2973 |            Register |
+| LUT3     |  802 |                 CLB |
+| RAMD32   |  752 |                 CLB |
+| LUT6     |  379 |                 CLB |
+| LUT5     |  367 |                 CLB |
+| LUT4     |  256 |                 CLB |
+| LUT1     |  163 |                 CLB |
+| FDSE     |  154 |            Register |
+| LUT2     |  138 |                 CLB |
+| RAMS32   |  108 |                 CLB |
 | FDCE     |   81 |            Register |
 | SRL16E   |   34 |                 CLB |
 +----------+------+---------------------+

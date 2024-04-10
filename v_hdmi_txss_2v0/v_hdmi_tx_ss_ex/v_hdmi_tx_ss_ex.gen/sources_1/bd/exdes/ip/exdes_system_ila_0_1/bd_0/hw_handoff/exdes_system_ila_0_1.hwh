@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr  9 16:37:03 2024" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 10 10:46:44 2024" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu104:part0:1.1" DEVICE="xczu7ev" NAME="bd_07c8" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
 
@@ -130,7 +130,7 @@
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axi_bvalid"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="127" NAME="SLOT_0_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_rdata">
+    <PORT DIR="I" LEFT="63" NAME="SLOT_0_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_rdata">
       <CONNECTIONS>
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axi_rdata"/>
       </CONNECTIONS>
@@ -155,7 +155,7 @@
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axi_rvalid"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="127" NAME="SLOT_0_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_wdata">
+    <PORT DIR="I" LEFT="63" NAME="SLOT_0_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_wdata">
       <CONNECTIONS>
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axi_wdata"/>
       </CONNECTIONS>
@@ -170,7 +170,7 @@
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axi_wready"/>
       </CONNECTIONS>
     </PORT>
-    <PORT DIR="I" LEFT="15" NAME="SLOT_0_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_wstrb">
+    <PORT DIR="I" LEFT="7" NAME="SLOT_0_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_wstrb">
       <CONNECTIONS>
         <CONNECTION INSTANCE="g_inst" PORT="slot_0_axi_wstrb"/>
       </CONNECTIONS>
@@ -183,8 +183,8 @@
   </EXTERNALPORTS>
 
   <EXTERNALINTERFACES>
-    <BUSINTERFACE BUSNAME="g_inst_slot_0_axi" DATAWIDTH="128" NAME="SLOT_0_AXI" TYPE="TARGET">
-      <PARAMETER NAME="DATA_WIDTH" VALUE="128"/>
+    <BUSINTERFACE BUSNAME="g_inst_slot_0_axi" DATAWIDTH="64" NAME="SLOT_0_AXI" TYPE="TARGET">
+      <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
       <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
       <PARAMETER NAME="FREQ_HZ" VALUE="250000000"/>
       <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
@@ -207,7 +207,7 @@
       <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
       <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
       <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
-      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="4"/>
+      <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="8"/>
       <PARAMETER NAME="PHASE" VALUE="0.0"/>
       <PARAMETER NAME="CLK_DOMAIN" VALUE="exdes_clk_wiz_0_0_clk_out1"/>
       <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
@@ -1472,7 +1472,7 @@
         <PARAMETER NAME="C_MUX_PROBE126_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_MUX_PROBE127_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ADDR_WIDTH" VALUE="49"/>
-        <PARAMETER NAME="C_SLOT_0_AXI_DATA_WIDTH" VALUE="128"/>
+        <PARAMETER NAME="C_SLOT_0_AXI_DATA_WIDTH" VALUE="64"/>
         <PARAMETER NAME="C_SLOT_0_AXI_ID_WIDTH" VALUE="0"/>
         <PARAMETER NAME="C_SLOT_0_AXI_PROTOCOL" VALUE="AXI4"/>
         <PARAMETER NAME="C_SLOT_0_AXIS_TDATA_WIDTH" VALUE="32"/>
@@ -1679,12 +1679,12 @@
             <CONNECTION INSTANCE="bd_07c8_imp" PORT="SLOT_0_AXI_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="127" NAME="slot_0_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_wdata">
+        <PORT DIR="I" LEFT="63" NAME="slot_0_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="bd_07c8_imp" PORT="SLOT_0_AXI_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="slot_0_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_wstrb">
+        <PORT DIR="I" LEFT="7" NAME="slot_0_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_wstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="bd_07c8_imp" PORT="SLOT_0_AXI_wstrb"/>
           </CONNECTIONS>
@@ -1764,7 +1764,7 @@
             <CONNECTION INSTANCE="bd_07c8_imp" PORT="SLOT_0_AXI_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="127" NAME="slot_0_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_rdata">
+        <PORT DIR="I" LEFT="63" NAME="slot_0_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_slot_0_axi_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="bd_07c8_imp" PORT="SLOT_0_AXI_rdata"/>
           </CONNECTIONS>
@@ -1834,12 +1834,12 @@
             <CONNECTION INSTANCE="slot_0_aw" PORT="In1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="127" NAME="m_slot_0_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_wdata">
+        <PORT DIR="O" LEFT="63" NAME="m_slot_0_axi_wdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_lib" PORT="probe23"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="m_slot_0_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_wstrb">
+        <PORT DIR="O" LEFT="7" NAME="m_slot_0_axi_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_wstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_lib" PORT="probe24"/>
           </CONNECTIONS>
@@ -1919,7 +1919,7 @@
             <CONNECTION INSTANCE="slot_0_ar" PORT="In1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="127" NAME="m_slot_0_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_rdata">
+        <PORT DIR="O" LEFT="63" NAME="m_slot_0_axi_rdata" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="ila_lib" PORT="probe21"/>
           </CONNECTIONS>
@@ -1966,8 +1966,8 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="g_inst_slot_0_axi" DATAWIDTH="128" NAME="slot_0_axi" TYPE="MONITOR" VLNV="xilinx.com:interface:aximm:1.0">
-          <PARAMETER NAME="DATA_WIDTH" VALUE="128"/>
+        <BUSINTERFACE BUSNAME="g_inst_slot_0_axi" DATAWIDTH="64" NAME="slot_0_axi" TYPE="MONITOR" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="250000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
@@ -2034,8 +2034,8 @@
             <PORTMAP LOGICAL="WVALID" PHYSICAL="slot_0_axi_wvalid"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="__NOC__" DATAWIDTH="128" NAME="m_slot_0_axi" TYPE="INITIATOR" VLNV="xilinx.com:interface:aximm:1.0">
-          <PARAMETER NAME="DATA_WIDTH" VALUE="128"/>
+        <BUSINTERFACE BUSNAME="__NOC__" DATAWIDTH="64" NAME="m_slot_0_axi" TYPE="INITIATOR" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="250000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
@@ -2169,10 +2169,10 @@
         <PARAMETER NAME="C_PROBE18_WIDTH" VALUE="2"/>
         <PARAMETER NAME="C_PROBE19_WIDTH" VALUE="2"/>
         <PARAMETER NAME="C_PROBE20_WIDTH" VALUE="2"/>
-        <PARAMETER NAME="C_PROBE21_WIDTH" VALUE="128"/>
+        <PARAMETER NAME="C_PROBE21_WIDTH" VALUE="64"/>
         <PARAMETER NAME="C_PROBE22_WIDTH" VALUE="2"/>
-        <PARAMETER NAME="C_PROBE23_WIDTH" VALUE="128"/>
-        <PARAMETER NAME="C_PROBE24_WIDTH" VALUE="16"/>
+        <PARAMETER NAME="C_PROBE23_WIDTH" VALUE="64"/>
+        <PARAMETER NAME="C_PROBE24_WIDTH" VALUE="8"/>
         <PARAMETER NAME="C_PROBE25_WIDTH" VALUE="2"/>
         <PARAMETER NAME="C_PROBE26_WIDTH" VALUE="3"/>
         <PARAMETER NAME="C_PROBE27_WIDTH" VALUE="2"/>
@@ -5354,7 +5354,7 @@
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axi_r_cnt"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="127" NAME="probe21" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_rdata">
+        <PORT DIR="I" LEFT="63" NAME="probe21" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axi_rdata"/>
           </CONNECTIONS>
@@ -5364,12 +5364,12 @@
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axi_rresp"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="127" NAME="probe23" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_wdata">
+        <PORT DIR="I" LEFT="63" NAME="probe23" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axi_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="probe24" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_wstrb">
+        <PORT DIR="I" LEFT="7" NAME="probe24" RIGHT="0" SIGIS="undef" SIGNAME="g_inst_m_slot_0_axi_wstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="g_inst" PORT="m_slot_0_axi_wstrb"/>
           </CONNECTIONS>

@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-| Date             : Tue Apr  9 16:48:21 2024
+| Date             : Wed Apr 10 10:57:00 2024
 | Host             : weslie running 64-bit major release  (build 9200)
 | Command          : report_power -file exdes_wrapper_power_routed.rpt -pb exdes_wrapper_power_summary_routed.pb -rpx exdes_wrapper_power_routed.rpx
 | Design           : exdes_wrapper
@@ -30,11 +30,11 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 4.522        |
+| Total On-Chip Power (W)  | 4.483        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.762        |
-| Device Static (W)        | 0.760        |
+| Dynamic (W)              | 3.724        |
+| Device Static (W)        | 0.759        |
 | Effective TJA (C/W)      | 1.0          |
 | Max Ambient (C)          | 95.6         |
 | Junction Temperature (C) | 29.4         |
@@ -52,26 +52,26 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.315 |       31 |       --- |             --- |
-| CLB Logic                |     0.125 |    86932 |       --- |             --- |
-|   LUT as Distributed RAM |     0.056 |     1826 |    101760 |            1.79 |
-|   LUT as Logic           |     0.046 |    24884 |    230400 |           10.80 |
-|   LUT as Shift Register  |     0.016 |     1947 |    101760 |            1.91 |
-|   Register               |     0.005 |    45379 |    460800 |            9.85 |
-|   CARRY8                 |     0.001 |      463 |     28800 |            1.61 |
-|   Others                 |     0.000 |     3187 |       --- |             --- |
-|   F7/F8 Muxes            |     0.000 |      568 |    230400 |            0.25 |
+| Clocks                   |     0.305 |       31 |       --- |             --- |
+| CLB Logic                |     0.108 |    84522 |       --- |             --- |
+|   LUT as Logic           |     0.045 |    24615 |    230400 |           10.68 |
+|   LUT as Distributed RAM |     0.043 |     1676 |    101760 |            1.65 |
+|   LUT as Shift Register  |     0.014 |     1811 |    101760 |            1.78 |
+|   Register               |     0.005 |    44009 |    460800 |            9.55 |
+|   CARRY8                 |     0.001 |      454 |     28800 |            1.58 |
+|   Others                 |     0.000 |     3140 |       --- |             --- |
+|   F7/F8 Muxes            |     0.000 |      547 |    230400 |            0.24 |
 |   BUFG                   |     0.000 |        2 |        64 |            3.13 |
-| Signals                  |     0.069 |    64040 |       --- |             --- |
-| Block RAM                |     0.040 |     24.5 |       312 |            7.85 |
+| Signals                  |     0.063 |    62329 |       --- |             --- |
+| Block RAM                |     0.034 |       21 |       312 |            6.73 |
 | MMCM                     |     0.292 |        0 |       --- |             --- |
 | I/O                      |     0.011 |       13 |       360 |            3.61 |
 | GTH                      |     0.263 |        3 |        20 |           15.00 |
 | PS8                      |     2.648 |        1 |       --- |             --- |
-| Static Power             |     0.760 |          |           |                 |
+| Static Power             |     0.759 |          |           |                 |
 |   PS Static              |     0.100 |          |           |                 |
 |   PL Static              |     0.660 |          |           |                 |
-| Total                    |     4.522 |          |           |                 |
+| Total                    |     4.483 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -81,9 +81,9 @@ Table of Contents
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source          | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint          |       0.850 |     0.861 |       0.703 |      0.158 |       NA    | Unspecified | NA         |
+| Vccint          |       0.850 |     0.817 |       0.659 |      0.158 |       NA    | Unspecified | NA         |
 | Vccint_io       |       0.850 |     0.073 |       0.002 |      0.071 |       NA    | Unspecified | NA         |
-| Vccbram         |       0.850 |     0.008 |       0.005 |      0.002 |       NA    | Unspecified | NA         |
+| Vccbram         |       0.850 |     0.006 |       0.004 |      0.002 |       NA    | Unspecified | NA         |
 | Vccaux          |       1.800 |     0.308 |       0.161 |      0.147 |       NA    | Unspecified | NA         |
 | Vccaux_io       |       1.800 |     0.059 |       0.004 |      0.055 |       NA    | Unspecified | NA         |
 | Vcco33          |       3.300 |     0.007 |       0.000 |      0.007 |       NA    | Unspecified | NA         |
@@ -197,41 +197,41 @@ Table of Contents
 +-----------------------------+-----------+
 | Name                        | Power (W) |
 +-----------------------------+-----------+
-| exdes_wrapper               |     3.762 |
+| exdes_wrapper               |     3.724 |
 |   dbg_hub                   |     0.005 |
 |     inst                    |     0.005 |
 |       BSCANID.u_xsdbm_id    |     0.005 |
-|   exdes_i                   |     3.756 |
-|     audio_ss_0              |     0.123 |
-|       aud_pat_gen           |     0.009 |
+|   exdes_i                   |     3.717 |
+|     audio_ss_0              |     0.125 |
+|       aud_pat_gen           |     0.008 |
 |       axi_interconnect      |     0.004 |
 |       clk_wiz               |     0.102 |
-|       hdmi_acr_ctrl         |     0.008 |
+|       hdmi_acr_ctrl         |     0.010 |
 |     clk_wiz_0               |     0.100 |
 |       inst                  |     0.100 |
-|     system_ila_0            |     0.077 |
-|       inst                  |     0.077 |
+|     system_ila_0            |     0.060 |
+|       inst                  |     0.060 |
 |     tx_video_axis_reg_slice |     0.001 |
 |       inst                  |     0.001 |
-|     v_hdmi_tx_ss            |     0.089 |
-|       inst                  |     0.089 |
-|     v_tpg_ss_0              |     0.043 |
-|       system_ila_1          |     0.025 |
+|     v_hdmi_tx_ss            |     0.092 |
+|       inst                  |     0.092 |
+|     v_tpg_ss_0              |     0.042 |
+|       system_ila_1          |     0.024 |
 |       v_tpg                 |     0.017 |
-|     vid_phy_controller      |     0.402 |
-|       inst                  |     0.402 |
-|     video_frame_crc         |     0.007 |
-|       inst                  |     0.007 |
-|     video_gen               |     0.185 |
-|       axi_vdma_0            |     0.043 |
-|       axis_data_fifo_0      |     0.005 |
+|     vid_phy_controller      |     0.405 |
+|       inst                  |     0.405 |
+|     video_frame_crc         |     0.006 |
+|       inst                  |     0.006 |
+|     video_gen               |     0.159 |
+|       axi_vdma_0            |     0.042 |
+|       axis_data_fifo_0      |     0.004 |
 |       axis_gen              |     0.001 |
-|       smartconnect_0        |     0.107 |
-|       system_ila_1          |     0.029 |
-|     zynq_us_ss_0            |     2.729 |
-|       axi_interconnect_0    |     0.072 |
+|       smartconnect_0        |     0.083 |
+|       system_ila_1          |     0.028 |
+|     zynq_us_ss_0            |     2.726 |
+|       axi_interconnect_0    |     0.070 |
 |       fmch_axi_iic          |     0.002 |
-|       zynq_us               |     2.655 |
+|       zynq_us               |     2.654 |
 +-----------------------------+-----------+
 
 

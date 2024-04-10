@@ -1,13 +1,13 @@
-17:46:23 **** Incremental Build of configuration Debug for project TxOnly_A53_1 ****
+11:04:36 **** Incremental Build of configuration Debug for project TxOnly_A53_1 ****
 make all 
 'Building file: ../src/xhdmi_example.c'
 'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xhdmi_example.o" -IE:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/sw/exde_hdmi_ps/standalone_domain/bspinclude/include -MMD -MP -MF"src/xhdmi_example.d" -MT"src/xhdmi_example.o" -o "src/xhdmi_example.o" "../src/xhdmi_example.c"
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xhdmi_example.o" -IE:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/hdmi_tx/export/hdmi_tx/sw/hdmi_tx/standalone_domain/bspinclude/include -MMD -MP -MF"src/xhdmi_example.d" -MT"src/xhdmi_example.o" -o "src/xhdmi_example.o" "../src/xhdmi_example.c"
 'Finished building: ../src/xhdmi_example.c'
 ' '
 'Building target: TxOnly_A53_1.elf'
 'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/exde_hdmi_ps/export/exde_hdmi_ps/sw/exde_hdmi_ps/standalone_domain/bsplib/lib -o "TxOnly_A53_1.elf"  ./src/aes256.o ./src/audiogen_drv.o ./src/dp159.o ./src/idt_8t49n24x.o ./src/platform.o ./src/sha256.o ./src/si5324drv.o ./src/xhdcp.o ./src/xhdmi_edid.o ./src/xhdmi_example.o ./src/xhdmi_hdcp_keys.o ./src/xhdmi_menu.o ./src/xvidframe_crc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LE:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_txss_vitis/prj/hdmi_tx/export/hdmi_tx/sw/hdmi_tx/standalone_domain/bsplib/lib -o "TxOnly_A53_1.elf"  ./src/aes256.o ./src/audiogen_drv.o ./src/dp159.o ./src/idt_8t49n24x.o ./src/platform.o ./src/sha256.o ./src/si5324drv.o ./src/xhdcp.o ./src/xhdmi_edid.o ./src/xhdmi_example.o ./src/xhdmi_hdcp_keys.o ./src/xhdmi_menu.o ./src/xvidframe_crc.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: TxOnly_A53_1.elf'
 ' '
 'Invoking: ARM v8 Print Size'
@@ -17,5 +17,5 @@ aarch64-none-elf-size TxOnly_A53_1.elf  |tee "TxOnly_A53_1.elf.size"
 'Finished building: TxOnly_A53_1.elf.size'
 ' '
 
-17:46:24 Build Finished (took 458ms)
+11:04:36 Build Finished (took 460ms)
 

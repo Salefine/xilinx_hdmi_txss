@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/impl_1/exdes_wrapper.tcl"
+  variable script "E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/impl_1/exdes_wrapper.tcl"
   variable category "vivado_impl"
 }
 
@@ -115,6 +115,7 @@ proc step_failed { step } {
 OPTRACE "impl_1" END { }
 }
 
+set_msg_config -id {HDL-1065} -limit 10000
 set_msg_config  -id {[BD 41-1306]}  -suppress 
 set_msg_config  -id {[BD 41-1271]}  -suppress 
 
@@ -132,20 +133,20 @@ OPTRACE "create in-memory project" START { }
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/wt [current_project]
-  set_property parent.project_path E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.xpr [current_project]
-  set_property ip_output_repo E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/ip [current_project]
+  set_property webtalk.parent_dir E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/wt [current_project]
+  set_property parent.project_path E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.xpr [current_project]
+  set_property ip_output_repo E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/synth_1/exdes_wrapper.dcp
+  add_files -quiet E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/synth_1/exdes_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/exdes.bd
+  add_files E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/bd/exdes/exdes.bd
   set_param project.isImplRun false
 OPTRACE "read constraints: implementation" START { }
-  read_xdc E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/hdmi_example_zcu104.xdc
+  read_xdc E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/hdmi_example_zcu104.xdc
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }
 OPTRACE "link_design" START { }
@@ -249,17 +250,17 @@ OPTRACE "read constraints: phys_opt_design_post" START { }
 OPTRACE "read constraints: phys_opt_design_post" END { }
 OPTRACE "Post-Place Phys Opt Design: post hook" START { }
   set src_rc [catch { 
-    puts "source E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl"
-    source E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl
+    puts "source E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl"
+    source E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/phys_opt_design.tcl failed"
     }
     return -code error
   }
@@ -295,17 +296,17 @@ OPTRACE "read constraints: route_design_post" START { }
 OPTRACE "read constraints: route_design_post" END { }
 OPTRACE "Route Design: post hook" START { }
   set src_rc [catch { 
-    puts "source E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/route_design.tcl"
-    source E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/route_design.tcl
+    puts "source E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/route_design.tcl"
+    source E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/route_design.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/route_design.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/route_design.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/route_design.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/route_design.tcl failed"
     }
     return -code error
   }
@@ -351,17 +352,17 @@ OPTRACE "phys_opt_design" START { }
 OPTRACE "phys_opt_design" END { }
 OPTRACE "Post-Route Phys Opt Design: post hook" START { }
   set src_rc [catch { 
-    puts "source E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl"
-    source E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl
+    puts "source E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl"
+    source E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl
   } _RESULT] 
   if {$src_rc} { 
     set tool_flow [get_property -quiet TOOL_FLOW [current_project -quiet]]
     if { $tool_flow eq {SDx} } { 
       send_gid_msg -id 2 -ssname VPL_TCL -severity ERROR $_RESULT
-      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl failed"
+      send_gid_msg -id 3 -ssname VPL_TCL -severity ERROR "sourcing script E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl failed"
     } else {
       send_msg_id runtcl-1 status "$_RESULT"
-      send_msg_id runtcl-2 status "sourcing script E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl failed"
+      send_msg_id runtcl-2 status "sourcing script E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/imports/postroute_phys_opt_design.tcl failed"
     }
     return -code error
   }

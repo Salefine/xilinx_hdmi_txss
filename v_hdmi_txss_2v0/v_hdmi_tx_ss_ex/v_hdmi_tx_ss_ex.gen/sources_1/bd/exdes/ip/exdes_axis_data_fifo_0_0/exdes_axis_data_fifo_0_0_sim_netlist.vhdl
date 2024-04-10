@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Tue Apr  9 15:26:22 2024
+-- Date        : Wed Apr 10 10:47:47 2024
 -- Host        : weslie running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode funcsim
---               e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axis_data_fifo_0_0/exdes_axis_data_fifo_0_0_sim_netlist.vhdl
+--               e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axis_data_fifo_0_0/exdes_axis_data_fifo_0_0_sim_netlist.vhdl
 -- Design      : exdes_axis_data_fifo_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -1818,11 +1818,10 @@ begin
   doutb(33 downto 32) <= \^doutb\(33 downto 32);
   doutb(31) <= \<const0>\;
   doutb(30) <= \<const0>\;
-  doutb(29 downto 27) <= \^doutb\(29 downto 27);
-  doutb(26) <= \<const0>\;
-  doutb(25) <= \<const0>\;
-  doutb(24) <= \<const0>\;
-  doutb(23 downto 0) <= \^doutb\(23 downto 0);
+  doutb(29) <= \<const0>\;
+  doutb(28) <= \<const0>\;
+  doutb(27) <= \<const0>\;
+  doutb(26 downto 0) <= \^doutb\(26 downto 0);
   sbiterra <= \<const0>\;
   sbiterrb <= \<const0>\;
 GND: unisim.vcomponents.GND
@@ -1958,15 +1957,13 @@ GND: unisim.vcomponents.GND
       DINADIN(15 downto 0) => dina(15 downto 0),
       DINBDIN(15 downto 13) => B"111",
       DINBDIN(12 downto 11) => dina(33 downto 32),
-      DINBDIN(10 downto 8) => dina(29 downto 27),
-      DINBDIN(7 downto 0) => dina(23 downto 16),
+      DINBDIN(10 downto 0) => dina(26 downto 16),
       DINPADINP(1 downto 0) => B"11",
       DINPBDINP(1 downto 0) => B"11",
       DOUTADOUT(15 downto 0) => \^doutb\(15 downto 0),
       DOUTBDOUT(15 downto 13) => \NLW_gen_wr_a.gen_word_narrow.mem_reg_DOUTBDOUT_UNCONNECTED\(15 downto 13),
       DOUTBDOUT(12 downto 11) => \^doutb\(33 downto 32),
-      DOUTBDOUT(10 downto 8) => \^doutb\(29 downto 27),
-      DOUTBDOUT(7 downto 0) => \^doutb\(23 downto 16),
+      DOUTBDOUT(10 downto 0) => \^doutb\(26 downto 16),
       DOUTPADOUTP(1 downto 0) => \NLW_gen_wr_a.gen_word_narrow.mem_reg_DOUTPADOUTP_UNCONNECTED\(1 downto 0),
       DOUTPBDOUTP(1 downto 0) => \NLW_gen_wr_a.gen_word_narrow.mem_reg_DOUTPBDOUTP_UNCONNECTED\(1 downto 0),
       ENARDEN => enb,
@@ -2184,7 +2181,7 @@ architecture STRUCTURE of exdes_axis_data_fifo_0_0_xpm_fifo_base is
   signal \NLW_gen_sdpram.xpm_memory_base_inst_sbiterra_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_gen_sdpram.xpm_memory_base_inst_sbiterrb_UNCONNECTED\ : STD_LOGIC;
   signal \NLW_gen_sdpram.xpm_memory_base_inst_douta_UNCONNECTED\ : STD_LOGIC_VECTOR ( 33 downto 0 );
-  signal \NLW_gen_sdpram.xpm_memory_base_inst_doutb_UNCONNECTED\ : STD_LOGIC_VECTOR ( 31 downto 24 );
+  signal \NLW_gen_sdpram.xpm_memory_base_inst_doutb_UNCONNECTED\ : STD_LOGIC_VECTOR ( 31 downto 27 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \FSM_sequential_gen_fwft.curr_fwft_state[0]_i_1\ : label is "soft_lutpair12";
   attribute SOFT_HLUTNM of \FSM_sequential_gen_fwft.curr_fwft_state[1]_i_1\ : label is "soft_lutpair12";
@@ -2349,11 +2346,10 @@ begin
   dout(33 downto 32) <= \^dout\(33 downto 32);
   dout(31) <= \<const0>\;
   dout(30) <= \<const0>\;
-  dout(29 downto 27) <= \^dout\(29 downto 27);
-  dout(26) <= \<const0>\;
-  dout(25) <= \<const0>\;
-  dout(24) <= \<const0>\;
-  dout(23 downto 0) <= \^dout\(23 downto 0);
+  dout(29) <= \<const0>\;
+  dout(28) <= \<const0>\;
+  dout(27) <= \<const0>\;
+  dout(26 downto 0) <= \^dout\(26 downto 0);
   empty <= \<const0>\;
   full <= \<const0>\;
   overflow <= \<const0>\;
@@ -2518,17 +2514,13 @@ GND: unisim.vcomponents.GND
       dbiterra => \NLW_gen_sdpram.xpm_memory_base_inst_dbiterra_UNCONNECTED\,
       dbiterrb => \NLW_gen_sdpram.xpm_memory_base_inst_dbiterrb_UNCONNECTED\,
       dina(33 downto 32) => din(33 downto 32),
-      dina(31 downto 30) => B"00",
-      dina(29 downto 27) => din(29 downto 27),
-      dina(26 downto 24) => B"000",
-      dina(23 downto 0) => din(23 downto 0),
+      dina(31 downto 27) => B"00000",
+      dina(26 downto 0) => din(26 downto 0),
       dinb(33 downto 0) => B"0000000000000000000000000000000000",
       douta(33 downto 0) => \NLW_gen_sdpram.xpm_memory_base_inst_douta_UNCONNECTED\(33 downto 0),
       doutb(33 downto 32) => \^dout\(33 downto 32),
-      doutb(31 downto 30) => \NLW_gen_sdpram.xpm_memory_base_inst_doutb_UNCONNECTED\(31 downto 30),
-      doutb(29 downto 27) => \^dout\(29 downto 27),
-      doutb(26 downto 24) => \NLW_gen_sdpram.xpm_memory_base_inst_doutb_UNCONNECTED\(26 downto 24),
-      doutb(23 downto 0) => \^dout\(23 downto 0),
+      doutb(31 downto 27) => \NLW_gen_sdpram.xpm_memory_base_inst_doutb_UNCONNECTED\(31 downto 27),
+      doutb(26 downto 0) => \^dout\(26 downto 0),
       ena => '0',
       enb => rdpp1_inst_n_9,
       injectdbiterra => '0',
@@ -2786,7 +2778,7 @@ architecture STRUCTURE of exdes_axis_data_fifo_0_0_xpm_fifo_axis is
   signal NLW_xpm_fifo_base_inst_underflow_UNCONNECTED : STD_LOGIC;
   signal NLW_xpm_fifo_base_inst_wr_ack_UNCONNECTED : STD_LOGIC;
   signal NLW_xpm_fifo_base_inst_wr_rst_busy_UNCONNECTED : STD_LOGIC;
-  signal NLW_xpm_fifo_base_inst_dout_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 24 );
+  signal NLW_xpm_fifo_base_inst_dout_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 27 );
   signal NLW_xpm_fifo_base_inst_rd_data_count_UNCONNECTED : STD_LOGIC_VECTOR ( 9 downto 0 );
   signal NLW_xpm_fifo_base_inst_wr_data_count_UNCONNECTED : STD_LOGIC_VECTOR ( 9 downto 0 );
   attribute DEF_VAL : string;
@@ -2923,9 +2915,9 @@ begin
   dbiterr_axis <= \<const0>\;
   m_axis_tdest(0) <= \<const0>\;
   m_axis_tid(0) <= \<const0>\;
-  m_axis_tstrb(2) <= \<const0>\;
-  m_axis_tstrb(1) <= \<const0>\;
-  m_axis_tstrb(0) <= \<const0>\;
+  m_axis_tkeep(2) <= \<const0>\;
+  m_axis_tkeep(1) <= \<const0>\;
+  m_axis_tkeep(0) <= \<const0>\;
   m_axis_tvalid <= \^m_axis_tvalid\;
   prog_empty_axis <= \<const0>\;
   prog_full_axis <= \<const0>\;
@@ -2976,15 +2968,13 @@ xpm_fifo_base_inst: entity work.exdes_axis_data_fifo_0_0_xpm_fifo_base
       dbiterr => NLW_xpm_fifo_base_inst_dbiterr_UNCONNECTED,
       din(33) => s_axis_tlast,
       din(32) => s_axis_tuser(0),
-      din(31 downto 30) => B"00",
-      din(29 downto 27) => s_axis_tkeep(2 downto 0),
-      din(26 downto 24) => B"000",
+      din(31 downto 27) => B"00000",
+      din(26 downto 24) => s_axis_tstrb(2 downto 0),
       din(23 downto 0) => s_axis_tdata(23 downto 0),
       dout(33) => m_axis_tlast,
       dout(32) => m_axis_tuser(0),
-      dout(31 downto 30) => NLW_xpm_fifo_base_inst_dout_UNCONNECTED(31 downto 30),
-      dout(29 downto 27) => m_axis_tkeep(2 downto 0),
-      dout(26 downto 24) => NLW_xpm_fifo_base_inst_dout_UNCONNECTED(26 downto 24),
+      dout(31 downto 27) => NLW_xpm_fifo_base_inst_dout_UNCONNECTED(31 downto 27),
+      dout(26 downto 24) => m_axis_tstrb(2 downto 0),
       dout(23 downto 0) => m_axis_tdata(23 downto 0),
       empty => NLW_xpm_fifo_base_inst_empty_UNCONNECTED,
       full => NLW_xpm_fifo_base_inst_full_UNCONNECTED,
@@ -3061,7 +3051,7 @@ entity exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top is
   attribute C_ACLKEN_CONV_MODE : integer;
   attribute C_ACLKEN_CONV_MODE of exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top : entity is 0;
   attribute C_AXIS_SIGNAL_SET : integer;
-  attribute C_AXIS_SIGNAL_SET of exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top : entity is 155;
+  attribute C_AXIS_SIGNAL_SET of exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top : entity is 151;
   attribute C_AXIS_TDATA_WIDTH : integer;
   attribute C_AXIS_TDATA_WIDTH of exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top : entity is 24;
   attribute C_AXIS_TDEST_WIDTH : integer;
@@ -3198,7 +3188,7 @@ architecture STRUCTURE of exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top is
   signal \gen_fifo.xpm_fifo_axis_inst_n_61\ : STD_LOGIC;
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED\ : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED\ : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute AXIS_DATA_WIDTH : integer;
   attribute AXIS_DATA_WIDTH of \gen_fifo.xpm_fifo_axis_inst\ : label is 34;
   attribute AXIS_FINAL_DATA_WIDTH : integer;
@@ -3349,9 +3339,9 @@ begin
   dbiterr <= \<const0>\;
   m_axis_tdest(0) <= \<const0>\;
   m_axis_tid(0) <= \<const0>\;
-  m_axis_tstrb(2) <= \<const0>\;
-  m_axis_tstrb(1) <= \<const0>\;
-  m_axis_tstrb(0) <= \<const0>\;
+  m_axis_tkeep(2) <= \<const0>\;
+  m_axis_tkeep(1) <= \<const0>\;
+  m_axis_tkeep(0) <= \<const0>\;
   prog_empty <= \<const0>\;
   prog_full <= \<const0>\;
   sbiterr <= \<const0>\;
@@ -3370,10 +3360,10 @@ GND: unisim.vcomponents.GND
       m_axis_tdata(23 downto 0) => m_axis_tdata(23 downto 0),
       m_axis_tdest(0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tdest_UNCONNECTED\(0),
       m_axis_tid(0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tid_UNCONNECTED\(0),
-      m_axis_tkeep(2 downto 0) => m_axis_tkeep(2 downto 0),
+      m_axis_tkeep(2 downto 0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tkeep_UNCONNECTED\(2 downto 0),
       m_axis_tlast => m_axis_tlast,
       m_axis_tready => m_axis_tready,
-      m_axis_tstrb(2 downto 0) => \NLW_gen_fifo.xpm_fifo_axis_inst_m_axis_tstrb_UNCONNECTED\(2 downto 0),
+      m_axis_tstrb(2 downto 0) => m_axis_tstrb(2 downto 0),
       m_axis_tuser(0) => m_axis_tuser(0),
       m_axis_tvalid => m_axis_tvalid,
       prog_empty_axis => \gen_fifo.xpm_fifo_axis_inst_n_48\,
@@ -3393,10 +3383,10 @@ GND: unisim.vcomponents.GND
       s_axis_tdata(23 downto 0) => s_axis_tdata(23 downto 0),
       s_axis_tdest(0) => '0',
       s_axis_tid(0) => '0',
-      s_axis_tkeep(2 downto 0) => s_axis_tkeep(2 downto 0),
+      s_axis_tkeep(2 downto 0) => B"000",
       s_axis_tlast => s_axis_tlast,
       s_axis_tready => s_axis_tready,
-      s_axis_tstrb(2 downto 0) => B"000",
+      s_axis_tstrb(2 downto 0) => s_axis_tstrb(2 downto 0),
       s_axis_tuser(0) => s_axis_tuser(0),
       s_axis_tvalid => s_axis_tvalid,
       sbiterr_axis => \gen_fifo.xpm_fifo_axis_inst_n_60\,
@@ -3423,13 +3413,13 @@ entity exdes_axis_data_fifo_0_0 is
     s_axis_tvalid : in STD_LOGIC;
     s_axis_tready : out STD_LOGIC;
     s_axis_tdata : in STD_LOGIC_VECTOR ( 23 downto 0 );
-    s_axis_tkeep : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    s_axis_tstrb : in STD_LOGIC_VECTOR ( 2 downto 0 );
     s_axis_tlast : in STD_LOGIC;
     s_axis_tuser : in STD_LOGIC_VECTOR ( 0 to 0 );
     m_axis_tvalid : out STD_LOGIC;
     m_axis_tready : in STD_LOGIC;
     m_axis_tdata : out STD_LOGIC_VECTOR ( 23 downto 0 );
-    m_axis_tkeep : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    m_axis_tstrb : out STD_LOGIC_VECTOR ( 2 downto 0 );
     m_axis_tlast : out STD_LOGIC;
     m_axis_tuser : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
@@ -3454,11 +3444,11 @@ architecture STRUCTURE of exdes_axis_data_fifo_0_0 is
   signal NLW_inst_axis_wr_data_count_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_inst_m_axis_tdest_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_inst_m_axis_tid_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal NLW_inst_m_axis_tstrb_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal NLW_inst_m_axis_tkeep_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   attribute C_ACLKEN_CONV_MODE : integer;
   attribute C_ACLKEN_CONV_MODE of inst : label is 0;
   attribute C_AXIS_SIGNAL_SET : integer;
-  attribute C_AXIS_SIGNAL_SET of inst : label is 155;
+  attribute C_AXIS_SIGNAL_SET of inst : label is 151;
   attribute C_AXIS_TDATA_WIDTH : integer;
   attribute C_AXIS_TDATA_WIDTH of inst : label is 24;
   attribute C_AXIS_TDEST_WIDTH : integer;
@@ -3574,13 +3564,13 @@ architecture STRUCTURE of exdes_axis_data_fifo_0_0 is
   attribute X_INTERFACE_INFO of s_axis_tready : signal is "xilinx.com:interface:axis:1.0 S_AXIS TREADY";
   attribute X_INTERFACE_INFO of s_axis_tvalid : signal is "xilinx.com:interface:axis:1.0 S_AXIS TVALID";
   attribute X_INTERFACE_INFO of m_axis_tdata : signal is "xilinx.com:interface:axis:1.0 M_AXIS TDATA";
-  attribute X_INTERFACE_INFO of m_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 M_AXIS TKEEP";
+  attribute X_INTERFACE_INFO of m_axis_tstrb : signal is "xilinx.com:interface:axis:1.0 M_AXIS TSTRB";
   attribute X_INTERFACE_INFO of m_axis_tuser : signal is "xilinx.com:interface:axis:1.0 M_AXIS TUSER";
-  attribute X_INTERFACE_PARAMETER of m_axis_tuser : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of m_axis_tuser : signal is "XIL_INTERFACENAME M_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axis_tdata : signal is "xilinx.com:interface:axis:1.0 S_AXIS TDATA";
-  attribute X_INTERFACE_INFO of s_axis_tkeep : signal is "xilinx.com:interface:axis:1.0 S_AXIS TKEEP";
+  attribute X_INTERFACE_INFO of s_axis_tstrb : signal is "xilinx.com:interface:axis:1.0 S_AXIS TSTRB";
   attribute X_INTERFACE_INFO of s_axis_tuser : signal is "xilinx.com:interface:axis:1.0 S_AXIS TUSER";
-  attribute X_INTERFACE_PARAMETER of s_axis_tuser : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 1, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axis_tuser : signal is "XIL_INTERFACENAME S_AXIS, TDATA_NUM_BYTES 3, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 1, HAS_TREADY 1, HAS_TSTRB 1, HAS_TKEEP 0, HAS_TLAST 1, FREQ_HZ 300000000, PHASE 0.0, CLK_DOMAIN exdes_zynq_us_0_pl_clk1, LAYERED_METADATA undef, INSERT_VIP 0";
 begin
 inst: entity work.exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top
      port map (
@@ -3596,10 +3586,10 @@ inst: entity work.exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top
       m_axis_tdata(23 downto 0) => m_axis_tdata(23 downto 0),
       m_axis_tdest(0) => NLW_inst_m_axis_tdest_UNCONNECTED(0),
       m_axis_tid(0) => NLW_inst_m_axis_tid_UNCONNECTED(0),
-      m_axis_tkeep(2 downto 0) => m_axis_tkeep(2 downto 0),
+      m_axis_tkeep(2 downto 0) => NLW_inst_m_axis_tkeep_UNCONNECTED(2 downto 0),
       m_axis_tlast => m_axis_tlast,
       m_axis_tready => m_axis_tready,
-      m_axis_tstrb(2 downto 0) => NLW_inst_m_axis_tstrb_UNCONNECTED(2 downto 0),
+      m_axis_tstrb(2 downto 0) => m_axis_tstrb(2 downto 0),
       m_axis_tuser(0) => m_axis_tuser(0),
       m_axis_tvalid => m_axis_tvalid,
       prog_empty => NLW_inst_prog_empty_UNCONNECTED,
@@ -3610,10 +3600,10 @@ inst: entity work.exdes_axis_data_fifo_0_0_axis_data_fifo_v2_0_9_top
       s_axis_tdata(23 downto 0) => s_axis_tdata(23 downto 0),
       s_axis_tdest(0) => '0',
       s_axis_tid(0) => '0',
-      s_axis_tkeep(2 downto 0) => s_axis_tkeep(2 downto 0),
+      s_axis_tkeep(2 downto 0) => B"111",
       s_axis_tlast => s_axis_tlast,
       s_axis_tready => s_axis_tready,
-      s_axis_tstrb(2 downto 0) => B"111",
+      s_axis_tstrb(2 downto 0) => s_axis_tstrb(2 downto 0),
       s_axis_tuser(0) => s_axis_tuser(0),
       s_axis_tvalid => s_axis_tvalid,
       sbiterr => NLW_inst_sbiterr_UNCONNECTED

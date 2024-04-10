@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Apr  9 16:37:08 2024" VIVADOVERSION="2022.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Wed Apr 10 10:46:49 2024" VIVADOVERSION="2022.2">
 
   <SYSTEMINFO ARCH="zynquplus" BOARD="xilinx.com:zcu104:part0:1.1" DEVICE="xczu7ev" NAME="exdes" PACKAGE="ffvc1156" SPEEDGRADE="-2"/>
 
@@ -7038,8 +7038,8 @@
         <PORT DIR="I" LEFT="3" NAME="SLOT_0_AXI_awqos" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_awvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_awready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="127" NAME="SLOT_0_AXI_wdata" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="15" NAME="SLOT_0_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="63" NAME="SLOT_0_AXI_wdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="7" NAME="SLOT_0_AXI_wstrb" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_wlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_wvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_wready" SIGIS="undef"/>
@@ -7056,7 +7056,7 @@
         <PORT DIR="I" LEFT="3" NAME="SLOT_0_AXI_arqos" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_arvalid" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_arready" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="127" NAME="SLOT_0_AXI_rdata" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="I" LEFT="63" NAME="SLOT_0_AXI_rdata" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="1" NAME="SLOT_0_AXI_rresp" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_rlast" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXI_rvalid" SIGIS="undef"/>
@@ -7068,8 +7068,8 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="video_gen_smartconnect_0_M00_AXI" DATAWIDTH="128" NAME="SLOT_0_AXI" TYPE="MONITOR" VLNV="xilinx.com:interface:aximm:1.0">
-          <PARAMETER NAME="DATA_WIDTH" VALUE="128"/>
+        <BUSINTERFACE BUSNAME="video_gen_smartconnect_0_M00_AXI" DATAWIDTH="64" NAME="SLOT_0_AXI" TYPE="MONITOR" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="250000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
@@ -7092,7 +7092,7 @@
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
-          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="4"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="8"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="exdes_clk_wiz_0_0_clk_out1"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
@@ -14943,11 +14943,7 @@
             <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="m_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="s_axis_s2mm_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axi_vdma_0_s_axis_s2mm_tkeep">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="m_axis_tkeep"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="s_axis_s2mm_tkeep" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="s_axis_s2mm_tuser" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axi_vdma_0_s_axis_s2mm_tuser">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="m_axis_tuser"/>
@@ -15189,7 +15185,7 @@
         <PARAMETER NAME="C_AXIS_TID_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_AXIS_TDEST_WIDTH" VALUE="1"/>
         <PARAMETER NAME="C_AXIS_TUSER_WIDTH" VALUE="1"/>
-        <PARAMETER NAME="C_AXIS_SIGNAL_SET" VALUE="0b00000000000000000000000010011011"/>
+        <PARAMETER NAME="C_AXIS_SIGNAL_SET" VALUE="0b00000000000000000000000010010111"/>
         <PARAMETER NAME="C_FIFO_DEPTH" VALUE="512"/>
         <PARAMETER NAME="C_FIFO_MODE" VALUE="1"/>
         <PARAMETER NAME="C_IS_ACLK_ASYNC" VALUE="0"/>
@@ -15209,8 +15205,8 @@
         <PARAMETER NAME="IS_ACLK_ASYNC" VALUE="0"/>
         <PARAMETER NAME="ACLKEN_CONV_MODE" VALUE="0"/>
         <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-        <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
-        <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
+        <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+        <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
         <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
         <PARAMETER NAME="SYNCHRONIZATION_STAGES" VALUE="3"/>
         <PARAMETER NAME="HAS_WR_DATA_COUNT" VALUE="0"/>
@@ -15240,32 +15236,32 @@
         </PORT>
         <PORT DIR="I" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tvalid">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="m_axis_tvalid"/>
+            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="s_axis_tready" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="m_axis_tready"/>
+            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="s_axis_tready"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tdata">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="m_axis_tdata"/>
+            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="2" NAME="s_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tkeep">
+        <PORT DIR="I" LEFT="2" NAME="s_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tstrb">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="m_axis_tkeep"/>
+            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="s_axis_tstrb"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tlast">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="m_axis_tlast"/>
+            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="s_axis_tlast"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="0" NAME="s_axis_tuser" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tuser">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="m_axis_tuser"/>
+            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="s_axis_tuser"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="video_gen_axi_vdma_0_s_axis_s2mm_tvalid">
@@ -15283,11 +15279,7 @@
             <CONNECTION INSTANCE="video_gen_axi_vdma_0" PORT="s_axis_s2mm_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="m_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axi_vdma_0_s_axis_s2mm_tkeep">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axi_vdma_0" PORT="s_axis_s2mm_tkeep"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="m_axis_tstrb" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="video_gen_axi_vdma_0_s_axis_s2mm_tlast">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_axi_vdma_0" PORT="s_axis_s2mm_tlast"/>
@@ -15300,14 +15292,14 @@
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="video_gen_axis_gen_m_axis" NAME="S_AXIS" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="video_gen_axis_gen_s_axis" NAME="S_AXIS" TYPE="SLAVE" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
-          <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="300000000"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
@@ -15316,9 +15308,9 @@
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
-            <PORTMAP LOGICAL="TKEEP" PHYSICAL="s_axis_tkeep"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="s_axis_tstrb"/>
             <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_tuser"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
           </PORTMAPS>
@@ -15329,8 +15321,8 @@
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
-          <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="300000000"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
@@ -15339,9 +15331,9 @@
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
-            <PORTMAP LOGICAL="TKEEP" PHYSICAL="m_axis_tkeep"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_tlast"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="m_axis_tstrb"/>
             <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_tuser"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
           </PORTMAPS>
@@ -15357,56 +15349,56 @@
         <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
       </PARAMETERS>
       <PORTS>
-        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="m_axis_aclk" SIGIS="clk" SIGNAME="zynq_us_ss_0_zynq_us_pl_clk1">
+        <PORT CLKFREQUENCY="300000000" DIR="I" NAME="s_axis_aclk" SIGIS="clk" SIGNAME="zynq_us_ss_0_zynq_us_pl_clk1">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_us_ss_0_zynq_us" PORT="pl_clk1"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="video_gen_xlconstant_0_dout">
+        <PORT DIR="I" NAME="s_axis_aresetn" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="video_gen_xlconstant_0_dout">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="m_axis_tready" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tready">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tready"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" NAME="m_axis_tvalid" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tvalid">
+        <PORT DIR="O" NAME="s_axis_tvalid" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tvalid">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tvalid"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_tuser" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tuser">
+        <PORT DIR="O" NAME="s_axis_tuser" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tuser">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tuser"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" NAME="m_axis_tlast" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tlast">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tlast"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="23" NAME="m_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tdata">
+        <PORT DIR="O" LEFT="23" NAME="s_axis_tdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="2" NAME="m_axis_tkeep" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tkeep">
+        <PORT DIR="I" NAME="s_axis_tready" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tready">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tkeep"/>
+            <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tready"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="s_axis_tlast" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tlast">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tlast"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="s_axis_tstrb" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_axis_data_fifo_0_s_axis_tstrb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_tstrb"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
       <BUSINTERFACES>
-        <BUSINTERFACE BUSNAME="video_gen_axis_gen_m_axis" NAME="m_axis" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
+        <BUSINTERFACE BUSNAME="video_gen_axis_gen_s_axis" NAME="s_axis" TYPE="MASTER" VLNV="xilinx.com:interface:axis:1.0">
           <PARAMETER NAME="TDATA_NUM_BYTES" VALUE="3"/>
           <PARAMETER NAME="TDEST_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
-          <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="300000000"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
@@ -15414,12 +15406,12 @@
           <PARAMETER NAME="LAYERED_METADATA" VALUE="undef"/>
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
-            <PORTMAP LOGICAL="TDATA" PHYSICAL="m_axis_tdata"/>
-            <PORTMAP LOGICAL="TKEEP" PHYSICAL="m_axis_tkeep"/>
-            <PORTMAP LOGICAL="TLAST" PHYSICAL="m_axis_tlast"/>
-            <PORTMAP LOGICAL="TUSER" PHYSICAL="m_axis_tuser"/>
-            <PORTMAP LOGICAL="TVALID" PHYSICAL="m_axis_tvalid"/>
-            <PORTMAP LOGICAL="TREADY" PHYSICAL="m_axis_tready"/>
+            <PORTMAP LOGICAL="TDATA" PHYSICAL="s_axis_tdata"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="s_axis_tstrb"/>
+            <PORTMAP LOGICAL="TLAST" PHYSICAL="s_axis_tlast"/>
+            <PORTMAP LOGICAL="TUSER" PHYSICAL="s_axis_tuser"/>
+            <PORTMAP LOGICAL="TVALID" PHYSICAL="s_axis_tvalid"/>
+            <PORTMAP LOGICAL="TREADY" PHYSICAL="s_axis_tready"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -15698,12 +15690,12 @@
             <CONNECTION INSTANCE="zynq_us_ss_0_zynq_us" PORT="saxigp2_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="127" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_wdata">
+        <PORT DIR="O" LEFT="63" NAME="M00_AXI_wdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_us_ss_0_zynq_us" PORT="saxigp2_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="15" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_wstrb">
+        <PORT DIR="O" LEFT="7" NAME="M00_AXI_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_wstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_us_ss_0_zynq_us" PORT="saxigp2_wstrb"/>
           </CONNECTIONS>
@@ -15788,7 +15780,7 @@
             <CONNECTION INSTANCE="zynq_us_ss_0_zynq_us" PORT="saxigp2_arready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="127" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_rdata">
+        <PORT DIR="I" LEFT="63" NAME="M00_AXI_rdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="zynq_us_ss_0_zynq_us" PORT="saxigp2_rdata"/>
           </CONNECTIONS>
@@ -15918,8 +15910,8 @@
             <PORTMAP LOGICAL="BREADY" PHYSICAL="S01_AXI_bready"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="video_gen_smartconnect_0_M00_AXI" DATAWIDTH="128" NAME="M00_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
-          <PARAMETER NAME="DATA_WIDTH" VALUE="128"/>
+        <BUSINTERFACE BUSNAME="video_gen_smartconnect_0_M00_AXI" DATAWIDTH="64" NAME="M00_AXI" TYPE="MASTER" VLNV="xilinx.com:interface:aximm:1.0">
+          <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="250000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="0"/>
@@ -15942,7 +15934,7 @@
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="2"/>
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="2"/>
-          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="4"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="8"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="exdes_clk_wiz_0_0_clk_out1"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>
@@ -19832,7 +19824,6 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="23" NAME="SLOT_0_AXIS_tdata" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="I" LEFT="2" NAME="SLOT_0_AXIS_tkeep" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tlast" SIGIS="undef"/>
         <PORT DIR="I" LEFT="0" NAME="SLOT_0_AXIS_tuser" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="I" NAME="SLOT_0_AXIS_tvalid" SIGIS="undef"/>
@@ -19848,6 +19839,7 @@
             <CONNECTION INSTANCE="video_gen_xlconstant_0" PORT="dout"/>
           </CONNECTIONS>
         </PORT>
+        <PORT DIR="I" LEFT="2" NAME="SLOT_0_AXIS_tstrb" RIGHT="0" SIGIS="undef"/>
       </PORTS>
       <BUSINTERFACES>
         <BUSINTERFACE BUSNAME="video_gen_axis_data_fifo_0_M_AXIS" NAME="SLOT_0_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
@@ -19856,8 +19848,8 @@
           <PARAMETER NAME="TID_WIDTH" VALUE="0"/>
           <PARAMETER NAME="TUSER_WIDTH" VALUE="1"/>
           <PARAMETER NAME="HAS_TREADY" VALUE="1"/>
-          <PARAMETER NAME="HAS_TSTRB" VALUE="0"/>
-          <PARAMETER NAME="HAS_TKEEP" VALUE="1"/>
+          <PARAMETER NAME="HAS_TSTRB" VALUE="1"/>
+          <PARAMETER NAME="HAS_TKEEP" VALUE="0"/>
           <PARAMETER NAME="HAS_TLAST" VALUE="1"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="300000000"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
@@ -19866,11 +19858,11 @@
           <PARAMETER NAME="INSERT_VIP" VALUE="0"/>
           <PORTMAPS>
             <PORTMAP LOGICAL="TDATA" PHYSICAL="SLOT_0_AXIS_tdata"/>
-            <PORTMAP LOGICAL="TKEEP" PHYSICAL="SLOT_0_AXIS_tkeep"/>
             <PORTMAP LOGICAL="TLAST" PHYSICAL="SLOT_0_AXIS_tlast"/>
             <PORTMAP LOGICAL="TUSER" PHYSICAL="SLOT_0_AXIS_tuser"/>
             <PORTMAP LOGICAL="TVALID" PHYSICAL="SLOT_0_AXIS_tvalid"/>
             <PORTMAP LOGICAL="TREADY" PHYSICAL="SLOT_0_AXIS_tready"/>
+            <PORTMAP LOGICAL="TSTRB" PHYSICAL="SLOT_0_AXIS_tstrb"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="video_gen_axi_vdma_0_M_AXIS_MM2S" NAME="SLOT_1_AXIS" TYPE="MONITOR" VLNV="xilinx.com:interface:axis:1.0">
@@ -19911,8 +19903,8 @@
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_proc_sys_reset_0" PORT="ext_reset_in"/>
             <CONNECTION INSTANCE="video_gen_system_ila_1" PORT="resetn"/>
-            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="m_axis_aresetn"/>
             <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_aresetn"/>
+            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="s_axis_aresetn"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -23072,10 +23064,10 @@
         <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=zynq_ultra_ps_e;v=v3_4;d=pg201-zynq-ultrascale-plus-processing-system.pdf"/>
       </DOCUMENTS>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_QSPI" RANGE="0x20000000" USAGE="memory"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
       <ADDRESSBLOCKS>
-        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_DDR_LOW" RANGE="0x80000000" USAGE="memory"/>
+        <ADDRESSBLOCK ACCESS="" INTERFACE="SAXIGP2" NAME="HP0_QSPI" RANGE="0x20000000" USAGE="memory"/>
       </ADDRESSBLOCKS>
       <PARAMETERS>
         <PARAMETER NAME="C_DP_USE_AUDIO" VALUE="0"/>
@@ -23085,7 +23077,7 @@
         <PARAMETER NAME="C_MAXIGP2_DATA_WIDTH" VALUE="32"/>
         <PARAMETER NAME="C_SAXIGP0_DATA_WIDTH" VALUE="128"/>
         <PARAMETER NAME="C_SAXIGP1_DATA_WIDTH" VALUE="128"/>
-        <PARAMETER NAME="C_SAXIGP2_DATA_WIDTH" VALUE="128"/>
+        <PARAMETER NAME="C_SAXIGP2_DATA_WIDTH" VALUE="64"/>
         <PARAMETER NAME="C_SAXIGP3_DATA_WIDTH" VALUE="128"/>
         <PARAMETER NAME="C_SAXIGP4_DATA_WIDTH" VALUE="128"/>
         <PARAMETER NAME="C_SAXIGP5_DATA_WIDTH" VALUE="128"/>
@@ -23684,7 +23676,7 @@
         <PARAMETER NAME="PSU__SAXIGP1__DATA_WIDTH" VALUE="128"/>
         <PARAMETER NAME="PSU__USE__S_AXI_GP2" VALUE="1"/>
         <PARAMETER NAME="PSU__USE_DIFF_RW_CLK_GP2" VALUE="0"/>
-        <PARAMETER NAME="PSU__SAXIGP2__DATA_WIDTH" VALUE="128"/>
+        <PARAMETER NAME="PSU__SAXIGP2__DATA_WIDTH" VALUE="64"/>
         <PARAMETER NAME="PSU__USE__S_AXI_GP3" VALUE="0"/>
         <PARAMETER NAME="PSU__USE_DIFF_RW_CLK_GP3" VALUE="0"/>
         <PARAMETER NAME="PSU__SAXIGP3__DATA_WIDTH" VALUE="128"/>
@@ -25063,12 +25055,12 @@
             <CONNECTION INSTANCE="video_gen_smartconnect_0" PORT="M00_AXI_awready"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="127" NAME="saxigp2_wdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_wdata">
+        <PORT DIR="I" LEFT="63" NAME="saxigp2_wdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_wdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_smartconnect_0" PORT="M00_AXI_wdata"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="15" NAME="saxigp2_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_wstrb">
+        <PORT DIR="I" LEFT="7" NAME="saxigp2_wstrb" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_wstrb">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_smartconnect_0" PORT="M00_AXI_wstrb"/>
           </CONNECTIONS>
@@ -25151,7 +25143,7 @@
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="5" NAME="saxigp2_rid" RIGHT="0" SIGIS="undef"/>
-        <PORT DIR="O" LEFT="127" NAME="saxigp2_rdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_rdata">
+        <PORT DIR="O" LEFT="63" NAME="saxigp2_rdata" RIGHT="0" SIGIS="undef" SIGNAME="video_gen_smartconnect_0_M00_AXI_rdata">
           <CONNECTIONS>
             <CONNECTION INSTANCE="video_gen_smartconnect_0" PORT="M00_AXI_rdata"/>
           </CONNECTIONS>
@@ -25250,7 +25242,7 @@
             <CONNECTION INSTANCE="video_gen_axi_vdma_0" PORT="m_axis_mm2s_aclk"/>
             <CONNECTION INSTANCE="video_gen_system_ila_1" PORT="clk"/>
             <CONNECTION INSTANCE="video_gen_axis_data_fifo_0" PORT="s_axis_aclk"/>
-            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="m_axis_aclk"/>
+            <CONNECTION INSTANCE="video_gen_axis_gen" PORT="s_axis_aclk"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>
@@ -25329,10 +25321,10 @@
             <PORTMAP LOGICAL="ARQOS" PHYSICAL="maxigp2_arqos"/>
           </PORTMAPS>
         </BUSINTERFACE>
-        <BUSINTERFACE BUSNAME="video_gen_smartconnect_0_M00_AXI" DATAWIDTH="128" NAME="S_AXI_HP0_FPD" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
+        <BUSINTERFACE BUSNAME="video_gen_smartconnect_0_M00_AXI" DATAWIDTH="64" NAME="S_AXI_HP0_FPD" TYPE="SLAVE" VLNV="xilinx.com:interface:aximm:1.0">
           <PARAMETER NAME="NUM_WRITE_OUTSTANDING" VALUE="16"/>
           <PARAMETER NAME="NUM_READ_OUTSTANDING" VALUE="16"/>
-          <PARAMETER NAME="DATA_WIDTH" VALUE="128"/>
+          <PARAMETER NAME="DATA_WIDTH" VALUE="64"/>
           <PARAMETER NAME="PROTOCOL" VALUE="AXI4"/>
           <PARAMETER NAME="FREQ_HZ" VALUE="250000000"/>
           <PARAMETER NAME="ID_WIDTH" VALUE="6"/>
@@ -25353,7 +25345,7 @@
           <PARAMETER NAME="HAS_BRESP" VALUE="1"/>
           <PARAMETER NAME="HAS_RRESP" VALUE="1"/>
           <PARAMETER NAME="SUPPORTS_NARROW_BURST" VALUE="0"/>
-          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="4"/>
+          <PARAMETER NAME="MAX_BURST_LENGTH" VALUE="8"/>
           <PARAMETER NAME="PHASE" VALUE="0.0"/>
           <PARAMETER NAME="CLK_DOMAIN" VALUE="exdes_clk_wiz_0_0_clk_out1"/>
           <PARAMETER NAME="NUM_READ_THREADS" VALUE="1"/>

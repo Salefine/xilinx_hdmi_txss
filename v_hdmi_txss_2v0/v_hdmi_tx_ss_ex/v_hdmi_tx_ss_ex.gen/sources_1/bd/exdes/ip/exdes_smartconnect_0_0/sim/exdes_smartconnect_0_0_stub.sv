@@ -111,8 +111,8 @@ module exdes_smartconnect_0_0 (
   output bit [3 : 0] M00_AXI_awqos,
   output bit_as_bool M00_AXI_awvalid,
   input bit_as_bool M00_AXI_awready,
-  output bit [127 : 0] M00_AXI_wdata,
-  output bit [15 : 0] M00_AXI_wstrb,
+  output bit [63 : 0] M00_AXI_wdata,
+  output bit [7 : 0] M00_AXI_wstrb,
   output bit_as_bool M00_AXI_wlast,
   output bit_as_bool M00_AXI_wvalid,
   input bit_as_bool M00_AXI_wready,
@@ -129,7 +129,7 @@ module exdes_smartconnect_0_0 (
   output bit [3 : 0] M00_AXI_arqos,
   output bit_as_bool M00_AXI_arvalid,
   input bit_as_bool M00_AXI_arready,
-  input bit [127 : 0] M00_AXI_rdata,
+  input bit [63 : 0] M00_AXI_rdata,
   input bit [1 : 0] M00_AXI_rresp,
   input bit_as_bool M00_AXI_rlast,
   input bit_as_bool M00_AXI_rvalid,
@@ -188,8 +188,8 @@ module exdes_smartconnect_0_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00_AXI
   output wire [3 : 0] M00_AXI_awqos;
   output wire M00_AXI_awvalid;
   input bit M00_AXI_awready;
-  output wire [127 : 0] M00_AXI_wdata;
-  output wire [15 : 0] M00_AXI_wstrb;
+  output wire [63 : 0] M00_AXI_wdata;
+  output wire [7 : 0] M00_AXI_wstrb;
   output wire M00_AXI_wlast;
   output wire M00_AXI_wvalid;
   input bit M00_AXI_wready;
@@ -206,7 +206,7 @@ module exdes_smartconnect_0_0 (aclk,aresetn,S00_AXI_araddr,S00_AXI_arlen,S00_AXI
   output wire [3 : 0] M00_AXI_arqos;
   output wire M00_AXI_arvalid;
   input bit M00_AXI_arready;
-  input bit [127 : 0] M00_AXI_rdata;
+  input bit [63 : 0] M00_AXI_rdata;
   input bit [1 : 0] M00_AXI_rresp;
   input bit M00_AXI_rlast;
   input bit M00_AXI_rvalid;

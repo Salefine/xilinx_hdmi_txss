@@ -1,7 +1,7 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0x7498E7F37ABFD5BC",
+      "boundary_crc": "0x64063E711EE263AF",
       "design_src": "SBD",
       "device": "xczu7ev-ffvc1156-2-e",
       "name": "bd_07c8",
@@ -47,7 +47,7 @@
             "value_src": "default_prop"
           },
           "DATA_WIDTH": {
-            "value": "128",
+            "value": "64",
             "value_src": "default"
           },
           "FREQ_HZ": {
@@ -99,7 +99,7 @@
             "value_src": "default"
           },
           "MAX_BURST_LENGTH": {
-            "value": "4",
+            "value": "8",
             "value_src": "default"
           },
           "NUM_READ_OUTSTANDING": {
@@ -320,7 +320,7 @@
             "value": "0"
           },
           "C_PROBE21_WIDTH": {
-            "value": "128"
+            "value": "64"
           },
           "C_PROBE22_TYPE": {
             "value": "0"
@@ -332,13 +332,13 @@
             "value": "0"
           },
           "C_PROBE23_WIDTH": {
-            "value": "128"
+            "value": "64"
           },
           "C_PROBE24_TYPE": {
             "value": "0"
           },
           "C_PROBE24_WIDTH": {
-            "value": "16"
+            "value": "8"
           },
           "C_PROBE25_TYPE": {
             "value": "0"
@@ -475,7 +475,7 @@
             "value": "1"
           },
           "C_SLOT_0_AXI_DATA_WIDTH": {
-            "value": "128"
+            "value": "64"
           },
           "C_SLOT_0_AXI_ID_WIDTH": {
             "value": "0"

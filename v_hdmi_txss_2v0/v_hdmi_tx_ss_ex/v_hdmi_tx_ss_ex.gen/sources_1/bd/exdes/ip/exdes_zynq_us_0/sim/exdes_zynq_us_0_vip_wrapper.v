@@ -200,8 +200,8 @@ input [3 : 0] saxigp2_awcache;
 input [2 : 0] saxigp2_awprot;
 input saxigp2_awvalid;
 output saxigp2_awready;
-input [127 : 0] saxigp2_wdata;
-input [15 : 0] saxigp2_wstrb;
+input [63 : 0] saxigp2_wdata;
+input [7 : 0] saxigp2_wstrb;
 input saxigp2_wlast;
 input saxigp2_wvalid;
 output saxigp2_wready;
@@ -220,7 +220,7 @@ input [2 : 0] saxigp2_arprot;
 input saxigp2_arvalid;
 output saxigp2_arready;
 output [5 : 0] saxigp2_rid;
-output [127 : 0] saxigp2_rdata;
+output [63 : 0] saxigp2_rdata;
 output [1 : 0] saxigp2_rresp;
 output saxigp2_rlast;
 output saxigp2_rvalid;
@@ -292,7 +292,7 @@ assign pl_clk0 = pl_clk_t[0] ;
     .C_M_AXI_GP2_DATA_WIDTH(32),
     .C_S_AXI_GP0_DATA_WIDTH(128),
     .C_S_AXI_GP1_DATA_WIDTH(128),
-    .C_S_AXI_GP2_DATA_WIDTH(128),
+    .C_S_AXI_GP2_DATA_WIDTH(64),
     .C_S_AXI_GP3_DATA_WIDTH(128),
     .C_S_AXI_GP4_DATA_WIDTH(128),
     .C_S_AXI_GP5_DATA_WIDTH(128),

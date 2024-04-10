@@ -16868,20 +16868,20 @@ set psu_afi_config {
 
 		# Configures the Read Channel Fabric interface width. 2'b11 : Reserved 2'b
     # 10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM2_AFIFM_RDCTRL_FABRIC_WIDTH                                            0x0
+		# PSU_AFIFM2_AFIFM_RDCTRL_FABRIC_WIDTH                                            0x1
 
 		# Read Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD380000, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD380000 0x00000003 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFD380000, 0x00000003U ,0x00000001U)  */
+    mask_write 0XFD380000 0x00000003 0x00000001
 		# Register : AFIFM_WRCTRL @ 0XFD380014</p>
 
 		# Configures the Write Channel Fabric interface width. 2'b11 : Reserved 2'
     # b10 : 32-bit Fabric 2'b01 : 64-bit enabled 2'b00 : 128-bit enabled
-		# PSU_AFIFM2_AFIFM_WRCTRL_FABRIC_WIDTH                                            0x0
+		# PSU_AFIFM2_AFIFM_WRCTRL_FABRIC_WIDTH                                            0x1
 
 		# Write Channel Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD380014, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFD380014 0x00000003 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFD380014, 0x00000003U ,0x00000001U)  */
+    mask_write 0XFD380014 0x00000003 0x00000001
 }
 
 set psu_ps_pl_reset_config_data {

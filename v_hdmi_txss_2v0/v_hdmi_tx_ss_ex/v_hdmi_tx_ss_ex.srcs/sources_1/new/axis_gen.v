@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2024/04/08 15:08:22
+// Create Date: 2024/03/26 19:50:31
 // Design Name: 
 // Module Name: axis_gen
 // Project Name: 
@@ -21,62 +21,75 @@
 
 
 module axis_gen#(
-    parameter   integer     IMAGE_WIDTH =   3840,
-    parameter   integer     IMAGE_HEIGHT=   2160
+    parameter  IMAGE_WIDTH	=	3840,
+	parameter  IMAGE_HEIGHT	=	2160
 )(
-input   wire    m_axis_aclk,
-input   wire    m_axis_aresetn,
-
-input   wire    m_axis_tready,
-output  reg     m_axis_tvalid,
-output  wire    m_axis_tuser,
-output  wire    m_axis_tlast,
-output  reg     [23:0]  m_axis_tdata,
-output  wire    [2:0]   m_axis_tkeep
+	input	wire	s_axis_aclk,
+	input	wire	s_axis_aresetn,
+	
+	output	reg			s_axis_tvalid,
+	output	wire		s_axis_tuser,
+	output	reg	[23:0]	s_axis_tdata,
+	input	wire		s_axis_tready,
+	output	wire		s_axis_tlast,
+	output	wire[2:0]	s_axis_tstrb
     );
-    reg     [31 - 1 : 0] h_cnt = 0;
-    reg     [31 - 1 : 0] v_cnt = 0;
-    initial begin
-        m_axis_tvalid <= 1;
-        m_axis_tdata  <= 0;
-    end
-    always @(posedge m_axis_aclk)begin
-        if(!h_cnt)
-            m_axis_tvalid <= 1;
-        else m_axis_tvalid <= m_axis_tvalid;
-    end
-    always @(posedge m_axis_aclk)begin
-        if(h_cnt == IMAGE_WIDTH)
-            h_cnt <= 0;
-        else if(m_axis_tready && m_axis_tvalid)begin
-            h_cnt <= h_cnt + 1;
-        end else h_cnt <= h_cnt;
-    end
-    always @(posedge m_axis_aclk)begin
-        if(v_cnt == IMAGE_HEIGHT)
-            v_cnt <= 0;
-        else if(m_axis_tready && m_axis_tvalid)begin
-            v_cnt <= v_cnt + 1;
-        end else v_cnt <= v_cnt;
-    end
-    always @(posedge m_axis_aclk)begin
-        if(h_cnt >= 0 && h_cnt < IMAGE_WIDTH / 8)
-            m_axis_tdata <= 24'hFF4D40;
-        else if(h_cnt >= IMAGE_WIDTH / 8 && h_cnt < IMAGE_WIDTH / 7)
-            m_axis_tdata <= 24'hFF_eb_cd;
-        else if(h_cnt >= IMAGE_WIDTH / 7 && h_cnt < IMAGE_WIDTH / 6)
-            m_axis_tdata <= 24'h00c5cd;
-        else if(h_cnt >= IMAGE_WIDTH / 6 && h_cnt < IMAGE_WIDTH / 5)
-            m_axis_tdata <= 24'h7fffd4;
-        else if(h_cnt >= IMAGE_WIDTH / 5 && h_cnt < IMAGE_WIDTH / 4)
-            m_axis_tdata <= 24'h54ff9f;
-        else if(h_cnt >= IMAGE_WIDTH / 4 && h_cnt < IMAGE_WIDTH / 3)
-            m_axis_tdata <= 24'hffe4e1;
-        else if(h_cnt >= IMAGE_WIDTH / 3 && h_cnt < IMAGE_WIDTH / 2)
-            m_axis_tdata <= 24'h8470ff;
-        else m_axis_tdata <= 24'h00ffff;
-    end
-    assign m_axis_tkeep = 3'b111;
-    assign m_axis_tuser = ((h_cnt == 1) && (v_cnt == 1)) ? 1 : 0;
-    assign m_axis_tlast = ((h_cnt == IMAGE_WIDTH) && (v_cnt == IMAGE_HEIGHT)) ? 1 : 0;
+//	initial begin
+//		s_axis_tvalid <= 0;
+//		s_axis_tuser  <= 0;
+//		s_axis_tdata  <= 0;
+//		s_axis_tlast  <= 0;
+//		s_axis_tstrb  <= 0;
+//	end
+	
+	reg	[31:0]	h_cnt	=	0;
+	reg	[31:0]	v_cnt	=	0;
+	reg [23:0]	pixel = 0;
+	always @(posedge s_axis_aclk)begin
+	    if(h_cnt == IMAGE_WIDTH) h_cnt <= 0;
+		else if(s_axis_tvalid && s_axis_tready)
+			h_cnt <= h_cnt + 1;
+		else h_cnt <= h_cnt;
+	end
+	always @(posedge s_axis_aclk)begin
+		if(h_cnt == IMAGE_WIDTH)
+			v_cnt <= v_cnt + 1;
+		else if(v_cnt == IMAGE_HEIGHT) v_cnt <= 0;
+		else v_cnt <= v_cnt;
+	end
+	always @(posedge s_axis_aclk)begin
+		if(!s_axis_aresetn)
+			s_axis_tvalid <= 0;
+		else if(v_cnt == 0) s_axis_tvalid <= 1;
+		else if(v_cnt == IMAGE_HEIGHT) s_axis_tvalid <= 0;
+		else s_axis_tvalid <= s_axis_tvalid;
+	end
+	always @(posedge s_axis_aclk)begin
+		if(!s_axis_aresetn)
+			s_axis_tdata <= 0;
+		else if(s_axis_tvalid && s_axis_tready) s_axis_tdata <= pixel;
+		else s_axis_tdata <= 0;
+	end
+	
+	assign s_axis_tuser = (h_cnt == 1) ? 1 : 0;
+	assign s_axis_tlast = (h_cnt == IMAGE_WIDTH) ? 1 : 0;
+	assign s_axis_tstrb = 3'b111;
+	
+	always @(posedge s_axis_aclk)begin
+		if(h_cnt <= IMAGE_WIDTH / 8)
+			pixel <= 24'hFFFAFA;
+		else if(h_cnt >= IMAGE_WIDTH / 8 && h_cnt <= IMAGE_WIDTH / 8 * 2)
+			pixel <= 24'h53868B;
+		else if(h_cnt >= IMAGE_WIDTH / 8 *2 && h_cnt <= IMAGE_WIDTH / 8 * 3)
+			pixel <= 24'h7FFFD4;
+		else if(h_cnt >= IMAGE_WIDTH / 8 *3&& h_cnt <= IMAGE_WIDTH / 8 * 4)
+			pixel <= 24'hC1FFC1;
+		else if(h_cnt >= IMAGE_WIDTH / 8 *4&& h_cnt <= IMAGE_WIDTH / 8 * 5)
+			pixel <= 24'h9bcd9b;
+		else if(h_cnt >= IMAGE_WIDTH / 8 *5&& h_cnt <= IMAGE_WIDTH / 8 * 6)
+			pixel <= 24'hffe4e1;
+		else if(h_cnt >= IMAGE_WIDTH / 8 *6&& h_cnt <= IMAGE_WIDTH / 8 * 7)
+			pixel <= 24'h54ff9f;
+		else pixel <= 24'h9400d3;
+	end
 endmodule

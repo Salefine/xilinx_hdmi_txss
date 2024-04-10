@@ -3,7 +3,7 @@
 	<name>TxOnly_A53_1</name>
 	<comment>Created by Vitis v2022.2</comment>
 	<projects>
-		<project>exde_hdmi_ps</project>
+		<project>hdmi_tx</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>

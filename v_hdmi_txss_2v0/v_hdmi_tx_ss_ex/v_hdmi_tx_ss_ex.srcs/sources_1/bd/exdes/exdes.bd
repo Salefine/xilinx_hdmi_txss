@@ -3946,7 +3946,7 @@
                 "value": "Ref Clk1"
               },
               "PSU__SAXIGP2__DATA_WIDTH": {
-                "value": "128"
+                "value": "64"
               },
               "PSU__SD1_COHERENCY": {
                 "value": "0"
@@ -4528,7 +4528,7 @@
                 "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
                 "parameters": {
                   "MAX_BURST_LENGTH": {
-                    "value": "4"
+                    "value": "8"
                   },
                   "NUM_READ_OUTSTANDING": {
                     "value": "2"
@@ -4680,7 +4680,7 @@
               "boundary_crc": "0x0"
             },
             "interface_ports": {
-              "m_axis": {
+              "s_axis": {
                 "mode": "Master",
                 "vlnv_bus_definition": "xilinx.com:interface:axis:1.0",
                 "vlnv": "xilinx.com:interface:axis_rtl:1.0",
@@ -4706,11 +4706,11 @@
                     "value_src": "constant"
                   },
                   "HAS_TSTRB": {
-                    "value": "0",
+                    "value": "1",
                     "value_src": "constant"
                   },
                   "HAS_TKEEP": {
-                    "value": "1",
+                    "value": "0",
                     "value_src": "constant"
                   },
                   "HAS_TLAST": {
@@ -4728,47 +4728,47 @@
                 },
                 "port_maps": {
                   "TDATA": {
-                    "physical_name": "m_axis_tdata",
+                    "physical_name": "s_axis_tdata",
                     "direction": "O",
                     "left": "23",
                     "right": "0"
                   },
-                  "TKEEP": {
-                    "physical_name": "m_axis_tkeep",
+                  "TSTRB": {
+                    "physical_name": "s_axis_tstrb",
                     "direction": "O",
                     "left": "2",
                     "right": "0"
                   },
                   "TLAST": {
-                    "physical_name": "m_axis_tlast",
+                    "physical_name": "s_axis_tlast",
                     "direction": "O"
                   },
                   "TUSER": {
-                    "physical_name": "m_axis_tuser",
+                    "physical_name": "s_axis_tuser",
                     "direction": "O"
                   },
                   "TVALID": {
-                    "physical_name": "m_axis_tvalid",
+                    "physical_name": "s_axis_tvalid",
                     "direction": "O"
                   },
                   "TREADY": {
-                    "physical_name": "m_axis_tready",
+                    "physical_name": "s_axis_tready",
                     "direction": "I"
                   }
                 }
               }
             },
             "ports": {
-              "m_axis_aclk": {
+              "s_axis_aclk": {
                 "type": "clk",
                 "direction": "I",
                 "parameters": {
                   "ASSOCIATED_BUSIF": {
-                    "value": "m_axis",
+                    "value": "s_axis",
                     "value_src": "constant"
                   },
                   "ASSOCIATED_RESET": {
-                    "value": "m_axis_aresetn",
+                    "value": "s_axis_aresetn",
                     "value_src": "constant"
                   },
                   "FREQ_HZ": {
@@ -4781,7 +4781,7 @@
                   }
                 }
               },
-              "m_axis_aresetn": {
+              "s_axis_aresetn": {
                 "type": "rst",
                 "direction": "I",
                 "parameters": {
@@ -4831,7 +4831,7 @@
           },
           "axis_gen_m_axis": {
             "interface_ports": [
-              "axis_gen/m_axis",
+              "axis_gen/s_axis",
               "axis_data_fifo_0/S_AXIS"
             ]
           },
@@ -4865,7 +4865,7 @@
               "axi_vdma_0/m_axis_mm2s_aclk",
               "system_ila_1/clk",
               "axis_data_fifo_0/s_axis_aclk",
-              "axis_gen/m_axis_aclk"
+              "axis_gen/s_axis_aclk"
             ]
           },
           "net_zynq_us_ss_0_peripheral_aresetn": {
@@ -4897,8 +4897,8 @@
               "xlconstant_0/dout",
               "proc_sys_reset_0/ext_reset_in",
               "system_ila_1/resetn",
-              "axis_gen/m_axis_aresetn",
-              "axis_data_fifo_0/s_axis_aresetn"
+              "axis_data_fifo_0/s_axis_aresetn",
+              "axis_gen/s_axis_aresetn"
             ]
           }
         }

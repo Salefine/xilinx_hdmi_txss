@@ -52,8 +52,8 @@
 
 (* X_CORE_INFO = "sc_node_v1_0_14_top,Vivado 2022.2" *)
 (* CHECK_LICENSE_TYPE = "bd_cc6e_m00rn_0,sc_node_v1_0_14_top,{}" *)
-(* CORE_GENERATION_INFO = "bd_cc6e_m00rn_0,sc_node_v1_0_14_top,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_node,x_ipVersion=1.0,x_ipCoreRevision=14,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_FIFO_IP=0,C_DISABLE_IP=0,C_FIFO_SIZE=5,C_FIFO_TYPE=0,C_FIFO_OUTPUT_REG=1,C_ENABLE_PIPELINING=0x01,C_SYNCHRONIZATION_STAGES=3,C_NUM_SI=1,C_NUM_MI=2,C_CHANNEL=0,C_PAYLD_WIDTH=149,C_S_NUM_BYTES_ARRAY=0x00000010,C_M_NUM_BYTES_ARRAY=0x0000001000000010,C_PRIORITY_ARB_ARRAY=0b0,C_USER_BITS\
-_PER_BYTE=0,C_ARBITER_MODE=1,C_SC_ROUTE_WIDTH=2,C_ID_WIDTH=2,C_ADDR_WIDTH=32,C_USER_WIDTH=0,C_MAX_PAYLD_BYTES=16,C_S_PIPELINE=0,C_M_PIPELINE=0,C_M_SEND_PIPELINE=1,C_S_LATENCY=0,C_NUM_OUTSTANDING=2,C_ACLK_RELATIONSHIP=1,C_ACLKEN_CONVERSION=0}" *)
+(* CORE_GENERATION_INFO = "bd_cc6e_m00rn_0,sc_node_v1_0_14_top,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=ip,x_ipName=sc_node,x_ipVersion=1.0,x_ipCoreRevision=14,x_ipLanguage=VERILOG,x_ipSimLanguage=MIXED,C_FAMILY=zynquplus,C_FIFO_IP=0,C_DISABLE_IP=0,C_FIFO_SIZE=5,C_FIFO_TYPE=0,C_FIFO_OUTPUT_REG=1,C_ENABLE_PIPELINING=0x01,C_SYNCHRONIZATION_STAGES=3,C_NUM_SI=1,C_NUM_MI=2,C_CHANNEL=0,C_PAYLD_WIDTH=85,C_S_NUM_BYTES_ARRAY=0x00000008,C_M_NUM_BYTES_ARRAY=0x0000000800000008,C_PRIORITY_ARB_ARRAY=0b0,C_USER_BITS_\
+PER_BYTE=0,C_ARBITER_MODE=1,C_SC_ROUTE_WIDTH=2,C_ID_WIDTH=2,C_ADDR_WIDTH=32,C_USER_WIDTH=0,C_MAX_PAYLD_BYTES=8,C_S_PIPELINE=0,C_M_PIPELINE=0,C_M_SEND_PIPELINE=1,C_S_LATENCY=0,C_NUM_OUTSTANDING=2,C_ACLK_RELATIONSHIP=1,C_ACLKEN_CONVERSION=0}" *)
 (* DowngradeIPIdentifiedWarnings = "yes" *)
 module bd_cc6e_m00rn_0 (
   s_sc_aclk,
@@ -87,7 +87,7 @@ input wire [0 : 0] s_sc_send;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC RECV" *)
 output wire [0 : 0] s_sc_recv;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 S_SC PAYLD" *)
-input wire [148 : 0] s_sc_payld;
+input wire [84 : 0] s_sc_payld;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME m_sc_aclk, ASSOCIATED_BUSIF M_SC, ASSOCIATED_RESET m_sc_aresetn, ASSOCIATED_CLKEN m_sc_aclken, FREQ_HZ 250000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN exdes_clk_wiz_0_0_clk_out1, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:clock:1.0 m_sc_aclk CLK" *)
 input wire m_sc_aclk;
@@ -103,7 +103,7 @@ output wire [1 : 0] m_sc_req;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M_SC INFO" *)
 output wire [1 : 0] m_sc_info;
 (* X_INTERFACE_INFO = "xilinx.com:interface:sc:1.0 M_SC PAYLD" *)
-output wire [148 : 0] m_sc_payld;
+output wire [84 : 0] m_sc_payld;
 
   sc_node_v1_0_14_top #(
     .C_FAMILY("zynquplus"),
@@ -117,9 +117,9 @@ output wire [148 : 0] m_sc_payld;
     .C_NUM_SI(1),
     .C_NUM_MI(2),
     .C_CHANNEL(0),
-    .C_PAYLD_WIDTH(149),
-    .C_S_NUM_BYTES_ARRAY(32'H00000010),
-    .C_M_NUM_BYTES_ARRAY(64'H0000001000000010),
+    .C_PAYLD_WIDTH(85),
+    .C_S_NUM_BYTES_ARRAY(32'H00000008),
+    .C_M_NUM_BYTES_ARRAY(64'H0000000800000008),
     .C_PRIORITY_ARB_ARRAY(1'B0),
     .C_USER_BITS_PER_BYTE(0),
     .C_ARBITER_MODE(1),
@@ -127,7 +127,7 @@ output wire [148 : 0] m_sc_payld;
     .C_ID_WIDTH(2),
     .C_ADDR_WIDTH(32),
     .C_USER_WIDTH(0),
-    .C_MAX_PAYLD_BYTES(16),
+    .C_MAX_PAYLD_BYTES(8),
     .C_S_PIPELINE(0),
     .C_M_PIPELINE(0),
     .C_M_SEND_PIPELINE(1),

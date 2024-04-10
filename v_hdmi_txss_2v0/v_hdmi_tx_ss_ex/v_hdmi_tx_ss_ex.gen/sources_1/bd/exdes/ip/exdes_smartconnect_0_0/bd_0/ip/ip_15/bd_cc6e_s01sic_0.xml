@@ -1416,11 +1416,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 08 08:03:07 UTC 2024</spirit:value>
+            <spirit:value>Wed Apr 10 02:41:15 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d6f22152</spirit:value>
+            <spirit:value>9:b18118d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1431,7 +1431,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d6f22152</spirit:value>
+            <spirit:value>9:b18118d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1447,11 +1447,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 09 08:37:05 UTC 2024</spirit:value>
+            <spirit:value>Wed Apr 10 02:46:46 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d6f22152</spirit:value>
+            <spirit:value>9:b18118d9</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1470,11 +1470,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Mon Apr 08 08:03:07 UTC 2024</spirit:value>
+            <spirit:value>Wed Apr 10 02:41:15 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4baba422</spirit:value>
+            <spirit:value>9:48fc14f7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1490,11 +1490,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Apr 09 08:37:05 UTC 2024</spirit:value>
+            <spirit:value>Wed Apr 10 02:46:46 UTC 2024</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:4baba422</spirit:value>
+            <spirit:value>9:48fc14f7</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -3572,12 +3572,12 @@
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_SEP_WDATA_WIDTH_ARRAY</spirit:name>
         <spirit:displayName>C_SEP_WDATA_WIDTH_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEP_WDATA_WIDTH_ARRAY" spirit:bitStringLength="64">0x0000008000000080</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEP_WDATA_WIDTH_ARRAY" spirit:bitStringLength="64">0x0000004000000040</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_SEP_RDATA_WIDTH_ARRAY</spirit:name>
         <spirit:displayName>C_SEP_RDATA_WIDTH_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEP_RDATA_WIDTH_ARRAY" spirit:bitStringLength="64">0x0000008000000080</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_SEP_RDATA_WIDTH_ARRAY" spirit:bitStringLength="64">0x0000004000000040</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_SEP_PROTOCOL_ARRAY</spirit:name>
@@ -3592,12 +3592,12 @@
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_MSC_WDATA_WIDTH_ARRAY</spirit:name>
         <spirit:displayName>C_MSC_WDATA_WIDTH_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_WDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000080</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_WDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000040</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="bitString">
         <spirit:name>C_MSC_RDATA_WIDTH_ARRAY</spirit:name>
         <spirit:displayName>C_MSC_RDATA_WIDTH_ARRAY</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_RDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000080</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_MSC_RDATA_WIDTH_ARRAY" spirit:bitStringLength="32">0x00000040</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="long">
         <spirit:name>C_ADDR_WIDTH</spirit:name>
@@ -3944,12 +3944,12 @@
     <spirit:parameter>
       <spirit:name>SEP000_RDATA_WIDTH</spirit:name>
       <spirit:displayName>SEP000_RDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP000_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">128</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP000_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEP000_WDATA_WIDTH</spirit:name>
       <spirit:displayName>SEP000_WDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP000_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">128</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP000_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEP000_PROTOCOL</spirit:name>
@@ -3959,12 +3959,12 @@
     <spirit:parameter>
       <spirit:name>SEP001_RDATA_WIDTH</spirit:name>
       <spirit:displayName>SEP001_RDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP001_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">128</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP001_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEP001_WDATA_WIDTH</spirit:name>
       <spirit:displayName>SEP001_WDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP001_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">128</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.SEP001_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>SEP001_PROTOCOL</spirit:name>
@@ -7784,12 +7784,12 @@
     <spirit:parameter>
       <spirit:name>MSC000_RDATA_WIDTH</spirit:name>
       <spirit:displayName>MSC000_RDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC000_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">128</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC000_RDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC000_WDATA_WIDTH</spirit:name>
       <spirit:displayName>MSC000_WDATA_WIDTH</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC000_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">128</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.MSC000_WDATA_WIDTH" spirit:choiceRef="choice_list_40181835">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>MSC001_RDATA_WIDTH</spirit:name>

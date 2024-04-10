@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="exdes_zynq_us_0_synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1712651837">
+<GenRun Id="exdes_zynq_us_0_synth_1" LaunchPart="xczu7ev-ffvc1156-2-e" LaunchTime="1712717218">
   <File Type="PA-TCL" Name="exdes_zynq_us_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="exdes_zynq_us_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="exdes_zynq_us_0_reports.tcl"/>

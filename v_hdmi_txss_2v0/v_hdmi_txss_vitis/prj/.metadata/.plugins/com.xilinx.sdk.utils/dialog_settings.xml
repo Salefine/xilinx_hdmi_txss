@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item key="scw_hwspec" value="E:\xilinx_axi\github\v_hdmi_txss_2v0\v_hdmi_txss_vitis\xsa"/>
+	<item key="scw_hwspec" value="E:\xilinx_axi\mian\xilinx_hdmi_txss\v_hdmi_txss_2v0\v_hdmi_txss_vitis\xsa"/>
 </section>

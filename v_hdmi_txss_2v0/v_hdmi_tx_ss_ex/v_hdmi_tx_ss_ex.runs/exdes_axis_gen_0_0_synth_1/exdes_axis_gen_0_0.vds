@@ -2,18 +2,20 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Apr  9 15:25:46 2024
-# Process ID: 14612
-# Current directory: E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1
+# Start of session at: Wed Apr 10 10:47:03 2024
+# Process ID: 27572
+# Current directory: E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1
 # Command line: vivado.exe -log exdes_axis_gen_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source exdes_axis_gen_0_0.tcl
-# Log file: E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1/exdes_axis_gen_0_0.vds
-# Journal file: E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1\vivado.jou
+# Log file: E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1/exdes_axis_gen_0_0.vds
+# Journal file: E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1\vivado.jou
 # Running On: weslie, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34074 MB
 #-----------------------------------------------------------
 source exdes_axis_gen_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/tools/xilinx/Vivado/2022.2/data/ip'.
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.cache/ip 
 INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: exdes_axis_gen_0_0
 Command: synth_design -top exdes_axis_gen_0_0 -part xczu7ev-ffvc1156-2-e -incremental_mode off -mode out_of_context
 Starting synth_design
@@ -22,44 +24,43 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev
 INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9584
+INFO: [Synth 8-7075] Helper process launched with PID 30040
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2525.430 ; gain = 339.043
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 2524.656 ; gain = 337.047
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'exdes_axis_gen_0_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axis_gen_0_0/synth/exdes_axis_gen_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'axis_gen' [E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'axis_gen' (0#1) [E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'exdes_axis_gen_0_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axis_gen_0_0/synth/exdes_axis_gen_0_0.v:53]
-WARNING: [Synth 8-7129] Port m_axis_aresetn in module axis_gen is either unconnected or has no load
+INFO: [Synth 8-6157] synthesizing module 'exdes_axis_gen_0_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axis_gen_0_0/synth/exdes_axis_gen_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axis_gen' [E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'axis_gen' (0#1) [E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.srcs/sources_1/new/axis_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'exdes_axis_gen_0_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_axis_gen_0_0/synth/exdes_axis_gen_0_0.v:53]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2619.723 ; gain = 433.336
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2620.223 ; gain = 432.613
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2637.656 ; gain = 451.270
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2638.141 ; gain = 450.531
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:04 . Memory (MB): peak = 2637.656 ; gain = 451.270
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2638.141 ; gain = 450.531
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2637.656 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 2638.141 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2737.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2737.719 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2755.121 ; gain = 17.898
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 2755.562 ; gain = 17.844
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2755.121 ; gain = 568.734
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2755.562 ; gain = 567.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -67,31 +68,31 @@ Start Loading Part and Timing Information
 Loading part: xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2755.121 ; gain = 568.734
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2755.562 ; gain = 567.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2755.121 ; gain = 568.734
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2755.562 ; gain = 567.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 2755.121 ; gain = 568.734
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 2755.562 ; gain = 567.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input   31 Bit       Adders := 2     
+	   2 Input   32 Bit       Adders := 2     
 +---Registers : 
-	               31 Bit    Registers := 2     
-	               24 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	               24 Bit    Registers := 2     
 	                1 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input   31 Bit        Muxes := 2     
+	   2 Input   32 Bit        Muxes := 1     
 	   8 Input   24 Bit        Muxes := 1     
-	   2 Input    1 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -108,30 +109,29 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-INFO: [Synth 8-3917] design exdes_axis_gen_0_0 has port m_axis_tkeep[2] driven by constant 1
-INFO: [Synth 8-3917] design exdes_axis_gen_0_0 has port m_axis_tkeep[1] driven by constant 1
-INFO: [Synth 8-3917] design exdes_axis_gen_0_0 has port m_axis_tkeep[0] driven by constant 1
-WARNING: [Synth 8-7129] Port m_axis_aresetn in module exdes_axis_gen_0_0 is either unconnected or has no load
+INFO: [Synth 8-3917] design exdes_axis_gen_0_0 has port s_axis_tstrb[2] driven by constant 1
+INFO: [Synth 8-3917] design exdes_axis_gen_0_0 has port s_axis_tstrb[1] driven by constant 1
+INFO: [Synth 8-3917] design exdes_axis_gen_0_0 has port s_axis_tstrb[0] driven by constant 1
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:01 ; elapsed = 00:00:11 . Memory (MB): peak = 2755.121 ; gain = 568.734
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 2755.562 ; gain = 567.953
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 3197.152 ; gain = 1010.766
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 3195.762 ; gain = 1008.152
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 3197.227 ; gain = 1010.840
+Finished Timing Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 3195.910 ; gain = 1008.301
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Finished Technology Mapping : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 3224.520 ; gain = 1036.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -149,37 +149,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Finished IO Insertion : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 3224.840 ; gain = 1037.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 3224.840 ; gain = 1037.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 3224.840 ; gain = 1037.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 3224.840 ; gain = 1037.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 3224.840 ; gain = 1037.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 3224.840 ; gain = 1037.230
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -197,36 +197,36 @@ Report Cell Usage:
 +------+-------+------+
 |1     |CARRY8 |     8|
 |2     |LUT1   |     2|
-|3     |LUT2   |     3|
-|4     |LUT3   |     6|
-|5     |LUT4   |    13|
-|6     |LUT5   |     8|
-|7     |LUT6   |    28|
-|8     |FDRE   |    81|
+|3     |LUT2   |    13|
+|4     |LUT3   |     5|
+|5     |LUT4   |    21|
+|6     |LUT5   |    14|
+|7     |LUT6   |    46|
+|8     |FDRE   |   113|
 +------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 3224.840 ; gain = 1037.230
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:04 ; elapsed = 00:00:20 . Memory (MB): peak = 3225.824 ; gain = 921.973
-Synthesis Optimization Complete : Time (s): cpu = 00:00:05 ; elapsed = 00:00:21 . Memory (MB): peak = 3225.824 ; gain = 1039.438
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 3224.840 ; gain = 919.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:15 ; elapsed = 00:00:25 . Memory (MB): peak = 3224.840 ; gain = 1037.230
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3236.121 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3236.867 ; gain = 0.000
 INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3264.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3263.992 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: eba6c6f3
+Synth Design complete, checksum: 38ce6899
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+29 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:27 . Memory (MB): peak = 3264.715 ; gain = 2182.254
-INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1/exdes_axis_gen_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP exdes_axis_gen_0_0, cache-ID = f27a5ba91a409fea
-INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1/exdes_axis_gen_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:31 . Memory (MB): peak = 3263.992 ; gain = 2180.906
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1/exdes_axis_gen_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP exdes_axis_gen_0_0, cache-ID = 38f8c027c5587208
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_axis_gen_0_0_synth_1/exdes_axis_gen_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file exdes_axis_gen_0_0_utilization_synth.rpt -pb exdes_axis_gen_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 15:26:19 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 10 10:47:45 2024...

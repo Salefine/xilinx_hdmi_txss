@@ -1,7 +1,7 @@
 //Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-//Date        : Tue Apr  9 16:36:39 2024
+//Date        : Wed Apr 10 10:46:18 2024
 //Host        : weslie running 64-bit major release  (build 9200)
 //Command     : generate_target exdes.bd
 //Design      : exdes
@@ -565,15 +565,15 @@ module exdes
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 BREADY" *) (* DONT_TOUCH *) wire S_AXI_HP0_FPD_1_BREADY;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 BRESP" *) (* DONT_TOUCH *) wire [1:0]S_AXI_HP0_FPD_1_BRESP;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 BVALID" *) (* DONT_TOUCH *) wire S_AXI_HP0_FPD_1_BVALID;
-  (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 RDATA" *) (* DONT_TOUCH *) wire [127:0]S_AXI_HP0_FPD_1_RDATA;
+  (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 RDATA" *) (* DONT_TOUCH *) wire [63:0]S_AXI_HP0_FPD_1_RDATA;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 RLAST" *) (* DONT_TOUCH *) wire S_AXI_HP0_FPD_1_RLAST;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 RREADY" *) (* DONT_TOUCH *) wire S_AXI_HP0_FPD_1_RREADY;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 RRESP" *) (* DONT_TOUCH *) wire [1:0]S_AXI_HP0_FPD_1_RRESP;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 RVALID" *) (* DONT_TOUCH *) wire S_AXI_HP0_FPD_1_RVALID;
-  (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 WDATA" *) (* DONT_TOUCH *) wire [127:0]S_AXI_HP0_FPD_1_WDATA;
+  (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 WDATA" *) (* DONT_TOUCH *) wire [63:0]S_AXI_HP0_FPD_1_WDATA;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 WLAST" *) (* DONT_TOUCH *) wire S_AXI_HP0_FPD_1_WLAST;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 WREADY" *) (* DONT_TOUCH *) wire S_AXI_HP0_FPD_1_WREADY;
-  (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 WSTRB" *) (* DONT_TOUCH *) wire [15:0]S_AXI_HP0_FPD_1_WSTRB;
+  (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 WSTRB" *) (* DONT_TOUCH *) wire [7:0]S_AXI_HP0_FPD_1_WSTRB;
   (* CONN_BUS_INFO = "S_AXI_HP0_FPD_1 xilinx.com:interface:aximm:1.0 AXI4 WVALID" *) (* DONT_TOUCH *) wire S_AXI_HP0_FPD_1_WVALID;
   wire [47:0]axi_vdma_0_M_AXIS_MM2S_TDATA;
   wire [5:0]axi_vdma_0_M_AXIS_MM2S_TKEEP;
@@ -9208,15 +9208,15 @@ module video_gen_imp_JXPXII
   output M00_AXI_bready;
   input [1:0]M00_AXI_bresp;
   input M00_AXI_bvalid;
-  input [127:0]M00_AXI_rdata;
+  input [63:0]M00_AXI_rdata;
   input M00_AXI_rlast;
   output M00_AXI_rready;
   input [1:0]M00_AXI_rresp;
   input M00_AXI_rvalid;
-  output [127:0]M00_AXI_wdata;
+  output [63:0]M00_AXI_wdata;
   output M00_AXI_wlast;
   input M00_AXI_wready;
-  output [15:0]M00_AXI_wstrb;
+  output [7:0]M00_AXI_wstrb;
   output M00_AXI_wvalid;
   output [47:0]M_AXIS_MM2S_tdata;
   output [5:0]M_AXIS_MM2S_tkeep;
@@ -9282,15 +9282,15 @@ module video_gen_imp_JXPXII
   wire [7:0]axi_vdma_0_M_AXI_S2MM_WSTRB;
   wire axi_vdma_0_M_AXI_S2MM_WVALID;
   (* CONN_BUS_INFO = "axis_data_fifo_0_M_AXIS xilinx.com:interface:axis:1.0 None TDATA" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [23:0]axis_data_fifo_0_M_AXIS_TDATA;
-  (* CONN_BUS_INFO = "axis_data_fifo_0_M_AXIS xilinx.com:interface:axis:1.0 None TKEEP" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]axis_data_fifo_0_M_AXIS_TKEEP;
   (* CONN_BUS_INFO = "axis_data_fifo_0_M_AXIS xilinx.com:interface:axis:1.0 None TLAST" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axis_data_fifo_0_M_AXIS_TLAST;
   (* CONN_BUS_INFO = "axis_data_fifo_0_M_AXIS xilinx.com:interface:axis:1.0 None TREADY" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axis_data_fifo_0_M_AXIS_TREADY;
+  (* CONN_BUS_INFO = "axis_data_fifo_0_M_AXIS xilinx.com:interface:axis:1.0 None TSTRB" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [2:0]axis_data_fifo_0_M_AXIS_TSTRB;
   (* CONN_BUS_INFO = "axis_data_fifo_0_M_AXIS xilinx.com:interface:axis:1.0 None TUSER" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire [0:0]axis_data_fifo_0_M_AXIS_TUSER;
   (* CONN_BUS_INFO = "axis_data_fifo_0_M_AXIS xilinx.com:interface:axis:1.0 None TVALID" *) (* DEBUG = "true" *) (* MARK_DEBUG *) wire axis_data_fifo_0_M_AXIS_TVALID;
   wire [23:0]axis_gen_m_axis_TDATA;
-  wire [2:0]axis_gen_m_axis_TKEEP;
   wire axis_gen_m_axis_TLAST;
   wire axis_gen_m_axis_TREADY;
+  wire [2:0]axis_gen_m_axis_TSTRB;
   wire axis_gen_m_axis_TUSER;
   wire axis_gen_m_axis_TVALID;
   wire ddr4_0_c0_ddr4_ui_clk;
@@ -9322,15 +9322,15 @@ module video_gen_imp_JXPXII
   wire smartconnect_0_M00_AXI_BREADY;
   wire [1:0]smartconnect_0_M00_AXI_BRESP;
   wire smartconnect_0_M00_AXI_BVALID;
-  wire [127:0]smartconnect_0_M00_AXI_RDATA;
+  wire [63:0]smartconnect_0_M00_AXI_RDATA;
   wire smartconnect_0_M00_AXI_RLAST;
   wire smartconnect_0_M00_AXI_RREADY;
   wire [1:0]smartconnect_0_M00_AXI_RRESP;
   wire smartconnect_0_M00_AXI_RVALID;
-  wire [127:0]smartconnect_0_M00_AXI_WDATA;
+  wire [63:0]smartconnect_0_M00_AXI_WDATA;
   wire smartconnect_0_M00_AXI_WLAST;
   wire smartconnect_0_M00_AXI_WREADY;
-  wire [15:0]smartconnect_0_M00_AXI_WSTRB;
+  wire [7:0]smartconnect_0_M00_AXI_WSTRB;
   wire smartconnect_0_M00_AXI_WVALID;
   wire [0:0]xlconstant_0_dout;
   wire [39:0]zynq_us_ss_0_M03_AXI_ARADDR;
@@ -9370,9 +9370,9 @@ module video_gen_imp_JXPXII
   assign M00_AXI_awvalid = smartconnect_0_M00_AXI_AWVALID;
   assign M00_AXI_bready = smartconnect_0_M00_AXI_BREADY;
   assign M00_AXI_rready = smartconnect_0_M00_AXI_RREADY;
-  assign M00_AXI_wdata[127:0] = smartconnect_0_M00_AXI_WDATA;
+  assign M00_AXI_wdata[63:0] = smartconnect_0_M00_AXI_WDATA;
   assign M00_AXI_wlast = smartconnect_0_M00_AXI_WLAST;
-  assign M00_AXI_wstrb[15:0] = smartconnect_0_M00_AXI_WSTRB;
+  assign M00_AXI_wstrb[7:0] = smartconnect_0_M00_AXI_WSTRB;
   assign M00_AXI_wvalid = smartconnect_0_M00_AXI_WVALID;
   assign M_AXIS_MM2S_tdata[47:0] = axi_vdma_0_M_AXIS_MM2S_TDATA;
   assign M_AXIS_MM2S_tkeep[5:0] = axi_vdma_0_M_AXIS_MM2S_TKEEP;
@@ -9397,7 +9397,7 @@ module video_gen_imp_JXPXII
   assign smartconnect_0_M00_AXI_AWREADY = M00_AXI_awready;
   assign smartconnect_0_M00_AXI_BRESP = M00_AXI_bresp[1:0];
   assign smartconnect_0_M00_AXI_BVALID = M00_AXI_bvalid;
-  assign smartconnect_0_M00_AXI_RDATA = M00_AXI_rdata[127:0];
+  assign smartconnect_0_M00_AXI_RDATA = M00_AXI_rdata[63:0];
   assign smartconnect_0_M00_AXI_RLAST = M00_AXI_rlast;
   assign smartconnect_0_M00_AXI_RRESP = M00_AXI_rresp[1:0];
   assign smartconnect_0_M00_AXI_RVALID = M00_AXI_rvalid;
@@ -9469,35 +9469,35 @@ module video_gen_imp_JXPXII
         .s_axi_lite_wvalid(zynq_us_ss_0_M03_AXI_WVALID),
         .s_axis_s2mm_aclk(net_zynq_us_ss_0_clk_out2),
         .s_axis_s2mm_tdata(axis_data_fifo_0_M_AXIS_TDATA),
-        .s_axis_s2mm_tkeep(axis_data_fifo_0_M_AXIS_TKEEP),
+        .s_axis_s2mm_tkeep({1'b1,1'b1,1'b1}),
         .s_axis_s2mm_tlast(axis_data_fifo_0_M_AXIS_TLAST),
         .s_axis_s2mm_tready(axis_data_fifo_0_M_AXIS_TREADY),
         .s_axis_s2mm_tuser(axis_data_fifo_0_M_AXIS_TUSER),
         .s_axis_s2mm_tvalid(axis_data_fifo_0_M_AXIS_TVALID));
   exdes_axis_data_fifo_0_0 axis_data_fifo_0
        (.m_axis_tdata(axis_data_fifo_0_M_AXIS_TDATA),
-        .m_axis_tkeep(axis_data_fifo_0_M_AXIS_TKEEP),
         .m_axis_tlast(axis_data_fifo_0_M_AXIS_TLAST),
         .m_axis_tready(axis_data_fifo_0_M_AXIS_TREADY),
+        .m_axis_tstrb(axis_data_fifo_0_M_AXIS_TSTRB),
         .m_axis_tuser(axis_data_fifo_0_M_AXIS_TUSER),
         .m_axis_tvalid(axis_data_fifo_0_M_AXIS_TVALID),
         .s_axis_aclk(net_zynq_us_ss_0_clk_out2),
         .s_axis_aresetn(xlconstant_0_dout),
         .s_axis_tdata(axis_gen_m_axis_TDATA),
-        .s_axis_tkeep(axis_gen_m_axis_TKEEP),
         .s_axis_tlast(axis_gen_m_axis_TLAST),
         .s_axis_tready(axis_gen_m_axis_TREADY),
+        .s_axis_tstrb(axis_gen_m_axis_TSTRB),
         .s_axis_tuser(axis_gen_m_axis_TUSER),
         .s_axis_tvalid(axis_gen_m_axis_TVALID));
   exdes_axis_gen_0_0 axis_gen
-       (.m_axis_aclk(net_zynq_us_ss_0_clk_out2),
-        .m_axis_aresetn(xlconstant_0_dout),
-        .m_axis_tdata(axis_gen_m_axis_TDATA),
-        .m_axis_tkeep(axis_gen_m_axis_TKEEP),
-        .m_axis_tlast(axis_gen_m_axis_TLAST),
-        .m_axis_tready(axis_gen_m_axis_TREADY),
-        .m_axis_tuser(axis_gen_m_axis_TUSER),
-        .m_axis_tvalid(axis_gen_m_axis_TVALID));
+       (.s_axis_aclk(net_zynq_us_ss_0_clk_out2),
+        .s_axis_aresetn(xlconstant_0_dout),
+        .s_axis_tdata(axis_gen_m_axis_TDATA),
+        .s_axis_tlast(axis_gen_m_axis_TLAST),
+        .s_axis_tready(axis_gen_m_axis_TREADY),
+        .s_axis_tstrb(axis_gen_m_axis_TSTRB),
+        .s_axis_tuser(axis_gen_m_axis_TUSER),
+        .s_axis_tvalid(axis_gen_m_axis_TVALID));
   exdes_proc_sys_reset_0_0 proc_sys_reset_0
        (.aux_reset_in(1'b1),
         .dcm_locked(1'b1),
@@ -9577,9 +9577,9 @@ module video_gen_imp_JXPXII
         .aresetn(proc_sys_reset_0_interconnect_aresetn));
   exdes_system_ila_1_0 system_ila_1
        (.SLOT_0_AXIS_tdata(axis_data_fifo_0_M_AXIS_TDATA),
-        .SLOT_0_AXIS_tkeep(axis_data_fifo_0_M_AXIS_TKEEP),
         .SLOT_0_AXIS_tlast(axis_data_fifo_0_M_AXIS_TLAST),
         .SLOT_0_AXIS_tready(axis_data_fifo_0_M_AXIS_TREADY),
+        .SLOT_0_AXIS_tstrb(axis_data_fifo_0_M_AXIS_TSTRB),
         .SLOT_0_AXIS_tuser(axis_data_fifo_0_M_AXIS_TUSER),
         .SLOT_0_AXIS_tvalid(axis_data_fifo_0_M_AXIS_TVALID),
         .SLOT_1_AXIS_tdata(axi_vdma_0_M_AXIS_MM2S_TDATA),
@@ -9964,15 +9964,15 @@ module zynq_us_ss_0_imp_1A5BJWS
   input S_AXI_HP0_FPD_bready;
   output [1:0]S_AXI_HP0_FPD_bresp;
   output S_AXI_HP0_FPD_bvalid;
-  output [127:0]S_AXI_HP0_FPD_rdata;
+  output [63:0]S_AXI_HP0_FPD_rdata;
   output S_AXI_HP0_FPD_rlast;
   input S_AXI_HP0_FPD_rready;
   output [1:0]S_AXI_HP0_FPD_rresp;
   output S_AXI_HP0_FPD_rvalid;
-  input [127:0]S_AXI_HP0_FPD_wdata;
+  input [63:0]S_AXI_HP0_FPD_wdata;
   input S_AXI_HP0_FPD_wlast;
   output S_AXI_HP0_FPD_wready;
-  input [15:0]S_AXI_HP0_FPD_wstrb;
+  input [7:0]S_AXI_HP0_FPD_wstrb;
   input S_AXI_HP0_FPD_wvalid;
   output clk_out2;
   output [0:0]dcm_locked;
@@ -10023,15 +10023,15 @@ module zynq_us_ss_0_imp_1A5BJWS
   wire S_AXI_HP0_FPD_1_BREADY;
   wire [1:0]S_AXI_HP0_FPD_1_BRESP;
   wire S_AXI_HP0_FPD_1_BVALID;
-  wire [127:0]S_AXI_HP0_FPD_1_RDATA;
+  wire [63:0]S_AXI_HP0_FPD_1_RDATA;
   wire S_AXI_HP0_FPD_1_RLAST;
   wire S_AXI_HP0_FPD_1_RREADY;
   wire [1:0]S_AXI_HP0_FPD_1_RRESP;
   wire S_AXI_HP0_FPD_1_RVALID;
-  wire [127:0]S_AXI_HP0_FPD_1_WDATA;
+  wire [63:0]S_AXI_HP0_FPD_1_WDATA;
   wire S_AXI_HP0_FPD_1_WLAST;
   wire S_AXI_HP0_FPD_1_WREADY;
-  wire [15:0]S_AXI_HP0_FPD_1_WSTRB;
+  wire [7:0]S_AXI_HP0_FPD_1_WSTRB;
   wire S_AXI_HP0_FPD_1_WVALID;
   wire [39:0]intf_net_axi_interconnect_0_M00_AXI_ARADDR;
   wire [2:0]intf_net_axi_interconnect_0_M00_AXI_ARPROT;
@@ -10358,15 +10358,15 @@ module zynq_us_ss_0_imp_1A5BJWS
   assign S_AXI_HP0_FPD_1_AWVALID = S_AXI_HP0_FPD_awvalid;
   assign S_AXI_HP0_FPD_1_BREADY = S_AXI_HP0_FPD_bready;
   assign S_AXI_HP0_FPD_1_RREADY = S_AXI_HP0_FPD_rready;
-  assign S_AXI_HP0_FPD_1_WDATA = S_AXI_HP0_FPD_wdata[127:0];
+  assign S_AXI_HP0_FPD_1_WDATA = S_AXI_HP0_FPD_wdata[63:0];
   assign S_AXI_HP0_FPD_1_WLAST = S_AXI_HP0_FPD_wlast;
-  assign S_AXI_HP0_FPD_1_WSTRB = S_AXI_HP0_FPD_wstrb[15:0];
+  assign S_AXI_HP0_FPD_1_WSTRB = S_AXI_HP0_FPD_wstrb[7:0];
   assign S_AXI_HP0_FPD_1_WVALID = S_AXI_HP0_FPD_wvalid;
   assign S_AXI_HP0_FPD_arready = S_AXI_HP0_FPD_1_ARREADY;
   assign S_AXI_HP0_FPD_awready = S_AXI_HP0_FPD_1_AWREADY;
   assign S_AXI_HP0_FPD_bresp[1:0] = S_AXI_HP0_FPD_1_BRESP;
   assign S_AXI_HP0_FPD_bvalid = S_AXI_HP0_FPD_1_BVALID;
-  assign S_AXI_HP0_FPD_rdata[127:0] = S_AXI_HP0_FPD_1_RDATA;
+  assign S_AXI_HP0_FPD_rdata[63:0] = S_AXI_HP0_FPD_1_RDATA;
   assign S_AXI_HP0_FPD_rlast = S_AXI_HP0_FPD_1_RLAST;
   assign S_AXI_HP0_FPD_rresp[1:0] = S_AXI_HP0_FPD_1_RRESP;
   assign S_AXI_HP0_FPD_rvalid = S_AXI_HP0_FPD_1_RVALID;

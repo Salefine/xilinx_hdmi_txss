@@ -3,19 +3,19 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1">
+      <db_ref path="E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.hw/hw_1/wave/hw_ila_data_3/hw_ila_data_3.wdb" id="1">
          <top_modules>
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="373"></ZoomStartTime>
-      <ZoomEndTime time="391"></ZoomEndTime>
-      <Cursor1Time time="175"></Cursor1Time>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="1,025"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="384"></NameColumnWidth>
-      <ValueColumnWidth column_width="120"></ValueColumnWidth>
+      <ValueColumnWidth column_width="114"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="2" />
    <wave_markers>
@@ -68,15 +68,6 @@
             <obj_property name="ElementShortName">exdes_i/video_gen/system_ila_1/inst/net_slot_0_axis_tdata[23:0]</obj_property>
             <obj_property name="ObjectShortName">net_slot_0_axis_tdata[23:0]</obj_property>
             <obj_property name="label">slot_0 : axis_gen_0_m_axis : TDATA</obj_property>
-            <obj_property name="Radix">HEXRADIX</obj_property>
-            <obj_property name="LABELRADIX">true</obj_property>
-            <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
-         </wvobject>
-         <wvobject fp_name="exdes_i/video_gen/system_ila_1/inst/net_slot_0_axis_tkeep" type="array">
-            <obj_property name="DisplayName">label</obj_property>
-            <obj_property name="ElementShortName">exdes_i/video_gen/system_ila_1/inst/net_slot_0_axis_tkeep[2:0]</obj_property>
-            <obj_property name="ObjectShortName">net_slot_0_axis_tkeep[2:0]</obj_property>
-            <obj_property name="label">slot_0 : axis_gen_0_m_axis : TKEEP</obj_property>
             <obj_property name="Radix">HEXRADIX</obj_property>
             <obj_property name="LABELRADIX">true</obj_property>
             <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

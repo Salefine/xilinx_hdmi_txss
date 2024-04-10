@@ -2,12 +2,12 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Tue Apr  9 16:37:23 2024
-# Process ID: 15408
-# Current directory: E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1
+# Start of session at: Wed Apr 10 10:47:03 2024
+# Process ID: 1452
+# Current directory: E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1
 # Command line: vivado.exe -log exdes_smartconnect_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source exdes_smartconnect_0_0.tcl
-# Log file: E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/exdes_smartconnect_0_0.vds
-# Journal file: E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1\vivado.jou
+# Log file: E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/exdes_smartconnect_0_0.vds
+# Journal file: E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1\vivado.jou
 # Running On: weslie, OS: Windows, CPU Frequency: 2419 MHz, CPU Physical cores: 24, Host memory: 34074 MB
 #-----------------------------------------------------------
 source exdes_smartconnect_0_0.tcl -notrace
@@ -19,121 +19,121 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu7ev
 INFO: [Device 21-403] Loading part xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 32240
+INFO: [Synth 8-7075] Helper process launched with PID 12864
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
-WARNING: [Synth 8-11067] parameter 'K_MAX_EP_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:87]
-WARNING: [Synth 8-11067] parameter 'K_MAX_SC_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:88]
-WARNING: [Synth 8-11067] parameter 'K_MAX_CMD_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:89]
-WARNING: [Synth 8-11067] parameter 'K_MAX_LUTRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:90]
-WARNING: [Synth 8-11067] parameter 'K_MAX_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:91]
-WARNING: [Synth 8-11067] parameter 'K_MIN_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:92]
-WARNING: [Synth 8-11067] parameter 'K_MAX_SYNC_RATIO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:93]
-WARNING: [Synth 8-11067] parameter 'K_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:94]
-WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:95]
-WARNING: [Synth 8-11067] parameter 'K_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:96]
-WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:97]
-WARNING: [Synth 8-11067] parameter 'K_AXIS_ARB_TDATA_NUM_BYTES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:98]
-WARNING: [Synth 8-11067] parameter 'K_MAX_USER_BITS_PER_BYTE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:99]
-WARNING: [Synth 8-11067] parameter 'K_MAX_INFO_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:100]
-WARNING: [Synth 8-11067] parameter 'K_MAX_OUTSTANDING_REQ' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:101]
-WARNING: [Synth 8-11067] parameter 'K_AXI_SIZE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:102]
-WARNING: [Synth 8-11067] parameter 'K_AXI_BURST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:103]
-WARNING: [Synth 8-11067] parameter 'K_AXI_RESP_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:104]
-WARNING: [Synth 8-11067] parameter 'K_AXI_LAST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:105]
-WARNING: [Synth 8-11067] parameter 'K_AXI_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:106]
-WARNING: [Synth 8-11067] parameter 'K_AXI_EXCL_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:107]
-WARNING: [Synth 8-11067] parameter 'K_AXI_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:108]
-WARNING: [Synth 8-11067] parameter 'K_AXI3_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:109]
-WARNING: [Synth 8-11067] parameter 'K_AXI3_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:110]
-WARNING: [Synth 8-11067] parameter 'K_AXI_PROT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:111]
-WARNING: [Synth 8-11067] parameter 'K_AXI_QOS_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:112]
-WARNING: [Synth 8-11067] parameter 'K_AXI_CACHE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:113]
-WARNING: [Synth 8-11067] parameter 'K_MAX_ACCEPTANCE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:114]
-WARNING: [Synth 8-11067] parameter 'K_MAX_FANOUT' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:115]
-WARNING: [Synth 8-11067] parameter 'K_MAX_READ_WATERMARK' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:116]
-WARNING: [Synth 8-11067] parameter 'K_MAX_BURST_LENGTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:117]
-WARNING: [Synth 8-11067] parameter 'CH_R' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:164]
-WARNING: [Synth 8-11067] parameter 'CH_W' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:165]
-WARNING: [Synth 8-11067] parameter 'CH_AR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:166]
-WARNING: [Synth 8-11067] parameter 'CH_AW' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:167]
-WARNING: [Synth 8-11067] parameter 'CH_B' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:168]
-WARNING: [Synth 8-11067] parameter 'CLK_DOWN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:170]
-WARNING: [Synth 8-11067] parameter 'CLK_SYNC_ALIAS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:171]
-WARNING: [Synth 8-11067] parameter 'CLK_ASYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:172]
-WARNING: [Synth 8-11067] parameter 'CLK_SYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:173]
-WARNING: [Synth 8-11067] parameter 'CLK_UP' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:174]
-WARNING: [Synth 8-11067] parameter 'CLKEN_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:176]
-WARNING: [Synth 8-11067] parameter 'CLKEN_S' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:177]
-WARNING: [Synth 8-11067] parameter 'CLKEN_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:178]
-WARNING: [Synth 8-11067] parameter 'CLKEN_S_AND_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:179]
-WARNING: [Synth 8-11067] parameter 'ARB_BYPASS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:180]
-WARNING: [Synth 8-11067] parameter 'ARB_ROUNDROBIN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:181]
-WARNING: [Synth 8-11067] parameter 'ARB_SLAVE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:182]
-WARNING: [Synth 8-11067] parameter 'FIFO_LUTRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:183]
-WARNING: [Synth 8-11067] parameter 'FIFO_BRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:184]
-WARNING: [Synth 8-11067] parameter 'FIFO_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:185]
-WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_MEMORY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:186]
-WARNING: [Synth 8-11067] parameter 'FIFO_IP_FG' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:187]
-WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_FIFO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:188]
-WARNING: [Synth 8-11067] parameter 'K_T_STRUCT_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:230]
-WARNING: [Synth 8-11067] parameter 'K_T_STATIC_ADDR_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:232]
-WARNING: [Synth 8-11067] parameter 'K_T_STATIC_RDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:240]
-WARNING: [Synth 8-11067] parameter 'K_T_STATIC_WDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:244]
-WARNING: [Synth 8-11067] parameter 'K_T_STATIC_BRSP_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:247]
-WARNING: [Synth 8-11067] parameter 'K_T_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:253]
-WARNING: [Synth 8-11067] parameter 'K_T_ADDR_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:256]
-WARNING: [Synth 8-11067] parameter 'K_T_DATA_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:259]
-WARNING: [Synth 8-11067] parameter 'K_T_BRSP_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:261]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:263]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:265]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:267]
-WARNING: [Synth 8-11067] parameter 'K_T_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:270]
-WARNING: [Synth 8-11067] parameter 'K_T_SEG_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:304]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:305]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:308]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:310]
-WARNING: [Synth 8-11067] parameter 'K_T_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:313]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:341]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:348]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:352]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:357]
-WARNING: [Synth 8-11067] parameter 'K_T_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:361]
-WARNING: [Synth 8-11067] parameter 'K_MAX_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:362]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:547]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:557]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:561]
-WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:566]
-WARNING: [Synth 8-11067] parameter 'K_STATIC_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:574]
-WARNING: [Synth 8-11067] parameter 'K_STATIC_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:584]
-WARNING: [Synth 8-11067] parameter 'K_STATIC_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:588]
-WARNING: [Synth 8-11067] parameter 'K_STATIC_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:593]
-WARNING: [Synth 8-11067] parameter 'K_T_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:596]
-WARNING: [Synth 8-11067] parameter 'K_MAX_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:597]
-WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_MNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:674]
-WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_SNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:675]
-WARNING: [Synth 8-11067] parameter 'NOC_MAX_SCHED_LEN' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:676]
-WARNING: [Synth 8-11067] parameter 'NOC_MAX_TKN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:677]
-WARNING: [Synth 8-11067] parameter 'NOC_MAX_RTR_ADDR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:678]
-WARNING: [Synth 8-11067] parameter 'NOC_PORT_EJECT' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:679]
-WARNING: [Synth 8-11067] parameter 'NOC_PORT_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:680]
-WARNING: [Synth 8-11067] parameter 'NOC_PORT_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:681]
-WARNING: [Synth 8-11067] parameter 'NOC_PORT_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:682]
-WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:683]
-WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:684]
-WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:685]
+WARNING: [Synth 8-11067] parameter 'K_MAX_EP_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:87]
+WARNING: [Synth 8-11067] parameter 'K_MAX_SC_ROUTE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:88]
+WARNING: [Synth 8-11067] parameter 'K_MAX_CMD_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:89]
+WARNING: [Synth 8-11067] parameter 'K_MAX_LUTRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:90]
+WARNING: [Synth 8-11067] parameter 'K_MAX_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:91]
+WARNING: [Synth 8-11067] parameter 'K_MIN_BRAM_PTR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:92]
+WARNING: [Synth 8-11067] parameter 'K_MAX_SYNC_RATIO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:93]
+WARNING: [Synth 8-11067] parameter 'K_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:94]
+WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_PIPELINES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:95]
+WARNING: [Synth 8-11067] parameter 'K_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:96]
+WARNING: [Synth 8-11067] parameter 'K_LOG_MAX_LATENCY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:97]
+WARNING: [Synth 8-11067] parameter 'K_AXIS_ARB_TDATA_NUM_BYTES' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:98]
+WARNING: [Synth 8-11067] parameter 'K_MAX_USER_BITS_PER_BYTE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:99]
+WARNING: [Synth 8-11067] parameter 'K_MAX_INFO_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:100]
+WARNING: [Synth 8-11067] parameter 'K_MAX_OUTSTANDING_REQ' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:101]
+WARNING: [Synth 8-11067] parameter 'K_AXI_SIZE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:102]
+WARNING: [Synth 8-11067] parameter 'K_AXI_BURST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:103]
+WARNING: [Synth 8-11067] parameter 'K_AXI_RESP_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:104]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LAST_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:105]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:106]
+WARNING: [Synth 8-11067] parameter 'K_AXI_EXCL_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:107]
+WARNING: [Synth 8-11067] parameter 'K_AXI_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:108]
+WARNING: [Synth 8-11067] parameter 'K_AXI3_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:109]
+WARNING: [Synth 8-11067] parameter 'K_AXI3_LOCK_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:110]
+WARNING: [Synth 8-11067] parameter 'K_AXI_PROT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:111]
+WARNING: [Synth 8-11067] parameter 'K_AXI_QOS_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:112]
+WARNING: [Synth 8-11067] parameter 'K_AXI_CACHE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:113]
+WARNING: [Synth 8-11067] parameter 'K_MAX_ACCEPTANCE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:114]
+WARNING: [Synth 8-11067] parameter 'K_MAX_FANOUT' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:115]
+WARNING: [Synth 8-11067] parameter 'K_MAX_READ_WATERMARK' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:116]
+WARNING: [Synth 8-11067] parameter 'K_MAX_BURST_LENGTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:117]
+WARNING: [Synth 8-11067] parameter 'CH_R' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:164]
+WARNING: [Synth 8-11067] parameter 'CH_W' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:165]
+WARNING: [Synth 8-11067] parameter 'CH_AR' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:166]
+WARNING: [Synth 8-11067] parameter 'CH_AW' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:167]
+WARNING: [Synth 8-11067] parameter 'CH_B' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:168]
+WARNING: [Synth 8-11067] parameter 'CLK_DOWN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:170]
+WARNING: [Synth 8-11067] parameter 'CLK_SYNC_ALIAS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:171]
+WARNING: [Synth 8-11067] parameter 'CLK_ASYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:172]
+WARNING: [Synth 8-11067] parameter 'CLK_SYNC' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:173]
+WARNING: [Synth 8-11067] parameter 'CLK_UP' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:174]
+WARNING: [Synth 8-11067] parameter 'CLKEN_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:176]
+WARNING: [Synth 8-11067] parameter 'CLKEN_S' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:177]
+WARNING: [Synth 8-11067] parameter 'CLKEN_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:178]
+WARNING: [Synth 8-11067] parameter 'CLKEN_S_AND_M' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:179]
+WARNING: [Synth 8-11067] parameter 'ARB_BYPASS' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:180]
+WARNING: [Synth 8-11067] parameter 'ARB_ROUNDROBIN' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:181]
+WARNING: [Synth 8-11067] parameter 'ARB_SLAVE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:182]
+WARNING: [Synth 8-11067] parameter 'FIFO_LUTRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:183]
+WARNING: [Synth 8-11067] parameter 'FIFO_BRAM' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:184]
+WARNING: [Synth 8-11067] parameter 'FIFO_NONE' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:185]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_MEMORY' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:186]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_FG' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:187]
+WARNING: [Synth 8-11067] parameter 'FIFO_IP_XPM_FIFO' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:188]
+WARNING: [Synth 8-11067] parameter 'K_T_STRUCT_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:230]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_ADDR_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:232]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_RDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:240]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_WDATA_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:244]
+WARNING: [Synth 8-11067] parameter 'K_T_STATIC_BRSP_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:247]
+WARNING: [Synth 8-11067] parameter 'K_T_EXCLUSIVE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:253]
+WARNING: [Synth 8-11067] parameter 'K_T_ADDR_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:256]
+WARNING: [Synth 8-11067] parameter 'K_T_DATA_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:259]
+WARNING: [Synth 8-11067] parameter 'K_T_BRSP_AUGMENT_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:261]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:263]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:265]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:267]
+WARNING: [Synth 8-11067] parameter 'K_T_CASCADE_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:270]
+WARNING: [Synth 8-11067] parameter 'K_T_SEG_LEN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:304]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_ADDR_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:305]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_DATA_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:308]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BRSP_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:310]
+WARNING: [Synth 8-11067] parameter 'K_T_SIDEBAND_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:313]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:341]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:348]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:352]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BPAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:357]
+WARNING: [Synth 8-11067] parameter 'K_T_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:361]
+WARNING: [Synth 8-11067] parameter 'K_MAX_PAYLD_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:362]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:547]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:557]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:561]
+WARNING: [Synth 8-11067] parameter 'K_USABLE_T_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:566]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_AXVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:574]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_WVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:584]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_RVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:588]
+WARNING: [Synth 8-11067] parameter 'K_STATIC_BVECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:593]
+WARNING: [Synth 8-11067] parameter 'K_T_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:596]
+WARNING: [Synth 8-11067] parameter 'K_MAX_VECTOR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:597]
+WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_MNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:674]
+WARNING: [Synth 8-11067] parameter 'K_MAX_NUM_SNOC' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:675]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_SCHED_LEN' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:676]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_TKN_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:677]
+WARNING: [Synth 8-11067] parameter 'NOC_MAX_RTR_ADDR_WIDTH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:678]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_EJECT' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:679]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:680]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:681]
+WARNING: [Synth 8-11067] parameter 'NOC_PORT_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:682]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_THROUGH' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:683]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_ASCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:684]
+WARNING: [Synth 8-11067] parameter 'NOC_TOKEN_DESCEND' declared inside package 'sc_util_v1_0_4_pkg_noc' shall be treated as localparam [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/f0b6/hdl/sc_util_v1_0_vl_rfs.sv:685]
 INFO: [Common 17-14] Message 'Synth 8-11067' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-WARNING: [Synth 8-11014] non-net output port 'upsizer_valid' cannot be initialized at declaration in SystemVerilog mode [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/66be/hdl/sc_node_v1_0_vl_rfs.sv:2589]
+WARNING: [Synth 8-11014] non-net output port 'upsizer_valid' cannot be initialized at declaration in SystemVerilog mode [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/66be/hdl/sc_node_v1_0_vl_rfs.sv:2589]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 2550.770 ; gain = 338.402
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2550.066 ; gain = 338.441
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'exdes_smartconnect_0_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/synth/exdes_smartconnect_0_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:9]
-INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1Y1QCSS' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:949]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_one_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_cc6e_one_0.v:53]
-INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_one_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_cc6e_one_0.v:53]
-INFO: [Synth 8-638] synthesizing module 'bd_cc6e_psr_aclk_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_cc6e_psr_aclk_0.vhd:74]
+INFO: [Synth 8-6157] synthesizing module 'exdes_smartconnect_0_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/synth/exdes_smartconnect_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:9]
+INFO: [Synth 8-6157] synthesizing module 'clk_map_imp_1Y1QCSS' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:949]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_one_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_cc6e_one_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_7_xlconstant' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_7_xlconstant' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/badb/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_one_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_0/synth/bd_cc6e_one_0.v:53]
+INFO: [Synth 8-638] synthesizing module 'bd_cc6e_psr_aclk_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_cc6e_psr_aclk_0.vhd:74]
 	Parameter C_FAMILY bound to: zynquplus - type: string 
 	Parameter C_EXT_RST_WIDTH bound to: 4 - type: integer 
 	Parameter C_AUX_RST_WIDTH bound to: 1 - type: integer 
@@ -143,57 +143,57 @@ INFO: [Synth 8-638] synthesizing module 'bd_cc6e_psr_aclk_0' [e:/xilinx_axi/gith
 	Parameter C_NUM_PERP_RST bound to: 1 - type: integer 
 	Parameter C_NUM_INTERCONNECT_ARESETN bound to: 1 - type: integer 
 	Parameter C_NUM_PERP_ARESETN bound to: 1 - type: integer 
-INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_cc6e_psr_aclk_0.vhd:129]
-INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-3491] module 'proc_sys_reset' declared at 'e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1264' bound to instance 'U0' of component 'proc_sys_reset' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_cc6e_psr_aclk_0.vhd:129]
+INFO: [Synth 8-638] synthesizing module 'proc_sys_reset' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
+INFO: [Synth 8-113] binding component instance 'FDRE_inst' to cell 'FDRE' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1392]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR' to cell 'FDRE' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1408]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
+INFO: [Synth 8-113] binding component instance 'FDRE_BSR_N' to cell 'FDRE' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1434]
 	Parameter INIT bound to: 1'b1 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER' to cell 'FDRE' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1457]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
-INFO: [Synth 8-638] synthesizing module 'lpf' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/tools/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628' bound to instance 'POR_SRL_I' of component 'SRL16' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
+INFO: [Synth 8-113] binding component instance 'FDRE_PER_N' to cell 'FDRE' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1481]
+INFO: [Synth 8-638] synthesizing module 'lpf' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-3491] module 'SRL16' declared at 'D:/tools/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628' bound to instance 'POR_SRL_I' of component 'SRL16' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:868]
 INFO: [Synth 8-6157] synthesizing module 'SRL16' [D:/tools/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
 INFO: [Synth 8-6155] done synthesizing module 'SRL16' (0#1) [D:/tools/xilinx/Vivado/2022.2/scripts/rt/data/unisim_comp.v:131628]
-INFO: [Synth 8-638] synthesizing module 'cdc_sync' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-638] synthesizing module 'cdc_sync' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_IN_cdc_to' to cell 'FDR' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:514]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d2' to cell 'FDR' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:545]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d3' to cell 'FDR' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:554]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d4' to cell 'FDR' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:564]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d5' to cell 'FDR' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:574]
 	Parameter INIT bound to: 1'b0 
-INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
-INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
-INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
-INFO: [Synth 8-638] synthesizing module 'sequence_psr' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'upcnt_n' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
-INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
-INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
-INFO: [Synth 8-256] done synthesizing module 'bd_cc6e_psr_aclk_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_cc6e_psr_aclk_0.vhd:74]
-WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_cc6e_psr_aclk_0' is unconnected for instance 'psr_aclk' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
-WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_cc6e_psr_aclk_0' is unconnected for instance 'psr_aclk' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
-WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_cc6e_psr_aclk_0' is unconnected for instance 'psr_aclk' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
-WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_cc6e_psr_aclk_0' is unconnected for instance 'psr_aclk' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
-WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_cc6e_psr_aclk_0' has 10 connections declared, but only 6 given [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
-INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1Y1QCSS' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:949]
-INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1CGPZR' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:999]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00e_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_cc6e_m00e_0.sv:53]
+INFO: [Synth 8-113] binding component instance 'CROSS_PLEVEL_IN2SCNDRY_s_level_out_d6' to cell 'FDR' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:584]
+INFO: [Synth 8-256] done synthesizing module 'cdc_sync' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd:106]
+INFO: [Synth 8-256] done synthesizing module 'lpf' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:816]
+INFO: [Synth 8-638] synthesizing module 'sequence_psr' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-638] synthesizing module 'upcnt_n' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'upcnt_n' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:125]
+INFO: [Synth 8-256] done synthesizing module 'sequence_psr' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:301]
+INFO: [Synth 8-256] done synthesizing module 'proc_sys_reset' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ipshared/8842/hdl/proc_sys_reset_v5_0_vh_rfs.vhd:1323]
+INFO: [Synth 8-256] done synthesizing module 'bd_cc6e_psr_aclk_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/synth/bd_cc6e_psr_aclk_0.vhd:74]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'bd_cc6e_psr_aclk_0' is unconnected for instance 'psr_aclk' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'bd_cc6e_psr_aclk_0' is unconnected for instance 'psr_aclk' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'bd_cc6e_psr_aclk_0' is unconnected for instance 'psr_aclk' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
+WARNING: [Synth 8-7071] port 'peripheral_aresetn' of module 'bd_cc6e_psr_aclk_0' is unconnected for instance 'psr_aclk' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
+WARNING: [Synth 8-7023] instance 'psr_aclk' of module 'bd_cc6e_psr_aclk_0' has 10 connections declared, but only 6 given [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:990]
+INFO: [Synth 8-6155] done synthesizing module 'clk_map_imp_1Y1QCSS' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:949]
+INFO: [Synth 8-6157] synthesizing module 'm00_exit_pipeline_imp_1CGPZR' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:999]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00e_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_cc6e_m00e_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_cdc_async_rst' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_cdc_async_rst' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_cdc/hdl/xpm_cdc.sv:1174]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00e_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_cc6e_m00e_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1CGPZR' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:999]
-INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_NKE8JF' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1370]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00arn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_cc6e_m00arn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00e_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_26/synth/bd_cc6e_m00e_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_exit_pipeline_imp_1CGPZR' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:999]
+INFO: [Synth 8-6157] synthesizing module 'm00_nodes_imp_NKE8JF' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1370]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00arn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_cc6e_m00arn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
@@ -202,10 +202,10 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized0' [D:
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized0' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized0' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized0' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00arn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_cc6e_m00arn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00awn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_cc6e_m00awn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00awn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_cc6e_m00awn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00bn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_cc6e_m00bn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00arn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_21/synth/bd_cc6e_m00arn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00awn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_cc6e_m00awn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00awn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_23/synth/bd_cc6e_m00awn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00bn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_cc6e_m00bn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized1' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized1' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized1' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
@@ -214,14 +214,14 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized2' [D:
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized2' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized2' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized2' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00bn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_cc6e_m00bn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00rn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_cc6e_m00rn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00bn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_25/synth/bd_cc6e_m00bn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00rn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_cc6e_m00rn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized3' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized3' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized3' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized3' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00rn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_cc6e_m00rn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00wn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_cc6e_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00rn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_22/synth/bd_cc6e_m00rn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00wn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_cc6e_m00wn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized4' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized4' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized4' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
@@ -230,24 +230,24 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized5' [D:
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized5' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized5' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized5' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00wn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_cc6e_m00wn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_NKE8JF' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1370]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00s2a_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_cc6e_m00s2a_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00s2a_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_cc6e_m00s2a_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s00a2s_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_cc6e_s00a2s_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s00a2s_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_cc6e_s00a2s_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_11PZVKK' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1675]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s00mmu_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_cc6e_s00mmu_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s00mmu_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_cc6e_s00mmu_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s00sic_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_cc6e_s00sic_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s00sic_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_cc6e_s00sic_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s00tr_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_cc6e_s00tr_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s00tr_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_cc6e_s00tr_0.sv:53]
-WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_cc6e_s00tr_0' is unconnected for instance 's00_transaction_regulator' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1922]
-WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_cc6e_s00tr_0' has 38 connections declared, but only 37 given [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1922]
-INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_11PZVKK' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1675]
-INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_14L9OR2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1962]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_sarn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_cc6e_sarn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00wn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_24/synth/bd_cc6e_m00wn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'm00_nodes_imp_NKE8JF' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1370]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_m00s2a_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_cc6e_m00s2a_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_m00s2a_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_20/synth/bd_cc6e_m00s2a_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s00a2s_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_cc6e_s00a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s00a2s_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_10/synth/bd_cc6e_s00a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's00_entry_pipeline_imp_11PZVKK' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1675]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s00mmu_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_cc6e_s00mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s00mmu_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_7/synth/bd_cc6e_s00mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s00sic_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_cc6e_s00sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s00sic_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_9/synth/bd_cc6e_s00sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s00tr_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_cc6e_s00tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s00tr_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_8/synth/bd_cc6e_s00tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_arburst' of module 'bd_cc6e_s00tr_0' is unconnected for instance 's00_transaction_regulator' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1922]
+WARNING: [Synth 8-7023] instance 's00_transaction_regulator' of module 'bd_cc6e_s00tr_0' has 38 connections declared, but only 37 given [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1922]
+INFO: [Synth 8-6155] done synthesizing module 's00_entry_pipeline_imp_11PZVKK' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1675]
+INFO: [Synth 8-6157] synthesizing module 's00_nodes_imp_14L9OR2' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1962]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_sarn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_cc6e_sarn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized6' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized6' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized6' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
@@ -256,69 +256,69 @@ INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized7' [D:
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized7' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized7' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized7' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_sarn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_cc6e_sarn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_srn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_cc6e_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_sarn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_11/synth/bd_cc6e_sarn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_srn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_cc6e_srn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized8' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized8' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized8' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized8' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_srn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_cc6e_srn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_14L9OR2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1962]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s01a2s_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_cc6e_s01a2s_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s01a2s_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_cc6e_s01a2s_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_7WOL6O' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2093]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s01mmu_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_cc6e_s01mmu_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s01mmu_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_cc6e_s01mmu_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s01sic_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_cc6e_s01sic_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s01sic_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_cc6e_s01sic_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s01tr_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_cc6e_s01tr_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s01tr_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_cc6e_s01tr_0.sv:53]
-WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_cc6e_s01tr_0' is unconnected for instance 's01_transaction_regulator' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2391]
-WARNING: [Synth 8-7023] instance 's01_transaction_regulator' of module 'bd_cc6e_s01tr_0' has 46 connections declared, but only 45 given [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2391]
-INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_7WOL6O' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2093]
-INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_48JC3C' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2439]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_sawn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_cc6e_sawn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_sawn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_cc6e_sawn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_sbn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_cc6e_sbn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_srn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_12/synth/bd_cc6e_srn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's00_nodes_imp_14L9OR2' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:1962]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s01a2s_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_cc6e_s01a2s_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s01a2s_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_16/synth/bd_cc6e_s01a2s_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 's01_entry_pipeline_imp_7WOL6O' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2093]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s01mmu_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_cc6e_s01mmu_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s01mmu_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_13/synth/bd_cc6e_s01mmu_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s01sic_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_cc6e_s01sic_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s01sic_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_15/synth/bd_cc6e_s01sic_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_s01tr_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_cc6e_s01tr_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_s01tr_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_14/synth/bd_cc6e_s01tr_0.sv:53]
+WARNING: [Synth 8-7071] port 'm_axi_awburst' of module 'bd_cc6e_s01tr_0' is unconnected for instance 's01_transaction_regulator' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2391]
+WARNING: [Synth 8-7023] instance 's01_transaction_regulator' of module 'bd_cc6e_s01tr_0' has 46 connections declared, but only 45 given [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2391]
+INFO: [Synth 8-6155] done synthesizing module 's01_entry_pipeline_imp_7WOL6O' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2093]
+INFO: [Synth 8-6157] synthesizing module 's01_nodes_imp_48JC3C' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2439]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_sawn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_cc6e_sawn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_sawn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_17/synth/bd_cc6e_sawn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_sbn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_cc6e_sbn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized9' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized9' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized9' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized9' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_sbn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_cc6e_sbn_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_swn_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_cc6e_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_sbn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_19/synth/bd_cc6e_sbn_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_swn_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_cc6e_swn_0.sv:53]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_sdpram__parameterized10' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
 INFO: [Synth 8-6157] synthesizing module 'xpm_memory_base__parameterized10' [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_base__parameterized10' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:56]
 INFO: [Synth 8-6155] done synthesizing module 'xpm_memory_sdpram__parameterized10' (0#1) [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv:8476]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_swn_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_cc6e_swn_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_48JC3C' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2439]
-INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1XAKOM2' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2625]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_arsw_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_cc6e_arsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_arsw_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_cc6e_arsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_awsw_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_cc6e_awsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_awsw_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_cc6e_awsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_bsw_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_cc6e_bsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_bsw_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_cc6e_bsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_rsw_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_cc6e_rsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_rsw_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_cc6e_rsw_0.sv:53]
-INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_wsw_0' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_cc6e_wsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_wsw_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_cc6e_wsw_0.sv:53]
-INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1XAKOM2' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2625]
-WARNING: [Synth 8-7071] port 'M00_SC_B_info' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'M00_SC_B_payld' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'M00_SC_B_req' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'M00_SC_B_send' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'S00_SC_AW_recv' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'S00_SC_W_recv' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_1XAKOM2' has 77 connections declared, but only 66 given [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
-INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:9]
-INFO: [Synth 8-6155] done synthesizing module 'exdes_smartconnect_0_0' (0#1) [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/synth/exdes_smartconnect_0_0.v:53]
-WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1Y1QCSS does not have driver. [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:969]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_swn_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_18/synth/bd_cc6e_swn_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 's01_nodes_imp_48JC3C' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2439]
+INFO: [Synth 8-6157] synthesizing module 'switchboards_imp_1XAKOM2' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2625]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_arsw_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_cc6e_arsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_arsw_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_2/synth/bd_cc6e_arsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_awsw_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_cc6e_awsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_awsw_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_4/synth/bd_cc6e_awsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_bsw_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_cc6e_bsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_bsw_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_6/synth/bd_cc6e_bsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_rsw_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_cc6e_rsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_rsw_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_3/synth/bd_cc6e_rsw_0.sv:53]
+INFO: [Synth 8-6157] synthesizing module 'bd_cc6e_wsw_0' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_cc6e_wsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e_wsw_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_5/synth/bd_cc6e_wsw_0.sv:53]
+INFO: [Synth 8-6155] done synthesizing module 'switchboards_imp_1XAKOM2' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:2625]
+WARNING: [Synth 8-7071] port 'M00_SC_B_info' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'M00_SC_B_payld' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'M00_SC_B_req' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'M00_SC_B_send' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'M01_SC_R_info' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'M01_SC_R_payld' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'M01_SC_R_req' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'M01_SC_R_send' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'S00_SC_AW_recv' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'S00_SC_W_recv' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7071] port 'S01_SC_AR_recv' of module 'switchboards_imp_1XAKOM2' is unconnected for instance 'switchboards' [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+WARNING: [Synth 8-7023] instance 'switchboards' of module 'switchboards_imp_1XAKOM2' has 77 connections declared, but only 66 given [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:880]
+INFO: [Synth 8-6155] done synthesizing module 'bd_cc6e' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'exdes_smartconnect_0_0' (0#1) [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/synth/exdes_smartconnect_0_0.v:53]
+WARNING: [Synth 8-3848] Net aresetn_out in module/entity clk_map_imp_1Y1QCSS does not have driver. [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/synth/bd_cc6e.v:969]
 WARNING: [Synth 8-7129] Port aclk in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port aclken in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port areset in module sc_util_v1_0_4_pipeline__parameterized0 is either unconnected or has no load
@@ -346,123 +346,123 @@ WARNING: [Synth 8-7129] Port connectivity[1] in module sc_switchboard_v1_0_6_top
 WARNING: [Synth 8-7129] Port connectivity[0] in module sc_switchboard_v1_0_6_top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port aresetn in module switchboards_imp_1XAKOM2 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port din[0] in module sc_util_v1_0_4_onehot_to_binary__parameterized0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[159] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[158] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[157] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[156] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[155] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[154] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[153] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[152] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[151] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[150] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[149] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[148] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[147] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[146] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[145] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[144] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[143] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[142] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[141] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[140] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[139] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[138] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[137] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[136] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[135] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[134] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[133] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[132] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[131] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[130] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[129] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[128] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[127] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[126] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[125] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[124] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[123] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[122] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[121] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[120] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[119] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[118] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[117] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[116] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[115] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[114] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[113] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[112] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[111] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[110] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[109] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[108] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[107] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[106] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[105] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[104] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[103] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[102] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[101] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[100] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[99] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[98] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[97] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[96] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[95] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[94] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[93] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[92] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[91] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[90] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[89] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port s_sc_payld[88] in module sc_node_v1_0_14_ingress__parameterized8 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port sleep in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rsta in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regcea in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectsbiterra in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port injectdbiterra in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clkb in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port regceb in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port web[0] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[87] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[86] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[85] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[84] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[83] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[82] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[81] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[80] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[79] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[78] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[77] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[76] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[75] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[74] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[73] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[72] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[71] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[70] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[69] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[68] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[67] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[66] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[65] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[64] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[63] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[62] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[61] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[60] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[59] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[58] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[57] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[56] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[55] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[54] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[53] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[52] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[51] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[50] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[49] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[48] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[47] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[46] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[45] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[44] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[43] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[42] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[41] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[40] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[39] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[38] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[37] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[36] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[35] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[34] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[33] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[32] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[31] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[30] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[29] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[28] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[27] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[26] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[25] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[24] in module xpm_memory_base__parameterized10 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port dinb[23] in module xpm_memory_base__parameterized10 is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2774.867 ; gain = 562.500
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2764.652 ; gain = 553.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2793.785 ; gain = 581.418
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2782.531 ; gain = 570.906
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:13 . Memory (MB): peak = 2793.785 ; gain = 581.418
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 2782.531 ; gain = 570.906
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 2870.176 ; gain = 12.277
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 2853.703 ; gain = 12.500
 INFO: [Netlist 29-17] Analyzing 13 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/ooc.xdc] for cell 'inst'
-Finished Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/ooc.xdc] for cell 'inst'
-Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/bd_cc6e_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/bd_cc6e_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/bd_cc6e_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Finished Parsing XDC File [e:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/bd_cc6e_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
-Parsing XDC File [E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/dont_touch.xdc]
-Finished Parsing XDC File [E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/dont_touch.xdc]
+Parsing XDC File [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/ooc.xdc] for cell 'inst'
+Parsing XDC File [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/bd_cc6e_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/bd_cc6e_psr_aclk_0_board.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/bd_cc6e_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [e:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.gen/sources_1/bd/exdes/ip/exdes_smartconnect_0_0/bd_0/ip/ip_1/bd_cc6e_psr_aclk_0.xdc] for cell 'inst/clk_map/psr_aclk/U0'
+Parsing XDC File [E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/dont_touch.xdc]
 INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/tools/xilinx/Vivado/2022.2/data/ip/xpm/xpm_memory/tcl/xpm_memory_xdc.tcl]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/exdes_smartconnect_0_0_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/exdes_smartconnect_0_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 INFO: [Project 1-1714] 49 XPM XDC files have been applied to the design.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3325.719 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 3304.395 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
   A total of 13 instances were transformed.
   FDR => FDRE: 12 instances
   SRL16 => SRL16E: 1 instance 
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.712 . Memory (MB): peak = 3347.156 ; gain = 21.438
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.617 . Memory (MB): peak = 3325.816 ; gain = 21.422
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [D:/tools/xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:42 . Memory (MB): peak = 3347.156 ; gain = 1134.789
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 3325.816 ; gain = 1114.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -470,12 +470,12 @@ Start Loading Part and Timing Information
 Loading part: xczu7ev-ffvc1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:42 . Memory (MB): peak = 3347.156 ; gain = 1134.789
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:34 . Memory (MB): peak = 3325.816 ; gain = 1114.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
-Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/dont_touch.xdc, line 135).
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/dont_touch.xdc, line 135).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_ar_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_aw_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/m00_nodes/m00_b_node/inst/m_sc_xpm_cdc_async_rst_inst. (constraint file  auto generated constraint).
@@ -526,7 +526,7 @@ Applied set_property KEEP_HIERARCHY = SOFT for inst/s00_nodes/s00_r_node/inst/in
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_b_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for inst/s01_nodes/s01_w_node/inst/inst_mi_handler/\gen_normal_area.inst_fifo_node_payld /\gen_xpm_memory_fifo.inst_fifo /\gen_mem_rep[0].inst_xpm_memory . (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:42 . Memory (MB): peak = 3347.156 ; gain = 1134.789
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 3325.816 ; gain = 1114.191
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_pipelined.state_reg' through user attribute
@@ -544,14 +544,14 @@ INFO: [Synth 8-4490] FSM extraction disabled for register 'gen_AB_reg_slice.stat
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.gen_write.write_cs_reg' using encoding 'one-hot' in module 'sc_mmu_v1_0_11_decerr_slave'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:45 . Memory (MB): peak = 3347.156 ; gain = 1134.789
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:37 . Memory (MB): peak = 3325.816 ; gain = 1114.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input    8 Bit       Adders := 6     
+	   2 Input    8 Bit       Adders := 2     
 	   2 Input    7 Bit       Adders := 4     
 	   2 Input    6 Bit       Adders := 123   
 	   2 Input    5 Bit       Adders := 6     
@@ -559,47 +559,45 @@ Detailed RTL Component Info :
 	   2 Input    3 Bit       Adders := 12    
 	   2 Input    2 Bit       Adders := 4     
 	   3 Input    1 Bit       Adders := 4     
-	   2 Input    1 Bit       Adders := 3     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 181   
 +---Registers : 
 	             2178 Bit    Registers := 42    
-	              178 Bit    Registers := 1     
-	              167 Bit    Registers := 1     
-	              160 Bit    Registers := 2     
 	              158 Bit    Registers := 2     
-	              149 Bit    Registers := 3     
 	              140 Bit    Registers := 4     
+	              106 Bit    Registers := 1     
+	              103 Bit    Registers := 1     
+	               88 Bit    Registers := 2     
+	               85 Bit    Registers := 3     
 	               47 Bit    Registers := 1     
 	               33 Bit    Registers := 1     
 	               25 Bit    Registers := 1     
 	               19 Bit    Registers := 2     
-	               18 Bit    Registers := 4     
+	               18 Bit    Registers := 3     
 	               16 Bit    Registers := 1     
 	               14 Bit    Registers := 2     
-	                8 Bit    Registers := 19    
-	                7 Bit    Registers := 5     
+	                8 Bit    Registers := 2     
+	                7 Bit    Registers := 3     
 	                6 Bit    Registers := 63    
 	                5 Bit    Registers := 6     
 	                4 Bit    Registers := 15    
 	                3 Bit    Registers := 41    
-	                2 Bit    Registers := 24    
-	                1 Bit    Registers := 496   
+	                2 Bit    Registers := 23    
+	                1 Bit    Registers := 470   
 +---Muxes : 
 	   2 Input 2178 Bit        Muxes := 21    
-	   2 Input  160 Bit        Muxes := 1     
-	   2 Input  149 Bit        Muxes := 2     
 	   2 Input  140 Bit        Muxes := 2     
+	   2 Input   88 Bit        Muxes := 1     
+	   2 Input   85 Bit        Muxes := 2     
 	   2 Input   64 Bit        Muxes := 2     
 	   2 Input   47 Bit        Muxes := 1     
 	   2 Input   33 Bit        Muxes := 1     
 	   2 Input   16 Bit        Muxes := 1     
 	   2 Input   14 Bit        Muxes := 2     
 	   2 Input    8 Bit        Muxes := 2     
-	   2 Input    7 Bit        Muxes := 8     
+	   2 Input    7 Bit        Muxes := 6     
 	   4 Input    7 Bit        Muxes := 8     
 	   2 Input    6 Bit        Muxes := 21    
-	   2 Input    4 Bit        Muxes := 1     
 	   4 Input    3 Bit        Muxes := 9     
 	  11 Input    3 Bit        Muxes := 5     
 	   2 Input    3 Bit        Muxes := 10    
@@ -610,7 +608,7 @@ Detailed RTL Component Info :
 	  10 Input    1 Bit        Muxes := 63    
 	   7 Input    1 Bit        Muxes := 42    
 	  12 Input    1 Bit        Muxes := 5     
-	   2 Input    1 Bit        Muxes := 204   
+	   2 Input    1 Bit        Muxes := 170   
 	   3 Input    1 Bit        Muxes := 18    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -629,7 +627,7 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:01:07 . Memory (MB): peak = 3347.156 ; gain = 1134.789
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:56 . Memory (MB): peak = 3325.816 ; gain = 1114.191
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -644,15 +642,15 @@ Distributed RAM: Preliminary Mapping Report (see note below)
 |inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M16 x 2   | 
 |inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 7               | RAM32M16 x 1   | 
 |inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M16 x 2   | 
-|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 149             | RAM32M16 x 11  | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 85              | RAM32M16 x 7   | 
 |inst/i_0/\m00_nodes/m00_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1   | 
-|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 178             | RAM32M16 x 13  | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 106             | RAM32M16 x 8   | 
 |inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 140             | RAM32M16 x 10  | 
-|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 167             | RAM32M16 x 12  | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 103             | RAM32M16 x 8   | 
 |inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 140             | RAM32M16 x 10  | 
 |inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 25              | RAM32M16 x 2   | 
 |inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M16 x 2   | 
-|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 160             | RAM32M16 x 12  | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M16 x 7   | 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
 
 Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
@@ -663,13 +661,13 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:01:16 . Memory (MB): peak = 3415.461 ; gain = 1203.094
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:01:04 . Memory (MB): peak = 3414.957 ; gain = 1203.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:01:17 . Memory (MB): peak = 3473.094 ; gain = 1260.727
+Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:06 . Memory (MB): peak = 3472.371 ; gain = 1260.746
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -684,15 +682,15 @@ Distributed RAM: Final Mapping Report
 |inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M16 x 2   | 
 |inst/i_0/\m00_nodes/m00_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 7               | RAM32M16 x 1   | 
 |inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 19              | RAM32M16 x 2   | 
-|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 149             | RAM32M16 x 11  | 
+|inst/i_0/\m00_nodes/m00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 85              | RAM32M16 x 7   | 
 |inst/i_0/\m00_nodes/m00_w_node/inst /\inst_si_handler/gen_si_handler.gen_request_fifos.gen_req_fifo[1].inst_req_fifo/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 4 x 1                | RAM16X1D x 1   | 
-|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 178             | RAM32M16 x 13  | 
+|inst/i_0/\m00_nodes/m00_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 106             | RAM32M16 x 8   | 
 |inst/i_0/\s00_nodes/s00_ar_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 140             | RAM32M16 x 10  | 
-|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 167             | RAM32M16 x 12  | 
+|inst/i_0/\s00_nodes/s00_r_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 103             | RAM32M16 x 8   | 
 |inst/i_0/\s01_nodes/s01_aw_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                          | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 140             | RAM32M16 x 10  | 
 |inst/i_0/\s01_nodes/s01_b_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 25              | RAM32M16 x 2   | 
 |inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.gen_fifo_req.inst_fifo_req/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                     | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 18              | RAM32M16 x 2   | 
-|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 160             | RAM32M16 x 12  | 
+|inst/i_0/\s01_nodes/s01_w_node/inst /\inst_mi_handler/gen_normal_area.inst_fifo_node_payld/gen_xpm_memory_fifo.inst_fifo/gen_mem_rep[0].inst_xpm_memory /xpm_memory_base_inst                           | gen_wr_a.gen_word_narrow.mem_reg | User Attribute | 32 x 88              | RAM32M16 x 7   | 
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+----------------+----------------------+----------------+
 
 ---------------------------------------------------------------------------------
@@ -705,7 +703,7 @@ INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_oneh
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[1]) is unused and will be removed from module sc_mmu_v1_0_11_top__xdcDup__1.
 INFO: [Synth 8-3332] Sequential element (gen_endpoint.decerr_slave_inst/FSM_onehot_gen_axi.gen_write.write_cs_reg[0]) is unused and will be removed from module sc_mmu_v1_0_11_top__xdcDup__1.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:01:19 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Finished Technology Mapping : Time (s): cpu = 00:00:38 ; elapsed = 00:01:08 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -723,37 +721,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:24 ; elapsed = 00:01:22 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Finished IO Insertion : Time (s): cpu = 00:00:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:24 ; elapsed = 00:01:22 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:01:22 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:01:22 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:01:22 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:01:22 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -783,51 +781,53 @@ Report Cell Usage:
 +------+---------+------+
 |      |Cell     |Count |
 +------+---------+------+
-|1     |LUT1     |   165|
-|2     |LUT2     |   161|
-|3     |LUT3     |   949|
-|4     |LUT4     |   267|
-|5     |LUT5     |   378|
-|6     |LUT6     |   435|
+|1     |LUT1     |   163|
+|2     |LUT2     |   138|
+|3     |LUT3     |   802|
+|4     |LUT4     |   256|
+|5     |LUT5     |   367|
+|6     |LUT6     |   379|
 |7     |RAM16X1D |     1|
 |8     |RAM32M   |     1|
-|9     |RAM32M16 |    72|
-|10    |SRL16    |     1|
-|11    |SRL16E   |    33|
-|12    |FDCE     |    81|
-|13    |FDR      |     4|
-|14    |FDRE     |  3825|
-|15    |FDSE     |   156|
+|9     |RAM32M16 |    53|
+|10    |RAM32X1D |     1|
+|11    |SRL16    |     1|
+|12    |SRL16E   |    33|
+|13    |FDCE     |    81|
+|14    |FDR      |     4|
+|15    |FDRE     |  2969|
+|16    |FDSE     |   154|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:01:22 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:39 ; elapsed = 00:01:10 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 4107 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:13 ; elapsed = 00:00:58 . Memory (MB): peak = 3477.129 ; gain = 711.391
-Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:01:22 . Memory (MB): peak = 3477.129 ; gain = 1264.762
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:52 . Memory (MB): peak = 3478.738 ; gain = 723.828
+Synthesis Optimization Complete : Time (s): cpu = 00:00:39 ; elapsed = 00:01:11 . Memory (MB): peak = 3478.738 ; gain = 1267.113
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.318 . Memory (MB): peak = 3482.832 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 79 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.261 . Memory (MB): peak = 3483.355 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 61 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3520.715 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3517.340 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 79 instances were transformed.
+  A total of 61 instances were transformed.
   FDR => FDRE: 4 instances
   RAM16X1D => RAM32X1D (RAMD32(x2)): 1 instance 
   RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 1 instance 
-  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 72 instances
+  RAM32M16 => RAM32M16 (RAMD32(x14), RAMS32(x2)): 53 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 1 instance 
   SRL16 => SRL16E: 1 instance 
 
-Synth Design complete, checksum: 74b2b621
+Synth Design complete, checksum: 4963d578
 INFO: [Common 17-83] Releasing license: Synthesis
 187 Infos, 224 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:01:32 . Memory (MB): peak = 3520.715 ; gain = 2436.801
-INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/exdes_smartconnect_0_0.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP exdes_smartconnect_0_0, cache-ID = 34cef2334b009a24
-INFO: [Coretcl 2-1174] Renamed 334 cell refs.
-INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/github/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/exdes_smartconnect_0_0.dcp' has been generated.
+synth_design: Time (s): cpu = 00:00:43 ; elapsed = 00:01:18 . Memory (MB): peak = 3517.340 ; gain = 2434.344
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/exdes_smartconnect_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP exdes_smartconnect_0_0, cache-ID = be03d6535affeff7
+INFO: [Coretcl 2-1174] Renamed 330 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.runs/exdes_smartconnect_0_0_synth_1/exdes_smartconnect_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file exdes_smartconnect_0_0_utilization_synth.rpt -pb exdes_smartconnect_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Tue Apr  9 16:39:11 2024...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr 10 10:48:39 2024...
