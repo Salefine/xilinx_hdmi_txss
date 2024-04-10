@@ -133,7 +133,7 @@ e.   Set MM2S_VSIZE (50h) to the number of lines per frame. VSIZE must be set la
 
 接下来编译vitis并且下载到板卡上进行验证。
 
-下载完成之后可以看到串口打印的信息。VIDEO_BASE_ADDR为读写ddr的基地址，这里是pl端的，设置为0x00000000.如果是ps侧的ddr，起始地址要避免和指令的起始地址冲突。
+下载完成之后可以看到串口打印的信息。VIDEO_BASE_ADDR为读写ddr的基地址，这里是pl端的，设置为0x00000000.如果是ps侧的ddr，起始地址要避免和指令的起始地址冲突。（0x40000000）
 
 `mrd -bin -file image.bin 0x000000000 58982400`
 
