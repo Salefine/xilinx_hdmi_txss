@@ -9,27 +9,27 @@ The project modified the tpg data generation section based on xilinx's hdmi2.0 t
 
 ## 设计框图
 
-<img src="E:\xilinx_axi\github\image\image-20240409101508136.png" alt="image-20240409101508136" style="zoom:100%;" />
+![](README.assets/image-20240409101508136.png)
 
 整个工程的block design框图如上所示：video_gen模块由用户控制，其余的hdmi tx模块来自hdmi2.0 ip所提供的example。打开video_gen这个hier可以看到这个模块负责处理彩条生成以及缓存到ddr。缓存功能由vdma实现。
 
-![image-20240409101715420](E:\xilinx_axi\github\image\image-20240409101715420.png)
+![](README.assets/image-20240409101715420.png)
 
 整个hdmi2.0的框图如下：
 
-<img src="E:\xilinx_axi\github\image\image-20240409102426899.png" alt="image-20240409102426899" style="zoom:80%;" />
+![](README.assets/image-20240409102426899.png)
 
 这是phy层同时打开tx和rx端的example。当phy层只打开tx通道后的example框图如下：
 
-<img src="E:\xilinx_axi\github\image\image-20240409102506621.png" alt="image-20240409102506621" style="zoom:80%;" />
+![](README.assets/image-20240409102506621.png)
 
 这里由于数据是来自axis_gen，所以phy层只打开tx通道，example只选择tx only。
 
-<img src="E:\xilinx_axi\github\image\image-20240409102625050.png" alt="image-20240409102625050" style="zoom:80%;" />
+![](README.assets/image-20240409102625050.png)
 
 ​														tx only选择（来自hdmi2.0）
 
-<img src="E:\xilinx_axi\github\image\image-20240409102653392.png" alt="image-20240409102653392" style="zoom:80%;" />
+![](README.assets/image-20240409102653392.png)
 
 ​													phy层关闭rx通道（来自video phy controller）
 
@@ -45,7 +45,7 @@ The project modified the tpg data generation section based on xilinx's hdmi2.0 t
 
 ​	vdma配置如下：两个数据位宽的选择。
 
-<img src="E:\xilinx_axi\github\image\image-20240409103834052.png" alt="image-20240409103834052" style="zoom: 67%;" />
+![](README.assets/image-20240409103834052.png)
 
 
 
@@ -53,7 +53,7 @@ The project modified the tpg data generation section based on xilinx's hdmi2.0 t
 
 ​	其中一个是axis_gen写入到vdma的位宽，另外一个是从ddr读出来的位宽，设置为48主要是和example中的crc的位宽匹配。
 
-<img src="E:\xilinx_axi\github\image\image-20240409104023712.png" alt="image-20240409104023712" style="zoom:80%;" />
+![](README.assets/image-20240409104023712.png)
 
 ​										Advance 配置
 
@@ -69,7 +69,7 @@ The project modified the tpg data generation section based on xilinx's hdmi2.0 t
 
 *如果您是高级用户，并且出于某些特定目的需要访问mm2s_frame_ptr_in（s2mm_frame_ptr_in）端口，您可以通过在Vivado设计工具（或IP集成器）中使用Tcl控制台命令，设置参数C_MM2S_GENLOCK_NUM_MASTERS > 1（C_S2MM_GENLOCK_NUM_MASTERS > 1）来实现。*
 
-<img src="E:\xilinx_axi\github\image\image-20240409104852510.png" alt="image-20240409104852510" style="zoom:80%;" />
+![](README.assets/image-20240409104852510.png)
 
 ​	详细的内容参考pg020.
 
@@ -77,7 +77,7 @@ The project modified the tpg data generation section based on xilinx's hdmi2.0 t
 
 ​	按照block design完成整个工程的连接，由于按照board file配置，所以这里的引脚并未设置。一切都是由board file来配置的，包括一些ip的设置。比如ddr。这里配置好下面三个参数即可完成ddr的引脚及型号的选择。
 
-<img src="E:\xilinx_axi\github\image\image-20240409105703822.png" alt="image-20240409105703822" style="zoom:80%;" />
+![](README.assets/image-20240409105703822.png)
 
 ​	接下来按照synthesis-->implementation-->generate bitstream这个顺序生成bit文件，然后创建xsa。打开vitis。
 
@@ -85,7 +85,7 @@ The project modified the tpg data generation section based on xilinx's hdmi2.0 t
 
 ​	在板级支持包上找到相应的example，并且根据板卡支持的cpu选择a53处理器。打开这个文件。
 
-<img src="E:\xilinx_axi\github\image\image-20240409110014105.png" alt="image-20240409110014105" style="zoom:50%;" />
+![](README.assets/image-20240409110014105.png)
 
 ​	由于添加了vdma，所以这里需要对vdma做出配置。配置可以参考pg020给出的步骤。
 
@@ -141,8 +141,8 @@ IMAGE_WIDTH  IMAGE_HEIGHT这两个需要自行声明，表示图像的宽度和�
 
 在vitis终端输入这条命令查看效果。
 
-<img src="E:\xilinx_axi\github\image\cfde137b44c4570818eea51f2afb795.png" alt="cfde137b44c4570818eea51f2afb795" style="zoom: 33%;" />
+![](README.assets/cfde137b44c4570818eea51f2afb795.png)
 
 注意：vdma在写入图像时会将RGB中的R,G和B倒换顺序。最后以BGR的格式写入DDR，所以读出的图片会和预期有差异。
 
-<img src="E:\xilinx_axi\github\image\7b9ea2185a5907bdc7ae851b1158eb7.png" alt="7b9ea2185a5907bdc7ae851b1158eb7" style="zoom: 80%;" />
+![](README.assets/7b9ea2185a5907bdc7ae851b1158eb7.png)

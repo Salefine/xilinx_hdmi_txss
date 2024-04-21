@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="61" Path="E:/xilinx_axi/mian/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.xpr">
+<Project Version="7" Minor="61" Path="D:/xilinx_prj/xilinx_hdmi_txss/v_hdmi_txss_2v0/v_hdmi_tx_ss_ex/v_hdmi_tx_ss_ex.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="17dc1f3a56084d96ae34617df642a2aa"/>
@@ -43,7 +43,6 @@
     <Option Name="SimulatorGccVersionRiviera" Val="9.3.0"/>
     <Option Name="SimulatorGccVersionActiveHdl" Val="9.3.0"/>
     <Option Name="BoardPart" Val="xilinx.com:zcu104:part0:1.1"/>
-    <Option Name="BoardPartRepoPaths" Val="C:/Users/zhi/AppData/Roaming/Xilinx/Vivado/2022.2/xhub/board_store/xilinx_board_store"/>
     <Option Name="ActiveSimSet" Val="sim_1"/>
     <Option Name="DefaultLib" Val="xil_defaultlib"/>
     <Option Name="ProjectType" Val="Default"/>
@@ -102,59 +101,8 @@
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_vid_phy_controller_0/exdes_vid_phy_controller_0.xci">
-          <Proxy FileSetName="exdes_vid_phy_controller_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/ip_3/bd_3ea7_util_vector_logic_0_0.xci">
-          <Proxy FileSetName="bd_3ea7_util_vector_logic_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/ip_4/bd_3ea7_axi_crossbar_0.xci">
-          <Proxy FileSetName="bd_3ea7_axi_crossbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/ip_1/bd_3ea7_v_tc_0.xci">
-          <Proxy FileSetName="bd_3ea7_v_tc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/ip_0/bd_3ea7_v_hdmi_tx_0.xci">
-          <Proxy FileSetName="bd_3ea7_v_hdmi_tx_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/ip_2/bd_3ea7_v_axi4s_vid_out_0.xci">
-          <Proxy FileSetName="bd_3ea7_v_axi4s_vid_out_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_v_hdmi_tx_ss_0/exdes_v_hdmi_tx_ss_0.xci">
-          <Proxy FileSetName="exdes_v_hdmi_tx_ss_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_tx_video_axis_reg_slice_0/exdes_tx_video_axis_reg_slice_0.xci">
-          <Proxy FileSetName="exdes_tx_video_axis_reg_slice_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_video_frame_crc_0/exdes_video_frame_crc_0.xci">
-          <Proxy FileSetName="exdes_video_frame_crc_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_axis_data_fifo_0_0/exdes_axis_data_fifo_0_0.xci">
-          <Proxy FileSetName="exdes_axis_data_fifo_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_system_ila_1_0/exdes_system_ila_1_0.xci">
-          <Proxy FileSetName="exdes_system_ila_1_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_zynq_us_0/exdes_zynq_us_0.xci">
-          <Proxy FileSetName="exdes_zynq_us_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xci">
-          <Proxy FileSetName="exdes_axi_vdma_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_fmch_axi_iic_0/exdes_fmch_axi_iic_0.xci">
-          <Proxy FileSetName="exdes_fmch_axi_iic_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_rst_processor_1_300M_0/exdes_rst_processor_1_300M_0.xci">
-          <Proxy FileSetName="exdes_rst_processor_1_300M_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_system_ila_0_1/exdes_system_ila_0_1.xci">
-          <Proxy FileSetName="exdes_system_ila_0_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_proc_sys_reset_0_0/exdes_proc_sys_reset_0_0.xci">
           <Proxy FileSetName="exdes_proc_sys_reset_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_rst_processor_1_100M_0/exdes_rst_processor_1_100M_0.xci">
-          <Proxy FileSetName="exdes_rst_processor_1_100M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_axis_gen_0_0/exdes_axis_gen_0_0.xci">
           <Proxy FileSetName="exdes_axis_gen_0_0"/>
@@ -162,30 +110,67 @@
         <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_clk_wiz_0_0/exdes_clk_wiz_0_0.xci">
           <Proxy FileSetName="exdes_clk_wiz_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_axis_data_fifo_0_0/exdes_axis_data_fifo_0_0.xci">
+          <Proxy FileSetName="exdes_axis_data_fifo_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_system_ila_1_0/exdes_system_ila_1_0.xci">
+          <Proxy FileSetName="exdes_system_ila_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_system_ila_0_1/exdes_system_ila_0_1.xci">
+          <Proxy FileSetName="exdes_system_ila_0_1"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_smartconnect_0_0/exdes_smartconnect_0_0.xci">
           <Proxy FileSetName="exdes_smartconnect_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_hdmi_acr_ctrl_0/exdes_hdmi_acr_ctrl_0.xci">
-          <Proxy FileSetName="exdes_hdmi_acr_ctrl_0"/>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_axi_vdma_0_0/exdes_axi_vdma_0_0.xci">
+          <Proxy FileSetName="exdes_axi_vdma_0_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_clk_wiz_0/exdes_clk_wiz_0.xci">
-          <Proxy FileSetName="exdes_clk_wiz_0"/>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_fmch_axi_iic_0/exdes_fmch_axi_iic_0.xci">
+          <Proxy FileSetName="exdes_fmch_axi_iic_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_zynq_us_0/exdes_zynq_us_0.xci">
+          <Proxy FileSetName="exdes_zynq_us_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_rst_processor_1_300M_0/exdes_rst_processor_1_300M_0.xci">
+          <Proxy FileSetName="exdes_rst_processor_1_300M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_rst_processor_1_100M_0/exdes_rst_processor_1_100M_0.xci">
+          <Proxy FileSetName="exdes_rst_processor_1_100M_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_axi_gpio_0/exdes_axi_gpio_0.xci">
           <Proxy FileSetName="exdes_axi_gpio_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_xbar_1/exdes_xbar_1.xci">
-          <Proxy FileSetName="exdes_xbar_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_xbar_0/exdes_xbar_0.xci">
-          <Proxy FileSetName="exdes_xbar_0"/>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_clk_wiz_0/exdes_clk_wiz_0.xci">
+          <Proxy FileSetName="exdes_clk_wiz_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_aud_pat_gen_0/exdes_aud_pat_gen_0.xci">
           <Proxy FileSetName="exdes_aud_pat_gen_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_hdmi_acr_ctrl_0/exdes_hdmi_acr_ctrl_0.xci">
+          <Proxy FileSetName="exdes_hdmi_acr_ctrl_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_xbar_1/exdes_xbar_1.xci">
+          <Proxy FileSetName="exdes_xbar_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_video_frame_crc_0/exdes_video_frame_crc_0.xci">
+          <Proxy FileSetName="exdes_video_frame_crc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_xbar_0/exdes_xbar_0.xci">
+          <Proxy FileSetName="exdes_xbar_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_vid_phy_controller_0/exdes_vid_phy_controller_0.xci">
+          <Proxy FileSetName="exdes_vid_phy_controller_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_tx_video_axis_reg_slice_0/exdes_tx_video_axis_reg_slice_0.xci">
+          <Proxy FileSetName="exdes_tx_video_axis_reg_slice_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="exdes.bd" FileRelPathName="ip/exdes_v_hdmi_tx_ss_0/exdes_v_hdmi_tx_ss_0.xci">
+          <Proxy FileSetName="exdes_v_hdmi_tx_ss_0"/>
+        </CompFileExtendedInfo>
       </File>
       <File Path="$PGENDIR/sources_1/bd/exdes/hdl/exdes_wrapper.v">
         <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -418,289 +403,259 @@
     </Simulator>
   </Simulators>
   <Runs Version="1" Minor="19">
-    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/exdes_wrapper.dcp" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="true" IncrementalCheckpoint="$PSRCDIR/utils_1/imports/synth_1/exdes_wrapper.dcp" WriteIncrSynthDcp="false" State="current" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_vid_phy_controller_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_vid_phy_controller_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_vid_phy_controller_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_vid_phy_controller_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_vid_phy_controller_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_vid_phy_controller_0_synth_1">
+    <Run Id="exdes_vid_phy_controller_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_vid_phy_controller_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_vid_phy_controller_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_vid_phy_controller_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_vid_phy_controller_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_tx_video_axis_reg_slice_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_tx_video_axis_reg_slice_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_tx_video_axis_reg_slice_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_tx_video_axis_reg_slice_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_tx_video_axis_reg_slice_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_tx_video_axis_reg_slice_0_synth_1">
+    <Run Id="exdes_tx_video_axis_reg_slice_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_tx_video_axis_reg_slice_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_tx_video_axis_reg_slice_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_tx_video_axis_reg_slice_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_tx_video_axis_reg_slice_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_v_hdmi_tx_ss_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_v_hdmi_tx_ss_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_v_hdmi_tx_ss_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_v_hdmi_tx_ss_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_v_hdmi_tx_ss_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_v_hdmi_tx_ss_0_synth_1">
+    <Run Id="exdes_v_hdmi_tx_ss_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_v_hdmi_tx_ss_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_v_hdmi_tx_ss_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_v_hdmi_tx_ss_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_v_hdmi_tx_ss_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bd_3ea7_v_hdmi_tx_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_v_hdmi_tx_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_v_hdmi_tx_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_3ea7_v_hdmi_tx_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_hdmi_tx_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_hdmi_tx_0_synth_1">
+    <Run Id="bd_3ea7_v_hdmi_tx_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_v_hdmi_tx_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_v_hdmi_tx_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_hdmi_tx_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_hdmi_tx_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bd_3ea7_v_tc_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_v_tc_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_v_tc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_3ea7_v_tc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_tc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_tc_0_synth_1">
+    <Run Id="bd_3ea7_v_tc_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_v_tc_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_v_tc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_tc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_tc_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bd_3ea7_v_axi4s_vid_out_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_v_axi4s_vid_out_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_v_axi4s_vid_out_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_3ea7_v_axi4s_vid_out_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_axi4s_vid_out_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_axi4s_vid_out_0_synth_1">
+    <Run Id="bd_3ea7_v_axi4s_vid_out_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_v_axi4s_vid_out_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_v_axi4s_vid_out_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_axi4s_vid_out_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_v_axi4s_vid_out_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bd_3ea7_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_util_vector_logic_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_3ea7_util_vector_logic_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_util_vector_logic_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_util_vector_logic_0_0_synth_1">
+    <Run Id="bd_3ea7_util_vector_logic_0_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_util_vector_logic_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_util_vector_logic_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_util_vector_logic_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_util_vector_logic_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="bd_3ea7_axi_crossbar_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_axi_crossbar_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_axi_crossbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/bd_3ea7_axi_crossbar_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_axi_crossbar_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_axi_crossbar_0_synth_1">
+    <Run Id="bd_3ea7_axi_crossbar_0_synth_1" Type="Ft3:Synth" SrcSet="bd_3ea7_axi_crossbar_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="bd_3ea7_axi_crossbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/bd_3ea7_axi_crossbar_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/bd_3ea7_axi_crossbar_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_video_frame_crc_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_video_frame_crc_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_video_frame_crc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_video_frame_crc_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_video_frame_crc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_video_frame_crc_0_synth_1">
+    <Run Id="exdes_video_frame_crc_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_video_frame_crc_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_video_frame_crc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_video_frame_crc_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_video_frame_crc_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_axi_gpio_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_axi_gpio_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axi_gpio_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_axi_gpio_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axi_gpio_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axi_gpio_0_synth_1">
+    <Run Id="exdes_axi_gpio_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_axi_gpio_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axi_gpio_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axi_gpio_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axi_gpio_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_xbar_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_xbar_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_xbar_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_xbar_0_synth_1">
+    <Run Id="exdes_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_xbar_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_xbar_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_xbar_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_clk_wiz_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_clk_wiz_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_clk_wiz_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_clk_wiz_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_clk_wiz_0_synth_1">
+    <Run Id="exdes_clk_wiz_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_clk_wiz_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_clk_wiz_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_clk_wiz_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_clk_wiz_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_aud_pat_gen_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_aud_pat_gen_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_aud_pat_gen_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_aud_pat_gen_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_aud_pat_gen_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_aud_pat_gen_0_synth_1">
+    <Run Id="exdes_aud_pat_gen_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_aud_pat_gen_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_aud_pat_gen_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_aud_pat_gen_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_aud_pat_gen_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_hdmi_acr_ctrl_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_hdmi_acr_ctrl_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_hdmi_acr_ctrl_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_hdmi_acr_ctrl_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_hdmi_acr_ctrl_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_hdmi_acr_ctrl_0_synth_1">
+    <Run Id="exdes_hdmi_acr_ctrl_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_hdmi_acr_ctrl_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_hdmi_acr_ctrl_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_hdmi_acr_ctrl_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_hdmi_acr_ctrl_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_xbar_1_synth_1" Type="Ft3:Synth" SrcSet="exdes_xbar_1" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_xbar_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_xbar_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_xbar_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_xbar_1_synth_1">
+    <Run Id="exdes_xbar_1_synth_1" Type="Ft3:Synth" SrcSet="exdes_xbar_1" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_xbar_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_xbar_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_xbar_1_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_zynq_us_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_zynq_us_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_zynq_us_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_zynq_us_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_zynq_us_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_zynq_us_0_synth_1">
+    <Run Id="exdes_zynq_us_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_zynq_us_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_zynq_us_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_zynq_us_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_zynq_us_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_fmch_axi_iic_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_fmch_axi_iic_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_fmch_axi_iic_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_fmch_axi_iic_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_fmch_axi_iic_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_fmch_axi_iic_0_synth_1">
+    <Run Id="exdes_fmch_axi_iic_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_fmch_axi_iic_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_fmch_axi_iic_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_fmch_axi_iic_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_fmch_axi_iic_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_rst_processor_1_100M_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_rst_processor_1_100M_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_rst_processor_1_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_rst_processor_1_100M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_rst_processor_1_100M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_rst_processor_1_100M_0_synth_1">
+    <Run Id="exdes_rst_processor_1_100M_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_rst_processor_1_100M_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_rst_processor_1_100M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_rst_processor_1_100M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_rst_processor_1_100M_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_rst_processor_1_300M_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_rst_processor_1_300M_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_rst_processor_1_300M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_rst_processor_1_300M_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_rst_processor_1_300M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_rst_processor_1_300M_0_synth_1">
+    <Run Id="exdes_rst_processor_1_300M_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_rst_processor_1_300M_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_rst_processor_1_300M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_rst_processor_1_300M_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_rst_processor_1_300M_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_axi_vdma_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_axi_vdma_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axi_vdma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_axi_vdma_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axi_vdma_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axi_vdma_0_0_synth_1">
+    <Run Id="exdes_axi_vdma_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_axi_vdma_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axi_vdma_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axi_vdma_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axi_vdma_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_proc_sys_reset_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_proc_sys_reset_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_proc_sys_reset_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_proc_sys_reset_0_0_synth_1">
+    <Run Id="exdes_proc_sys_reset_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_proc_sys_reset_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_proc_sys_reset_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_proc_sys_reset_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_proc_sys_reset_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_axis_data_fifo_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_axis_data_fifo_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axis_data_fifo_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_axis_data_fifo_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axis_data_fifo_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axis_data_fifo_0_0_synth_1">
+    <Run Id="exdes_axis_data_fifo_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_axis_data_fifo_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axis_data_fifo_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axis_data_fifo_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axis_data_fifo_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_system_ila_1_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_system_ila_1_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_system_ila_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_system_ila_1_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_system_ila_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_system_ila_1_0_synth_1">
+    <Run Id="exdes_system_ila_1_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_system_ila_1_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_system_ila_1_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_system_ila_1_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_system_ila_1_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_system_ila_0_1_synth_1" Type="Ft3:Synth" SrcSet="exdes_system_ila_0_1" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_system_ila_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_system_ila_0_1_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_system_ila_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_system_ila_0_1_synth_1">
+    <Run Id="exdes_system_ila_0_1_synth_1" Type="Ft3:Synth" SrcSet="exdes_system_ila_0_1" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_system_ila_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_system_ila_0_1_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_system_ila_0_1_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_smartconnect_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_smartconnect_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_smartconnect_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_smartconnect_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_smartconnect_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_smartconnect_0_0_synth_1">
+    <Run Id="exdes_smartconnect_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_smartconnect_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_smartconnect_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_smartconnect_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_smartconnect_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_clk_wiz_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_clk_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_clk_wiz_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_clk_wiz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_clk_wiz_0_0_synth_1">
+    <Run Id="exdes_clk_wiz_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_clk_wiz_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_clk_wiz_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_clk_wiz_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_clk_wiz_0_0_synth_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="exdes_axis_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_axis_gen_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axis_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/exdes_axis_gen_0_0_synth_1" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axis_gen_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axis_gen_0_0_synth_1">
+    <Run Id="exdes_axis_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="exdes_axis_gen_0_0" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axis_gen_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" IncludeInArchive="true" IsChild="false" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axis_gen_0_0_synth_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axis_gen_0_0_synth_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2022"/>
         <Step Id="synth_design"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/impl_1" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="constrs_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/impl_1">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
@@ -721,7 +676,6 @@
         </Step>
         <Step Id="write_bitstream"/>
       </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
       <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2022"/>
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
@@ -1170,9 +1124,7 @@
     </Run>
     <Run Id="exdes_axis_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu7ev-ffvc1156-2-e" ConstrsSet="exdes_axis_gen_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="exdes_axis_gen_0_0_synth_1" IncludeInArchive="false" IsChild="false" GenFullBitstream="true" AutoIncrementalDir="$PSRCDIR/utils_1/imports/exdes_axis_gen_0_0_impl_1" AutoRQSDir="$PSRCDIR/utils_1/imports/exdes_axis_gen_0_0_impl_1">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2022"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
